@@ -10,4 +10,7 @@ Viidennessä osassa syvennyttiin olioiden maailmaan. Tarkastelimme alkeis- ja vi
 
 Vastaa vielä alla olevaan kyselyyn.
 
+
+### Scale tyyppinen quiz
+
 <quiznator id='5c534d9b3972a91474102e32'></quiznator>

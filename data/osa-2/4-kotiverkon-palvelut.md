@@ -1,6 +1,6 @@
 ---
-path: '/osa-2/4-yhteenveto'
-title: 'Yhteenveto'
+path: '/osa-2/4-kotiverkon-palvelut'
+title: 'Kotiverkon palvelut'
 ---
 
 
