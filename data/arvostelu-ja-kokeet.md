@@ -5,6 +5,8 @@ hidden: false
 information_page: true
 ---
 
+# Ohjelmointi MOOCin tiedot - Nämä on siis päivittämättä
+
 Ohjelmoinnin MOOC sisältää Helsingin yliopiston kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Kummastakin osasta järjestetään verkossa tehtävä koe, ja kummastakin osasta saa erillisen arvosanan. Ohjelmoinnin MOOCista on kaksi versiota: aikataulutettu kurssi ja aikatauluttamaton kurssi. Näiden arvostelu poikkeaa hieman toisistaan.
 
 ## Aikataulutettu kurssi
