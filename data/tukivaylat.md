@@ -5,6 +5,8 @@ hidden: false
 information_page: true
 ---
 
+# Tämä ohje on kokonaisuudessaan Ohjelmointi MOOCin ohjeistusta
+
 Kurssilla on vertaistukeen perustuva keskustelukanava, jonka lisäksi tammikuun puolesta välistä lähtien kaikilla kurssilaisilla on mahdollisuus ohjaukseen Helsingin yliopiston kumpulan kampuksella.
 
 ## Keskustelukanava
