@@ -11,6 +11,6 @@ Tässä osassa erilaisia keskeisiä käsitteitä, joita sitten käytetään myö
 
 <pages-in-this-section></pages-in-this-section>
 
-Yllä oleva sisällysluettelo sisältää tämän osan aihealueet. Kuhunkin kurssin osaan on hyvä varata noin viisi - kymmenen tuntia aikaa, riippuen aiemmasta osaamisesta ja tiedoistasi. Tietoliikennettä ja sen käsitteitä ja toiminnallisuutta jo jonkin verran tuntevat luultavsti etenevät paljon nopeammin.
+Yllä oleva sisällysluettelo sisältää tämän osan aihealueet. Kuhunkin kurssin osaan on hyvä varata noin viisi - kymmenen tuntia aikaa, riippuen aiemmasta osaamisesta ja tiedoistasi. Tietoliikennettä ja sen käsitteitä ja toiminnallisuutta jo jonkin verran tuntevat luultavasti etenevät paljon nopeammin.
 
 <exercises-in-this-section></exercises-in-this-section>
