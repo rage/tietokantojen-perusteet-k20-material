@@ -9,8 +9,6 @@ Tässä usein kysyttyjä kysymyksiä ja ongelmia. Jos et löydä kysymykseesi va
 
 <table-of-contents></table-of-contents>
 
-# Sivu on peritty Ohjelmointi MOOCista
-
 
 
 ### Löysin materiaalista virheen
