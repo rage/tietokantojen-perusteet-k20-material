@@ -1,6 +1,6 @@
 ---
 path: '/osa-2/3-kotiverkon-palvelut'
-title: 'Tämä tiedosto pois'
+title: 'Kotiverkon palvelut'
 ---
 
 # Kotiverkon palvelut
