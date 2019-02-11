@@ -45,7 +45,12 @@ Tietoturvan vuoksi kotiverkossa ei pitäisi olla omaa erillistä nimipalvelijaa,
 
 ## Osoitteiden muunnos (NAT)
 
-Osoitteiden muunnosta (Network address translation, NAT) käytetään silloin, kun omia yksityisiä verkko liitetään julkiseen internetiin. Verkon yksityisyys määräytyy sen käyttämien IP-osoitteiden kautta. Julkisen verkon IP-osoitteet täytyy erikseen anoa 
+Osoitteiden muunnosta (Network address translation, NAT) käytetään silloin, kun omia yksityisiä verkko liitetään julkiseen internetiin. Verkon yksityisyys määräytyy sen käyttämien IP-osoitteiden kautta. Julkisen verkon IP-osoitteet täytyy erikseen anoa.
+
+Palataan hetkiseksi IPv4:n osoitteiden pariin. Nehän olivat muotoa 123.123.123.123, joista kussakin kohdassa voi olla numero väliltä 0-255. Julkiset IP-osoitteet on ryhmitelty erilaisiin ryhmiin 
+
+
+Gateway
 
 -	NAT, DHCP, DNS, Gateway , …   yms. käsitteitä, jotka hallittava oman kotiverkon kanssa
 -	DNS palveluna (sisäinen toiminnallisuus osioon 2)
