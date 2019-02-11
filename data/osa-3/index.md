@@ -1,6 +1,6 @@
 ---
 path: '/osa-3'
-title: 'Osa 3'
+title: 'Osa 3: Sovelluskerros'
 overview: true
 hidden: false
 ---
