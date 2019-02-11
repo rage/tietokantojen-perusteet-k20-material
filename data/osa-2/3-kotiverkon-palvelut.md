@@ -45,13 +45,12 @@ Tietoturvan vuoksi kotiverkossa ei pitäisi olla omaa erillistä nimipalvelijaa,
 
 ## Osoitteiden muunnos (NAT)
 
-Osoitteiden muunnosta (Network address translation, NAT) käytetään silloin, kun omia yksityisiä verkko liitetään julkiseen internetiin. Verkon yksityisyys määräytyy sen käyttämien IP-osoitteiden kautta. Julkisen verkon IP-osoitteet täytyy erikseen anoa.
+Osoitteiden muunnosta (Network address translation, NAT) käytetään silloin, kun omia yksityisiä verkko liitetään julkiseen internetiin. Verkon yksityisyys määräytyy sen käyttämien IP-osoitteiden kautta. Julkisen verkon IP-osoitteet täytyy erikseen anoa. Yksityisen verkon IP-osoitteet eli osoiteavaruudet 192.168.0.0 - 192.168.255.255 ja 10.0.0.0 - 10.255.255.255 ovat kaikkien käytettävissä. Usein kotiverkon DHCP-palvelin käyttää nioita B-luokan osoitteita osoiteavaruudesta 192.168.x.x.
 
-Palataan hetkiseksi IPv4:n osoitteiden pariin. Nehän olivat muotoa 123.123.123.123, joista kussakin kohdassa voi olla numero väliltä 0-255. Julkiset IP-osoitteet on ryhmitelty erilaisiin ryhmiin 
+Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi oman kotiverkon ja palveluntarjoajan verkon yhdistävässä kohdassa täytyy olla laite, joka tekee osoitteen muunnoksen yksityisen verkon osoitteesta julkisen verkon osoitteeksi ja päinvastoin. Osoitteenmuunnos edellyttää, että NAT-laite pitää kirjaa mistä oman verkon osoitteesta lähetettiin viestejä mihin julkisen verkon osoitteeseen, jotta se osaa vastausviestit ohjata oikealle yksityisen verkon laitteelle. Tarkempaa tietoa osoitteenmuunnosten tekniikasta on esimerkiksi wikipedia sivulla https://fi.wikipedia.org/wiki/Osoitteenmuunnos
+
+Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin wikipedia sivu https://fi.wikipedia.org/wiki/IP-osoite on hyvä suomenkielinen kuvaus aiheesta.
 
 
-Gateway
 
--	NAT, DHCP, DNS, Gateway , …   yms. käsitteitä, jotka hallittava oman kotiverkon kanssa
--	DNS palveluna (sisäinen toiminnallisuus osioon 2)
 
