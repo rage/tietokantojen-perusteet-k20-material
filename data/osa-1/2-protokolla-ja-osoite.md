@@ -59,7 +59,7 @@ Internetin protokollapinon alin, fyysinen, kerros huolehtii bittien siirtämises
 -- quiz 1.2. Eri kerrosten tehtäviä
 <div><quiznator id="5bae056c7ece1102a5127dff"></quiznator></div>
 
-## verkkotunnus eli laitteen osoite
+## Verkkotunnus eli laitteen osoite
 
 Me olemme tottuneet käyttämään erilaisista Internet-verkon palveluista ihmiselle luettavia nimiä kuten mooc.fi, www.helsinki.fi tai vaikkapa eecs.berkeley.edu. Koska tietokoneet toimivat biteillä ja numerot on helpompi esittää bitteinä kuin kirjaimet (katso Tietokoneen toiminta -kurssin materiaaleista lisää biteistä ja numeroiden esitysmuodoista), on internet-verkon toimijoiden kesken sovittu, että kaikilla IP-protokollaa käyttävillä laitteilla pitää olla IP-numero, jolla ko. laite internet-verkossa tunnistetaan ja jonka avulla se voidaan myös löytää.
 
@@ -67,7 +67,9 @@ Käymme myöhemmin läpi Internet-verkon nimipalvelun (Domain Name Service, DNS)
 
 IP-numero liittyy siis protokollapinon verkkokerroksen toimintaan. Muillakin kerroksilla on tarvetta tunnistaa vastapuoli, mutta niillä kerroksilla käytetään erilaisia kyseiseen toimintaan paremmin sopivia osoitteita.
 
-IP-numeroita on kahta tyyppiä. Meillä on käytössä IP-protokollasta sekä versio 4 että versio 6. Näillä versioilla on käytössään erilainen IP-osoite. Se perinteisempi osoite IPv4 on muodoltaan 128.214.189.90  eli siinä on neljä ryhmää numeroita erotettuna pisteillä toisistaan. Kussakin ryhmässä voi olla numerot 0-255. Eli kukin numero esittää yhden tavun (=8 bittiä) arvon. Tuota eecs.berkeley.edu nimeä vastaava IPv4 osoite on 23.185.0.1. Sillä on myös IPv6 osoite, joka on 2620:12a:8001::1
+IP-numeroita on kahta tyyppiä. Meillä on käytössä IP-protokollasta sekä versio 4 että versio 6. Näillä versioilla on käytössään erilainen IP-osoite. Se perinteisempi osoite IPv4 on muodoltaan 128.214.189.90  eli siinä on neljä ryhmää numeroita erotettuna pisteillä toisistaan. Kussakin ryhmässä voi olla numerot 0-255. Eli kukin numero esittää yhden tavun (=8 bittiä) arvon. Tuota eecs.berkeley.edu nimeä vastaava IPv4 osoite on 23.185.0.1. Sillä on myös IPv6 osoite, joka on 2620:12a:8001::1 
+
+Koska IP-osoite on laitteen tunniste maailmanlaajuisesti, sen pitää olla globaalisti ainutlaatuinen, ja siksi IP-osoitteita (katso wikipedian artikkeli https://fi.wikipedia.org/wiki/IP-osoite) hallinnoi IANA (Internet Assigned Numbers Authority, https://www.iana.org/). Joitakin IP-osoitteista on varattu yksityiseen käyttöön. Nämä osoitteet voi olla käyttöön koska tahansa, mutta niille ei voi eikä saa liikennöidä julkisessa internetissä. Palataan osoitteiden tarkempaan rakenteeseen myöhemmin.
 
 Monet tietokoneen käyttäjät ovat törmänneet MAC-osoitteeseen. Minun käyttämässäni kannettavassa tietokoneessa koneen MAC-osoite on laitteen pohjassa olevassa tarrassa. Protokollapinon kannalta MAC-osoite liittyy linkkikerrokseen, koska se on mm. Ethnernet-verkossa käytettävä laitteen tunniste. Toki MAC-osoitteella pyritään yksilöimään laitteet siten, että millään kahdella laitteella ei ole samaa osoitetta. Aiemmin MAC-osoite oli laitevalmistan laitteelle antama osoite, jota ei voinut vaihtaa, mutta nykyään se on ainakin joissakin tilanteissa vaihdettavissa. Protokolla pinon kannalta tätä osoitetta käyttävät ne verkon osat, jotka toimivat linkkikerroksella. Linkkikerroksella ei tuo verkkokerroksen IP-osoite ole käytettävissä, kun se on ylemmän kerroksen osoite ja piilossa linkkikerroksen oman kirjekuoren sisällä eikä siis näy linkkikerroksen toimijoille.
 
