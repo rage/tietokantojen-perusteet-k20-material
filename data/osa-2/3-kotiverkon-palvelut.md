@@ -26,7 +26,22 @@ EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin 
 
 ## Nimipalvelu (DNS)
 
-DNS
+Nykyään kaikissa internet-verkon osissa on käyttössä nimipalvelu (Domani Name Service, DNS). Nimipalvelu on maailmanlaajuinen, koko laajan internet-verkon kattava palvelu, joka pitää huolta verkon laitteiden nimien ja IP-osoitteiden kuvaamisesti toisilleen. Esimerkiksi pyytämällä www.helsinki.fi nimen tietoja nimipalvelusta saadaan tiedoksi, että "www.helsinki.fi canonical name adc-vip3.helsinki.fi" ja edelleen että "Name: adc-vip3.helsinki.fi Address: 128.214.189.90". Näistä tiedoista voidaan päätellä, että helsingin yliospiston www-palvelu toimii tietokoneella, jonka nimi on adv-vip3.helsinki.fi ja sen IPv4 osoite on 128.214.189.90.
+
+Kaikilla IP-osoitteilla ei ole pakko olla nimeä, mutta jos nimelle ei löydy IP-osoitetta, niin sen kanssa ei voi kommunikoida.
+
+### Tehtävä: käytä jotain nimipalvelutietoja kyselevää järjestelmää ja selvitä mikä on Helsingin kaupungin www-palvelun www.hel.fi osoite. 128.214.123.25, 13.33.101.65, 208.7.71.31, 137.163.136.41
+
+Mooc.fi on toteutustapansa vuoksi hiukan hankalampi nimipalvelun osalta. Kyselyllä "nslookup mooc.fi" vastaukseksi tulee useita IP-osoitteita. Tämä johtuu siitä, että mooc.fi on toteutettu pilvipalveluna ja kyseisellä pilvipalvelulla on käytössään sekä useita IP-osoitteita, että kuormatasauksen vuoksi tarve jakaa nimipalvelun kautta usieta osoitteita, jolloin eri asiakkaan ottavat yhteyttä eri osiin pilveä ja näin kaikki saavat palvelua sujuvasti. Jos kaikki yrittäisivät yhteyttä samaan kohtaa se voisi tukkeutua, jolloin osa ei ehkä saisi palvelua lainkaan ja useimmilla sivu toimisi todella hitaasti.
+
+### Mukaan vai pois (EKSTRA: Jos nimipalvelun käyttö kiinnostaa, niin kokeille nimipalvelukyselyjen avulla selvittää millä isolla pilvialustalla mooc.fi toimii. Tämä voi onnistua suoraan ensimmäisellä kyselyllä, jos sain tiedon sähköpostipalvelimen nimestä. Se voi onnistua myös jos teet kyselyn yhdellä noista IP-osoitteista. Silloin saatat saada vastaukseksi kyseistä osoitetta hallinnoivan nimipalvelijan nimen.)
+
+Kotiverkon kannalta kiinnostavin seikka on, että miten oman kotiverkon laitteet tietävät oman nimipalvelijan osoitteen. Aikoinaan tämä osoite täytyi kertoa laitteelle suoraan kirjoittamalla se sopivaan tiedostoon, mutta nykyään se onneksi saadaan samalla DHCP-kyselyllä kuin laitteen oma IP-osoite. DHCP-kyselyn mukana tulee siina paljon hyodyllistä konfigurointitietoa, joista yksi on nimipalvelijan osoite.
+
+Kotiverkkoa palvelee yleensä aina oman palveluntarjoajan nimipalvelin, joka sitten yhdessä muiden maailman nimipalvelujoiden kanssa ratkoo asiakkaiden tekemät kyselyt. Wikipedian artikkeli https://fi.wikipedia.org/wiki/DNS kertoo lyhyesti tästä nimipalvelijoiden yhteistyöstä. Nimipalvelun sisäinen toiminta jätetään valitettavasti tältä aloituskurssilta pois, kun kaikki kiinnostava asia ei mahdu mukaan. 
+
+Tietoturvan vuoksi kotiverkossa ei pitäisi olla omaa erillistä nimipalvelijaa, koska tuo palveluntarjoajan nimipalvelu yleensä riittää. Mikäli kotiverkossa on oma erillinen nimipalvelija, niin sitten sen päivittämisistä pitää huolehtia, jotta se pysyy turvallisena. Valitettavasti aina silloin tällöin on vastaan tullut oletusasetuksiltaan turvattomia laitteita. Yksi tällainen saattaa olla laitteissa toimiva nimipalvelin, silloinkin kun sillä ei aidosti ole tarvetta. Tällainen ylimääräinen, mahdollisesti jopa avoin nimipalvelu on yksi mahdollinen reitti hyökkäyksille / tunkeutumisille. Tämän kaltaisten ongelmien selvittämisessä oman palveluntarjoajan apu on usein tarpeen.
+
 
 ## Osoitteiden muunnos (NAT)
 
