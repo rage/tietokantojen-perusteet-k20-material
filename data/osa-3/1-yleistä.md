@@ -1,6 +1,6 @@
 ---
 path: '/osa-3/1-yleistä'
-title: 'Yleistä sovelluskerroksesta'
+title: 'Verkkosovellus'
 hidden: false
 ---
 
@@ -12,10 +12,10 @@ hidden: false
 </text-box>
 
 
-Nyt lähdetään tutustumaan tietoliikenteen toiminnallisuuteen protokollapinon eri kerroksilla. Tässä osiossa vuorossa on pinon ylin kerros -sovelluskerros. Se on lähimpänä käyttäjää ja käyttäjän sovelluksia. Osa toiminnallisuuksista onkin jopa toteutettuna sovelluksen sisällä tai sovelluksen käyttämissä aliohjelmakirjastoissa.
+Nyt lähdetään tutustumaan tietoliikenteen toiminnallisuuteen protokollapinon eri kerroksilla. Tässä osiossa vuorossa on pinon ylin kerros -sovelluskerros. Se on lähimpänä käyttäjää ja käyttäjän sovelluksia. Osa toiminnallisuuksista onkin jopa toteutettuna sovelluksen sisällä tai sovelluksen käyttämissä aliohjelmakirjastoissa. Ensin tarkastellaankin asiaa verkossa toimivien sovellusten tarpeiden kautta.
 
 
-## Yleistä sovelluskerroksesta
+## Verkkosovellus
 
 Tietoverkon näkökulmasta sovelluskerroksella mietitään asioita vain kahden tai useamman keskenään kommunikoivan elementin kannalta. Kaikkien muiden protokollapinon kerrosten tehtävänä on omalta osaltaan huolehtia viestin siirtämisestä lähettäjältä vastaanottajalle. Tällä kerroksella täytyy oikeasti miettiä, mitä asiaa lähettäjällä on ja miten se pitäisi 'sanoa', jotta vastaanottaja voi sen ymmärtää.
 
@@ -23,14 +23,34 @@ Verkkosovelluksessa on siis useita eri paikoissa suoritettavia osia, jotka kommu
 
 Uudempia sovelluskerroksella tapahtuvia asioita ovat esimerkiksi esineiden internetiin (Internet of Things, IoT) liittyvät erilaisia ideat ja toteutukset, kuten ajatus siitä, että autot voisivat kommunikoida keskenään ja välittää esimerkiksi ruuhka- ja kelitietoja automaattisesti toisilleen. Kaikkien näiden kommunikoinnit kuitenkin pohjautuvat näihin samoihin periaatteisiin, joita käymme tämän kurssin puitteissa läpi vähän perinteisemmillä esimerkeillä.
 
-Verkkosovelluksen toteuttajalla, tekeepä hän web-sovellusta tai autojen välistä viestintää, on vastuulla suuri joukko erilaisia osien väliseen kommunikointiin liittyviä päätöksiä. Täytyy päättää mm. viestien rakenne ja sisältö, viestien välitysjärjestys, millaista välityspalvelua kuljetuskerrokselta halutaan, jne.  Viestien välitykseen liitttyy mm. siirtoon kuluva aika, siirrettävän määrä tarvitsema kapasiteetti, siirron luotettavuus ja mahdollisesti tarvittavat salaus. Lisäksi on mietittävä saako viestejä kadota ja jos saa, niin miten sovellus silloin reagoi. Entä sallitaanko suuret viipeet siirrossa, ja mikä on tarvittava siirtokapasiteetti tai verkon läpäisykyky (throughput).
+Verkkosovelluksen toteuttajalla, tekeepä hän web-sovellusta tai autojen välistä viestintää, on vastuulla suuri joukko erilaisia päätöksiä sovelluksen toimintaan liittyen. Hänen täytyy miettiä sovelluksen arkkitehtuurin lisäksi myös osien välistä kommunikointia. Täytyy päättää mm. viestien rakenne ja sisältö, viestien välitysjärjestys, millaista välityspalvelua kuljetuskerrokselta halutaan, jne.  Viestien välitykseen liitttyy mm. siirtoon kuluva aika, siirrettävän määrä tarvitsema kapasiteetti, siirron luotettavuus ja mahdollisesti tarvittavat salaus. Lisäksi on mietittävä saako viestejä kadota ja jos saa, niin miten sovellus silloin reagoi. Entä sallitaanko suuret viipeet siirrossa, ja mikä on tarvittava siirtokapasiteetti tai verkon läpäisykyky (throughput). Tällä kurssilla emme käy läpi sovelluksen suunnittelun tai toteutuksen näkökulmaa. Niitä käsittelevät kurssit, jotka on nimetty esimerkiksi verkkosovellusten toteuttaminen tai web-sovellusohjelmointi.
 
-Sovelluksille, joiden toiminta edellyttää, että kaikki viestit pääsevät perille, kuljetuskerros tarjoaa luotettavaa tiedonsiirtopalvelua. Se takaa, että viestit menevät perille samassa muodossa kuin ne on lähetetty, että ne eivät monistu matkalla ja että ne toimitetaan perille ennemmin tai myöhemmin. Jos esimerkiksi kaivinkone on katkaissut kaapelin tai palvelin kone on päivityksen vuoksi poissa käytöstä, niin viestiä ei voida toimittaa samantien, vaan viestin toimitusviive voi olla hyvinkin pitkä. Sovellus voi toki asettaa aikarajan viestin välitykselle, mutta silloin voi olla, että viestiä ei saada toimitettua perille, kun vastaanottajaa ei tavoiteta ajoissa. 
+## Verkkosovelluksen arkkitehtuuri
 
-Jotkut sovellukset, kuten esimerkiksi verkkopelit, eivät puolestaan siedä pitkiä siirtoviiveitä tai suurta vaihtelua viestien kulkunopeuksissa. Sama koskee myös esim. videoiden katselua, silloinkin data pitäisi siirtyä mahdollisimman takaisesti. Videot vielä tarvitsevat paljon siirtokapasiteettia, jolloin verkossa läpäisykyvyn eli kyvyn siirtää data pitää pitäisi olla mahdollisimman suuri. Verkon maksimi siirtonopeus esimerkiksi 1 Gb/s asettaa teoreettisen maksimin verkon läpäisykyvylle, koska sitä suurempaa siirtonopeutta ei kyseisessä verkossa ole mahdollista saada. Käytännössä todelliset siirretyt datamäärät ovat huomattavan paljon pienempiä, koska verkossa liikkuu muitakin viestejä ja siirretyn datan määrään ei lasketa mukaan viestin otsakkeita. 
+Vaikka emme tällä kurssilla opettelekaan varsinaisesti verkkosovellusten toteuttamista, niin joidenkin tietoliikenneratkaisujen ymmärtäminen on helpompaa, kun hahmottaa millaisia vaihtoehtoja sovelluksen toteutukselle on. Perinteisesti verkkosovellukset ovat käyttäneet asiakas-palvelija -mallia, jossa eri osilla sovellusta on keskenään erilaiset roolit. Esimerkiksi WWW-palvelussa, meillä on www-selain asiakkaan roolissa ja www-palvelin palvelijan roolissa. Asiakkaat ottavat yhteyttä palvelimeen ja palvelin vastaa niille.
+
+Vertaistoimijamalli (peer to peer) on malli, jossa verkkosovelluksen osilla ei ole erilaisia rooleja, vaan kaikki ovat vertaisia ja niillä on samat toiminnallisuudet. Suomenkielessä usein puhumme suoraan vertaisverkosta (peer-to-peer network), jolloin ilman muuta oletetaan, että vertaiset ovat verkostoituneet keskenään. Wikipedian suomenkielisellä sivulla https://fi.wikipedia.org/wiki/Vertaisverkko on lyhyt kuvaus aiheesta. Englanninkielisellä sivulla https://en.wikipedia.org/wiki/Peer-to-peer on paljon laajempi selvitys.
+
+Tämn kurssin kannalta noiden termien asiakas-palvelija ja vertaisverkko tunnistaminen riittää.
+
+
+## Kuljetuskerroksen palvelut
+
+Sovelluksille, joiden toiminta edellyttää, että kaikki viestit pääsevät perille, kuljetuskerros tarjoaa luotettavaa tiedonsiirtopalvelua. Se takaa, että viestit menevät perille samassa muodossa kuin ne on lähetetty, että ne eivät monistu matkalla ja että ne toimitetaan perille ennemmin tai myöhemmin. Jos esimerkiksi kaivinkone on katkaissut kaapelin tai palvelinkone on päivityksen vuoksi poissa käytöstä, niin viestiä ei voida toimittaa samantien, vaan viestin toimitusviive voi olla hyvinkin pitkä. Sovellus voi toki asettaa aikarajan viestin välitykselle, mutta silloin voi olla, että viestiä ei saada toimitettua perille, kun vastaanottajaa ei tavoiteta ajoissa. 
+
+Jotkut sovellukset, kuten esimerkiksi verkkopelit, eivät puolestaan siedä pitkiä siirtoviiveitä tai suurta vaihtelua viestien kulkunopeuksissa. Sama koskee myös esim. videoiden katselua, silloinkin datan pitäisi siirtyä mahdollisimman tasaisesti. Videot tarvitsevat paljon siirtokapasiteettia, jolloin verkon nopeuden pitäisi olla mahdollisimman suuri. Tieverkossa puhutaan läpäisykyvystä (throuhput) eli kuinka paljon liikennettä mahtuu kyseistä tietä pitkin kulkemaan. Tietoverkoissakin tämä olisi oikeampi termi, mutta yleisesti kuitenkin on otettu käyttöön termi 'verkon nopeus' vaikka verkko ei itse mihinkään liiku. Verkon maksimi siirtonopeus esimerkiksi 1 Gb/s asettaa teoreettisen maksimin verkon läpäisykyvylle, koska sitä suurempaa siirtonopeutta ei kyseisessä verkossa ole mahdollista saada. Käytännössä todelliset siirretyt datamäärät ovat huomattavan paljon pienempiä, koska verkossa liikkuu muitakin viestejä ja siirretyn datan määrään ei lasketa mukaan viestin otsakkeita. 
 
 Tietoliikenteessä siirtonopeudet ilmoitetaan aina bitteinä sekunnissa (b/s) ja etuliitteet (katso wikipedia https://fi.wikipedia.org/wiki/Mittayksik%C3%B6n_etuliite) ovat aina aitoja kymmenen potensseja, toisinkuin tiedon tallennuksessa, jossa usein käytetään tavuja ja kakkosen potensseja.
 
+Kuljetuskerroksen palveluja valittaessa sovelluksen suunnittelijan pitää siis päättää ainakin
+<ul>
+   <li> tarvitaanko luotettavaa kommunikointia vai riittäisikö epäluotettavampi?
+   <li> onko viestin perille menon ajankohdalla väliä vai voiko viesti viipyä matkalla pidempään?
+   <li> onko tarvittavalla siirtokapasiteetilla joku minimi alaraja vai voidaanko ohjelman toiminta sopeuttaa käytettävissä olevaan verkon läpäisykykyyn?
+   <li> kuinka turvallista kommunikointiä tarvitaan vai voiko vain lähettää siten, että kaikki voivat nähdä viestit?
+</ul>
+
+Eri verkkosovelluksissa on tehty erilaisia ratkaisuja ja siksi ne toimivat eri tavoin. 
 
 
 
