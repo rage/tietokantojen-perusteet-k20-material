@@ -1,4 +1,4 @@
-# Ohjelmointi 19
+# Tietoliikenteen perusteet 19
 
 ## Development environment
 
