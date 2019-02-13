@@ -7,7 +7,7 @@ hidden: false
 
 <div>
 <lead>
-Lähes kaikki palvelut ja koko yhteiskunta toimii ja luottaa siihen, että viestejä voidaan välittää henkilöltä toisella ja laitteelta toisella. Kaikki siis olettavat että tietoliikenne toimii. Tietoliikennettä tarvitsevat esimerkiksi puhelut, verkkosivujen selailu, videoiden katselu tietokoneella tai kännykällä, mutta myös uudet älykkäät kodinkoneet olettavat voivansa käyttää tietoverkkoja. Käydään siis aluksi läpi tietoverkkoja ja niiden toiminnallisuuksia.
+Lähes kaikki palvelut ja koko yhteiskunta toimii ja luottaa siihen, että viestejä voidaan välittää henkilöltä toisella ja laitteelta toiselle. Kaikki siis olettavat että tietoliikenne toimii. Tietoliikennettä tarvitsevat esimerkiksi puhelut, verkkosivujen selailu, videoiden katselu tietokoneella tai kännykällä, mutta myös uudet älykkäät kodinkoneet olettavat voivansa käyttää tietoverkkoja. Käydään siis aluksi läpi tietoverkkoja ja niiden toiminnallisuuksia.
 </lead>
 </div>
 
@@ -15,7 +15,7 @@ Lähes kaikki palvelut ja koko yhteiskunta toimii ja luottaa siihen, että viest
 
 Tietoverkoilla yhdistetään toisiinsa tietokoneita, jotka haluavat kommunikoida keskenään. Ihmiset keskustelevat, mutta laitteet kommunikoivat. Aluksi meidän täytyykin käyttää aikaa erilaisten asioiden nimeämiseen. <a href="https://www.viestintavirasto.fi/">Viestintävirasto</a> on jo koonnut hyviä sanastoja, joissa asioita on nimetty. Tällä kurssilla käytetään näiden sanastojen mukaisia suomenkielisiä nimiä. Eri teemojen sanastot löytyvät www-osoitteesta: https://www.viestintavirasto.fi/viestintavirasto/sanastot.html
 
-Hyvä esimerkki nimeämisen ongelmista on se, että olisin äskeistä wwww-osoitetta voinut kutsua myös nettiosoitteeksi tai URL-osoitteeksi. Nämä kaikki nimet ovat noissa sanastoissa ja vaikka ne lähtökohtaisesti tarkoittavat samaa merkkijono, niin eri käyttötilanteissa on käytetty eri nimeä ja siksi samalla asialla voi olla useita nimiä. Näistä tuo www-osoite tulee taustaltaan englanninkielisestä World Wide Web (WWW) käsitteestä. URL-osoite puolestaan on ottanut tuon alkuosansa englanninkielisestä Uniform Resource Locator (URL), jossa se on määritelmänsä mukaan merkkijono, jolla voidaan osoittaa www-sivun paikkaa. Nettiosoite ei suoraan sitoudu juuri www-palveluun ja niidne liittyvään käsitteistöön, vaikka sitä usein vain tähän palveluun liittyen käytetäänkin.
+Hyvä esimerkki nimeämisen ongelmista on se, että olisin äskeistä wwww-osoitetta voinut kutsua myös nettiosoitteeksi tai URL-osoitteeksi. Nämä kaikki nimet ovat noissa sanastoissa ja vaikka ne lähtökohtaisesti tarkoittavat samaa merkkijonoa, niin eri käyttötilanteissa on käytetty eri nimeä ja siksi samalla asialla voi olla useita nimiä. Näistä tuo www-osoite tulee taustaltaan englanninkielisestä World Wide Web (WWW) käsitteestä. URL-osoite puolestaan on ottanut tuon alkuosansa englanninkielisestä Uniform Resource Locator (URL), jossa se on määritelmänsä mukaan merkkijono, jolla voidaan osoittaa www-sivun paikkaa. Nettiosoite ei suoraan sitoudu juuri www-palveluun ja siihen liittyvään käsitteistöön, vaikka sitä usein vain tähän palveluun liittyen käytetäänkin.
 
 Itseasiassa tuossa sanastojen osoitteessa on monta eri osaa. Käydään ne nyt läpi pikaisesti ja palataan niihin myöhemmin.
 

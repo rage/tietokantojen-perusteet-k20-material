@@ -5,7 +5,7 @@ title: "Viestin välitys"
 
 
 <div>
-<lead>Kommunikoinnissa ei vielä riitä, että tiedetään miten keskustella (=protokolla) tai kenen kanssa (=osoite) viestitään. Kommunikoivien osapuolte välissä olevan tietoverkon pitää vielä saada sanoma kuljetettua lähettäjältä vastaanottajalle.</lead>
+<lead>Kommunikoinnissa ei vielä riitä, että tiedetään miten keskustella (=protokolla) tai kenen kanssa (=osoite) viestitään. Kommunikoivien osapuolten välissä olevan tietoverkon pitää vielä saada sanoma kuljetettua lähettäjältä vastaanottajalle.</lead>
 </div>
 
 ## Sanomanvälitys protokollapinon kerrosten välillä
@@ -20,7 +20,7 @@ Kuljetuskerros antaa segmentit yksi kerrallaan verkkokerrokselle välitettäväk
 
 Verkkokerros puolestaan antaa IP-paketin linkkikerrokselle, joka sijoittaa sen oman kehyksensä sisään ja käyttää fyysistä kerrosta kehyksen siirtämiseen langallisen kaapelin toisessa päässä olevalle koneelle tai langattomassa verkossa kuuloyhteyden päässä olevalle vastaanottajalle.
 
-Nyt sitten kehys, jonka sisällä on IP-paketti, jonka sisällä on segmentti, jonka sisällä on sanom (tai osa siitä), on vihdoin vastaanottajalla ja protokollapino lähdetään kulkemaan alhaalta ylöspäin.
+Nyt sitten kehys, jonka sisällä on IP-paketti, jonka sisällä on segmentti, jonka sisällä on sanoma (tai osa siitä), on vihdoin vastaanottajalla ja protokollapinoa lähdetään kulkemaan alhaalta ylöspäin.
 
 Linkkikerros on siis saanut kehyksen fyysiseltä kerrokselta. Se poimii IP-paketin kehyksen sisältä ja antaa sen ylöspäin verkkokerrokselle. Verkkokerros poimii IP-paketin sisältä segmentin ja antaa sen kuljetuskerrokselle. Jos segmentti sisälsi koko sovelluskerroksen sanoman, niin kuljetuskerros voi antaa sen sovelluskerrokselle. Jos kuljetuskerros oli joutunut pilkkomaan sovelluskerroksen sanoman useampaan segmenttiin, niin se pitää palaset tallessa. Kun sanoma on saapunut kokonaisuudessaan perille, niin kuljetuskerros kokoaa sen ja antaa sanoman sovelluskerrokselle.
 
@@ -33,7 +33,7 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 
 ### Sanoman välitys tietoliikenneverkossa, pakettikytkentä, reititys
 
-Lähettäjä ja vstaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjältä koneelta vastaanottajan koneelle.
+Lähettäjä ja vastaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjältä koneelta vastaanottajan koneelle.
 
 Kuten edellisestä tarinasta kävi jo ilmi, niin internet-verkossa tapahtuva sanomien kuljetus tapahtuu paketteina. Se onkin toteutustavaltaan pakettikytkentäinen (https://fi.wikipedia.org/wiki/Pakettikytkent%C3%A4).
 
@@ -41,7 +41,7 @@ Tällöin lähettävän tietokoneen verkko- ja linkkikerros siirtävät viestiä
 
 Lähettäjän ja vastaanottajan välissä olevat reitittimet (https://fi.wikipedia.org/wiki/Reititin) huolehtivat viestin siirtämisestä yhdestä linkistä seuraavaan. Niiden täytyy tietää mihinpäin viesti pitää laittaa, jotta se aikanaan päätyy vastaanottajalle.
 
-Ne  toimivat verkkokerroksella eli ne reitittävät IP-paketteja. Sitä varten niiten täytyy vastaanottaa linkkikerrokselle saapuva kehys ja siirtää sen sisältämä IP-paketti verkkokerrokselle reititystä varten. Tutustumme itse reititykseen myöhemmin. Nyt riittää tieto siitä, että reititin osaa tavalla tai toisella päätellä vastaanottajan IP-osoitteesta sen, mihin linkkiin IP-paketti pitää ohjata, jotta se olisi yhden askeleen lähempänä vastaaanottajaa. Kun reititin on tämän päätöksen tehnyt, niin IP-paketti annetaan taas linkkikerrokselle toimitettavaksi tiettyyn suuntaan, eli tiettyyn linkkiin. Linkkikerros rakentaa IP-paketin ympärille uuden kehyksen, jonka mukana paketti laitetaan eteenpäin.
+Ne  toimivat verkkokerroksella eli ne reitittävät IP-paketteja. Sitä varten niiten täytyy vastaanottaa linkkikerrokselle saapuva kehys ja siirtää sen sisältämä IP-paketti verkkokerrokselle reititystä varten. Tutustumme itse reititykseen myöhemmin. Nyt riittää tieto siitä, että reititin osaa tavalla tai toisella päätellä vastaanottajan IP-osoitteesta sen, mihin linkkiin IP-paketti pitää ohjata, jotta se olisi yhden askeleen lähempänä vastaanottajaa. Kun reititin on tämän päätöksen tehnyt, niin IP-paketti annetaan taas linkkikerrokselle toimitettavaksi tiettyyn suuntaan, eli tiettyyn linkkiin. Linkkikerros rakentaa IP-paketin ympärille uuden kehyksen, jonka mukana paketti laitetaan eteenpäin.
 
 Käytännössä siis viesti kulkee lähettäjältä yhden tai useamman reitittimen kautta vastaanottajalle. Kun tietoverkkoa tarkastellaan verkkokerroksen näkökulmasta, niin lähettäjän ja vastaanottajan välissä on vain reitittimiä, jotka huolehtivat pakettien siirtymisestä yhdestä linkistä seuraavaan.
 
@@ -49,7 +49,7 @@ Kahden reitittimen välissä olevassa linkissä voi toki olla myös linkkikerrok
 
 ### Ongelmia
 
-Koskat viestit etenevät lähettäjältä vastaanottajalle pätkittäin reitittimeltä toiselle, on mahdollista, että joku reititin ei voikaan laittaa viestiä eteenpäin tai joku toinen reititin ei omien ongelmiensa vuoksi voi ottaa välitettävää viestiä vastaan. Tällöin viesti katoaa matkalla eikä se koskaa saavuta vastaanottajaa. Vastaavasti on myös mahdollista, että viestiä siirtäville reitittimille syntyy eri käsitys viestin etenemisestä ja lähettävä reititin laittaa viestin varmuuden vuoksi uudelleen eteenpäin. Tällöin viesti voi kahdentua, jolloin vastaanottajalle saapuukin kaksi kopiota samasta viestistä.
+Koska viestit etenevät lähettäjältä vastaanottajalle pätkittäin reitittimeltä toiselle, on mahdollista, että joku reititin ei voikaan laittaa viestiä eteenpäin tai joku toinen reititin ei omien ongelmiensa vuoksi voi ottaa välitettävää viestiä vastaan. Tällöin viesti katoaa matkalla eikä se koskaa saavuta vastaanottajaa. Vastaavasti on myös mahdollista, että viestiä siirtäville reitittimille syntyy eri käsitys viestin etenemisestä ja lähettävä reititin laittaa viestin varmuuden vuoksi uudelleen eteenpäin. Tällöin viesti voi kahdentua, jolloin vastaanottajalle saapuukin kaksi kopiota samasta viestistä.
 
 Toisaalta tällainen pakettien siirtely vaiheittain antaa mahdollisuuden myös pahantahtoiseen toimintaan. Verkossa on helppo kerätä kaikki tietyn pisteen kautta kulkevat viestit ja tutkia niitä. Julkisuudessa oli viitisen vuotta sitten paljonkin keskustelua siitä kuinka Yhdysvalloissa NSA kuuntelee viestejä tai kuinka Suomessa poliisin on mahdollisuus saada oikeus viestiliikenteen seurantaan.
 

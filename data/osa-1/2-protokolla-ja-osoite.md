@@ -20,9 +20,9 @@ Asiakkaan ja palvelimen välisessä kommunikoinnissa tämä tarkoittaa sitä, et
 
 Asiakkaan ja palvelimen välisessä viestien vaihdossa kumpikin osapuoli on vuorollaan lähettäjänä ja vastaanottajana, joten asiakkaankin pitää pysyä kiinni tietoverkossa kunnes se on vastaanottanut kaikki sanomat, joita se odotti palvelimen lähettävän.
 
-## Protokolla eli yhteyskäyntäntö
+## Protokolla eli yhteyskäytäntö
 
-Jotta tietokoneiden välinen kommunikointi ja sanomien vaihto olisi mahdollista, niin niiden täytyy noudattaa ythteistä käytäntöä sekä sanomien lähettämisessä että sanomien sisällössä ja rakenteessa.
+Jotta tietokoneiden välinen kommunikointi ja sanomien vaihto olisi mahdollista, niin niiden täytyy noudattaa yhteistä käytäntöä sekä sanomien lähettämisessä että sanomien sisällössä ja rakenteessa.
 
 Valtaosa IETF:n standardeista onkin erilaisia internet-verkon protokollien määrittelyjä. Näiden avulla eri ohjelmoijien tekemät ohjelmat voivat kommunikoida toistensa kanssa onnistuneesti. Myös laitevalmistajien toteuttamien laitteiden pitää noudattaa standardoituja protokollia, jolla kommunikointi laitteiden välillä on mahdollista.
 
@@ -41,13 +41,13 @@ Näistä palveluista  muodostuukin kerrosrakenne. Internetin sanomien välitykse
 <illustrations motive="ch-1-2-kaannos-linkitys-draft" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
-Lähettäjä ja vastaanottaja, joka kommunikoivat keskenään käyttäen HTTP-protokollaa, sijoitetaan tässä protokollapinossa sovelluskerrokselle. Tällä kerroksella ovat siis kaikki, joilla on jokin yhteiseen tavoitteeseen liittyvä tarve kommunikoida keskenään. Näitä ovat tyypillisesti esimerki www-selain ja -palvelin, sähköpostiohjelma, pikaviestinpalvelua toteuttava ohjelma (esim. whatsapp, telegram, jabber). Ne käyttävät omaan ohjelman sisäiseen kommunikointiin jotain sovellustasonprotokollaa, kuten HTTP tai XMPP. Sovelluskset voivat ottaa käyttöön jonkun jo standardoidun sovellustason protokollan (esim. HTTP, XMPP) tai määritellä ihan oman protokollan, jota ne käyttävät.
+Lähettäjä ja vastaanottaja, joka kommunikoivat keskenään käyttäen HTTP-protokollaa, sijoitetaan tässä protokollapinossa sovelluskerrokselle. Tällä kerroksella ovat siis kaikki, joilla on jokin yhteiseen tavoitteeseen liittyvä tarve kommunikoida keskenään. Näitä ovat tyypillisesti esimerki www-selain ja -palvelin, sähköpostiohjelma, pikaviestinpalvelua toteuttava ohjelma (esim. whatsapp, telegram, jabber). Ne käyttävät omaan ohjelman sisäiseen kommunikointiin jotain sovellustason protokollaa, kuten HTTP tai XMPP. Sovellukset voivat ottaa käyttöön jonkun jo standardoidun sovellustason protokollan (esim. HTTP, XMPP) tai määritellä ihan oman protokollan, jota ne käyttävät.
 
 Tietoliikenteessä puhutaan usein päästä-päähän -yhteydestä, jolla tarkoitetaan sitä, että sovellusten ei tarvitse tietää, miten viesti alemmilla kerroksilla liikkuu, vaan ne voivat luottaa siihen, että lähettäjän lähettämä viesti päätyy vastaanottajalleen toiseen päähän.
 
 Kuljetuskerroksen tehtävä on nimenomaan tarjota sovelluskerrokselle tällainen yhteys lähettäjän ja vastaanottajan välille. Lähettäjä voi siis antaa viestinsä kuljetuskerrokselle toimitettavaksi ja olettaa, että vastaanottaja saa viestin oman tietokoneensa kuljetuskerrokselta. Kuljetuskerroksen toiminnalle voidaan asettaa myös erilaisia laatukriteerejä, esim. viestiä ei saa muuttua, kadota tai kahdentua. Toisaalta ihan yhtä hyvin voidaan kuljetuskerrokselle antaa lupa tarjota huonompilaatuista palvelua, esim. sallia viestin katoaminen. Internetin kuljetuskerroksen kaksi tärkeintä protokollaa ovat TCP ja UDP. Tutustutaan niihin tarkemmin myöhemmin tällä kurssilla.
 
-Verkkokerros tarjoaa palveluna kuljetuskerrokselle sanoman siirron verkossa lähtöpisteestä A kohteeseen B. Verkkokerros siis tietää missä päin verkkoa eri laitteet ovat ja mitä reittiä viestit niille pitää kuljettaa. Verkkokerroksen tärkein tehtävä on siis huolehtia viestien reittitämisestä verkossa siten, että ne päätyvät oikeille vastaanottajille. Tämän kerroksen tärkein sanomien siirtoon liittyvä protokolla on IP, joka on lyhenne englanninkielen sanoista Internet Protocol eli suomennettuna Internet-verkon protokolla.
+Verkkokerros tarjoaa palveluna kuljetuskerrokselle sanoman siirron verkossa lähtöpisteestä A kohteeseen B. Verkkokerros siis tietää missä päin verkkoa eri laitteet ovat ja mitä reittiä viestit niille pitää kuljettaa. Verkkokerroksen tärkein tehtävä on siis huolehtia viestien reitittämisestä verkossa siten, että ne päätyvät oikeille vastaanottajille. Tämän kerroksen tärkein sanomien siirtoon liittyvä protokolla on IP, joka on lyhenne englanninkielen sanoista Internet Protocol eli suomennettuna Internet-verkon protokolla.
 
 Verkkokerros on liima, joka liittää erilaiset sovellukset ja niiden kuljetustarpeet sekä erilaiset verkkoteknologiat ja niiden tarjoamat kuljetuspalvelut yhteen. Kaikkien internet verkossa palvelua tarjoavien laitteiden täytyy osata IP-protokollaa. Tämä koskee sekä käyttäjien laitteita että verkon reitittimiä.
 
@@ -73,7 +73,7 @@ Koska IP-osoite on laitteen tunniste maailmanlaajuisesti, sen pitää olla globa
 
 Monet tietokoneen käyttäjät ovat törmänneet MAC-osoitteeseen. Minun käyttämässäni kannettavassa tietokoneessa koneen MAC-osoite on laitteen pohjassa olevassa tarrassa. Protokollapinon kannalta MAC-osoite liittyy linkkikerrokseen, koska se on mm. Ethnernet-verkossa käytettävä laitteen tunniste. Toki MAC-osoitteella pyritään yksilöimään laitteet siten, että millään kahdella laitteella ei ole samaa osoitetta. Aiemmin MAC-osoite oli laitevalmistan laitteelle antama osoite, jota ei voinut vaihtaa, mutta nykyään se on ainakin joissakin tilanteissa vaihdettavissa. Protokolla pinon kannalta tätä osoitetta käyttävät ne verkon osat, jotka toimivat linkkikerroksella. Linkkikerroksella ei tuo verkkokerroksen IP-osoite ole käytettävissä, kun se on ylemmän kerroksen osoite ja piilossa linkkikerroksen oman kirjekuoren sisällä eikä siis näy linkkikerroksen toimijoille.
 
-Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä svoelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään pistoketta (socket) ja porttinumeroa. Näitäkään ei juuri tämän enempää tällä kurssilla tarkastella, koska niillä ei ole merkitystä itse verkon toimintaan. Ne ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Eri protokollien kohdalla kerrottan kyllä, jos niihin liittyy sovittuja, standardoiduja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
+Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä sovelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään pistoketta (socket) ja porttinumeroa. Näitäkään ei juuri tämän enempää tällä kurssilla tarkastella, koska niillä ei ole merkitystä itse verkon toimintaan. Ne ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Eri protokollien kohdalla kerrotaan kyllä, jos niihin liittyy sovittuja, standardoiduja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
 
 
 
