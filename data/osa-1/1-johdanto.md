@@ -17,7 +17,7 @@ Tietoverkoilla yhdistetään toisiinsa tietokoneita, jotka haluavat kommunikoida
 
 Hyvä esimerkki nimeämisen ongelmista on se, että olisin äskeistä wwww-osoitetta voinut kutsua myös nettiosoitteeksi tai URL-osoitteeksi. Nämä kaikki nimet ovat noissa sanastoissa ja vaikka ne lähtökohtaisesti tarkoittavat samaa merkkijonoa, niin eri käyttötilanteissa on käytetty eri nimeä ja siksi samalla asialla voi olla useita nimiä. Näistä tuo www-osoite tulee taustaltaan englanninkielisestä World Wide Web (WWW) käsitteestä. URL-osoite puolestaan on ottanut tuon alkuosansa englanninkielisestä Uniform Resource Locator (URL), jossa se on määritelmänsä mukaan merkkijono, jolla voidaan osoittaa www-sivun paikkaa. Nettiosoite ei suoraan sitoudu juuri www-palveluun ja siihen liittyvään käsitteistöön, vaikka sitä usein vain tähän palveluun liittyen käytetäänkin.
 
-Itseasiassa tuossa sanastojen osoitteessa on monta eri osaa. Käydään ne nyt läpi pikaisesti ja palataan niihin myöhemmin.
+Itse asiassa tuossa sanastojen osoitteessa on monta eri osaa. Käydään ne nyt läpi pikaisesti ja palataan niihin myöhemmin.
 
 <ul>
   <li> alkuosa https kertoo meille, että kyseessä on HTTP protokollan salattu (S) versio.
@@ -38,7 +38,7 @@ Näitä internetiin liitettyjä tietoverkkoja hallinnoivat palveluntarjoajat (In
 
 ![Kuvassa on verkko.](./ch-1-1-verkkojen-yhdistelma.jpg)
 
-FICIX julkaisee tilastotietoa sen verkon kautta kulkeneestä liikenteestä. Graafinen kuva tilastosta on sivulla https://stats-ficix.basen.com/#/page?name=StatsWelcome&source=wiki
+FICIX julkaisee tilastotietoa sen verkon kautta kulkeneesta liikenteestä. Graafinen kuva tilastosta on sivulla https://stats-ficix.basen.com/#/page?name=StatsWelcome&source=wiki
 
 
 -- Quiz 1.2. Viestien määristä
