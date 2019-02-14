@@ -52,6 +52,9 @@ Kuljetuskerroksen palveluja valittaessa sovelluksen suunnittelijan pitää siis 
 
 Eri verkkosovelluksissa on tehty erilaisia ratkaisuja ja siksi ne toimivat eri tavoin. 
 
+Kuljetuskerroksella on käytössä kaksi vaihtoehtoista protokollaa TCP ja UDP, joiden toimintaan tutustutaan tarkemmin hiukan myöhemmin. Nyt kuitenkin katsotaan niiden tarjoamien palvelujen erot, koska sovelluksen täytyy valita kumpaa kuljetusprotokollaa se minkäkin viestin kanssa käyttää.
+
+TCP on näistä monipuolisempi. Se tarjoaa luotettavan kuljetuspalvelun. Se lisäksi ylläpitää yhteyttä kommunikoivien osien välillä, joten peräkkäiset viestit voivat kulkeaa samaa loogista yhteyttä pitkin. Tietoliikenneverkon kannalta TCP pyrkii myös toimimaan kuormittamatta verkkoa tarpeettomasti. Siksi siihen on toteutettu myös vuonvalvonta (lähettää vain sen verran kuin vastaanottaja ehtii käsitellä) ja ruuhkanhallinta (lähettää vain sen verran kuin verkko ehtii välittää.). Mikä vastaanottaja tai verkko ei ehdi vauhtiin mukaan, niin TCP hiljentää lähetysvauhtia ja lähettää siis dataa hitaammin.
 
 
 
