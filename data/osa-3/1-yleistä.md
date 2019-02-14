@@ -52,8 +52,13 @@ Kuljetuskerroksen palveluja valittaessa sovelluksen suunnittelijan pitää siis 
 
 Eri verkkosovelluksissa on tehty erilaisia ratkaisuja ja siksi ne toimivat eri tavoin. 
 
+Kuljetuskerroksella on käytössä kaksi vaihtoehtoista protokollaa TCP ja UDP, joiden toimintaan tutustutaan tarkemmin hiukan myöhemmin. Nyt kuitenkin katsotaan niiden tarjoamien palvelujen erot, koska sovelluksen täytyy valita kumpaa kuljetusprotokollaa se minkäkin viestin kanssa käyttää.
 
+TCP on näistä monipuolisempi. Se tarjoaa luotettavan kuljetuspalvelun. Se lisäksi ylläpitää yhteyttä kommunikoivien osien välillä, joten peräkkäiset viestit voivat kulkeaa samaa loogista yhteyttä pitkin. Tietoliikenneverkon kannalta TCP pyrkii myös toimimaan kuormittamatta verkkoa tarpeettomasti. Siksi siihen on toteutettu myös vuonvalvonta (lähettää vain sen verran kuin vastaanottaja ehtii käsitellä) ja ruuhkanhallinta (lähettää vain sen verran kuin verkko ehtii välittää.). Mikä vastaanottaja tai verkko ei ehdi vauhtiin mukaan, niin TCP hiljentää lähetysvauhtia ja lähettää siis dataa hitaammin.
 
+UDP puolestaan on yksinkertainen. Se vain ottaa viestin kuljetettavaksi, mutta ei välttämättä lupaa toimittaa sitä perille. UDP lupaa vain yrittää parhaansa (best-effort), mutta viestin välitys voi silti epäonnistua, jolloin viesti ei menekään vastaanottajalle. Mahdollinen viestin uudelleen lähetys on sovelluskerroksen vastuulla. UDP ei myöskään ota kantaa viestein välitysnopeuksiin, vaan se laittaa kaikki sovellukselta saamansa viestit samantien eteenpäin. Taas mahdollinen sopeutuminen verkon välityskyvyn mukaan jää sovelluskerrokselle tehtäväksi.
+
+Kumpikaan kuljetuskerroksen protokollista ei lupaa mitään viestin välityksen ajankohtaan liittyen. Mitäään aikatakeita ei sovelluskerrokselle ole tarjolla. Ne eivät myöskään salaa viestejä. Salausta varten on erikseen SSL (secure socket layer) kirjasto, joka salaa viestit ensin ja käyttää sitten TCP:tä viestien kuljettamiseen.
 
 <quiznator id="5c385de6ddb6b814af31d7d0"></quiznator>
 
