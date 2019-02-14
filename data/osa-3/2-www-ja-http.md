@@ -20,7 +20,7 @@ Web-palvelimet ja web-selaimet käyttävät omaan keskinäiseen kommunikointiins
 
 ## HTTP - protokolla
 
-Ensimmäisesssä versiossa HTTP-protokollasta
+Ensimmäisesssä versiossa HTTP-protokollasta oli määritelty vain sivun noutoon tarvittavat GET pyyntö ja siihen liittyvä vastaus. Nämä ovat edelleen eniten käytetyt HTTP-protokollan viestit. Uudemmassa protokollassa on lisäksi paljon enemmän viestityyppejä, joiden avulla nettiselain voi myös antaa tietoja palvelimelle eikä vain pyytää siltä tietoja. Tämän kurssin osalta tarkastelemme lähinnä GET pyyntöä. Jos sinua kiinnostavat myös nuo muut viestityypit, niin wikipedian artikkelissa https://fi.wikipedia.org/wiki/HTTP on lyhyet kuvaukset niistä.  
 
 
 
