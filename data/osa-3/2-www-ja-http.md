@@ -21,6 +21,8 @@ Ykkösosiosta toivottavasti muistat, että WWW-sivuihin viitataan URL-osoitteell
 
 Web-palvelimet ja web-selaimet käyttävät omaan keskinäiseen kommunikointiinsa HTTP-protokollaa. HTTP-protokolla on meidän ihmisten kannalta sikäli kiva, että se on tekstipohjainen, joten meidän on helppo lukea protokollan viestejä ja niiden sisältöjä. Jotkut muut protokollat siirtävät viestejä binäärilukuina. Yksi esimerkki tällaisesta protokollasta on HTTP:stä kehitetty salattu versio HTTPS. 
 
+## Tähän kuva, jossa on www-palvelin keskellä ja useita eri asiakasselaimia ympärissä. Yhdistävissä kaksipäisissä nuolissa voisi lukea http
+
 
 ## HTTP - protokolla
 
