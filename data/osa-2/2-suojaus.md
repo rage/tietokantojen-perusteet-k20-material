@@ -17,7 +17,7 @@ Paljon käytetty <b>julkisen avaimen salakirjoitus</b> perustuu avainpareihin, j
 
 <b>Symmetrisen avaimen salakirjoituksessa</b> käytetään samaa avainta sekä salaamiseen että purkamiseen. Tällöin kaikki, joilla on ko. avain voivat purkaa kaikki samalla avaimella salatut viestit. Esimerkki symmetrisen avaimen käytöstä voisi olla vaikkapa AES.
 
-Näiden salausmenetelmien turvallisuus perustuu hyvään avainhallintaan. Emmehän me jaa kotiavaintakaan (tai sen kopioita) vapaasti muille. Samoin pitää menetellä oman salaisen avaimen kanssa. Jos joku epäluotettava taho saa haltuunsa minun salaisen avaimeni, niin mikään minun viestintäni ei ole sen jälkeen enää luottamuksellista, koska tämä taho voi vapaasti tutkia kaikkia minulle tulevia salattuja viestejä. Lisäksi kyseine taho voi väittää olevansa minä salaamalla lähettämänsä viestit minun salaisella avaimellani. Julkista avainta ei pidetä piilossa, joten sen oletetaan olevan kaikilla, jotka haluavat lähettää viestejä minulle.
+Näiden salausmenetelmien turvallisuus perustuu hyvään avainhallintaan. Emmehän me jaa kotiavaintakaan (tai sen kopioita) vapaasti muille. Samoin pitää menetellä oman salaisen avaimen kanssa. Jos joku epäluotettava taho saa haltuunsa minun salaisen avaimeni, niin mikään minun viestintäni ei ole sen jälkeen enää luottamuksellista, koska tämä taho voi vapaasti tutkia kaikkia minulle tulevia salattuja viestejä. Lisäksi kyseinen taho voi väittää olevansa minä salaamalla lähettämänsä viestit minun salaisella avaimellani. Julkista avainta ei pidetä piilossa, joten sen oletetaan olevan kaikilla, jotka haluavat lähettää viestejä minulle.
 
 ## Viestien salaus
 
@@ -35,26 +35,26 @@ Tietoliikenteeseen kotiverkossa voi kohdistua monenlaisia uhkia ja niiltä täyt
 
 Jos kaikki kotiverkon laitteet liikennöivät langallisesti (valokuitu, parikaapeli), niin käytön estämiseen riittää se, että fyysinen pääsy verkkoliittimiin estetään.
 
-Useimmissa kotiverkoissa on kuitenkin käytössä myös langaton verkko, jonka suojaaminen on haastellisempaa, koska verkko kuuluu myös ulkopuoliseen tilaan ja fyysinen pääsy kuuluvuusalueelle on usein mahdotonta estää. Langattoman verkon osalta luvaton käyttö voidaan estää käyttämällä WLAN-verkkosalasanaa. Useimmissa WLAN-tukiasemissa on nykyään jo valmiiksi asennettuna verkkosalasana, jota edellytetään, jotta verkkoon voi liittyä. Kaikki laitteet, jotka antavat oikean verkkosalasanan saavat pääsyn verkkoon. Helpot salasanat on suhteellisen helppo arvata. Riittävän vaikea verkkosalasanan käyttö on hyvä ja yksinkertainen tapa rajoittaa verkon käyttöä.
+Useimmissa kotiverkoissa on kuitenkin käytössä myös langaton verkko, jonka suojaaminen on haasteellisempaa, koska verkko kuuluu myös ulkopuoliseen tilaan ja fyysinen pääsy kuuluvuusalueelle on usein mahdotonta estää. Langattoman verkon osalta luvaton käyttö voidaan estää käyttämällä WLAN-verkkosalasanaa. Useimmissa WLAN-tukiasemissa on nykyään jo valmiiksi asennettuna verkkosalasana, jota edellytetään, jotta verkkoon voi liittyä. Kaikki laitteet, jotka antavat oikean verkkosalasanan saavat pääsyn verkkoon. Helpot salasanat on suhteellisen helppo arvata. Riittävän vaikea verkkosalasanan käyttö on hyvä ja yksinkertainen tapa rajoittaa verkon käyttöä.
 
 Langalliseen tai langattomaan verkkoon pääsy voidaan rajata myös vain tietyille laitteille. Linkkikerroksella Ethernet-verkossa käytettävä MAC-osoite on yksi mahdollinen tapa rajoittaa verkon käyttöä. Perinteisesti laitteilla on ollut kiinteä MAC-osoite, jolla laite voidaan tunnistaa. Nykyisin laitteiden MAC-osoitteita voidaan ohjelmallisesti vaihtaa, joten tämä ei enää ole kovin turvallinen tapa rajoittaa verkkoon liitettäviä laitteita. 
 
 
 ### Luvattoman tulevan liikenteen estäminen - Palomuuri
 
-Verkon suojauksessa on erittäin tärkeää estää luvaton tunkeutuminen verkkoon tietoliikenneyhteyden kautta. Valtaosa erilaisista tietoliikenteen hyökkäyksistä tapahtuu ulkopuolisesta verkosta käsin. Tässä suojauksessa keskeinen elementti on kotiverkon ja palveluntajoajan välistä liikennettä välittävä reititin. Reititin välittää kotiverkkoon päin kaiken liikenteen joka on osoitettu jollekin kyseisen verkon laitteelle. Muu liikenne jää operaattorin verkkoon eikä kuormita kotiverkon yhteyksiä.
+Verkon suojauksessa on erittäin tärkeää estää luvaton tunkeutuminen verkkoon tietoliikenneyhteyden kautta. Valtaosa erilaisista tietoliikenteen hyökkäyksistä tapahtuu ulkopuolisesta verkosta käsin. Tässä suojauksessa keskeinen elementti on kotiverkon ja palveluntarjoajan välistä liikennettä välittävä reititin. Reititin välittää kotiverkkoon päin kaiken liikenteen joka on osoitettu jollekin kyseisen verkon laitteelle. Muu liikenne jää operaattorin verkkoon eikä kuormita kotiverkon yhteyksiä.
 
-Valitettavasti suuri osa internet-verkon hyökkäyksistä perustuu siihen, että viestejä lähetetään kaikkiin mahdollisiin osoitteisiin ja yritetään löytää laitetta, jossa olisi erilaisia tietoturva haavoittuvuuksia sisältäviä ohjelmia. Tällainen Verkkotiedustelu eli porttiskannaus (engl. port scanning) on mahdollista estää palomuurilla tai sitä kehittyneemmillä järjestelmillä. Palomuurin tehtävänä on tarkkailla liikennettä ja estää sellaiset viestit, jotka esimerkiksi yrittävät ottaa yhteyttä sellaisiin portteihin, joita ei ole tarkoitettu verkon ulkopuolisille käyttäjille.
+Valitettavasti suuri osa internet-verkon hyökkäyksistä perustuu siihen, että viestejä lähetetään kaikkiin mahdollisiin osoitteisiin ja yritetään löytää laitetta, jossa olisi erilaisia tietoturva haavoittuvuuksia sisältäviä ohjelmia. Tällainen verkkotiedustelu eli porttiskannaus (engl. port scanning) on mahdollista estää palomuurilla tai sitä kehittyneemmillä järjestelmillä. Palomuurin tehtävänä on tarkkailla liikennettä ja estää sellaiset viestit, jotka esimerkiksi yrittävät ottaa yhteyttä sellaisiin portteihin, joita ei ole tarkoitettu verkon ulkopuolisille käyttäjille.
 
-Osa palomuuriohjelmistoista tai laitteista on oletusarvoisesti auki, jolloin ne eivät estä mitään liikennettä ja osa puolestaan on oletusarvioisesti suljettuja, jolloin ne estävät lähes kaiken liikenteen. Emme opettele tällä kurssilla palomuurien asetusten säätämistä, vaan se jää tietoturva- ja/tai ylläpito-teemaisten kurssien tehtäväksi.
+Osa palomuuriohjelmistoista tai laitteista on oletusarvoisesti auki, jolloin ne eivät estä mitään liikennettä ja osa puolestaan on oletusarvioisesti suljettuja, jolloin ne estävät lähes kaiken liikenteen. Emme opettele tällä kurssilla palomuurien asetusten säätämistä, vaan se jää tietoturva- ja/tai ylläpito- teemaisten kurssien tehtäväksi.
 
 ## Laitteiden suojaus - käyttäjätunnukset yms.
 
-Verkon liikenteen suojaamisen lisäksi on ihan yhtä tärkeää suojata verkon laitteet luvattomalta käytöltä. Tämä suojaaminen usein perustuu käyttäjätunnuksiin ja salasanoihin. Useimmilla verkkolaitteillakin on hallintatunnus (esimerkiksi admin) ja sillä salasana. Tämä salana saattaa vieläkin olla turhan helppo arvata tai olla jopa sama kaikilla laitteilla. Tällöin tärkeää vaihtaa salasana riittävän vahvasi ja aidosti salaiseksi.
+Verkon liikenteen suojaamisen lisäksi on ihan yhtä tärkeää suojata verkon laitteet luvattomalta käytöltä. Tämä suojaaminen usein perustuu käyttäjätunnuksiin ja salasanoihin. Useimmilla verkkolaitteillakin on hallintatunnus (esimerkiksi admin) ja sillä salasana. Tämä salana saattaa vieläkin olla turhan helppo arvata tai olla jopa sama kaikilla laitteilla. Tällöin tärkeää vaihtaa salasana riittävän vahvaksi ja aidosti salaiseksi.
 
 Joissakin markkinoilla olevissa WLAN-laitteissa hallintatunnuksen oletussalasana on sama kuin verkon salasana. Jos salasana on riittävän hyvä ja voidaan luottaa kaikkiin verkon käyttäjiin, niin silloin oletussalasanaa ei ehkä tarvitse vaihtaa. 
 
-Salasanojen hallinnasta on vuonna 2014 julkaistu Viestintäviraston kyperturvallisuuskeskuksen ohje https://www.kyberturvallisuuskeskus.fi/sites/default/files/media/file/Salasanat_haltuun.pdf
+Salasanojen hallinnasta on vuonna 2014 julkaistu Viestintäviraston kyberturvallisuuskeskuksen ohje https://www.kyberturvallisuuskeskus.fi/sites/default/files/media/file/Salasanat_haltuun.pdf
 
 Salasanat eivät ole tämän kurssin keskeistä sisältöä, mutta jokaiselle joka ylläpitää tai hallinnoi omaa tietoliikenneverkkoaan niiden oikea käyttö on tärkeä osa oman verkon turvallisuutta.
 

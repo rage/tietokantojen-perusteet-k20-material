@@ -45,12 +45,12 @@ FICIX julkaisee tilastotietoa sen verkon kautta kulkeneesta liikenteestä. Graaf
 <div> <quiznator id="5c1ce4a1054d71123e35cb5b"> </quiznator> </div>
 
 Internetin keskeisin ominaisuus onkin sen kyky siirtää viestejä tietoverkosta toiseen. Tämän tekevät verkkoja yhdistävät <a href=" https://fi.wikipedia.org/wiki/Reititin">reitittimet</a> (engl. router), jotka vastaanottavat viestin yhdestä verkosta ja välittävät sen edelleen toiseen verkkoon. Kahden eri verkon välissä on aina reititin, joka huolehtii viestien siirtämisestä verkkojen välillä. Usein kummassakin verkossa on oma reitittimensä, joka poimii omasta verkosta ulospäin menevät viestit välitettäväksi toiseen verkkoon.
-Jos olet kiinnostunut täysin tämän kurssin ulkopuolisesta ylimääräisestä lisätiedosta, niin FUNET-verkkoa kuvaavalla sivulla https://wiki.eduuni.fi/display/funet/IP-yhteydet kerrotaan lisää siitä, miten eri yliopistot tai korkeakoulut voivat omat verkkonsa liittää FUNEtin verkkoon.
+Jos olet kiinnostunut täysin tämän kurssin ulkopuolisesta ylimääräisestä lisätiedosta, niin FUNET-verkkoa kuvaavalla sivulla https://wiki.eduuni.fi/display/funet/IP-yhteydet kerrotaan lisää siitä, miten eri yliopistot tai korkeakoulut voivat omat verkkonsa liittää FUNETin verkkoon.
 
 Internetin kommunikointitavat on standardoitu ja kaikki internetissä tapahtuva kommunikointi noudattaa näitä standardeja. Internetin standardoinnista huolehtii <a href="https://www.ietf.org/">Internet Engineering Task Force</a> (IETF). IETF:n standardeja puhutellaan lyhenteellä RFC. Niiden numerointi alkoi aikoinaan numerosta 1, mutta uusimmat numerot ovat jo yli 8500. RFC:t määrittelevät erilaisia internet-verkon ominaisuuksia. Jo hyväksyttyä standardia ei enää muuteta, vaan muutokset kirjataan uudeksi RFC:ksi, joka joko täydentää edellistä tai korvaa sen kokonaan.
 
 
-## internetlaitteet ja verkkolaitteet
+## Internetlaitteet ja verkkolaitteet
 
 Internetlaitteita ovat kaikki internetiin kytketyt päätelaitteet. Verkkolaitteita puolestaan laitteet, jotka toimivat verkon sisällä ja huolehtivat viestien siirtämisestä paikasta toiseen.
 
@@ -77,9 +77,9 @@ Tietotekniikan termitalkoiden (http://www.tsk.fi/tsk/termitalkoot/) määrittely
    <li>Palvelin (engl. server) puolestaan on tietokone, ohjelmisto tai näiden yhdistelmä, joka hoitaa tiettyjä tehtäviä muiden samaan verkkoon kytkettyjen tietokoneiden pyyntöjen ohjaamana tai niiden puolesta.
 </ul>
 
-Eli kun puhumme palvelusta tarkoitamme jotain isompaa kokonaisuutta, jota tarjotaan muille käytettäväksi. Palvelin on taas osa tietoverkkoa, jonka avulla tuo palvelu voi olla muiden käytettävissä.
+Eli kun puhumme palvelusta, tarkoitamme jotain isompaa kokonaisuutta, jota tarjotaan muille käytettäväksi. Palvelin on taas osa tietoverkkoa, jonka avulla tuo palvelu voi olla muiden käytettävissä.
 
-Usein palvelua käyttävistä sovelluksista ja oikeammin niistä laitteista, joilla niitä suoritetaan käytetään termiä asiakas (engl. client). Sovelluksesta voidaan tarvittaessa käyttää termiä asiakasohjelma.
+Usein palvelua käyttävistä sovelluksista ja oikeammin niistä laitteista, joilla niitä suoritetaan, käytetään termiä asiakas (engl. client). Sovelluksesta voidaan tarvittaessa käyttää termiä asiakasohjelma.
 
 Seuraavassa aliluvussa tarkastellaankin miten viestinvaihto viestin lähettäjän ja vastaanottajan välillä oikein tapahtuu.
 

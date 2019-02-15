@@ -6,7 +6,7 @@ hidden: false
 ---
 
 
-Tässä osassa käydään pikaisesti läpi iso joukko erilaisia asioita ja käsitteitä, jotka liittyvät kotiverkon rakenteeseen ja toiminnallisuuksiin. Osaan näistä palataan vielä myöhemmissä osioissa, kukn katsotaan niiden toimintaa yleisemminkin verkossa. Tämä osion jälkeen sinun pitäisi ymmärtää perusasiat kotiverkon toimnnasta ja pystyä itsenäisesti opiskelemaan lisää omaan verkkoympäristöösi liittyvistä asioista.
+Tässä osassa käydään pikaisesti läpi iso joukko erilaisia asioita ja käsitteitä, jotka liittyvät kotiverkon rakenteeseen ja toiminnallisuuksiin. Osaan näistä palataan vielä myöhemmissä osioissa, kun katsotaan niiden toimintaa yleisemminkin verkossa. Tämä osion jälkeen sinun pitäisi ymmärtää perusasiat kotiverkon toiminnasta ja pystyä itsenäisesti opiskelemaan lisää omaan verkkoympäristöösi liittyvistä asioista.
 
 
 <please-login></please-login>
