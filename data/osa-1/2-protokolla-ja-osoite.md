@@ -26,7 +26,7 @@ Jotta tietokoneiden välinen kommunikointi ja sanomien vaihto olisi mahdollista,
 
 Valtaosa IETF:n standardeista onkin erilaisia internet-verkon protokollien määrittelyjä. Näiden avulla eri ohjelmoijien tekemät ohjelmat voivat kommunikoida toistensa kanssa onnistuneesti. Myös laitevalmistajien toteuttamien laitteiden pitää noudattaa standardoituja protokollia, jolla kommunikointi laitteiden välillä on mahdollista.
 
-Esimerkiksi www-sivujen kanssa käytettävä HTTP on standardoitu IETF:n toimesta. Se on kuvattu
+Esimerkiksi www-sivujen kanssa käytettävä HTTP on standardoitu IETF:n toimesta. Se on kuvattu useammassakin RFC standardissa. Uusin protokollan viestejä kuvaava standardi on vuodelta 2014 RFC7230 https://tools.ietf.org/html/rfc7230. Sitä edellinen RFC2616 oli vuodelta 1999, joten ihan hirvittävän usein näitä vakiintuneita protokollia ei muokata. Itseasiassa myös standardisarjan numerot 7231-7235 käsittelevät HTTP protokollaa ja sen eri piirteitä.
 
 ## Internetin protokollapino
 
