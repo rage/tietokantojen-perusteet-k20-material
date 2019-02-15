@@ -52,15 +52,12 @@ HTTP protokolla on tilaton (stateless). Tämä tarkoittaa sitä, että selaimen 
 
 HTTP käyttää TCP:tä viestien välittämiseen. TCP on yhteydellinen, joten asiakas (eli selain) ja palvelin voivat erikseen sopia yhteyden säilyttämisestä tulevia pyyntöjä varten tai palvelin voi sulkea yhteyden heti vastausviestin lähetettyään, jolloin asiakas joutuu avaamaan uuden yhteyden seuraavalle pyynnölle. Koska www-sivun muodostaminen yleensä edellyttää useita sivun elementtien pyyntöjä, niin usein asiakas ja palvelin sopivat yhteyden säilyttämisestä. Toisaalta yhteyden säilyttäminen tilanteessa, jossa lisäpyyntöjä ei tulekaan, kuormittaa palvelimen rajallisia yhteyksiä.
 
-kun kaikki kuvat ja muut osat joudutaan hakemaan erikseen sivun kuvaus kielen HTML:n määrittelyjen mukaan.
--- 
-
 
 ## HTML - kuvauskieli
 
 HTTP-protokolla ja sen viesteillä www-selain ja www-palvelin voivat siirtää www-sivun kuvauksen palvelimen tietovarastoista selaimelle, joka voi sen sitten näyttää käyttäjälle. HTTP-protokolla ei ota kantaa siiten mitä tuolla sivulla on tai miten sivu on rakennettu. Sitä varten on ihan oma HTML-kieli, jolla www-sivun sisältö yleensä kuvataan. Tällä sivun sisällön kuvaamisella ei ole mitään tekemistä tietoliikenteen kanssa ja siksi emme tuota HTML-kieltä tässä opiskele. Kielestä ja sen kehitysprosessistä on suomenkielinen kuvaus wikipediassa https://fi.wikipedia.org/wiki/HTML. Jos haluat kurssin ulkopuolella tutustua tähän aiheeseen lisää, yksi mahdollisuus on lukea Jukka Korpelan Web-julkaisemisen opas http://jkorpela.fi/webjulk/all.html.
 
-Tämä sisällön kuvauksen ja siirtoprotokollan välinen erillisyys on vahva ajattelumalli koko tiedonsiirron taustalla. Tiedonsiirrossa keskitytään vain siihen, että sisältö saadaan siirrettyä muuttumattomana paikasta toiseen, mutta ei oteta lainkaan kantaa siihen mitä sisältöä siirretään. Tähän ajattelumalliin perustuvat useimmat sisältöä jakavat palvelut, kuten Facebook, Snapchat, Napster, Youtube, jne. Osalle näistä sisältäpalvelua tuottaville organisaatioille on viranomaisten taholta asetettu myöhemmin (tai jo alunperin) vaatimuksia myös sisällön valvontaan.
+Tämä sisällön kuvauksen ja siirtoprotokollan välinen erillisyys on vahva ajattelumalli koko tiedonsiirron taustalla. Tiedonsiirrossa keskitytään vain siihen, että sisältö saadaan siirrettyä muuttumattomana paikasta toiseen, mutta ei oteta lainkaan kantaa siihen, mitä sisältöä siirretään. Tähän ajattelumalliin perustuvat useimmat sisältöä jakavat palvelut, kuten Facebook, Snapchat, Napster, Youtube, jne. Osalle näistä sisältäpalvelua tuottaville organisaatioille on viranomaisten taholta asetettu myöhemmin (tai jo alunperin) vaatimuksia myös sisällön valvontaan. Tästä palveluntarjoajan tekemästä oman palvelunsa verkkosisällön sensuroinnista olemme saaneet viime aikoina lukea myös uutisista, esimerkiksi Iltasanomissa oli kesällä 2018 artikkeli <a href="https://www.is.fi/digitoday/art-2000005768708.html"> "Facebookin sensuuri iski – Jopa maalaus Jeesuksesta rikkoi siveyssääntöä" </a>.
 
 ## Evästeet 
 
@@ -88,6 +85,8 @@ Välityspalvelin (engl. proxy server) hakee internetistä tietoa työasemien puo
 Välityspalvelin siis katkaisee aiemmin suoran yhteyden asiakkaan ja palvelimen välillä ja ottaa itselleen molemmat roolit. Se toimii palvelimena alkuperäiselle asiakkaalle ja asiakkaana alkuperäiselle palvelimelle. Samalla se vaikuttaa evästeiden käyttöön, kun ne eivät valukaan alkuperäiseltä palvelimelta alkuperäiselle asiakkaalle vaan alkuperäisen palvelimen lähettävät evästeet jäävät välityspalvelimelle.
 
 Koska verkkoliikenne ei ole ilmaista, niin näin organisaatiot voivat vähentää liikennettä ja säätää kuluissa. Jos vaikkapa ajatellaan, että Helsingin yliopiston verkkokurssilla opiskelijoiden pitää katsoa joku youtubeen taltioitu video, niin silloin video siirretään vain kertaalleen youtuben palvelimelta yliopiston välityspalvelimelle ja opiskelijoiden selaimet hakevatkin videon tältä välityspalvelimelta eivätkä suoraan youtuben palvelimelta. Tämä toki edellyttää, että youtuben palvelin sallii sisällön tilapäisen varastoinnin välityspalvelimella. WWW-palvelin voi vastausviestinsä attribuuttien avulla ohjata tätä toimintaa ja halutessaan jopa kieltää tällaisen välivarastoinnin.
+
+Välityspalvelin tarjoaa myös mahdollisuuksia valvoa verkkosivujen käyttöä. Jos kaikki tietyn organisaation liikenne ohjataan aina välityspalvelimen kautta, niin välityspalvelin ei välttämättä teekää kaikkia pyyntöjä eteenpäin vaan palauttaa virheruudun kyseistä sivua pyytäneelle asiakkaalle. Vastaavasti välityspalvelin voi seurata eri asiakkaiden liikennöintiä ja näin vaikuttaa käyttäjien yksityisyyden suojan heikkenemiseen. Onneksi yleensä voimme toki luottaa oman organisaation tai palveluntarjoajan toimintaan ja siihen, että sen välityspalvelin toimii lakien mukaan, mutta joskus terve epäilys on kuitenkin paikallaan.
 
 ## Tehtävä voisi olla jonkunlainen oikein väärin väittämiä tai jotain muuta jolla testataan tekstin lukeminen.
 
