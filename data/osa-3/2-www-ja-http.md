@@ -50,14 +50,47 @@ Tästä näkyy hyvin tuo viestin rakenne. Viesti alkaa sanalla GET, jota seuraa 
 
 HTTP protokolla on tilaton (stateless). Tämä tarkoittaa sitä, että selaimen tai palvelimen ei tarvitse muistaa mitä oltiin tekemässä, vaan jokainen viestipari käsitellään muista irrallisena tapahtuna. Tämä muistamattomuus helpottaa sovelluksen suunnittelua ja toteutusta, kun ei tarvitse pitää kirjaa siitä mitä on aiemmin tehty.
 
-HTTP käyttää TCP:tä viestien välittämiseen. TCP on yhteydellinen, joten selaimen pitää ottaa kantaa siihen käytetäänkö samaa TCP yhteyttä useammille viesteille vai ei. Molemmiss samaa yhteyttä pitkin selain ja palvelin voivat vaihtaa useampia viestejä. Usein www-sivun muodostaminen edellyttääkin useita sivun elementtien pyyntöjä, kun kaikki kuvat ja muut osat joudutaan hakemaan erikseen sivun kuvaus kielen HTML:n määrittelyjen mukaan.
--- TÄhän lisää pähkäilyä
+HTTP käyttää TCP:tä viestien välittämiseen. TCP on yhteydellinen, joten asiakas (eli selain) ja palvelin voivat erikseen sopia yhteyden säilyttämisestä tulevia pyyntöjä varten tai palvelin voi sulkea yhteyden heti vastausviestin lähetettyään, jolloin asiakas joutuu avaamaan uuden yhteyden seuraavalle pyynnölle. Koska www-sivun muodostaminen yleensä edellyttää useita sivun elementtien pyyntöjä, niin usein asiakas ja palvelin sopivat yhteyden säilyttämisestä. Toisaalta yhteyden säilyttäminen tilanteessa, jossa lisäpyyntöjä ei tulekaan, kuormittaa palvelimen rajallisia yhteyksiä.
+
+kun kaikki kuvat ja muut osat joudutaan hakemaan erikseen sivun kuvaus kielen HTML:n määrittelyjen mukaan.
+-- 
 
 
+## HTML - kuvauskieli
+
+HTTP-protokolla ja sen viesteillä www-selain ja www-palvelin voivat siirtää www-sivun kuvauksen palvelimen tietovarastoista selaimelle, joka voi sen sitten näyttää käyttäjälle. HTTP-protokolla ei ota kantaa siiten mitä tuolla sivulla on tai miten sivu on rakennettu. Sitä varten on ihan oma HTML-kieli, jolla www-sivun sisältö yleensä kuvataan. Tällä sivun sisällön kuvaamisella ei ole mitään tekemistä tietoliikenteen kanssa ja siksi emme tuota HTML-kieltä tässä opiskele. Kielestä ja sen kehitysprosessistä on suomenkielinen kuvaus wikipediassa https://fi.wikipedia.org/wiki/HTML. Jos haluat kurssin ulkopuolella tutustua tähän aiheeseen lisää, yksi mahdollisuus on lukea Jukka Korpelan Web-julkaisemisen opas http://jkorpela.fi/webjulk/all.html.
+
+Tämä sisällön kuvauksen ja siirtoprotokollan välinen erillisyys on vahva ajattelumalli koko tiedonsiirron taustalla. Tiedonsiirrossa keskitytään vain siihen, että sisältö saadaan siirrettyä muuttumattomana paikasta toiseen, mutta ei oteta lainkaan kantaa siihen mitä sisältöä siirretään. Tähän ajattelumalliin perustuvat useimmat sisältöä jakavat palvelut, kuten Facebook, Snapchat, Napster, Youtube, jne. Osalle näistä sisältäpalvelua tuottaville organisaatioille on viranomaisten taholta asetettu myöhemmin (tai jo alunperin) vaatimuksia myös sisällön valvontaan.
+
+## Evästeet 
+
+Eväste (engl. cookie) on Tietotekniikan termitalkoiden määritelmän mukaan aputiedosto tai tunniste, jonka sisältämiä tietoja voidaan käyttää selaimen ja palvelimen välisen yhteydenpidon ohjaamiseen.
+
+Palvelimet käyttävät evästeitä, koska niiden avulla voi tavallaan kiertää tuota tilattomuutta. Palvelimen ei itsensä tarvitse ylläpitää jokaiseen asiakkaaseen liittyvää tilaa, vaan tilatietoa ylläpidetään asiakkaalle annetun evästeen avulla. Asiakas saa evästeen palvelimelta osana HTTP-protokollan vastausviestiä ja antaa evästeen takaisin palvelimelle aina lähettäessään sille HTTP-protokollan mukaisen viestin. Näin palvelimen tarvitsema tilatietoa kulkee viestien mukana ja sitä säilytetään aina asiakkaalla väliaikoina.
+
+## Mukaeltu kuva kirjan kuvasta 2.10  (Voisi olla jokin hauskempi sisältö, esim. tilaus, käyttöoikeus tms.
+
+Palvelin voi siis tallettaa eväisteisiin tarvitsemiaan tietoja. Tyypillinen eväste on cfduid, johon palvelin yleensä tallettaa käyttäjän yksilöivän tunnisteen. Näin palvelin voi yhdistää saapuvan HTTP pyynnön aiempiin pyyntöihin ja selvittää mitä kyseinen käyttäjä on aiemmin palvelimen kanssa tehnyt. Näin palvelin voi analysoida saapuneita pyyntöjä ja havaita mitkä pyynnöt liittyvät samaan käyttäjään. Tälla voi olla nettipalvelun tarjoajan kannalta merkitystä esim. kohdennetussa mainonnassa tai vaikkapa palvelun esi osien kiinnostavuutta arvioitaessa.
+
+Voit omasta selaimestasi hallinnoida evästeitä ja jopa katsoa mihin kaikkiin sivustoihin sinun selaimessasi on tallessa evästeitä. Varsin monet sivut käyttävät googlen analytiikkaa sivujen käyttötietojen seurannassa. Tähän liittyen minullakin on selaimessani paljon ga evästeitä eri sivustoilta.
+
+Jos haluat selvittää mitä eri evästeet tarkoittavat tai mihin käyttötarkoitukseen ne todennäköisesti liittyvät, on englanninkieliselle sivustolle https://cookiepedia.co.uk/all-about-cookies koottu evästeisiin liittyvää informaatiota. Siellä voi tehdä hakuja evästeen nimellä.
+
+## Tehtävä: Etsi omalta koneeltasi tämän kurssin evästeistä _ga. Minä vuonna kyseisen evästeen voimassaolo päättyy (expires) 2019, 2020, 2021,2022? 
 
 
+## Välityspalvelin
 
+Välityspalvelin (engl. proxy server) hakee internetistä tietoa työasemien puolesta ja säilyttää työasemien toistuvasti käyttämiä tietoja niiden saannin nopeuttamiseksi (Lähde: tietotekniikan termitalkoot). WWW-palvelun kannalta se siis sijoittuu www-selaimen ja www-palvelun väliin. Välityspalvelimia käyttävät yleensä suuret organisaatiot, jolloin ne voivat pienentää omasta organisaatiosta ulkopuolisille www-palvelimille menevää liikennettä silloin, kun useammat organisaation sisäverkon asiakkaan haluavat käyttää samaa sivua. Välityspalvelin pitää siis omassa välimuistissaan (engl. cache) aiemmin pyydettyjä sivuja, joita se sitten antaa vastauksena pyyntöihin. Esimerkiksi Helsingin yliopistolla on oma välityspalvelin, myös useimmilla kotiverkoille internet yhteyksiä tarjoavilla organisaatioilla on omat välityspalvelimet. 
 
-## HTML
+## Kuva kolmesta laatikosta asiakas - välityspalvelin - palvelin
+
+Välityspalvelin siis katkaisee aiemmin suoran yhteyden asiakkaan ja palvelimen välillä ja ottaa itselleen molemmat roolit. Se toimii palvelimena alkuperäiselle asiakkaalle ja asiakkaana alkuperäiselle palvelimelle. Samalla se vaikuttaa evästeiden käyttöön, kun ne eivät valukaan alkuperäiseltä palvelimelta alkuperäiselle asiakkaalle vaan alkuperäisen palvelimen lähettävät evästeet jäävät välityspalvelimelle.
+
+Koska verkkoliikenne ei ole ilmaista, niin näin organisaatiot voivat vähentää liikennettä ja säätää kuluissa. Jos vaikkapa ajatellaan, että Helsingin yliopiston verkkokurssilla opiskelijoiden pitää katsoa joku youtubeen taltioitu video, niin silloin video siirretään vain kertaalleen youtuben palvelimelta yliopiston välityspalvelimelle ja opiskelijoiden selaimet hakevatkin videon tältä välityspalvelimelta eivätkä suoraan youtuben palvelimelta. Tämä toki edellyttää, että youtuben palvelin sallii sisällön tilapäisen varastoinnin välityspalvelimella. WWW-palvelin voi vastausviestinsä attribuuttien avulla ohjata tätä toimintaa ja halutessaan jopa kieltää tällaisen välivarastoinnin.
+
+## Tehtävä voisi olla jonkunlainen oikein väärin väittämiä tai jotain muuta jolla testataan tekstin lukeminen.
+
+## Toisaalta tehtävä voisi olla myös joltain sivulta selvittää jokin HTTP-protokollan argumentti ja sen käyttö. Tämän voisi laittaa jopa vertaisarvioitavaksi pikku esseeksi.
 
 
