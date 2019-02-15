@@ -6,9 +6,8 @@ hidden: false
 
 <text-box variant='learningObjectives' name='Oppimistavoitteet'>
 
-- Tunnet taulukon ja osaat käyttää sitä osana ohjelmia.
-- Osaat luoda taulukon, asettaa taulukon indeksiin arvon ja käydä taulukon läpi toistolauseen avulla.
-- Tiedät, että taulukko on viittaustyyppinen muuttuja ja osaat käyttää taulukkoa metodin parametrina.
+- Tiedät mikä virtuaalinen yksityisverkko on.
+- Osaat kertoa milloin ja miksi sitä käytetään tai kannattaisi käyttää.
 
 </text-box>
 
@@ -16,7 +15,7 @@ hidden: false
 ## Virtuaalinen yksityisverkko
 
 
-ArrayListin helppokäyttöisyydesta huolimatta ohjelmissa on joskus tarvetta ArrayListin esi-isälle eli **taulukolle**.
+Virtuaalinen yksityisverkko (engl. virtual private network, VPN) ArrayListin helppokäyttöisyydesta huolimatta ohjelmissa on joskus tarvetta ArrayListin esi-isälle eli **taulukolle**.
 
 
 
