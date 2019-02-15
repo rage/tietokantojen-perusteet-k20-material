@@ -75,6 +75,20 @@ Jos haluat selvittää mitä eri evästeet tarkoittavat tai mihin käyttötarkoi
 
 ## Tehtävä: Etsi omalta koneeltasi tämän kurssin evästeistä _ga. Minä vuonna kyseisen evästeen voimassaolo päättyy (expires) 2019, 2020, 2021,2022? 
 
+## Varmenteet
+
+Varmenne (engl. certificate) on sähköinen todistus, jolla vahvistetaan, että todistuksen haltija on tietty henkilö, organisaatio tai järjestelmä. Varmenteen voi siis ajatella vastaavan sähköistä henkilötodistusta. Yksityishenkilöille niitä Suomessa myöntää Väestörekisterikeskus https://vrk.fi/varmenteet-fineid. Yksityishenkilön varmennetta kutsutaankin kansalaisvarmenteeksi ja se voidaan myöntää vain suomalaisen henkilökortin mukana. Väestörekisterikeskus myöntää erilaisia varmenteita myös organisaatioille. 
+
+Varmenteita käytetään silloin kun on tarve luottavasti tunnistaa kommunikoinnin osapuolet tai ainakin toinen osapuoli. Esimerkiksi verkon kautta tapahtuvassa pankkiasioinnissa on hyvin tärkeää voida luottaa siihen, että annettu URL osoite kuten nordea.fi, s-pankki.fi, op.fi tai muu vastaava, vie oikean organisaation sivustolle, eikä jollekin pahantahtoiselle, mutta samannäköiselle sivustolle. Tätä varten organisaatiot antavat www-selaimelle varmenteen, jonka selain voi tarkistaa jostakin ulkopuolisesta varmennepalvelusta, kuten edellä ollut väestörekisterikeskus tai paljon käytetyt ulkomaiset Verisign, Thawte tai Entrust. Selaimilla on etukäteen asetettu joukko varmennepalveluja, joiden vahvistamia varmenteita ne hyväksyvät automaattisesti. 
+
+Sivustolla voi myös olla varmenne, jonka sivusto on ihan itse määritellyt ja jolla ei ole minkään varmennepalvelun vahvistusta. Usein tällaisista varmenteista selain saattaa antaa varoituksen ja silloin käyttäjän mitää huolellisesti miettiä luottaako sivustoon niin paljon, että sallii varmenteen ja kyseisen sivuston käytön.
+
+Varmenteisiin tuleekin törmättyä lähinnä silloin, kun jonkun organisaation varmenne on päässyt vanhenemaan tai siinä on muuten jotain vikaa ja www-selain varoittaa tästä. Näissä tilanteissa on aina olemassa erittäin suuri tietoturvariski, joten varmennetarkistuksen ohittamista ei voi suositella. Kyseessä voi pahimmilaan olla jonkunlainen verkkohyökkäys tai tietokalastelu (engl. phishing). 
+
+Varmenteita käytetään siis osana julkisen avaimen salakirjoitusjärjstelmää ja oikeastaan tässä vain varmennetaan, että julkinen avain ja siihen liittyvä salainen avain on varmennuspalvelun mukaan oikeasti kyseisen henkilön tai organisaation käytössä. Tämän vuoksi varmenteet on wikipediassa kuvattu osana julkisten avainten hallintajärjstelmää https://fi.wikipedia.org/wiki/PKI.
+
+Jos varmenteet ja ylipäätään sähköiseen asiointiin liittyvä teemat kiinnostavat, niin sivustolle http://digisaatio.fi/wiki/ on Juha Tuomala koonnut omia näkemyksiään ja kertoo oman käsityksensä aiheesta.
+
 
 ## Välityspalvelin
 
