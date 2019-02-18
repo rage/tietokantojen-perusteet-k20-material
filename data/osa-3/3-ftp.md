@@ -41,7 +41,7 @@ FTP-palveluissakin pyrittiin välttämään verkon kuormittamista käyttämäll�
 
 
 
-Sisällönjakeluverkko
+## Sisällönjakeluverkko
 
 Sisällönjakeluverkot on kehitetty nykyisen internetin käyttötapoihin sopiviksi. Vaikka FTP ja muut puhtaasti tiedostojen jakeluun kehitetyt järjestelmätkin edelleen toimivat, niin sisällönjakeluverkkojen keskeinen tavoite on vähentää verkkoliikenne ja taata häiriötön datan kulku palveluntarjoajalta asiakkaalle. Laajimmat maailmanlaajuiset verkot toimivat ainakin osittain internetin ulkopuolella, jotta jakeluverkon ylläpitäjällä on täysi kontrolli verkossa liikkuvaan tietoon. Tällöin verkosta on useita erillisiä liityntäpisteitä, joista sisältöä jaellaan internetissä oleville asiakkaille.
 
@@ -52,5 +52,7 @@ Yleensä käyttäjä käyttää jotain sovellusta, joka sitten sisäisesti käyt
 NOTE: Muistathan, että käytän termiä käyttäjä ihmisistä ja termiä asiakas laitteesta tai sen ohjelmistosta. Käyttäjä siis käyttää esimerkiksi tablettia, joka asiakkaana ottaa yhteyttä erilaisiin verkon palveluihin.
 
 
+
+### Tähän on pakko laittaa joko termejä tarkastava oikein väärin kysymys. Nyt tuli paljon sisältöä pienessä tilassa.
 
 
