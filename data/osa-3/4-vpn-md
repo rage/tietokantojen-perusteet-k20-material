@@ -15,4 +15,9 @@ hidden: false
 ## Virtuaalinen yksityisverkko
 
 
-Virtuaalinen yksityisverkko (engl. virtual private network, VPN) 
+Virtuaalinen yksityisverkko (engl. virtual private network, VPN) tapa muodostaa suojattu yhteys esimerkiksi työpaikan verkkoon silloinkin, kun todellisuudessa on jossain muualla. VPN-yhteyden avulla oman koneessa saa liitettyä työpaikanverkkoon siten, että koneella ovat käytettävissä ihan samat palvelut kuin työpaikallakin. Usein tietoturvan parantamiseksi organisaatiot rajoittavat palvelujen käyttöä ja näkyvyyttä siten, että ne ovat käytettävissä vain organisaation omassa verkossa.
+
+Esimerkiksi Helsingin yliopiston opiskelijoille ja henkilökunnalle on käytettävissä paljon enemmän palveluja yliopiston omassa verkossa kuin verkon ulkopuolella. Moni meistä on törmännyt tähän esimerkiksi tieteellisten artikkelien kanssa. Artikkeli on luettavissa ilman maksua, kun sen hakee yliopiston verkossa, mutta kun samaa artikkelia yrittää lukea kotiverkosta käsin, niin artikkelin julkaisija haluaakin maksun siitä. Tällöin tilanne on helppo ratkaista muodostamalla ensin VPN-yhteys yliopiston verkkoon ja sitten hakemalla kyseinen artikkeli.
+
+Ajatuksellisesti VPN-yhteys on siis jonkinlainen suojattu putki tai tunneli, joka johtaa omalta koneelta organisaation VPN-palvelimelle ja johon kukaan matkanvarrella oleva ulkopuolinen toimija ei voi nähdä sisälle. Näin se on helppo vielä hahmottaa. Lisätään tähän vähän yksityiskohtia lisää. Putken sisällä liikenne on organisaation oman verkon liikennettä, eli esimerkiksi www-selaimen lähettämiä pyyntöjä ja sen saamia vastauksia.
+
