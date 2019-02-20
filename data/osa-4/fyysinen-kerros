@@ -1,0 +1,36 @@
+---
+path: '/osa-4/3-fyysinen-kerros'
+title: 'Fyysinen kerros'
+hidden: false
+---
+
+
+<text-box variant='learningObjectives' name='Oppimistavoitteet'>
+
+- Ymmärrät miksi tämä kerros on mukana protokolla pinossa
+
+</text-box>
+
+
+##  Fyysinen kerros
+
+Käydään vielä täydellisyyden vuoksi hyvin lyhyesti läpi eri tavat kuljettaa viestejä paikasta toiseen tietoverkossa. Varsinaisesti fyysinen bittien siirtäminen paikasta toiseen ei enää ole osa tämän kurssin sisältöä, mutta usein on hyvä hiukan ymmärtää myös tätä osaa tietoliikennetekniikasta.
+
+Bittejähän on kaksi 0 ja 1. Ne täytyy erottaa toisistaan jollain tavalla. Yksi tapa on käyttää esimerkiksi jännitteitä ja niiden eroja kuvaamaan näitä kahta bittiä, jolloin erilaisista jännite-eroista voidaan päätellä kummasta bitistä kulloinkin on kyse. Valon kohdalla voidaan käyttää esimerkiksi eri väristä (eri spektri) valoa kuvaamaan eri bittejä. 
+
+Todellisuudessa bittien kuvaaminen sähkön, valon tai shkömagneettisen säteilyn (=radioaaltojen) avulla on edellä kuvattua monimutkaisempi tapa, mutta tällä kurssilla riittää ymmärtää, että kummallekin bitille on oma kuvauksensa ja ne voidaan näin erottaa toisistaan.
+
+Bittien siirtonopeus riipuu toisaalta käytettävän materiaalin (esim kupari, valokuitu, ilma) sallimasta muutosnopeudesta ja toisaalta siitä kuinka pitkä ero kahden bitin kuvausten välillä pitää olla, jotta ne eivät sekoitu toisiinsa matkalla. Joskus 
+
+
+## Sähkö:  Parikaapeli, Koaksiaalikaapeli 
+
+
+https://fi.wikipedia.org/wiki/Parikaapeli
+
+## Valo: Valokuitu
+
+## Radioaallot: langaton yhteys
+
+
+
