@@ -13,7 +13,7 @@ Tässä osassa käydään pikaisesti läpi iso joukko erilaisia asioita ja käsi
 
 <pages-in-this-section></pages-in-this-section>
 
-Yllä oleva sisällysluettelo sisältää kurssin toisen osan aihealueet. 
+Yllä oleva sisällysluettelo sisältää kurssin toisen osan aihealueet. Kuhunkin kurssin osaan on hyvä varata kymmenkunta tuntia, niin ehtii paneutua asioihin ja tehtäviin kunnolla. Jotkut osiot ovat hiukan kevyempiä ja oma aiempi osaaminen voi nopeuttaa kurssin suorittamista.
 
 
 <exercises-in-this-section></exercises-in-this-section>
