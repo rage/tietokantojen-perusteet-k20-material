@@ -14,7 +14,7 @@ Edellisessä osassa kävimme läpi sovelluskerroksen toiminnallisuutta. Nyt on v
 
 <pages-in-this-section></pages-in-this-section>
 
-Yllä oleva sisällysluettelo sisältää kurssin neljännen osan aihealueet. Tämän materiaalin läpikäyntiin ja harjoitusten tekemiseen on ajateltu käytettävän ehkä noin kymmenen tuntia.
+Yllä oleva sisällysluettelo sisältää kurssin neljännen osan aihealueet. Kuhunkin kurssin osaan on hyvä varata kymmenkunta tuntia, niin ehtii paneutua asioihin ja tehtäviin kunnolla. Jotkut osiot ovat hiukan kevyempiä ja oma aiempi osaaminen voi nopeuttaa kurssin suorittamista.
 
 
 <exercises-in-this-section></exercises-in-this-section>
