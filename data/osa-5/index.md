@@ -1,6 +1,6 @@
 ---
 path: '/osa-5'
-title: 'Osa 5'
+title: 'Osa 5: Yhteenveto'
 overview: true
 hidden: false
 ---
@@ -8,14 +8,14 @@ hidden: false
 <deadline>18.2.2019</deadline>
 
 
-Tässä osassa jatkat matkaasi olio-ohjelmoinnin saloihin. Opit Javan alkeis- ja viittaustyyppisistä muuttujista sekä niiden eroista. Opit kuormittamaan konstruktoreja ja metodeja eli luomaan useita konstruktoreja ja useita samannimisiä metodeja. Tutustut olioiden samankaltaisuuden vertailuun ja opit luomaan olioiden vertailussa käytettävän equals-metodin omiin luokkiisi. Harjoittelet olioiden käyttöä oliomuuttujina ja metodien paluuarvona. Opettelet lisäksi listojen käyttöä oliomuuttujina sekä harjoittelet yksikkötestien kirjoittamista.
+Kurssin lopuksi käydään vielä läpi kaikkien käsiteltyjen asioiden toiminta yhdessä.
 
 
 <please-login></please-login>
 
 <pages-in-this-section></pages-in-this-section>
 
-Yllä oleva sisällysluettelo sisältää kurssin viidennen osan aihealueet. Kukin kurssin osa on suunniteltu siten, että siinä on työtä yhden viikon ajaksi. Kuhunkin kurssin osaan on hyvä varata reilusti yli kymmenen tuntia aikaa, riippuen aiemmasta tietokoneen käyttökokemuksesta. Ohjelmointia aiemmin kokeilleet saattavat edetä materiaalissa aluksi nopeamminkin.
+Yllä oleva sisällysluettelo sisältää kurssin viidennen osan aihealueet. Kukin kurssin osa on suunniteltu siten, että siinä on työtä yhden viikon ajaksi. Kuhunkin kurssin osaan on hyvä varata kymmenkunta tuntia, niin ehtii paneutua asioihin ja tehtäviin kunnolla.
 
 
 <exercises-in-this-section></exercises-in-this-section>
