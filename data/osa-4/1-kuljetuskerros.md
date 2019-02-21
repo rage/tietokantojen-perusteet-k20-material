@@ -15,11 +15,12 @@ hidden: false
 <quiznator id="5c498c7c017ffc13eddc84f1"></quiznator>
 
 
-Merkittävä osa ohjelmistoista perustuu tavalla tai toisella tiedon käsittelyyn. Musiikin toistoon tarkoitetut ohjelmistot käsittelevät musiikkitiedostoja, kuvankäsittelyohjelmat käsittelevät kuvatiedostoja. Verkossa ja mobiililaitteissa toimivat sovellukset kuten Facebook, WhatsApp ja Telegram taas käsittelevät tiedostoihin perustuviin tietokantoihin tallennettuja henkilötietoja. Kaikissa näistä sovelluksista on yhteistä tiedon lukeminen, tiedon käsitteleminen tavalla tai toisella sekä se, että käsiteltävä tieto on loppujenlopulta tallennettu jonkinlaisessa muodossa yhteen tai useampaan tiedostoon.
-
 
 ## Kuljetuskerros
 
+Kuljetuskerros tarjoaa kuljetuspalvelun sovelluskerrokselle siten, että sovellusten tai oikeammin niitä toteuttavien prosessien ei tarvitse huolehtia viestien välityksestä vaan ne voivat vaan antaa viestin toimitettavaksi kuljetuskerrokselle. Viestin pitää toki antaa jollekin tietylle kuljetuskerroksen protokollalle, joka sitten huolehtii viestin vastaanottajalle.  Samalla koneella voi olla toiminnassa useita prosesseja. (Katso Tietokoneen toiminta -kurssin materiaalia prosesseihin ja niiden toimintaan liittyen.) Prosessit käyttävät pistokkeita (engl. socket), jotka liitetään johonkin tiettyyn tietoliikenteen porttiin. Wkipediassa on ihan lyhyt termistösivu tietoliikenteen pistokkeisiin liittyen https://fi.wikipedia.org/wiki/Pistoke_(tietotekniikka). Pistoke termiähän käytetään myös sähköverkoissa. 
+
+Tietoliikenteen porteilla (https://fi.wikipedia.org/wiki/Portti_(tietoliikenne)) on porttinumerot, joiden avulla ne erotetaan toisistaan. Osa porttinumeroista on yhdessä sovittu tiettyjen sovellusten käyttöön ja osa on vapaasti käytettävissä. Porttinumeron avulla kuljetuskerros osaa tunnistaa sovelluskerroksen viestin vastaanottajan. Se on tavallaan paikallinen postiluukku, johon saapuvat viestit laitetaan. Lähettäjän täytyy siis tietää vastaanottavan koneen sovelluksen käyttämä porttinumero. Jotta se olisi etukäteen mahdollista, niin näitä sopimuksia tiettyjen porttinumeroiden osalta on tehty. 
 
 ##  TCP
 
