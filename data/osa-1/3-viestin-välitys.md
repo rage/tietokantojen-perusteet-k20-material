@@ -33,7 +33,7 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 
 ### Sanomanvälitys tietoliikenneverkossa, pakettikytkentä, reititys
 
-Lähettäjä ja vastaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjältä koneelta vastaanottajan koneelle.
+Lähettäjä ja vastaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet-verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjältä koneelta vastaanottajan koneelle.
 
 Kuten edellisestä tarinasta kävi jo ilmi, niin internet-verkossa tapahtuva sanomien kuljetus tapahtuu paketteina. Se onkin toteutustavaltaan pakettikytkentäinen (https://fi.wikipedia.org/wiki/Pakettikytkent%C3%A4).
 
@@ -41,7 +41,7 @@ Tällöin lähettävän tietokoneen verkko- ja linkkikerros siirtävät viestiä
 
 Lähettäjän ja vastaanottajan välissä olevat reitittimet (https://fi.wikipedia.org/wiki/Reititin) huolehtivat viestin siirtämisestä yhdestä linkistä seuraavaan. Niiden täytyy tietää mihin päin viesti pitää laittaa, jotta se aikanaan päätyy vastaanottajalle.
 
-Ne  toimivat verkkokerroksella eli ne reitittävät IP-paketteja. Sitä varten niiten täytyy vastaanottaa linkkikerrokselle saapuva kehys ja siirtää sen sisältämä IP-paketti verkkokerrokselle reititystä varten. Tutustumme itse reititykseen myöhemmin. Nyt riittää tieto siitä, että reititin osaa tavalla tai toisella päätellä vastaanottajan IP-osoitteesta sen, mihin linkkiin IP-paketti pitää ohjata, jotta se olisi yhden askeleen lähempänä vastaanottajaa. Kun reititin on tämän päätöksen tehnyt, niin IP-paketti annetaan taas linkkikerrokselle toimitettavaksi tiettyyn suuntaan, eli tiettyyn linkkiin. Linkkikerros rakentaa IP-paketin ympärille uuden kehyksen, jonka mukana paketti laitetaan eteenpäin.
+Ne  toimivat verkkokerroksella eli ne reitittävät IP-paketteja. Sitä varten niiden täytyy vastaanottaa linkkikerrokselle saapuva kehys ja siirtää sen sisältämä IP-paketti verkkokerrokselle reititystä varten. Tutustumme itse reititykseen myöhemmin. Nyt riittää tieto siitä, että reititin osaa tavalla tai toisella päätellä vastaanottajan IP-osoitteesta sen, mihin linkkiin IP-paketti pitää ohjata, jotta se olisi yhden askeleen lähempänä vastaanottajaa. Kun reititin on tämän päätöksen tehnyt, niin IP-paketti annetaan taas linkkikerrokselle toimitettavaksi tiettyyn suuntaan, eli tiettyyn linkkiin. Linkkikerros rakentaa IP-paketin ympärille uuden kehyksen, jonka mukana paketti laitetaan eteenpäin.
 
 Käytännössä siis viesti kulkee lähettäjältä yhden tai useamman reitittimen kautta vastaanottajalle. Kun tietoverkkoa tarkastellaan verkkokerroksen näkökulmasta, niin lähettäjän ja vastaanottajan välissä on vain reitittimiä, jotka huolehtivat pakettien siirtymisestä yhdestä linkistä seuraavaan.
 
