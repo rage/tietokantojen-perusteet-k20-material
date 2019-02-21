@@ -29,10 +29,40 @@ Tietoliikenteen porteilla (https://fi.wikipedia.org/wiki/Portti_(tietoliikenne))
 TCP:n avulla sovelluskerroksen prosessit voivat muodostaa loogisen yhteyden lähettäjän ja vastaanottajan välille. Yhteys on kaksisuuntainen, joten molemmat voivat lähettää ja vastaanottaa viestejä samaa yhteyttä pitkin. Yhteys on looginen, koska meillä ei ole yhtä tiettyä kiinteää putkimaista reittiä, jota pitkin kaikki viestit aina kulkisivat lähettäjän ja vastaanottajan välillä. 
 Sovelluksen ja TCP:n välinen yhteys on sovittu käsiteltäväksi tavuvirtana, jolloin TCP:n ei tarvitse tietää sovelluksen sanomien rakennetta tai niiden kokoa etukäteen, vaan vaikki sovelluksen viestit tulevat TCP:lle pistokkeen kautta tavujonona, ihan samaan tapaan kuin tiedostoissa on vain tavuja.
 
-TCP:n keskeinen tehtävä on huolehtia sovellukselta tulevien viestin jaottelusta sopivan kokoisiin datagrammeihin, jotka sitten annetaan verkkokerrokselle toimitettavasti vastaanottajan koneelle.
+TCP:n keskeinen tehtävä on huolehtia sovellukselta tulevan viestijonon jaottelusta sopivan kokoisiin datagrammeihin, jotka sitten annetaan verkkokerrokselle toimitettavaksi vastaanottajan koneelle. Näihin datagrammeihin liitetään otsake, jossa on sekä porttinumero että vastaanottavan koneen IP-osoite. Vastaanottajan päässä kuljetuskerros käyttää tätä datagrammin otsakkeessa olevaa porttinumeroa oikean vastaanottavan prosessin tunnistamiseen.
+
+## Tähän kuva, jossa lähettävässä koneessa  on useampi erillinen prosessi (esim. www, ftp), joiden viestit lomittuvat kuljetuskerrokselta eteenpäin ja jotka kulkevat lomittuneina koneiden välillä. Lomitus sitten puretaan kuljetuskerroksella ja ne toimitetaan oikeille prosesseille.
+
+TCP:n yhteyden ylläpitäminen edellyttää, että yhteys muodostetaan ja päätetään hallitusti. Yhteyden muodostaminen TCP-protokollassa tapahtuu erityisen kättelymenettelyn kautta. Myös yhteyden päättämiseen on oma kättelymenettelynsä. Kättelyssä yhteyttäa avaavat osapuolet lähettävät protokollan mukaisia viestejä, joiden avulla ne sopivat yhteyden olemassaolosta ja vastaanottaja voi samalla kertoa miten paljon tietoa se voi ottaa vastaan sillä hetkellä. Yhteyden päättäminen hallitusti edellyttää, että kumpikin lähettää erityisen yhteyden päättämiseen liittyvän viestin.
+
+TCP lupaa toimittaa viestit luotettavasti vastaanottajalle. Luotettava tiedonvälitys edellyttää, että lähettäjä voi olla varma siitä, että viesti on saapunut vastaanottajalle. Koska internetissä ei ole erillistä kontrolliväylää, on vastaanottajan lähetettävä erillinen kuittausviesti, jolloin lähettäjä voi tästä tietää viestin saapuneen.
+
+No mitä lähettäjä sitten tekee, jos kuittausta ei saavu? Se ei voi tietää onko sen lähettämä alkuperäinen viesti kadonnut vai onko kadonnut vain kuittausviesti vai toimiiko verkko vain tavattoman hitaasti ja viestit ovatkin vielä matkalla. Tämä ongelma on keskeinen kaikelle tietoliikenteeelle, joten pysähdytään tähän ihan hetkiseksi.
+
+### Viestin katoaminen ja siihen reagointi
+
+Viestin katoamiseen tai vahingoittumiseen on monta syytä. Jossain matkan varrella tai vastaanottajalla ei ole tilaa viestin vastaanottamiseen. Koska valo, sähkö tai radioaallot eivät voi odottaa matkalla, katoaa viesti aina, jos sitä ei ajoissa voida ottaa talteen johonkin. Toisaalta matkalla minkä tahansa kahden pisteen välillä signaali on myös alttiina erilaisille häiriöille. Auringon energiapurkaus, satunnainen muu säteily tai joku muu häiriö voi sekoittaa viestin bittejä, jolloin viesti ei enää olekaan alkuperäinen. 
+Tällainen vaurioitunut viesti pyritään aina tunnistamaan ja poistamaan, jolloin viesti ei taaskaan päädy vastaanottajalle.
+
+Viestien ja kuittausten katoamista vastaan lähettäjät käyttävät ajastimia (timer). Kun ne lähettävät viestin, ne laittavat ajastimen käyntiin. Jos kuittausta ei ole saapunut siihen mennessä, kun ajastin laukeaa, lähettäjä olettaa viestin kadonneen ja lähettää sen uudelleen. Lähettäjää ei siis kiinnosta oliko kadonnut alkuperäinen viesti vai kuittaus. Sitä kiinnostaa ainoastaan se, että sillä ei ole varmuutta viestin perillemenosta.
+
+Lähettäjän viestien uudelleen lähetyksestä valitettavasti seuraa se, että vastaanottaja saattaa saada saman viestin kahteen kertaan.
+Näin käy aina, kun alkuperäinen viesti meni perille, mutta kuittaus katosi. Koska sovellus on kuitenkin lähettänyt vain yhden viestin, on tärkeää, että tämä monistunut viesti päätyy vastaanottavalle sovellukselle vain kertaalleen. TCP estää tämän näkymisen sovellukselle numeroimalla viestit ja näin se voi tunnistaa mahdolliset monistumiset ja poistaa ylimääräiset ennen kuin ne pääsevät sovellukselle asti.
+
+### Tämä vaatii jonkunlainen tehtävän asian hahmottamiseksi.
 
 
 ## UDP
+
+UDP yksinkertainen kuljetusprotokolla, joka ei välitä luotettavuudesta eikä tarjoa varmaa tiedonsiirtoa. Se ei muodosta yhteyttä ja käsittelee jokaisen sovellukselta tulevan viestin erillisenä datagrammina. Wikipedian sivu UDP:stä on https://fi.wikipedia.org/wiki/UDP.
+
+UDP yksinkertaisesti vain ottaa sovellukselta viestin välitettäväksi ja laittaa sen eteenpäin verkkokerrokselle. Toki UDP:kin laittaa viestiin oman kehyksen, jossa on myös vastaanottavan sovelluksen käyttämä porttinumero, jotta vastaanotettu viesti voidaan toimittaa oikealle sovellukselle.
+
+UDP siis vain lupaa lähettää viestin, mutta ei anna mitään takuita viestin perille menosta eikä käytä kuittauksia tämän tarkistamiseen.
+
+UDP:tä käytetäänkin yleensä vain silloin, kun sovellukselle ei ole merkitystä että kaikki viestit menevät sellaisenaan perille tai sovellus haluaa itse huolehtia mahdollisista uudelleenlähetyksistä. Näin on usein esimerkiksi erilaisten reaaliaikaisten 
+
+
 
 
 
