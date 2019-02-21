@@ -60,12 +60,14 @@ UDP yksinkertaisesti vain ottaa sovellukselta viestin välitettäväksi ja laitt
 
 UDP siis vain lupaa lähettää viestin, mutta ei anna mitään takuita viestin perille menosta eikä käytä kuittauksia tämän tarkistamiseen.
 
-UDP:tä käytetäänkin yleensä vain silloin, kun sovellukselle ei ole merkitystä että kaikki viestit menevät sellaisenaan perille tai sovellus haluaa itse huolehtia mahdollisista uudelleenlähetyksistä. Näin on usein esimerkiksi erilaisten reaaliaikaisten 
+UDP:tä käytetäänkin yleensä silloin, kun sovellukselle ei ole merkitystä että kaikki viestit menevät sellaisenaan perille tai sovellus haluaa itse huolehtia mahdollisista uudelleenlähetyksistä. Näin on usein esimerkiksi erilaisten reaaliaikaisten sovellusten kuten verkkopelien tai videoiden kanssa. Ehkä tunnetuin UDP:tä käyttävä järjestelmä on nimipalvelu (Domain Name Service, DNS). 
+
+UDP jää tällä kurssillä hyvin vähälle huomiolle. Tärkeintä onkin tunnistaa termi ja muistaa, että kyse on kuljetuskerroksen yksinkertaisesta protokollasta.
 
 
 
+## TLS
 
-
-## SSL
+Alkuperäiset kuljetuskerroksen protokollat eivät tarjoa salausta tiedonsiirron turvallisuuden parantamiseksi. Sitä varten on kehitetty aluksi SSL ja siitä edelleen TLS (Transport Layer Security), jolla voidaan salata TCP-yhteyksissä kulkevaa dataa. Yksinkertaistetusti voidaan ajatella että TLS on vain salattu TCP-yhteys. Salauksessa haastavinta salausalgoritmien lisäksi on suunnitella ja toteuttaa luotettava avainten hallinta. Avainten hallinta kuuluu erilaisilla tietoturva-kursseilla ja siksi emme sitä tällä kurssilla käsittele enempää kuin jo aiemmin esillä olleet varmenteet edellyttivät. 
 
 
