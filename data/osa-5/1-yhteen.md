@@ -76,3 +76,15 @@ Reitittimen linkkikerros poistaa viestistä oman linkkikerroksen kirjekuoren ja 
 
 Näin viesti etenee vähitellen reitittimeltä toiselle, kunnes se saapuu Helsingin ylipiston reitittimelle.
 
+Yliopiston reititin vastaanottaa viestin. Sekin tarkastelee vastaanottajan IP-osoitetta ja aliverkkopeitteen avulla havaitsee sen kuuluvan tiettyyn reitittimeen liitettyyn aliverkkoon, joten se lähettää viestin linkkikerroksen avulla sinne. Enää ei siis lähetetä viestiä jollekin välittävälle laitteelle vaan suoraan palvelimelle.
+
+Näin viesti on monien vaiheiden kautta saapunut vastaanottajalle. Linkkikerros antaa oman kehyksensä datan verkkokerrokselle. Verkkokerros vielä tarkistaa, että viesti on itselle ja antaa sitten IP-paketin datan kuljetuskerrokselle. Kuljetuskerros katsoo oman viestinsä otsikoista vastaanottajan palvelun porttinumeron ja laittaa kuljetuskerroksen sanomassa olleen data sinne. Näin sovelluskerros voi vihdoin saadaa itselleen lähettäneen sovelluskerroksen viestin ja käsitellä sen.
+
+Koska kyseessä on www-palvelin ja viesti oli tiettyyn sivuun liittynyt GET-pyyntö, palvelin etsii kyseisen sivun ja muodostaa vastausviestin. Vastausviestin vastaanottajana on siis www-selain. Vastausviesti kulkee nyt päinvastaiseen suuntaan, mutta käy läpi samat vaiheet kuin pyyntöviesti. Nyt on tärkeä huomata, että reitti eri reitittimien kautta ei välttämättä ole sama kuin jota pitkin pyyntö tuli. Reitittimet tekevät jokaiselle paketille itsenäisen reitityspäätöksen, joten viestit voivat kulkea eri reittejä.
+
+## Yhteenvetona
+
+Tietoliikenteessä on paljon toimijoita, mutta jokainen niistä hoitaa vain oman pienen tehtävänsä. Koko verkko toimii hyvin, kunhan jokainen sen pieni osa toimii hyvin. Verkon palveluja voi käyttää, vaikka ei verkon toimintaa täysin ymmärtäisikään. Oman kotiverkon ylläpito on helmpompaa, kun tuntee siihen liittyvät käsitteet. IT-ammattilaisen, joka toteuttaa uusia verkkosovelluksia, on hyvä tuntea tietoliikenteen ja kommunikoinnin periaatteet, jotta oma sovellus toimisi tehokkaasti eikä kuormittaisi verkkoa tarpeettomasti.
+
+Seuraavilla kursseilla tutustutaan tarkemmin eri protokollien toimintaa, niiden viestien rakenteisiin sekä erityisesti verkon kuormitukseen ja luotettavaan toimintaan liittyviin periaatteisiin.
+
