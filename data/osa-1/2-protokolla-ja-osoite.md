@@ -20,6 +20,7 @@ Asiakkaan ja palvelimen välisessä kommunikoinnissa tämä tarkoittaa sitä, et
 
 Asiakkaan ja palvelimen välisessä viestien vaihdossa kumpikin osapuoli on vuorollaan lähettäjänä ja vastaanottajana, joten asiakkaankin pitää pysyä kiinni tietoverkossa kunnes se on vastaanottanut kaikki sanomat, joita se odotti palvelimen lähettävän.
 
+
 ## Protokolla eli yhteyskäytäntö
 
 Jotta tietokoneiden välinen kommunikointi ja sanomien vaihto olisi mahdollista, niin niiden täytyy noudattaa yhteistä käytäntöä sekä sanomien lähettämisessä että sanomien sisällössä ja rakenteessa.
@@ -27,6 +28,7 @@ Jotta tietokoneiden välinen kommunikointi ja sanomien vaihto olisi mahdollista,
 Valtaosa IETF:n standardeista onkin erilaisia internet-verkon protokollien määrittelyjä. Näiden avulla eri ohjelmoijien tekemät ohjelmat voivat kommunikoida toistensa kanssa onnistuneesti. Myös laitevalmistajien toteuttamien laitteiden pitää noudattaa standardoituja protokollia, jolla kommunikointi laitteiden välillä on mahdollista.
 
 Esimerkiksi www-sivujen kanssa käytettävä HTTP on standardoitu IETF:n toimesta. Se on kuvattu useammassakin RFC standardissa. Uusin protokollan viestejä kuvaava standardi on vuodelta 2014 RFC7230 https://tools.ietf.org/html/rfc7230. Sitä edellinen RFC2616 oli vuodelta 1999, joten ihan hirvittävän usein näitä vakiintuneita protokollia ei muokata. Itse asiassa myös standardisarjan numerot 7231-7235 käsittelevät HTTP protokollaa ja sen eri piirteitä.
+
 
 ## Internetin protokollapino
 
@@ -56,8 +58,9 @@ Laitteet on voitu yhdistää toisiin erilaisilla verkkoteknologioilla. Kullakin 
 
 Internetin protokollapinon alin, fyysinen, kerros huolehtii bittien siirtämisestä linkkikerroksen laitteiden välillä. Tälläkin kerroksella bittien siirtoon voidaan käyttää erilaisia tekniikoita. Ne voidaan koodata valoksi valokuituun, sähköpulsseiksi koaksiaalikaapeliin tai radioaalloiksi langattoman verkon yhteyksillä. Näitä koodaustapoja emme tällä kurssilla käsittele.
 
--- quiz 1.2. Eri kerrosten tehtäviä
+-- quiz: Eri kerrosten tehtäviä
 <div><quiznator id="5bae056c7ece1102a5127dff"></quiznator></div>
+
 
 ## Verkkotunnus eli laitteen osoite
 
@@ -73,9 +76,9 @@ Koska IP-osoite on laitteen tunniste maailmanlaajuisesti, sen pitää olla globa
 
 Monet tietokoneen käyttäjät ovat törmänneet MAC-osoitteeseen. Minun käyttämässäni kannettavassa tietokoneessa koneen MAC-osoite on laitteen pohjassa olevassa tarrassa. Protokollapinon kannalta MAC-osoite liittyy linkkikerrokseen, koska se on mm. Ethernet-verkossa käytettävä laitteen tunniste. Toki MAC-osoitteella pyritään yksilöimään laitteet siten, että millään kahdella laitteella ei ole samaa osoitetta. Aiemmin MAC-osoite oli laitevalmistajan laitteelle antama osoite, jota ei voinut vaihtaa, mutta nykyään se on ainakin joissakin tilanteissa vaihdettavissa. Protokollapinon kannalta tätä osoitetta käyttävät ne verkon osat, jotka toimivat linkkikerroksella. Linkkikerroksella ei tuo verkkokerroksen IP-osoite ole käytettävissä, kun se on ylemmän kerroksen osoite ja piilossa linkkikerroksen oman kirjekuoren sisällä eikä siis näy linkkikerroksen toimijoille.
 
-Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä sovelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään pistoketta (socket) ja porttinumeroa. Porttinumeroita käsitellään hiukan enemmän myöhemmin kun tutustutaan tarkemmin kuljetuskerroksen toimintaan. Sovellukset liitetään tiettyyn porttinumeroon pistokkeilla. Pistokkeet ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Koska emme kurssilla opettele tekemään verkkosovelluksia, niin emme tutustu myöskään pistokkeisiin. Eri protokollien kohdalla kerrotaan, jos niihin liittyy sovittuja, standardoituja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
+Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä sovelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään porttinumeroa. Porttinumeroita käsitellään hiukan enemmän myöhemmin kun tutustutaan tarkemmin kuljetuskerroksen toimintaan. Sovellukset liitetään tiettyyn porttinumeroon pistokkeilla (socket). Pistokkeet ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Koska emme kurssilla opettele tekemään verkkosovelluksia, niin emme tutustu myöskään pistokkeisiin. Eri protokollien kohdalla kerrotaan, jos niihin liittyy sovittuja, standardoituja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
 
 
 
--- quiz 1.2. Väitteet ohjelmista
+-- quiz: Osoitteet ja kerrokset
 <div><quiznator id="5bae056c7ece1102a5127dff"></quiznator></div>
