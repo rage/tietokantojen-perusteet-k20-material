@@ -1,4 +1,4 @@
-# Tietoliikenteen perusteet 19
+# Johdatus tietoliikenteeseen 19
 
 ## Development environment
 

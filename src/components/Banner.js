@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Bruce from "../images/banner.svg"
+import Background from "../images/taustakuva.png"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const BannerWrapper = styled.header`
@@ -11,8 +11,8 @@ const BannerWrapper = styled.header`
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-  background-color: #c0392b;
-  background-image: url(${Bruce});
+  background-color: white;
+  background-image: url(${Background});
   text-align: center;
   h1 {
   }
@@ -50,7 +50,7 @@ const SubHeading = styled.div`
 
 const Banner = () => (
   <BannerWrapper>
-    <Heading>Tietoliikenteen perusteet</Heading>
+    <Heading>Johdatus tietoliikenteeseen</Heading>
     <SubHeading>Opi miten internet toimii</SubHeading>
   </BannerWrapper>
 )

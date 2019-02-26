@@ -7,7 +7,7 @@ information_page: true
 
 Tietoliikenteen prusteet kurssilla on Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmassa määritellyt oppimistavoitteet. Tämä MOOC kurssi kattaa niistä vain osan.
 
-## Tietoliikenteen perusteet MOOC
+## Johdatus tietoliikenteeseen MOOC
 
 <table>
     <thead>
@@ -55,7 +55,3 @@ Osaa selittää kuinka palomuuri toimii.
     </tr>
     </tbody>
 </table>
-
-
-
-
