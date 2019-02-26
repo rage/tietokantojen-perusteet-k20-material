@@ -1,4 +1,3 @@
-
 ---
 path: '/osa-3/5-muita'
 title: 'Muita esimerkkejä'
