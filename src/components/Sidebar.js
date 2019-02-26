@@ -106,10 +106,6 @@ var content2 = [
     title: "Arvostelu ja kokeet",
     path: "/arvostelu-ja-kokeet",
   },
-  {
-    title: "Mahdollisuus opinto-oikeuteen",
-    path: "/opinto-oikeus",
-  },
   { title: "Tukiväylät", path: "/tukivaylat" },
   {
     title: "Opettajille ja opinto-ohjaajille",
@@ -176,7 +172,7 @@ class Sidebar extends React.Component {
           </Button>
         </MenuExpanderWrapper>
         <SidebarContainer mobileMenuOpen={this.props.mobileMenuOpen}>
-          <Brand>Tietoliikenteen perusteet</Brand>
+          <Brand>Johdatus tietoliikenteeseen</Brand>
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>

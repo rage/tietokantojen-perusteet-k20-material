@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Tietoliikenteen perusteet",
+    title: "Johdatus tietoliikenteeseen",
     siteUrl: `https://tietoliikenteen-perusteet-material.mooc.fi`,
   },
   plugins: [

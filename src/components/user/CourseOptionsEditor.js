@@ -142,46 +142,6 @@ class CourseOptionsEditor extends React.Component {
   render() {
     return (
       <FormContainer>
-        <Loading loading={this.state.loading} heightHint="5px">
-          <div>
-            {this.props.courseVariant === "nodl" && (
-              <InfoBox>
-                <Card>
-                  <CardContent>
-                    <StyledIcon icon={icon} />
-                    Olet tekemässä kurssin aikataulutonta versiota, koska
-                    aikataulutetun kurssin ensimmäinen deadline on jo mennyt.
-                  </CardContent>
-                </Card>
-              </InfoBox>
-            )}
-          </div>
-
-          <div>
-            {!this.props.courseVariant &&
-              this.state.currentCourseVariant === "nodl" && (
-                <InfoBox>
-                  <Card>
-                    <CardContent>
-                      <StyledIcon icon={icon} />
-                      Olet tekemässä kurssin aikataulutonta versiota.
-                    </CardContent>
-                  </Card>
-                </InfoBox>
-              )}
-            {!this.props.courseVariant &&
-              this.state.currentCourseVariant !== "nodl" && (
-                <InfoBox>
-                  <Card>
-                    <CardContent>
-                      <StyledIcon icon={icon} />
-                      Olet tekemässä kurssin aikataulutettua versiota.
-                    </CardContent>
-                  </Card>
-                </InfoBox>
-              )}
-          </div>
-        </Loading>
         <h1>Opiskelijan tiedot</h1>
         <Form>
           <InfoBox>
@@ -262,7 +222,7 @@ class CourseOptionsEditor extends React.Component {
                       value="1"
                     />
                   }
-                  label="Aion hakea aikataulutetun Ohjelmoinnin MOOCin kautta opinto-oikeutta Helsingin yliopistoon."
+                  label="Teen Tietoliikenteen perusteet -kurssia Helsingin yliopistossa keväällä 2019."
                 />
               </Row>
 

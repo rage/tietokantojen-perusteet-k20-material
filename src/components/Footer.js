@@ -113,17 +113,6 @@ class Footer extends React.Component {
                   <div>Materiaalin lähdekoodi</div>
                 </OutboundLink>
               </GithubContainer>
-              <ContentContainer>
-                Kurssin on tehnyt Helsingin yliopiston{" "}
-                <OutboundLink
-                  href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Agile Education Research -tutkimusryhmä
-                </OutboundLink>
-                .
-              </ContentContainer>
 
               <ContentContainer>
                 <Link to="/credits">Kiitokset ja materiaalista</Link>.
