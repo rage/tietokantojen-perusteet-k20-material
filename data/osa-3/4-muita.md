@@ -1,5 +1,5 @@
 ---
-path: '/osa-3/5-muita'
+path: '/osa-3/4-muita'
 title: 'Muita esimerkkejä'
 hidden: false
 ---
@@ -24,3 +24,21 @@ Monet pikaviestintäjärjestelmät käyttävät sisäisesti viestein välittämi
 
 
 Emme millään pysty tutustumaan kaikkiin mahdollisiin internetin kautta saatavilla oleviin palveluihin ja niiden käyttämiin protokolliin. Tässä jäävät esimerkiksi erilaiset TV- ja videopalvelut kokonaan käsittelemättä. Jos erilaiset palvelut kiinnostavat laajemminkin, niin kannattaa itse aktiivisesti etsiä lisätietoja. Wikipediassa on yleensä ihan hyviä tiiviitä kuvauksia eri teemoista. Kannattaa lukea myös ihan perinteisiä lehtiä ja niiden artikkeleita. Suomenkielisiä lehtiä, joissa on paljon tietoliikenteeseen ja internetin palveluihin liittyviä artikkeleja ovat esimerkiksi Mikrobitti, MPC, Tekniikan maailma ja Scrolli. Lehtiä on toki paljon muitakin, mutta näitä selailen itse säännöllisesti.
+
+
+## Virtuaalinen yksityisverkko
+
+
+Virtuaalinen yksityisverkko (engl. virtual private network, VPN) tapa muodostaa suojattu yhteys esimerkiksi työpaikan verkkoon silloinkin, kun todellisuudessa on jossain muualla. VPN-yhteyden avulla oman koneensa saa liitettyä työpaikanverkkoon siten, että koneella ovat käytettävissä ihan samat palvelut kuin työpaikallakin. Usein tietoturvan parantamiseksi organisaatiot rajoittavat palvelujen käyttöä ja näkyvyyttä siten, että ne ovat käytettävissä vain organisaation omassa verkossa.
+
+Virtuaalinen yksityisverkko ei oikeastaan ole vain sovelluskerroksen asia, koska se vaikuttaa myös verkkokerroksen toimintaan. Käyttäjälle se on sovellus muiden joukossa ja siksi käsitellään jo tässä yhteydessä. 
+
+Esimerkiksi Helsingin yliopiston opiskelijoille ja henkilökunnalle on käytettävissä paljon enemmän palveluja yliopiston omassa verkossa kuin verkon ulkopuolella. Moni meistä on törmännyt tähän esimerkiksi tieteellisten artikkelien kanssa. Artikkeli on luettavissa ilman maksua, kun sen hakee yliopiston verkossa, mutta kun samaa artikkelia yrittää lukea kotiverkosta käsin, niin artikkelin julkaisija haluaakin maksun siitä. Tällöin tilanne on helppo ratkaista muodostamalla ensin VPN-yhteys yliopiston verkkoon ja sitten hakemalla kyseinen artikkeli.
+
+Ajatuksellisesti VPN-yhteys on siis jonkinlainen suojattu putki tai tunneli, joka johtaa omalta koneelta organisaation VPN-palvelimelle ja johon kukaan matkanvarrella oleva ulkopuolinen toimija ei voi nähdä sisälle. Näin se on helppo vielä hahmottaa. Lisätään tähän vähän yksityiskohtia lisää. Putken sisällä liikenne on organisaation oman sisäisen verkon liikennettä, eli esimerkiksi www-selaimen lähettämiä pyyntöjä ja sen saamia vastauksia. Putken ulkopuolella liikenne puolestaan on julkisen internetin liikennettä. Sisäpuolella liikennöidään siis yrityksen sisäverkon IP-osoitteilla ja ulkopuolella julkisen internetin osoitteilla. 
+
+## Kuva, jossa yksi protokollapinon sovellus, kuljetus ja verkko kerrokset on piilotettu sovelluskerroksen sisään/lievästi yläpuolelle)
+
+Lähettäjän sovellus lähettää viestin normaalisti ja protokollapinon eri kerroksilla siitä muodostetaan sisäverkon paketti. Koska sitä ei IP-osoitteidensa vuoksi voida suoraan lähettää julkiseen verkkoon. Tämä paketti sijoitetaan ulkoverkon paketin sisään dataksi. Ulkoverkon paketti voidaan sitten lähettää vastaanottajalle, jonka VPN-palvelin vastaanottaa ulkoverkon paketin. Palvelin avaa datan ja ottaa sieltä tuon sisäverkon paketin, jonka se lähettää nyt sisäverkosta lopulliselle kohteelleen. Viestien paketointiin tutustutaan hiukan tarkemmin seuraavassa osiossa, jossa katsotaan muita protokollan pinon kerroksia ja niiden toimintoja.
+
+## Tässä voisi olla jonkunlainen pieni avokysymys ja siihen vastaus, jonka muut opiskelijat arvioivat tai sitten vain oikein väärin väittämiä.
