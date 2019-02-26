@@ -176,7 +176,7 @@ class Sidebar extends React.Component {
           </Button>
         </MenuExpanderWrapper>
         <SidebarContainer mobileMenuOpen={this.props.mobileMenuOpen}>
-          <Brand>Ohjelmoinnin MOOC 2019</Brand>
+          <Brand>Tietoliikenteen perusteet</Brand>
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>

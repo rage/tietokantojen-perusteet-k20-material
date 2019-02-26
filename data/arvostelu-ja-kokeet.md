@@ -97,7 +97,4 @@ Tarkemmat ilmoittautumisohjeet tulevat myöhemmin tälle sivulle ja niistä läh
 
 
 
-Huom! Helsingin yliopiston Avoimen yliopiston sivuille on luotu epähuomiossa ylimääräisiä ilmoittautumissivuja, joista voi ymmärtää että olet tippunut pois kurssilta. Älä välitä näistä avoimen yliopiston muista ilmoittautumissivuista, vaan seuraa vain tällä sivulla (ohjelmointi-19.mooc.fi) olevia ohjeita. Tähän muodolliseen ilmoittautumiseen on vain yksi oikea ilmoittautumislinkki, jonka tulee löytymään tältä sivustolta (ohjelmointi-19.mooc.fi). Tämä tämän sivun antama linkki on siis ainoa oikea kokeen ilmoittautumislinkki sekä kurssin aikataulullisessa että aikatauluttomassa versiossa.
-
-
-
+Huom! Helsingin yliopiston Avoimen yliopiston sivuille on luotu epähuomiossa ylimääräisiä ilmoittautumissivuja, joista voi ymmärtää että olet tippunut pois kurssilta. Älä välitä näistä avoimen yliopiston muista ilmoittautumissivuista, vaan seuraa vain tällä sivulla (tietoliikenteen-perusteet-material.mooc.fi) olevia ohjeita. Tähän muodolliseen ilmoittautumiseen on vain yksi oikea ilmoittautumislinkki, jonka tulee löytymään tältä sivustolta (tietoliikenteen-perusteet-material.mooc.fi). Tämä tämän sivun antama linkki on siis ainoa oikea kokeen ilmoittautumislinkki sekä kurssin aikataulullisessa että aikatauluttomassa versiossa.

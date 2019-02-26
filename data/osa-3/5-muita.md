@@ -24,5 +24,3 @@ Monet pikaviestintäjärjestelmät käyttävät sisäisesti viestein välittämi
 
 
 Emme millään pysty tutustumaan kaikkiin mahdollisiin internetin kautta saatavilla oleviin palveluihin ja niiden käyttämiin protokolliin. Tässä jäävät esimerkiksi erilaiset TV- ja videopalvelut kokonaan käsittelemättä. Jos erilaiset palvelut kiinnostavat laajemminkin, niin kannattaa itse aktiivisesti etsiä lisätietoja. Wikipediassa on yleensä ihan hyviä tiiviitä kuvauksia eri teemoista. Kannattaa lukea myös ihan perinteisiä lehtiä ja niiden artikkeleita. Suomenkielisiä lehtiä, joissa on paljon tietoliikenteeseen ja internetin palveluihin liittyviä artikkeleja ovat esimerkiksi Mikrobitti, MPC, Tekniikan maailma ja Scrolli. Lehtiä on toki paljon muitakin, mutta näitä selaisen itse säännöllisesti.
-
-
