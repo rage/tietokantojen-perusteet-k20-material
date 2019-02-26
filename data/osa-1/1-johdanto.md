@@ -27,8 +27,10 @@ Itse asiassa tuossa sanastojen osoitteessa on monta eri osaa. Käydään ne nyt 
 
 Kaikki näiden sanastojen termit ja paljon muitakin käsitteitä on koottu <a href="http://www.tsk.fi/tsk/">Sanastokeskus TSK</a>:n [Tietotekniikan termitalkoot](http://www.tsk.fi/tsk/termitalkoot/) -sivustolle kaikkien nähtäville. Jos eri asioiden nimet ja käsitteiden selitykset kiinnostavat, niin tätä sivustoa kannattaa käyttää. Kurssin aikana se toivottavasti auttaa uusien käsitteiden opiskelua, jos käsite jää tässä materiaalissa kuitenkin oudoksi. Jotta sanaston käyttö tulisi hiukan tutummaksi, niin käy katsomassa ainakin tietoverkko-käsitteen käsitekaaviota sivulla: http://www.tsk.fi/tsk/termitalkoot/haku-266.html?page=resurssi&tiedosto=tietoverkko.svg. Kurssin kuluessa tutustumme lähes kaikkiin näistä termeistä.
 
--- Quiz 1.1. Tietoverkko-käsitteen käsitekaavio
+
+-- Quiz: Tietoverkko-käsitteen käsitekaavio
 <div> <quiznator id="5c1ce20564cf001162cb949d"> </quiznator> </div>
+
 
 ## Internet
 
@@ -36,13 +38,16 @@ Internet on englanninkielisen nimensä mukaisesti verkkojen verkko. Se siis yhdi
 
 Näitä internetiin liitettyjä tietoverkkoja hallinnoivat palveluntarjoajat (Internet service provider, ISP). Suomessa toimii kymmeniä palveluntarjoajia, joista tavalliselle kuluttajalle tunnetuimpia ovat teleoperaattorit kuten DNA, Elisa ja Telia. Helsingin yliopistolle kuten muillekin suomalaisille yliopistoille ja korkeakouluille internet yhteyden palveluntarjoajana toimii CSC - Tieteen tietotekniikan keskus (www.csc.fi). Se hallinnoi FUNET-verkkoa, jonka kautta Helsingin yliopiston internet yhteydet kulkevat. FUNET-verkko on puolestaan liitetty muuhun internetiin FICIXin (www.ficix.fi/fi/) operoiman internetliikenteen yhdysliikennepisteen (internet exchange point) kautta. FICIXin yhdysliikennepiste on tietoverkko, joka puolestaan on liitetty eurooppalaisen yhdysliikennepisteen tietoverkkoon, joka puolestaan taas on liitetty ... (TODO: muihin verkkoihin?)   Näin internet verkkona rakentuu toisiinsa liitetyistä palasista. Sillä ei ole yhtä keskitettyä hallitsevaa organisaatiota. Jokaisen pienemmän verkon omistaja päättää oman verkkonsa toiminnasta. Omistaja voi esimerkiksi irrottaa oman verkkonsa muista tai vaihtaa omaa yhteyspistettään.
 
+
 ![Kuvassa on verkko.](./ch-1-1-verkkojen-yhdistelma.jpg)
+
 
 FICIX julkaisee tilastotietoa sen verkon kautta kulkeneesta liikenteestä. Graafinen kuva tilastosta on sivulla https://stats-ficix.basen.com/#/page?name=StatsWelcome&source=wiki
 
 
--- Quiz 1.2. Viestien määristä
+-- Quiz: Viestien määristä
 <div> <quiznator id="5c1ce4a1054d71123e35cb5b"> </quiznator> </div>
+
 
 Internetin keskeisin ominaisuus onkin sen kyky siirtää viestejä tietoverkosta toiseen. Tämän tekevät verkkoja yhdistävät <a href=" https://fi.wikipedia.org/wiki/Reititin">reitittimet</a> (engl. router), jotka vastaanottavat viestin yhdestä verkosta ja välittävät sen edelleen toiseen verkkoon. Kahden eri verkon välissä on aina reititin, joka huolehtii viestien siirtämisestä verkkojen välillä. Usein kummassakin verkossa on oma reitittimensä, joka poimii omasta verkosta ulospäin menevät viestit välitettäväksi toiseen verkkoon.
 Jos olet kiinnostunut täysin tämän kurssin ulkopuolisesta ylimääräisestä lisätiedosta, niin <a href="https://wiki.eduuni.fi/display/funet/IP-yhteydet">FUNET-verkkoa kuvaavalla sivulla</a> kerrotaan lisää siitä, miten eri yliopistot tai korkeakoulut voivat omat verkkonsa liittää FUNETin verkkoon.
@@ -52,7 +57,7 @@ Internetin kommunikointitavat on standardoitu ja kaikki internetissä tapahtuva 
 
 ## Internetlaitteet ja verkkolaitteet
 
-Internetlaitteita ovat kaikki internetiin kytketyt päätelaitteet. (TODO: päätelaitteen määritelmä) Verkkolaitteita puolestaan laitteet, jotka toimivat verkon sisällä ja huolehtivat viestien siirtämisestä paikasta toiseen.
+Internetlaitteita ovat kaikki internetiin kytketyt päätelaitteet, jotka ovat verkon reunalla eivätkä välitä liikennettä muille. Verkkolaitteita puolestaan laitteet, jotka toimivat verkon sisällä ja huolehtivat viestien siirtämisestä paikasta toiseen.
 
 Näin ollen käyttäjän tabletti, älypuhelin tai tietokone on tässä jaottelussa internetlaite silloin, kun se on kytkettynä internet-verkkoon. Myös erilaisten organisaatioiden www-sivuja jakavat www-palvelimet ovat internet-verkon päätelaitteita. Ne eivät välitä liikennettä eteenpäin vaan ovat kiinni verkossa ja vastaanottavat ja lähettävät viestejä samaa yhteyttä käyttäen.
 
@@ -61,7 +66,7 @@ Verkkolaitteita ovat puolestaan laitteet, jotka ovat verkon sisäpuolella. Niide
 Kotiverkossa saattaa olla ADSL-modeemi, joka yhdistää sen internetpalvelua tarjoavan teleoperaattorin verkkoon. Aiemmin ADSL-modeemi oli vain ADSL-modeemi. Nykyään kyseessä yleensä on monitoimilaite, joka samalla toimii reitittimenä ja saattaa sisältää muitakin internet-verkon toiminnallisuuksia, kuten langattoman verkon (WLAN, WiFi) tukiasema.
 
 
--- Quiz 1.1. Väitteet tietokoneista
+-- Quiz: Väitteet tietokoneista
 <div> <quiznator id="5bf6a05dcd84693e7889b274"> </quiznator> </div>
 
 
@@ -79,10 +84,12 @@ Tietotekniikan termitalkoiden (http://www.tsk.fi/tsk/termitalkoot/) määrittely
 
 Eli kun puhumme palvelusta, tarkoitamme jotain isompaa kokonaisuutta, jota tarjotaan muille käytettäväksi. Palvelin on taas osa tietoverkkoa, jonka avulla tuo palvelu voi olla muiden käytettävissä.
 
-Usein palvelua käyttävistä sovelluksista ja oikeammin niistä laitteista, joilla niitä suoritetaan, käytetään termiä asiakas (engl. client). Sovelluksesta voidaan tarvittaessa käyttää termiä asiakasohjelma.
+Usein palvelua käyttävistä sovelluksista ja oikeammin niistä laitteista, joilla niitä suoritetaan, käytetään termiä asiakas (engl. client). Sovelluksesta voidaan tarvittaessa käyttää termiä asiakasohjelma. Tietoliikenteessä asiakas ei siis koskaan ole ihminen, vaan ihmisestä käytetään termiä 'käyttäjä', koska hän käyttää kyseistä sovellusta tai laitetta.
 
 Seuraavassa aliluvussa tarkastellaankin miten viestinvaihto viestin lähettäjän ja vastaanottajan välillä oikein tapahtuu.
 
+-- Quiz 1.1.Termeistä
+<div> <quiznator id="5c73f865fd9fd71425c674b7"> </quiznator> </div>
 
 <div>
 <key-terminology
