@@ -20,6 +20,7 @@ Tämän kurssin jälkeen tunnet keskeiset tietoliikenteen käsitteet ja lyhentee
 Tämä kurssi on tarkoitettu
 
 a) Digital education for all (DEFA) -hankkeen mukaisia opintoja tekeville
+
 b) Helsingin yliopiston tietojenkäsittelytieteen kandidaatin koulutuohjelman mukaisia opintoja tekeville
 
 
