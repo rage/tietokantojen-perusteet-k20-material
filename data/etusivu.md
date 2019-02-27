@@ -8,7 +8,7 @@ information_page: true
 
 # Tietoa kurssista
 
-Johdatus tietoliikenteeseen on ensimmäinen versio muuntaa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetus verkkokursseiksi.
+Johdatus tietoliikenteeseen on ensimmäinen versio muuntaa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetus verkkokursseiksi. Täm ensimmäinen versio on vielä hiukan tynkä. Se on puhtaasti tekstiin ja kuviin pohjautuva.
 
 Tämän kurssi sisältö on valikoitu tietoliikenteen käyttäjän tarpeista lähtien.  Jatkokurssit ottavat sitten enemmän asiantuntijan ja ammattilaisen näkökulmaa.
 
