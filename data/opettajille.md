@@ -5,10 +5,13 @@ hidden: false
 information_page: true
 ---
 
-Kurssin tai sen osan saa ottaa vapaasti osaksi peruskoulun, lukion, ammattikoulun, ammattikorkeakoulun tai yliopiston opintotarjontaa. Kerro opiskelijoillesi mahdollisuudesta osallistua kurssille.
+Emme suosittele keväällä 2019 tämän ihka ensimmäisen version ottamista vielä osaksi omaa opetustarjontaa, koska meillä ei ole vielä tarjota kurssin sisältömateriaalin lisäksi mitään muuta tukea tai tukimateriaalia.
 
-<b>Loppuosa ohjeesta on vielä toistaiseksi Ohjelmointi MOOCin sisältöä</b>
+Jatkossa on tarkoitus, että kurssin tai sen osan saa ottaa vapaasti osaksi peruskoulun, lukion, ammattikoulun, ammattikorkeakoulun tai yliopiston opintotarjontaa. Kerro opiskelijoillesi mahdollisuudesta osallistua kurssille.
 
-Jos haluat, että kurssillasi on koe ja opiskelijasi saavat kurssista merkinnän Helsingin yliopiston Avoimelta yliopistolta, ohjeista opiskelijasi osallistumaan Helsingin yliopiston Avoimen yliopiston ilmaiseksi tarjoamaan kokeeseen. Saat lisätietoja tästä järjestelystä ottamalla meihin yhteyttä (mooc@cs.helsinki.fi).
+Tänne on tarkoitus toimittaa myöhemmin ohjeistusta kurssin suoritusten arvioinnista omassa oppilaitoksessa.
+
+Opiskelijoilla on toki jo tänä keväänä mahdollisuus ....
+
 
 Avoimen yliopiston kurssisuoritus luetaan automaattisesti osaksi Helsingin yliopiston opintoja. Useat toisen asteen oppilaitokset kuten lukiot tarjoavat Ohjelmoinnin MOOCin suorittamisesta suoritusmerkintöjä.
