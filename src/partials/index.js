@@ -37,6 +37,7 @@ import PdfSlideshow from "./PdfSlideshow"
 import ExercisesInThisSection from "./ExercisesInThisSection"
 import AbStudy from "./AbStudy"
 import CrowdSorcerer from "./CrowdSorcerer"
+import Banner from "../components/Banner"
 
 import {
   Table,
@@ -74,6 +75,7 @@ const mapping = {
   "only-for-ab-group": OnlyForAbGroup,
   "table-of-contents": TableOfContents,
   "registration-link": RegistrationLink,
+  banner: Banner,
   notice: Notice,
   crowdsorcerer: CrowdSorcerer,
   youtube: Youtube,
