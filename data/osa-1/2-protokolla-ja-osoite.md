@@ -43,7 +43,7 @@ Näistä palveluista  muodostuukin kerrosrakenne. Internetin sanomien välitykse
 <illustrations motive="ch-1-2-kaannos-linkitys-draft" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
-Lähettäjä ja vastaanottaja, joka kommunikoivat keskenään käyttäen HTTP-protokollaa, sijoitetaan tässä protokollapinossa sovelluskerrokselle. Tällä kerroksella ovat siis kaikki, joilla on jokin yhteiseen tavoitteeseen liittyvä tarve kommunikoida keskenään. Näitä ovat tyypillisesti esimerkiksi www-selain ja -palvelin, sähköpostiohjelma, pikaviestinpalvelua toteuttava ohjelma (esim. whatsapp, telegram, jabber). Ne käyttävät omaan ohjelman sisäiseen kommunikointiin jotain sovellustason protokollaa, kuten HTTP tai XMPP. Sovellukset voivat ottaa käyttöön jonkun jo standardoidun sovellustason protokollan (esim. HTTP, XMPP) tai määritellä ihan oman protokollan, jota ne käyttävät. Tyypillisesti käyttäjän ohjelmat on sijoitettu sovelluskerrokselle, eivätkä käyttäjät voi suoraan käyttää alempien kerrosten protokollia.
+Lähettäjä ja vastaanottaja, joka kommunikoivat keskenään käyttäen HTTP-protokollaa, sijoitetaan tässä protokollapinossa sovelluskerrokselle. Tällä kerroksella ovat siis kaikki ohjelmat, joilla on jokin yhteiseen tavoitteeseen liittyvä tarve kommunikoida keskenään. Näitä ovat tyypillisesti esimerkiksi www-selain ja -palvelin, sähköpostiohjelma, pikaviestinpalvelua toteuttava ohjelma (esim. whatsapp, telegram, jabber). Ne käyttävät omaan ohjelman sisäiseen kommunikointiin jotain sovellustason protokollaa, kuten HTTP tai XMPP. Sovellukset voivat ottaa käyttöön jonkun jo standardoidun sovellustason protokollan (esim. HTTP, XMPP) tai määritellä ihan oman protokollan, jota ne käyttävät. Tyypillisesti käyttäjän ohjelmat on sijoitettu sovelluskerrokselle, eivätkä käyttäjät voi suoraan käyttää alempien kerrosten protokollia.
 
 Tietoliikenteessä puhutaan usein päästä-päähän -yhteydestä, jolla tarkoitetaan sitä, että sovellusten ei tarvitse tietää, miten viesti alemmilla kerroksilla liikkuu, vaan ne voivat luottaa siihen, että lähettäjän lähettämä viesti päätyy vastaanottajalleen toiseen päähän.
 
@@ -59,7 +59,7 @@ Laitteet on voitu yhdistää toisiin erilaisilla verkkoteknologioilla. Kullakin 
 Internetin protokollapinon alin, fyysinen, kerros huolehtii bittien siirtämisestä linkkikerroksen laitteiden välillä. Tälläkin kerroksella bittien siirtoon voidaan käyttää erilaisia tekniikoita. Ne voidaan koodata valoksi valokuituun, sähköpulsseiksi koaksiaalikaapeliin tai radioaalloiksi langattoman verkon yhteyksillä. Näitä koodaustapoja emme tällä kurssilla käsittele.
 
 -- quiz: Eri kerrosten tehtäviä
-<div><quiznator id="5bae056c7ece1102a5127dff"></quiznator></div>
+<div><quiznator id="5c75241a99236814c5bbd859"></quiznator></div>
 
 
 ## Verkkotunnus eli laitteen osoite
@@ -79,6 +79,7 @@ Monet tietokoneen käyttäjät ovat törmänneet MAC-osoitteeseen. Minun käytt�
 Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä sovelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään porttinumeroa. Porttinumeroita käsitellään hiukan enemmän myöhemmin kun tutustutaan tarkemmin kuljetuskerroksen toimintaan. Sovellukset liitetään tiettyyn porttinumeroon pistokkeilla (socket). Pistokkeet ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Koska emme kurssilla opettele tekemään verkkosovelluksia, niin emme tutustu myöskään pistokkeisiin. Eri protokollien kohdalla kerrotaan, jos niihin liittyy sovittuja, standardoituja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
 
 
-
 -- quiz: Osoitteet ja kerrokset
 <div><quiznator id="5bae056c7ece1102a5127dff"></quiznator></div>
+
+-- quiz  (Ip-osoitteista!)
