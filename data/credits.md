@@ -7,12 +7,15 @@ information_page: true
 
 ## Kiitos kaikille
 
-blaa
+Tähän Kurssin ensimmäisen version (Kevät 2019) tekoon ovat osallistuneet vastuuhenkilön Tiina Niklander lisäksi kurssin muut opettajat Terho Oinonen ja Mikko Rinta-Komi. Erityisesti heille kuuluu kiitos siitä, että tässä versiossa on tekstin lisäksi myös kuvia.
+
 
 ## Materiaalin lisenssi
 
 <p>
-Kurssin materiaali on lisensoitu
+Kurssin materiaalin tekijänoikeudet ovat Tiina Niklanderilla ja muilla materiaalin laadintaan osallistuneilla.
+    
+Kurssin materiaalin käyttöoikeus on lisensoitu
 <a
     href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
     target="_blank"
