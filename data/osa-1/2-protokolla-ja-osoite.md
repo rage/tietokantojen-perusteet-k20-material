@@ -80,6 +80,4 @@ Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitte
 
 
 -- quiz: Osoitteet ja kerrokset
-<div><quiznator id="5bae056c7ece1102a5127dff"></quiznator></div>
-
--- quiz  (Ip-osoitteista!)
+<div><quiznator id="5c7657ca244fe21455cbbf30"></quiznator></div>
