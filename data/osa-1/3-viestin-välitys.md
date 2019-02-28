@@ -31,6 +31,9 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 <illustrations motive="verkon-kaavakuva.pdf" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
+-- quiz: Viestin nimityksiä
+<div><quiznator id="5c77cf5799236814c5bbdcf4"></quiznator></div>
+
 ### Sanomanvälitys tietoliikenneverkossa, pakettikytkentä, reititys
 
 Lähettäjä ja vastaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet-verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjältä koneelta vastaanottajan koneelle.
@@ -53,4 +56,7 @@ Koska viestit etenevät lähettäjältä vastaanottajalle pätkittäin reitittim
 
 Toisaalta tällainen pakettien siirtely vaiheittain antaa mahdollisuuden myös pahantahtoiseen toimintaan. Verkossa on helppo kerätä kaikki tietyn pisteen kautta kulkevat viestit ja tutkia niitä. Julkisuudessa oli viitisen vuotta sitten paljonkin keskustelua siitä kuinka Yhdysvalloissa NSA kuuntelee viestejä tai kuinka Suomessa poliisin on mahdollisuus saada oikeus viestiliikenteen seurantaan.
 
-Toisaalta internetin perusmalli, jossa vastaanottaja ei voi päättää mitä viestejä sille saapuu, sallii myös erilaisia hyökkäyksiä internetissä. Tähän perustuvat esim. palvelun esto -hyökkäykset ja erilaiset matojen ja virusten leviämiset. Tällä kurssilla emme keskity näihin uhkakuviin ja niiden torjuntaan, vaan pelkästään siihen miten tietoverkko toimii viestien siirrossa. Erilaiset tietoturvaa käsittelevät kurssit käyvät läpi näitä uhkia ja niiltä suojautumista.
+Toisaalta internetin perusmalli, jossa vastaanottaja ei voi päättää mitä viestejä sille saapuu, sallii myös erilaisia hyökkäyksiä internetissä. Tähän perustuvat esim. palvelun esto -hyökkäykset ja erilaiset matojen ja virusten leviämiset. Tällä kurssilla emme keskity näihin uhkakuviin ja niiden torjuntaan. Erilaiset tietoturvaa käsittelevät kurssit käyvät kattavammin läpi näitä uhkia ja niiltä suojautumista.
+
+-- quiz: Väittämiä viestin välityksestä
+<div><quiznator id="5c77f30799236814c5bbdd50"></quiznator></div>
