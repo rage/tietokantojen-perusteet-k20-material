@@ -29,12 +29,16 @@ Suomessa näitä kotien internet-yhteyksiä kutsutaan usein laajakaistayhteyksik
 
 Tyypillisesti yhteys kotiin toteutetaan joko perinteistä puhelinverkkoa pitkin ADSL-yhteytenä, kaapeli-TV -verkossa kaapelimodeemin avulla tai asuntoon tulevan parikaapelin tai valokuidun kautta. Wikipedian sivulla https://fi.wikipedia.org/wiki/Laajakaista  luetellaan muitakin tekniikoita, joilla laajakaistayhteyden voi saada kotiin.
 
-Näitä yhteyksiä tarjoavat puhelinoperaattorit, kuten Telia, Elisa ja DNA, ympäri maata. Myös muita palveluntarjoajia on alueellisesti saatavilla. Erityisesti, jos käytetään noita (TODO: mihin noita muita viittaa, pitäisikö olla muita kuin ADSL) muita tekniikoita. 
+Näitä yhteyksiä tarjoavat puhelinoperaattorit, kuten Telia, Elisa ja DNA, ympäri maata. Myös muita palveluntarjoajia on alueellisesti saatavilla. Erityisesti, jos käytetään muita kuin puhelinverkon tekniikoita. 
 
-Osa palveluntarjoajista näyttää myyvän valokuitu-nimistä palvelua, vaikka valokuitu tulisikin vain taloyhtiöön ja siitä eteenpäin liikennöinti tapahtuisi puhelinverkon johtimella tai jollain muulla kaapeloinnilla.
+Osa palveluntarjoajista näyttää myyvän valokuitu-nimistä palvelua, vaikka valokuitu tulisikin vain taloyhtiöön ja siitä eteenpäin liikennöinti tapahtuisi parikaapelilla.
 
 Tietoliikenneyhteys voidaan rakentaa myös sähköverkon varaan. Tätä datasähköksi kutsuttua palveluakin on saatavilla eri puolilla maata.
+Kurkista esim. Nivos -nimisen yhtiön tarjontaa.
 
+Joillakin alueilla kaupalliset toimijat eivät koe laajakaistayhteyden toteuttamista kannattavaksi ja laajakaistayhteyttä tarjotaankin siellä täällä myös osuuskuntina. Esimerkiksi Verkko-osuuskunta Ylläksen Laajakaista tarjoaa laajakaistayhteyttä Ylläksellä.
+
+5c77f8fcddb6b814af327046
 
 ## Tehtävä:  essee:  Selvitä millaisia yhteyksiä omalla alueellasi on saatavilla. Operaattorit haluavat usein kotiosoitteen, jotta kertovat millaisia yhteyksiä voi saada. Tätä osoitetta ei kannata laittaa vastaukseen, mutta muuten voit laittaa vastaukseen linkkejä. Selvitä liikennöintinopeus ja millainen laite kotiin tarvitaan.
 
