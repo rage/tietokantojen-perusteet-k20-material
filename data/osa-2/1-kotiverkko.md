@@ -38,9 +38,9 @@ Kurkista esim. Nivos -nimisen yhtiön tarjontaa.
 
 Joillakin alueilla kaupalliset toimijat eivät koe laajakaistayhteyden toteuttamista kannattavaksi ja laajakaistayhteyttä tarjotaankin siellä täällä myös osuuskuntina. Esimerkiksi Verkko-osuuskunta Ylläksen Laajakaista tarjoaa laajakaistayhteyttä Ylläksellä.
 
-5c77f8fcddb6b814af327046
+-- quiz: Palveluntarjoajia
+<div><quiznator id="5c77f8fcddb6b814af327046"></quiznator></div>
 
-## Tehtävä:  essee:  Selvitä millaisia yhteyksiä omalla alueellasi on saatavilla. Operaattorit haluavat usein kotiosoitteen, jotta kertovat millaisia yhteyksiä voi saada. Tätä osoitetta ei kannata laittaa vastaukseen, mutta muuten voit laittaa vastaukseen linkkejä. Selvitä liikennöintinopeus ja millainen laite kotiin tarvitaan.
 
 
 
