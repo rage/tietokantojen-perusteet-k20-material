@@ -5,9 +5,9 @@ hidden: false
 information_page: true
 ---
 
-# Tämä ohje on kokonaisuudessaan Ohjelmointi MOOCin ohjeistusta
+# Tämä ohje on kokonaisuudessaan Ohjelmointi MOOCin ohjeistusta. Emme ole vielä valinneet tällä johdatus tietoliikenteeseen kurssilla käytettäviä tukikanavia.
 
-Kurssilla on vertaistukeen perustuva keskustelukanava, jonka lisäksi tammikuun puolesta välistä lähtien kaikilla kurssilaisilla on mahdollisuus ohjaukseen Helsingin yliopiston kumpulan kampuksella.
+Kurssilla on vertaistukeen perustuva keskustelukanava.
 
 ## Keskustelukanava
 
@@ -17,23 +17,6 @@ Pääset kanavalle tästä linkistä: [https://t.me/ohjelmointi19](https://t.me/
 
 Kanavan osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Kanavan toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti.
 
-Jos kysyt kanavalta apua ohjelmointitehtävään, voit liittää kysymykseesi myös ohjelmasi lähdekoodin. Valitse Netbeanssista "`TMC`" -> "`Send code to TMC Pastebin`" ja valitse avautuvasta ikkunasta "`Send`". Tämän jälkeen saat linkin koodiisi, jonka voit jakaa keskustelukanavalla apupyynnön yhteydessä.
-
-## Pajaohjaus
-
-Kurssilla on mahdollisuus saada hyvää ohjelmointiseuraa sekä saada apua tehtäviin, ohjelmointiin ja teknisiin ongelmiin tulemalla kurssin pajaan! Paja sijaitsee Helsingin yliopiston kumpulan kampuksella olevassa Exactum-rakennuksessa. Kaikki ovat tervetulleita pajaan!
-
-Katso Exactum-rakennuksen tarkempi sijainti seuraavasta linkistä: https://www.google.com/maps?hl=en&q=Exactum,+Kumpula+Campus,+Pietari+Kalmin+katu+5,+00560+Helsinki
-
-Ohjausta järjestetään Exactum-rakennuksen salissa BK107 seuraavina aikoina:
-
-- Maanantaisin klo 12-19
-- Torstaisin klo 12-19
-- Perjantaisin klo 10-14
-
-Tarkennamme poikkeuspäiviä kurssin edetessä.
-
-Exactum-rakennuksen aulassa olevasta infonäytöstä löytää salin tarkemman sijainnin. Voit myös kysyä salin sijaintia aulan vahtimestareilta sekä kampuksen henkilökunnalta ja opiskelijoilta.
 
 ## Moodle-foorumi
 
