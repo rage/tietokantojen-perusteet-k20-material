@@ -13,4 +13,4 @@ Kurssi julkaistaan jo nyt avoimena, joten emme sinänsä rajoita kurssin käytt�
 
 Kurssin tai sen osan saa ottaa vapaasti osaksi peruskoulun, lukion, ammattikoulun, ammattikorkeakoulun tai yliopiston opintotarjontaa. Kerrothan opiskelijoillesi mahdollisuudesta osallistua kurssille.
 
-Avoimen yliopiston kurssisuoritus luetaan automaattisesti osaksi Helsingin yliopiston opintoja, mutta tämän osion tekeminen ei korvaa tietojenkäsittelytieteen kandiohjelman pakollista tietoliikenteen perusteet -kurssia.
+Avoimen yliopiston kurssisuoritus luetaan automaattisesti osaksi Helsingin yliopiston opintoja, mutta tämän osion tekeminen ei korvaa tietojenkäsittelytieteen kandiohjelman pakollista tietoliikenteen perusteet -kurssia. Tälle kurssille on tulossa jatko-osa viimeistään keväällä 2020 ja nämä kaksi osaa yhdessä kattavat tuon kurssin.
