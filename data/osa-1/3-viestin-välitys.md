@@ -18,7 +18,7 @@ Kuljetuskerros puolestaan jakaa sovelluskerrokselta saamansa sanoman yhteen tai 
 
 Kuljetuskerros antaa segmentit yksi kerrallaan verkkokerrokselle välitettäväksi vastaanottajalle. Verkkokerroksella segmentit sijoitetaan IP-paketin sisään.
 
-Verkkokerros puolestaan antaa IP-paketin linkkikerrokselle, joka sijoittaa sen oman kehyksensä sisään ja käyttää fyysistä kerrosta kehyksen siirtämiseen langallisen kaapelin toisessa päässä olevalle koneelle tai langattomassa verkossa kuuloyhteyden päässä olevalle vastaanottajalle.
+Verkkokerros puolestaan antaa IP-paketin linkkikerrokselle, joka sijoittaa sen oman kehyksensä sisään ja käyttää fyysistä kerrosta kehyksen siirtämiseen langallisen kaapelin toisessa päässä olevalle koneelle tai langattomassa verkossa kuuloyhteyden päässä olevalle vastaanottajalle. Tässä siis oletetaan, että lähettäjä ja vastaanottaja ovat toistensa lähellä samassa linkissä.
 
 Nyt sitten kehys, jonka sisällä on IP-paketti, jonka sisällä on segmentti, jonka sisällä on sanoma (tai osa siitä), on vihdoin vastaanottajalla ja protokollapinoa lähdetään kulkemaan alhaalta ylöspäin.
 
