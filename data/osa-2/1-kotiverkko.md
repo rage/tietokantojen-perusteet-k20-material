@@ -7,6 +7,7 @@ title: 'Kotiverkko'
 <lead>Kotiverkko on useimpien tavallisten internet-käyttäjien kannalta erittäin tärkeä osa internetiä. Tässä luvussa käydään läpi kotiverkon rakenne, tyypilliset laitteet ja  keskeinen toiminnallisuus. </lead>
 </div>
 
+
 ## Kotiverkon rakenne ja verkkolaitteet
 
 Kotiverkko on tyypillisesti yhdistetty palveluntarjoajan verkkoon laajakaistayhteydellä. Tällainen laajakaistayhteys palveluntarjoajan ja kotiverkon välillä on tyypillisesti toteutettu jollakin kolmesta yleisimmästä tekniikasta. <ul>
@@ -22,6 +23,7 @@ Jotkut kotikäyttäjät käyttävät mobiililaitteillaan, kuten älypuhelin tai 
 Kotiverkon laitteet kommunikoivat siis omassa aliverkossaan keskenään ilman, että liikenne näkyy muualle. Ulkopuolisen internetin kanssa ne kommunikoivat reitittimen välityksellä.
 
 ## Tähän kaavakuva verkosta ja sen laitteista
+
 
 ### Yhteys kotiin
 
@@ -78,5 +80,6 @@ WLAN-tukiasema tarjoaa verkkoyhteyden palveluna kaikille laitteille, jotka siihe
 WLAN-reititin tarjoaa langattoman yhteyden lisäksi myös reitityksen langattomaan verkkoon liitettyjen laitteiden ja langallisen verkon laitteiden välillä. Näin meille syntyy kaksi toisistaan loogisesti eristettyä verkkoa. Langattoman verkon laitteiden kommunikoidessa keskenään niiden liikennettä ei ohjata eteenpäin langalliseen verkkoon. Kotiverkko jakautuukin kahteen aliverkkoon, joista toinen on langallinen ja toinen langaton.
 
 
+-- quiz: Kotiverkon laitteet 
+<div><quiznator id="5c78ea6014524713f95a65fb"></quiznator></div>
 
-## Tehtävä X ja Y: Mitkä seuraavista laitteista yhdistävät kotiverkon laitteita kotiverkon sisällä?  Mitkä seuraavista laitteista yhdistävät kotiverkon laitteet internetiin?
