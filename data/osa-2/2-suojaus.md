@@ -65,5 +65,5 @@ Salasanat eivät ole tämän kurssin keskeistä sisältöä, mutta jokaiselle jo
 <div><quiznator id="5c790cf3ddb6b814af3271b0"></quiznator></div>
 
 -- quiz: Viestintäviraston salasanaohjeistosta
-<div><quiznator id="5c77f8fcddb6b814af327046"></quiznator></div>
+<div><quiznator id="5c791dc5fd9fd71425c67eaf"></quiznator></div>
 
