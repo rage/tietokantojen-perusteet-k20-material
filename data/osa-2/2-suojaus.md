@@ -19,6 +19,9 @@ Paljon käytetty <b>julkisen avaimen salakirjoitus</b> perustuu avainpareihin, j
 
 Näiden salausmenetelmien turvallisuus perustuu hyvään avainhallintaan. Emmehän me jaa kotiavaintakaan (tai sen kopioita) vapaasti muille. Samoin pitää menetellä oman salaisen avaimen kanssa. Jos joku epäluotettava taho saa haltuunsa minun salaisen avaimeni, niin mikään minun viestintäni ei ole sen jälkeen enää luottamuksellista, koska tämä taho voi vapaasti tutkia kaikkia minulle tulevia salattuja viestejä. Lisäksi kyseinen taho voi väittää olevansa minä salaamalla lähettämänsä viestit minun salaisella avaimellani. Julkista avainta ei pidetä piilossa, joten sen oletetaan olevan kaikilla, jotka haluavat lähettää viestejä minulle.
 
+-- quiz: Julkisen avaimen salakirjoitus
+<div><quiznator id="5c78f913fd9fd71425c67e56"></quiznator></div>
+
 ## Viestien salaus
 
 Tietoliikenteessä viestien sisällön salaamiseen käytetään usein erityisiä salausprotokollia. Ne voivat sijoittua protokollapinon eri kerroksille. Esimerkiksi sovelluskerroksen HTTP-protokollasta on kehitetty HTTPS-protokolla, joka salaa lähettäjän ja vastaanottajan väliset viestit. Se käyttää kuljetuskerroksen TLS-protokollaa viestin salaamiseen kuljetuskerroksella. Vastaavasti verkkokerroksella on oma salausprotokolla IPsec. Linkkikerroksella erityisesti langattomissa verkoissa käytetään myös salausprotokollia viestien suojaamiseen langattoman yhteyden yli.
@@ -58,5 +61,9 @@ Salasanojen hallinnasta on vuonna 2014 julkaistu Viestintäviraston kyberturvall
 
 Salasanat eivät ole tämän kurssin keskeistä sisältöä, mutta jokaiselle joka ylläpitää tai hallinnoi omaa tietoliikenneverkkoaan niiden oikea käyttö on tärkeä osa oman verkon turvallisuutta.
 
+-- quiz: Verkkosalasana
+<div><quiznator id="5c790cf3ddb6b814af3271b0"></quiznator></div>
 
-## Tehtävä, joku aika yksinkertainen tehtävä, joka vain tarkistaa että teksti on luettu ja hahmotettu
+-- quiz: Viestintäviraston salasanaohjeistosta
+<div><quiznator id="5c77f8fcddb6b814af327046"></quiznator></div>
+
