@@ -18,11 +18,12 @@ hidden: false
 
 ## Kuljetuskerros
 
-Kuljetuskerros tarjoaa kuljetuspalvelun sovelluskerrokselle siten, että sovellusten tai oikeammin niitä toteuttavien prosessien ei tarvitse huolehtia viestien välityksestä vaan ne voivat vaan antaa viestin toimitettavaksi kuljetuskerrokselle. Viestin pitää toki antaa jollekin tietylle kuljetuskerroksen protokollalle, joka sitten huolehtii viestin vastaanottajalle.  Samalla koneella voi olla toiminnassa useita prosesseja. (Katso Tietokoneen toiminta -kurssin materiaalia prosesseihin ja niiden toimintaan liittyen.) Prosessit käyttävät pistokkeita (engl. socket), jotka liitetään johonkin tiettyyn tietoliikenteen porttiin. Wkipediassa on ihan lyhyt termistösivu tietoliikenteen pistokkeisiin liittyen https://fi.wikipedia.org/wiki/Pistoke_(tietotekniikka). Pistoke termiähän käytetään myös sähköverkoissa. 
+Kuljetuskerros tarjoaa kuljetuspalvelun sovelluskerrokselle siten, että sovellusten tai oikeammin niitä toteuttavien prosessien ei tarvitse huolehtia viestien välityksestä vaan ne voivat vaan antaa viestin toimitettavaksi kuljetuskerrokselle. Viestin pitää toki antaa jollekin tietylle kuljetuskerroksen protokollalle, joka sitten huolehtii viestin vastaanottajalle.  Samalla koneella voi olla toiminnassa useita prosesseja. (Katso Tietokoneen toiminta -kurssin materiaalia prosesseihin ja niiden toimintaan liittyen.) Prosessit käyttävät pistokkeita (engl. socket), jotka liitetään johonkin tiettyyn tietoliikenteen porttiin. Wkipediassa on ihan [lyhyt termistösivu tietoliikenteen pistokkeisiin liittyen](https://fi.wikipedia.org/wiki/Pistoke_(tietotekniikka)). Pistoke-termiähän käytetään myös sähköverkoissa.
 
-Tietoliikenteen porteilla (https://fi.wikipedia.org/wiki/Portti_(tietoliikenne)) on porttinumerot, joiden avulla ne erotetaan toisistaan. Osa porttinumeroista on yhdessä sovittu tiettyjen sovellusten käyttöön ja osa on vapaasti käytettävissä. Porttinumeron avulla kuljetuskerros osaa tunnistaa sovelluskerroksen viestin vastaanottajan. Se on tavallaan paikallinen postiluukku, johon saapuvat viestit laitetaan. Lähettäjän täytyy siis tietää vastaanottavan koneen sovelluksen käyttämä porttinumero. Tämä on mahdotonta, jos meillä ei olisi etukäteen tietoa siitä mihin asiakkaan ensimmäinen viesti pitää toimittaa. Siksi yleisimmille sovelluksille on sovittu tietyt porttinumerot, joita ne käyttävät. Tällöin asiakas voi lähettää viestin 'arvaamalla', että palvelimella on käytössä nimenomaan tämä yhteisesti sovittu porttinumero. 
+Tietoliikenteen [porteilla](https://fi.wikipedia.org/wiki/Portti_(tietoliikenne)) on porttinumerot, joiden avulla ne erotetaan toisistaan. Osa porttinumeroista on yhdessä sovittu tiettyjen sovellusten käyttöön ja osa on vapaasti käytettävissä. Porttinumeron avulla kuljetuskerros osaa tunnistaa sovelluskerroksen viestin vastaanottajan. Se on tavallaan paikallinen postiluukku, johon saapuvat viestit laitetaan. Lähettäjän täytyy siis tietää vastaanottavan koneen sovelluksen käyttämä porttinumero. Tämä on mahdotonta, jos meillä ei olisi etukäteen tietoa siitä mihin asiakkaan ensimmäinen viesti pitää toimittaa. Siksi yleisimmille sovelluksille on sovittu tietyt porttinumerot, joita ne käyttävät. Tällöin asiakas voi lähettää viestin 'arvaamalla', että palvelimella on käytössä nimenomaan tämä yhteisesti sovittu porttinumero.
 
 ## Tähän quizz porttinumeroista. Niitä on lueteltu tuossa wikipedian artikkelissa varsin kattavasti
+
 
 ##  TCP
 
@@ -33,11 +34,11 @@ TCP:n keskeinen tehtävä on huolehtia sovellukselta tulevan viestijonon jaottel
 
 ## Tähän kuva, jossa lähettävässä koneessa  on useampi erillinen prosessi (esim. www, ftp), joiden viestit lomittuvat kuljetuskerrokselta eteenpäin ja jotka kulkevat lomittuneina koneiden välillä. Lomitus sitten puretaan kuljetuskerroksella ja ne toimitetaan oikeille prosesseille.
 
-TCP:n yhteyden ylläpitäminen edellyttää, että yhteys muodostetaan ja päätetään hallitusti. Yhteyden muodostaminen TCP-protokollassa tapahtuu erityisen kättelymenettelyn kautta. Myös yhteyden päättämiseen on oma kättelymenettelynsä. Kättelyssä yhteyttäa avaavat osapuolet lähettävät protokollan mukaisia viestejä, joiden avulla ne sopivat yhteyden olemassaolosta ja vastaanottaja voi samalla kertoa miten paljon tietoa se voi ottaa vastaan sillä hetkellä. Yhteyden päättäminen hallitusti edellyttää, että kumpikin lähettää erityisen yhteyden päättämiseen liittyvän viestin.
+TCP-yhteyden ylläpitäminen edellyttää, että yhteys muodostetaan ja päätetään hallitusti. Yhteyden muodostaminen TCP-protokollassa tapahtuu erityisen kättelymenettelyn kautta. Myös yhteyden päättämiseen on oma kättelymenettelynsä. Kättelyssä yhteyttä avaavat osapuolet lähettävät protokollan mukaisia viestejä, joiden avulla ne sopivat yhteyden olemassaolosta ja vastaanottaja voi samalla kertoa miten paljon tietoa se voi ottaa vastaan sillä hetkellä. Yhteyden päättäminen hallitusti edellyttää, että kumpikin lähettää erityisen yhteyden päättämiseen liittyvän viestin.
 
 TCP lupaa toimittaa viestit luotettavasti vastaanottajalle. Luotettava tiedonvälitys edellyttää, että lähettäjä voi olla varma siitä, että viesti on saapunut vastaanottajalle. Koska internetissä ei ole erillistä kontrolliväylää, on vastaanottajan lähetettävä erillinen kuittausviesti, jolloin lähettäjä voi tästä tietää viestin saapuneen.
 
-No mitä lähettäjä sitten tekee, jos kuittausta ei saavu? Se ei voi tietää onko sen lähettämä alkuperäinen viesti kadonnut vai onko kadonnut vain kuittausviesti vai toimiiko verkko vain tavattoman hitaasti ja viestit ovatkin vielä matkalla. Tämä ongelma on keskeinen kaikelle tietoliikenteeelle, joten pysähdytään tähän ihan hetkiseksi.
+Mitä lähettäjä sitten tekee, jos kuittausta ei saavu? Se ei voi tietää onko sen lähettämä alkuperäinen viesti kadonnut vai onko kadonnut vain kuittausviesti vai toimiiko verkko vain tavattoman hitaasti ja viestit ovatkin vielä matkalla. Tämä ongelma on keskeinen kaikelle tietoliikenteeelle, joten pysähdytään tähän ihan hetkiseksi.
 
 ### Viestin katoaminen ja siihen reagointi
 
@@ -47,14 +48,14 @@ Tällainen vaurioitunut viesti pyritään aina tunnistamaan ja poistamaan, jollo
 Viestien ja kuittausten katoamista vastaan lähettäjät käyttävät ajastimia (timer). Kun ne lähettävät viestin, ne laittavat ajastimen käyntiin. Jos kuittausta ei ole saapunut siihen mennessä, kun ajastin laukeaa, lähettäjä olettaa viestin kadonneen ja lähettää sen uudelleen. Lähettäjää ei siis kiinnosta oliko kadonnut alkuperäinen viesti vai kuittaus. Sitä kiinnostaa ainoastaan se, että sillä ei ole varmuutta viestin perillemenosta.
 
 Lähettäjän viestien uudelleen lähetyksestä valitettavasti seuraa se, että vastaanottaja saattaa saada saman viestin kahteen kertaan.
-Näin käy aina, kun alkuperäinen viesti meni perille, mutta kuittaus katosi. Koska sovellus on kuitenkin lähettänyt vain yhden viestin, on tärkeää, että tämä monistunut viesti päätyy vastaanottavalle sovellukselle vain kertaalleen. TCP estää tämän näkymisen sovellukselle numeroimalla viestit ja näin se voi tunnistaa mahdolliset monistumiset ja poistaa ylimääräiset ennen kuin ne pääsevät sovellukselle asti.
+Näin käy aina, kun alkuperäinen viesti meni perille, mutta kuittaus katosi. Koska sovellus on kuitenkin lähettänyt vain yhden viestin, on tärkeää, että tämä monistunut viesti päätyy vastaanottavalle sovellukselle vain kertaalleen. TCP estää tämän näkymisen sovellukselle numeroimalla viestit ja näin se voi tunnistaa mahdolliset monistumiset ja poistaa ylimääräiset viestit ennen kuin ne pääsevät sovellukselle asti.
 
 ### Tämä vaatii jonkunlainen tehtävän asian hahmottamiseksi.
 
 
 ## UDP
 
-UDP yksinkertainen kuljetusprotokolla, joka ei välitä luotettavuudesta eikä tarjoa varmaa tiedonsiirtoa. Se ei muodosta yhteyttä ja käsittelee jokaisen sovellukselta tulevan viestin erillisenä datagrammina. Wikipedian sivu UDP:stä on https://fi.wikipedia.org/wiki/UDP.
+UDP yksinkertainen kuljetusprotokolla, joka ei välitä luotettavuudesta eikä tarjoa varmaa tiedonsiirtoa. Se ei muodosta yhteyttä ja käsittelee jokaisen sovellukselta tulevan viestin erillisenä datagrammina. Wikipediassa on [sivu UDP:stä](https://fi.wikipedia.org/wiki/UDP).
 
 UDP yksinkertaisesti vain ottaa sovellukselta viestin välitettäväksi ja laittaa sen eteenpäin verkkokerrokselle. Toki UDP:kin laittaa viestiin oman kehyksen, jossa on myös vastaanottavan sovelluksen käyttämä porttinumero, jotta vastaanotettu viesti voidaan toimittaa oikealle sovellukselle.
 
