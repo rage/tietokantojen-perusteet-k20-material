@@ -23,7 +23,7 @@ DHCP-protokollassa asiakas aloittaa viestien vaihdon. Tämä on hyvin tyypillist
 
 Tämän viestien vaihdon yhteydessä palvelin voi toimittaa asiakkaalle myös muita verkon konfiguraation kannalta oleellisia tietoja. Näitä ovat tyypillisesti nimipalvelimen osoite, ulospäin menevän liikenteen oletusreitittimen osoite (default gateway) ja IP-osoitteen laina-aika. Laina-ajan päätyttyä asiakaan pitää erillisellä DHCP-protokollan viestillä tarkistaa palvelimelta saako se vielä käyttää tätä IP-osoitetta. 
 
-EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin englanninkielinen wikipedian sivu https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol on hyvä lähtökohta. Sieltä löytyy linkit noihin DHCP:n toiminnallisuuden määritteleviin RFC-dokumentteihin.
+EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin englanninkielinen wikipedian [asiaa käsittelevä sivu](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) on hyvä lähtökohta. Sieltä löytyy linkit noihin DHCP:n toiminnallisuuden määritteleviin RFC-dokumentteihin.
 
 
 ## Nimipalvelu (DNS)
@@ -41,7 +41,7 @@ Mooc.fi on toteutustapansa vuoksi hiukan hankalampi nimipalvelun osalta. Kyselyl
 
 Kotiverkon kannalta kiinnostavin seikka on, että miten oman kotiverkon laitteet tietävät oman nimipalvelijan osoitteen. Aikoinaan tämä osoite täytyi kertoa laitteelle suoraan kirjoittamalla se sopivaan tiedostoon, mutta nykyään se onneksi saadaan samalla DHCP-kyselyllä kuin laitteen oma IP-osoite. DHCP-kyselyn mukana tulee paljon hyödyllistä konfigurointitietoa, joista yksi on nimipalvelijan osoite.
 
-Kotiverkkoa palvelee yleensä aina oman palveluntarjoajan nimipalvelin, joka sitten yhdessä muiden maailman nimipalvelijoiden kanssa ratkoo asiakkaiden tekemät kyselyt. Wikipedian artikkeli https://fi.wikipedia.org/wiki/DNS kertoo lyhyesti tästä nimipalvelijoiden yhteistyöstä. Nimipalvelun sisäinen toiminta jätetään valitettavasti tältä aloituskurssilta pois, kun kaikki kiinnostava asia ei mahdu mukaan. 
+Kotiverkkoa palvelee yleensä aina oman palveluntarjoajan nimipalvelin, joka sitten yhdessä muiden maailman nimipalvelijoiden kanssa ratkoo asiakkaiden tekemät kyselyt. Wikipedian [DNS-palvelua käsittelevä artikkeli](https://fi.wikipedia.org/wiki/DNS) kertoo lyhyesti tästä nimipalvelijoiden yhteistyöstä. Nimipalvelun sisäinen toiminta jätetään valitettavasti tältä aloituskurssilta pois, kun kaikki kiinnostava asia ei mahdu mukaan.
 
 Tietoturvan vuoksi kotiverkossa ei pitäisi olla omaa erillistä nimipalvelijaa, koska tuo palveluntarjoajan nimipalvelu yleensä riittää. Mikäli kotiverkossa on oma erillinen nimipalvelija, niin sitten sen päivittämisistä pitää huolehtia, jotta se pysyy turvallisena. Valitettavasti aina silloin tällöin on vastaan tullut oletusasetuksiltaan turvattomia laitteita. Yksi tällainen saattaa olla laitteissa toimiva nimipalvelin, silloinkin kun sillä ei aidosti ole tarvetta. Tällainen ylimääräinen, mahdollisesti jopa avoin nimipalvelu on yksi mahdollinen reitti hyökkäyksille / tunkeutumisille. Tämän kaltaisten ongelmien selvittämisessä oman palveluntarjoajan apu on usein tarpeen.
 
@@ -50,9 +50,9 @@ Tietoturvan vuoksi kotiverkossa ei pitäisi olla omaa erillistä nimipalvelijaa,
 
 Osoitteiden muunnosta (Network address translation, NAT) käytetään silloin, kun omia yksityisiä verkkoja liitetään julkiseen internetiin. Verkon yksityisyys määräytyy sen käyttämien IP-osoitteiden kautta. Julkisen verkon IP-osoitteet täytyy erikseen anoa. Yksityisen verkon IP-osoitteet eli osoiteavaruudet 192.168.0.0 - 192.168.255.255, 172.16.0.0 - 172.31.255.255 ja 10.0.0.0 - 10.255.255.255 ovat kaikkien käytettävissä. Usein kotiverkon DHCP-palvelin käyttää noita B-luokan osoitteita osoiteavaruudesta 192.168.x.x.
 
-Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi oman kotiverkon ja palveluntarjoajan verkon yhdistävässä kohdassa täytyy olla laite, joka tekee osoitteen muunnoksen yksityisen verkon osoitteesta julkisen verkon osoitteeksi ja päinvastoin. Osoitteenmuunnos edellyttää, että NAT-laite pitää kirjaa mistä oman verkon osoitteesta lähetettiin viestejä mihin julkisen verkon osoitteeseen, jotta se osaa vastausviestit ohjata oikealle yksityisen verkon laitteelle. Tarkempaa tietoa osoitteenmuunnosten tekniikasta on esimerkiksi wikipedia sivulla https://fi.wikipedia.org/wiki/Osoitteenmuunnos
+Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi oman kotiverkon ja palveluntarjoajan verkon yhdistävässä kohdassa täytyy olla laite, joka tekee osoitteen muunnoksen yksityisen verkon osoitteesta julkisen verkon osoitteeksi ja päinvastoin. Osoitteenmuunnos edellyttää, että NAT-laite pitää kirjaa mistä oman verkon osoitteesta lähetettiin viestejä mihin julkisen verkon osoitteeseen, jotta se osaa vastausviestit ohjata oikealle yksityisen verkon laitteelle. Tarkempaa tietoa osoitteenmuunnosten tekniikasta on esimerkiksi wikipedian [asiaa käsittelevällä sivulla](https://fi.wikipedia.org/wiki/Osoitteenmuunnos).
 
-Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin wikipedia sivu https://fi.wikipedia.org/wiki/IP-osoite on hyvä suomenkielinen kuvaus aiheesta.
+Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin wikipedia [niitä käsittelevä sivu](https://fi.wikipedia.org/wiki/IP-osoite) on hyvä suomenkielinen kuvaus aiheesta.
 
 
 

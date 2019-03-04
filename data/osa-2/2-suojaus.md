@@ -7,7 +7,7 @@ title: 'Viestien ja verkon suojaus'
 
 ## Salaus
 
-Jotta voimme suojata verkon liikennettä ja siellä kulkevia viestejä, ne pitää salata. Salaaminen tarkoittaa viestin sisällön muokkaamista siten, että se ei ole ulkopuolisten luettavissa. Yksinkertaisia esimerkkejä ovat erilaiset historialliset salakirjoitustekniikat (katso wikipedia sivua kryptologia, jos asia kiinnostaa enemmän https://fi.wikipedia.org/wiki/Kryptologia).
+Jotta voimme suojata verkon liikennettä ja siellä kulkevia viestejä, ne pitää salata. Salaaminen tarkoittaa viestin sisällön muokkaamista siten, että se ei ole ulkopuolisten luettavissa. Yksinkertaisia esimerkkejä ovat erilaiset historialliset salakirjoitustekniikat (katso wikipedia [sivua kryptologia](https://fi.wikipedia.org/wiki/Kryptologia), jos asia kiinnostaa enemmän).
 
 Tietokoneiden nykyisin käyttämät salausmenetelmät perustuvat edistyneeseen matematiikkaan. Me emme tutustu itse salausmenetelmien toimintaan tai niihin liittyviin analyyseihin, vaan otamme ne annettuna ja käytämme muualla kehitettyjä salausmenetelmiä tietoliikenteessä viestien välityksen turvaamiseen.
 
@@ -57,7 +57,7 @@ Verkon liikenteen suojaamisen lisäksi on ihan yhtä tärkeää suojata verkon l
 
 Joissakin markkinoilla olevissa WLAN-laitteissa hallintatunnuksen oletussalasana on sama kuin verkon salasana. Jos salasana on riittävän hyvä ja voidaan luottaa kaikkiin verkon käyttäjiin, niin silloin oletussalasanaa ei ehkä tarvitse vaihtaa. 
 
-Salasanojen hallinnasta on vuonna 2014 julkaistu Viestintäviraston kyberturvallisuuskeskuksen ohje https://www.kyberturvallisuuskeskus.fi/sites/default/files/media/file/Salasanat_haltuun.pdf
+Salasanojen hallinnasta on vuonna 2014 julkaistu [Viestintäviraston kyberturvallisuuskeskuksen ohje](https://www.kyberturvallisuuskeskus.fi/sites/default/files/media/file/Salasanat_haltuun.pdf).
 
 Salasanat eivät ole tämän kurssin keskeistä sisältöä, mutta jokaiselle joka ylläpitää tai hallinnoi omaa tietoliikenneverkkoaan niiden oikea käyttö on tärkeä osa oman verkon turvallisuutta.
 

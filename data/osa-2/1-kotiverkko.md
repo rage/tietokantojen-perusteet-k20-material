@@ -12,7 +12,7 @@ title: 'Kotiverkko'
 
 Kotiverkko on tyypillisesti yhdistetty palveluntarjoajan verkkoon laajakaistayhteydellä. Tällainen laajakaistayhteys palveluntarjoajan ja kotiverkon välillä on tyypillisesti toteutettu jollakin kolmesta yleisimmästä tekniikasta. <ul>
   <li> Perinteisessä puhelinverkossa yhteys on yleensä toteutettu ADSL-tekniikalla ja kotiverkossa on ADSL-modeemi tai ADSL-verkkokytkin, joka on liitetty puhelinpistokkeeseen.
-  <li> Kaaapelitelevisioverkkoon liitetyllä 'kaapelimodeemilla'.
+  <li> Kaapelitelevisioverkkoon liitetyllä 'kaapelimodeemilla'.
   <li> Suoraan kotijakamoon tulevalla parikaapelilla tai optisella kuidulla. Tämä on yhä yleisempi ratkaisu uusissa rakennuksissa ja peruskorjatuissa vanhemmissa rakennuksissa. Syynä on viestintäviraston määräys siitä, että tällainen toteutus edellytetään. (Jos haluat lukea koko määräyksen, niin se on Viestintäviraston määräys kiinteistön sisäverkoista ja teleurakoinnista 65C/2018 (https://www.finlex.fi/data/normit/44045/M_65_C_2018.pdf)
     </ul>
 
@@ -29,7 +29,7 @@ Kotiverkon laitteet kommunikoivat siis omassa aliverkossaan keskenään ilman, e
 
 Suomessa näitä kotien internet-yhteyksiä kutsutaan usein laajakaistayhteyksiksi tai lyhyesti vain laajakaistaksi. Nimitystä voi Suomessa käyttää, kun operaattorin tarjoama liikennöintinopeus on yli 256 kbits/s ja laskutus ei perustu siirrettyyn datamäärään.
 
-Tyypillisesti yhteys kotiin toteutetaan joko perinteistä puhelinverkkoa pitkin ADSL-yhteytenä, kaapeli-TV -verkossa kaapelimodeemin avulla tai asuntoon tulevan parikaapelin tai valokuidun kautta. Wikipedian sivulla https://fi.wikipedia.org/wiki/Laajakaista  luetellaan muitakin tekniikoita, joilla laajakaistayhteyden voi saada kotiin.
+Tyypillisesti yhteys kotiin toteutetaan joko perinteistä puhelinverkkoa pitkin ADSL-yhteytenä, kaapeli-TV -verkossa kaapelimodeemin avulla tai asuntoon tulevan parikaapelin tai valokuidun kautta. Wikipedian [laajakaistaa käsittelevällä sivulla](https://fi.wikipedia.org/wiki/Laajakaista) luetellaan muitakin tekniikoita, joilla laajakaistayhteyden voi saada kotiin.
 
 Näitä yhteyksiä tarjoavat puhelinoperaattorit, kuten Telia, Elisa ja DNA, ympäri maata. Myös muita palveluntarjoajia on alueellisesti saatavilla. Erityisesti, jos käytetään muita kuin puhelinverkon tekniikoita. 
 
@@ -68,7 +68,7 @@ Kaikissa näissä laitteissa on yksi liitin operaattorin verkkoon liittymistä v
  
 Kotiverkon laitteet voidaan liittää Ethernet-kaapeloinnilla kotiverkon reitittimeen joko suoraan reitittimen porttiin tai jos reitittimessä ei ole riittävästi portteja niin lisäämällä verkkoon esimerkiksi kytkimiä, joilla yhteen reitittimen porttiin voidaan liittää useita laitteita liittämällä ne ensin kytkimen portteihin ja vain kytkin liitetään reitittimeen.
 
-Mikäli kaapelointia ei ole tai sitä ei haluta asentaa, niin silloin yleensä otetaan käyttöön langaton lähiverkko (Wireless local area network, WLAN), joka tarvitsee sitten tukiaseman. Näistä tukiasemista käytetään sekä nimeä WLAN-tukiasema että wifi-tukiasema.  (Termeistä löydät lisätietoja wikipedian artikkelista https://fi.wikipedia.org/wiki/WLAN).
+Mikäli kaapelointia ei ole tai sitä ei haluta asentaa, niin silloin yleensä otetaan käyttöön langaton lähiverkko (Wireless local area network, WLAN), joka tarvitsee sitten tukiaseman. Näistä tukiasemista käytetään sekä nimeä WLAN-tukiasema että wifi-tukiasema.  (Termeistä löydät lisätietoja wikipedian [WLAN-artikkelista](https://fi.wikipedia.org/wiki/WLAN).
 
 Joissakin tilanteissa on mahdollista käyttää sähköverkon kaapelointia ethernet-signaalin siirtoon erillisten lisälaitteiden avulla. Vaihtoehtoja siis riittää ja eri tilanteissa on hyvä kartoittaa vaihtoehdot kunnolla ja tehdä sen jälkeen valinta. Olen itsekin kerrostaloasunnossa käyttänyt tällaista "ethernet over power" laitetta saadakseni ethernet-yhteyden tietokoneelle, jota ei voinut liittää langattomaan verkkoon ja joka oli hankalassa paikassa erillistä tietoliikennekaapelointia varten.
  
