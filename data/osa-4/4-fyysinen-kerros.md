@@ -1,5 +1,5 @@
 ---
-path: '/osa-4/3-fyysinen-kerros'
+path: '/osa-4/4-fyysinen-kerros'
 title: 'Fyysinen kerros'
 hidden: false
 ---
