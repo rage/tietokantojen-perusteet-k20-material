@@ -38,7 +38,8 @@ TCP-yhteyden ylläpitäminen edellyttää, että yhteys muodostetaan ja päätet
 
 TCP lupaa toimittaa viestit luotettavasti vastaanottajalle. Luotettava tiedonvälitys edellyttää, että lähettäjä voi olla varma siitä, että viesti on saapunut vastaanottajalle. Koska internetissä ei ole erillistä kontrolliväylää, on vastaanottajan lähetettävä erillinen kuittausviesti, jolloin lähettäjä voi tästä tietää viestin saapuneen.
 
-Mitä lähettäjä sitten tekee, jos kuittausta ei saavu? Se ei voi tietää onko sen lähettämä alkuperäinen viesti kadonnut vai onko kadonnut vain kuittausviesti vai toimiiko verkko vain tavattoman hitaasti ja viestit ovatkin vielä matkalla. Tämä ongelma on keskeinen kaikelle tietoliikenteeelle, joten pysähdytään tähän ihan hetkiseksi.
+Mitä lähettäjä sitten tekee, jos kuittausta ei saavu? Se ei voi tietää onko sen lähettämä alkuperäinen viesti kadonnut vai onko kadonnut vain kuittausviesti vai toimiiko verkko vain tavattoman hitaasti ja viestit ovatkin vielä matkalla. Tämä ongelma on keskeinen kaikelle tietoliikenteelle, joten pysähdytään tähän ihan hetkiseksi.
+
 
 ### Viestin katoaminen ja siihen reagointi
 
