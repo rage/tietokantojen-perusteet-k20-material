@@ -7,6 +7,7 @@ title: 'Kotiverkon palvelut'
 
 Kotiverkon laitteiden tarvitsevat verkkopalvelut eivät poikkea tietoverkkoon liitettyjen laitteiden tarvitsemista palveluista. Kaikki laitteet tarvitsevat itselleen oman IP-osoitteen, jonka avulla ne voidaan tunnistaa. Niiden pitää myös pystyä löytämään muiden laitteiden IP-osoitteita, jotta ne voivat lähettää näille viestejä. 
 
+
 ## Konfigurointi (DHCP)
 
 Kaikki verkkoon liitetyt laitteet tarvitsevat IP-osoitteen, jotta ne voivat kommunikoida muiden kanssa käyttäen IP-protokollaa. Tämä osoite annettiin aikoinaan jokaiselle laitteelle käsin kirjoittamalla se sopivaan tiedostoon laitteen asetuksissa. Tietokoneiden ja verkkolaitteiden määrän kasvaessa osoitteiden päivittäminen käsin muuttui aivan liian työlääksi ja siksi kehitettiin protokolla, jolla verkkoon liitettävä laite voi itse automaattisesti pyytää IP-osoitetta erilliseltä palvelimelta. Tämä Dynamic Host Configuration Protocol (DHCP) pohjautuu aiempiin vastaaviin protokolliin, mutta se on siis tällä hetkellä yleisimmin käytetty tapa saada verkkoon liitettävälle tietokoneelle tai muulle laitteelle IP-osoite. DHCP-protokollan määrittelyssä on kuvattuna useita erilaisia protokollan käyttötapoja. Tässä materiaalissa käydään niistä läpi vain tämä verkkoon liittyvän laitteet tarvitsema viestien vaihtoprosessi.
@@ -23,6 +24,7 @@ DHCP-protokollassa asiakas aloittaa viestien vaihdon. Tämä on hyvin tyypillist
 Tämän viestien vaihdon yhteydessä palvelin voi toimittaa asiakkaalle myös muita verkon konfiguraation kannalta oleellisia tietoja. Näitä ovat tyypillisesti nimipalvelimen osoite, ulospäin menevän liikenteen oletusreitittimen osoite (default gateway) ja IP-osoitteen laina-aika. Laina-ajan päätyttyä asiakaan pitää erillisellä DHCP-protokollan viestillä tarkistaa palvelimelta saako se vielä käyttää tätä IP-osoitetta. 
 
 EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin englanninkielinen wikipedian sivu https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol on hyvä lähtökohta. Sieltä löytyy linkit noihin DHCP:n toiminnallisuuden määritteleviin RFC-dokumentteihin.
+
 
 ## Nimipalvelu (DNS)
 
