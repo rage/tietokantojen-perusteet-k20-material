@@ -29,7 +29,7 @@ Verkkosovelluksen toteuttajalla, tekeepä hän web-sovellusta tai autojen välis
 
 Vaikka emme tällä kurssilla opettelekaan varsinaisesti verkkosovellusten toteuttamista, niin joidenkin tietoliikenneratkaisujen ymmärtäminen on helpompaa, kun hahmottaa millaisia vaihtoehtoja sovelluksen toteutukselle on. Perinteisesti verkkosovellukset ovat käyttäneet asiakas-palvelija -mallia, jossa eri osilla sovellusta on keskenään erilaiset roolit. Esimerkiksi WWW-palvelussa, meillä on www-selain asiakkaan roolissa ja www-palvelin palvelijan roolissa. Asiakkaat ottavat yhteyttä palvelimeen ja palvelin vastaa niille.
 
-Vertaistoimijamalli (peer to peer) on malli, jossa verkkosovelluksen osilla ei ole erilaisia rooleja, vaan kaikki ovat vertaisia ja niillä on samat toiminnallisuudet. Suomenkielessä usein puhumme suoraan vertaisverkosta (peer-to-peer network), jolloin ilman muuta oletetaan, että vertaiset ovat verkostoituneet keskenään. Wikipedian suomenkielisellä sivulla https://fi.wikipedia.org/wiki/Vertaisverkko on lyhyt kuvaus aiheesta. Englanninkielisellä sivulla https://en.wikipedia.org/wiki/Peer-to-peer on paljon laajempi selvitys.
+Vertaistoimijamalli (peer to peer) on malli, jossa verkkosovelluksen osilla ei ole erilaisia rooleja, vaan kaikki ovat vertaisia ja niillä on samat toiminnallisuudet. Suomenkielessä usein puhumme suoraan vertaisverkosta (peer-to-peer network), jolloin ilman muuta oletetaan, että vertaiset ovat verkostoituneet keskenään. Wikipedian [suomenkielisellä sivulla](https://fi.wikipedia.org/wiki/Vertaisverkko) on lyhyt kuvaus aiheesta. [Englanninkielisellä sivulla](https://en.wikipedia.org/wiki/Peer-to-peer) on paljon laajempi selvitys.
 
 Tämän kurssin kannalta noiden termien asiakas-palvelija ja vertaisverkko tunnistaminen riittää.
 
