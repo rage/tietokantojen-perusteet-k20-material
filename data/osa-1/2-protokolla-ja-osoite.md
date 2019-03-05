@@ -37,11 +37,7 @@ Vastaavasti lähettäjälle ja vastaanottajalle tällaista välityspalvelua tarj
 
 Näistä palveluista  muodostuukin kerrosrakenne. Internetin sanomien välitykseen liittyvää kerrosrakennetta kutsutaan protokollapinoksi. Siinä on viisi kerrosta (sovellus, kuljetus, verkko, linkki ja fyysinen kerros). Kullakin kerroksella on määritelty tiettyjä palveluja, joita se tarjoaa yläpuolellaan olevalle kerrokselle. Vastaavasti kukin kerros käyttää alapuolellaan olevan kerroksen palveluja. Wikipediassa on kuvattu nelikerroksinen [TCP/IP-viitemalli](https://fi.wikipedia.org/wiki/TCP/IP-viitemalli), jossa linkkikerros ja fyysinen kerros on yhdistetty yhdeksi peruskerrokseksi. Internetin kannalta keskeiset kerrokset ovat kuljetus- ja verkkokerros, jotka määrittelevät internetin keskeiset protokollat TCP:n ja IP:n.
 
-
--- kuva: Internetin protokollapino
-<div>
-<illustrations motive="ch-1-2-kaannos-linkitys-draft" frombottom="0" totalheight="70%"></illustrations>
-</div>
+![viesti kulkee sovelluskerrokselta muiden kerrosten läpi fyysiselle kerrokselle ja sieltä vastaanottajan fyysiselle kerrokselle ja käänteisessä järjestyksessä kerrosten käpi sovelluskerrokselle](../img/kerrokset.svg)
 
 Lähettäjä ja vastaanottaja, joka kommunikoivat keskenään käyttäen HTTP-protokollaa, sijoitetaan tässä protokollapinossa sovelluskerrokselle. Tällä kerroksella ovat siis kaikki ohjelmat, joilla on jokin yhteiseen tavoitteeseen liittyvä tarve kommunikoida keskenään. Näitä ovat tyypillisesti esimerkiksi www-selain ja -palvelin, sähköpostiohjelma, pikaviestinpalvelua toteuttava ohjelma (esim. whatsapp, telegram, jabber). Ne käyttävät omaan ohjelman sisäiseen kommunikointiin jotain sovellustason protokollaa, kuten HTTP tai XMPP. Sovellukset voivat ottaa käyttöön jonkun jo standardoidun sovellustason protokollan (esim. HTTP, XMPP) tai määritellä ihan oman protokollan, jota ne käyttävät. Tyypillisesti käyttäjän ohjelmat on sijoitettu sovelluskerrokselle, eivätkä käyttäjät voi suoraan käyttää alempien kerrosten protokollia.
 
