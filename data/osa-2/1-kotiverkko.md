@@ -10,11 +10,11 @@ title: 'Kotiverkko'
 
 ## Kotiverkon rakenne ja verkkolaitteet
 
-Kotiverkko on tyypillisesti yhdistetty palveluntarjoajan verkkoon laajakaistayhteydellä. Tällainen laajakaistayhteys palveluntarjoajan ja kotiverkon välillä on tyypillisesti toteutettu jollakin kolmesta yleisimmästä tekniikasta. <ul>
-  <li> Perinteisessä puhelinverkossa yhteys on yleensä toteutettu ADSL-tekniikalla ja kotiverkossa on ADSL-modeemi tai ADSL-verkkokytkin, joka on liitetty puhelinpistokkeeseen.
-  <li> Kaapelitelevisioverkkoon liitetyllä 'kaapelimodeemilla'.
-  <li> Suoraan kotijakamoon tulevalla parikaapelilla tai optisella kuidulla. Tämä on yhä yleisempi ratkaisu uusissa rakennuksissa ja peruskorjatuissa vanhemmissa rakennuksissa. Syynä on viestintäviraston määräys siitä, että tällainen toteutus edellytetään. (Jos haluat lukea koko määräyksen, niin se on Viestintäviraston määräys kiinteistön sisäverkoista ja teleurakoinnista 65C/2018 (https://www.finlex.fi/data/normit/44045/M_65_C_2018.pdf)
-    </ul>
+Kotiverkko on tyypillisesti yhdistetty palveluntarjoajan verkkoon laajakaistayhteydellä. Tällainen laajakaistayhteys palveluntarjoajan ja kotiverkon välillä on tyypillisesti toteutettu jollakin kolmesta yleisimmästä tekniikasta.
+
+* Perinteisessä puhelinverkossa yhteys on yleensä toteutettu ADSL-tekniikalla ja kotiverkossa on ADSL-modeemi tai ADSL-verkkokytkin, joka on liitetty puhelinpistokkeeseen.
+* Kaapelitelevisioverkkoon liitetyllä 'kaapelimodeemilla'.
+* Suoraan kotijakamoon tulevalla parikaapelilla tai optisella kuidulla. Tämä on yhä yleisempi ratkaisu uusissa rakennuksissa ja peruskorjatuissa vanhemmissa rakennuksissa. Syynä on viestintäviraston määräys siitä, että tällainen toteutus edellytetään. (Jos haluat lukea koko määräyksen, niin se on Viestintäviraston [määräys kiinteistön sisäverkoista ja teleurakoinnista 65C/2018](https://www.finlex.fi/data/normit/44045/M_65_C_2018.pdf)
 
 Useimmat kotiverkon internetin puoleisella reunalla oleva laitteet ovat monitoimilaitteita, jotka tarjoavat kotiverkolle muitakin palveluja kuin vain verkon liittämiseen tarvittavan kytkimen tai reitittimen. Hyvin tyypillisesti nämä laitteet toimivat langattoman verkon (wifi, WLAN) tukiasemana. Tällöin kotiverkon omassa sisäisessä rakenteessa ei tarvita kaapelointia, vaan laitteet voivat kommunikoida tämän langattoman verkon välityksellä.
 

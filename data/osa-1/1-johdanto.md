@@ -19,11 +19,9 @@ Hyvä esimerkki nimeämisen ongelmista on se, että olisin äskeistä wwww-osoit
 
 Itse asiassa tuossa sanastojen osoitteessa on monta eri osaa. Käydään ne nyt läpi pikaisesti ja palataan niihin myöhemmin.
 
-<ul>
-  <li> alkuosa https kertoo meille, että kyseessä on HTTP protokollan salattu (S) versio.
-  <li> keskiosa www.viestintavirasto.fi on jonkun tietyn laitteen tai palvelun verkkonimi
-  <li> loppuosa /viestintavirasto/sanastot.html puolestaan kertoo tuolle palvelulle, minkä verkkosivun haluamme nähdä
-</ul>
+* alkuosa https kertoo meille, että kyseessä on HTTP protokollan salattu (S) versio.
+* keskiosa www.viestintavirasto.fi on jonkun tietyn laitteen tai palvelun verkkonimi
+* loppuosa /viestintavirasto/sanastot.html puolestaan kertoo tuolle palvelulle, minkä verkkosivun haluamme nähdä
 
 Kaikki näiden sanastojen termit ja paljon muitakin käsitteitä on koottu [Sanastokeskus TSK](http://www.tsk.fi/tsk/):n [Tietotekniikan termitalkoot](http://www.tsk.fi/tsk/termitalkoot/) -sivustolle kaikkien nähtäville. Jos eri asioiden nimet ja käsitteiden selitykset kiinnostavat, niin tätä sivustoa kannattaa käyttää. Kurssin aikana se toivottavasti auttaa uusien käsitteiden opiskelua, jos käsite jää tässä materiaalissa kuitenkin oudoksi. Jotta sanaston käyttö tulisi hiukan tutummaksi, niin käy katsomassa ainakin [tietoverkko-käsitteen käsitekaaviota](http://www.tsk.fi/tsk/termitalkoot/haku-266.html?page=resurssi&tiedosto=tietoverkko.svg). Kurssin kuluessa tutustumme lähes kaikkiin näistä termeistä.
 
