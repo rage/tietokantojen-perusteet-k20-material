@@ -11,13 +11,13 @@ Tietoliikenteessä viestin siirtoon menee aikaa. Tämä aika riippuu toisaalta v
 
 Yhdessä linkissä viestin siirtoaika on helppo arvioida, kun tiedämme linkin liikennöintinopeuden (bitteinä sekunnissa) ja viestin pituuden (biteissä). Tästä on helppo jakolaskulla (viestin pituus / liikennöintinopeus) saada arvio kyseisen viestin siirron kestolle.
 
-Näissä laskutoimituksissa on tärkeä hahmottaa lukujen suuruusluokkia ilmaisevat [SI-järjestelmän kerrannaisyksiköt](https://fi.wikipedia.org/wiki/Kansainv%C3%A4linen_yksikk%C3%B6j%C3%A4rjestelm%C3%A4#Kerrannaisyksik%C3%B6t) nano, mikro, kilo, mega, giga, tera.
+Tietoliikenteessä siirtonopeudet ilmoitetaan aina bitteinä sekunnissa (b/s) ja etuliitteet (katso wikipedia https://fi.wikipedia.org/wiki/Mittayksik%C3%B6n_etuliite) ovat aina aitoja kymmenen potensseja, toisin kuin tiedon tallennuksessa, jossa usein käytetään tavuja ja kakkosen potensseja.
 
-Nämä laskutoimitukset ovat aina arvioita, koska viestit eivät kulje verkossa yksin.
+Tietoliikenteessä käytämme aina SI-järjestelmän mukaisia kerrannaisyksiköitä etuliitteinä https://fi.wikipedia.org/wiki/Kansainv%C3%A4linen_yksikk%C3%B6j%C3%A4rjestelm%C3%A4#Kerrannaisyksik%C3%B6t. Näistä tärkeimpiä ovat nano, mikro, kilo, mega, giga ja tera.
 
-Viestin kulkua hidastavat myös muut kuljetettavat viestit. Jos kaksi viestiä pitää siirtää samaa yhteyttä pitkin, niin ne eivät voi mennä yhtä aikaa vaan ne täytyy lähettää peräkkäin. Tällöin niiden yhteinen kokonaissiirtoaika on kummankin viestin siirtoaika yhteensä.
+Viestin kulkua hidastavat muut kuljetettavat viestit. Jos kaksi viestiä pitää siirtää samaa yhteyttä pitkin, niin ne eivät voi mennä yhtä aikaa vaan ne täytyy lähettää peräkkäin. Tällöin niiden yhteinen kokonaissiirtoaika on kummankin viestin siirtoaika yhteensä.
 
-Näillä yksinkertaisilla laskutoimituksilla usein pärjää kotiverkossa, koska se usein on yhtä ja samaa aliverkkoa, jolloin viestin voi siirtää suoraan lähettäjältä vastaanottajalle.
+Laskutoimitukset ovat aina arvioita, koska viestit eivät kulje verkossa yksin. Usein näissä karkeissa laskelmissa oletetaan, että muita viestejä ei ole tai että tällä viestillä on käytettävissään tietty osuus koko kapasiteetista. Näillä karkeillakin arvoilla on helppo havaita, onko esimerkiksi järkevää siirtää jokin datamäärä tietyn yhteyden yli. Joskus siihen vain olisi kulumassa liikaa aikaa ja on syytä miettiä muita vaihtoehtoja. Näillä yksinkertaisilla laskutoimituksilla pärjää kotiverkossa, koska se usein on yhtä ja samaa aliverkkoa, jolloin viestin voi siirtää suoraan lähettäjältä vastaanottajalle.
 
 Koska viestit kulkevat paketteina, joissa on mukana eri kerrosten otsakkeet, niin todellinen siirrettävä bittimäärä on suurempi kuin todellinen lähetettävä data. Jos viesteissä on paljon dataa, niin otsakkeiden aiheuttama lisäys ei ole merkityksellinen. Toisaalta, jos viestit ovat erittäin lyhyitä, niin suurin osa siirrettävästä datasta onkin näitä otsaketietoja ja siirto kestää paljon tuota yksinkertaista laskutoimitusta kauemmin.
 
