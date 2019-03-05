@@ -53,7 +53,7 @@ Osa palomuuriohjelmistoista tai laitteista on oletusarvoisesti auki, jolloin ne 
 
 ## Laitteiden suojaus - käyttäjätunnukset yms.
 
-Verkon liikenteen suojaamisen lisäksi on ihan yhtä tärkeää suojata verkon laitteet luvattomalta käytöltä. Tämä suojaaminen usein perustuu käyttäjätunnuksiin ja salasanoihin. Useimmilla verkkolaitteillakin on hallintatunnus (esimerkiksi admin) ja sillä salasana. Tämä salana saattaa vieläkin olla turhan helppo arvata tai olla jopa sama kaikilla laitteilla. Tällöin tärkeää vaihtaa salasana riittävän vahvaksi ja aidosti salaiseksi.
+Verkon liikenteen suojaamisen lisäksi on ihan yhtä tärkeää suojata verkon laitteet luvattomalta käytöltä. Tämä suojaaminen usein perustuu käyttäjätunnuksiin ja salasanoihin. Useimmilla verkkolaitteillakin on hallintatunnus (esimerkiksi admin) ja sillä salasana. Tämä salasana saattaa vieläkin olla turhan helppo arvata tai olla jopa sama kaikilla laitteilla. Tällöin tärkeää vaihtaa salasana riittävän vahvaksi ja aidosti salaiseksi.
 
 Joissakin markkinoilla olevissa WLAN-laitteissa hallintatunnuksen oletussalasana on sama kuin verkon salasana. Jos salasana on riittävän hyvä ja voidaan luottaa kaikkiin verkon käyttäjiin, niin silloin oletussalasanaa ei ehkä tarvitse vaihtaa. 
 
