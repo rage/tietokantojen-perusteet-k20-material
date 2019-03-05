@@ -11,9 +11,9 @@ Tietoliikenteessä viestin siirtoon menee aikaa. Tämä aika riippuu toisaalta v
 
 Yhdessä linkissä viestin siirtoaika on helppo arvioida, kun tiedämme linkin liikennöintinopeuden (bitteinä sekunnissa) ja viestin pituuden (biteissä). Tästä on helppo jakolaskulla (viestin pituus / liikennöintinopeus) saada arvio kyseisen viestin siirron kestolle.
 
-Tietoliikenteessä siirtonopeudet ilmoitetaan aina bitteinä sekunnissa (b/s) ja etuliitteet (katso wikipedia https://fi.wikipedia.org/wiki/Mittayksik%C3%B6n_etuliite) ovat aina aitoja kymmenen potensseja, toisin kuin tiedon tallennuksessa, jossa usein käytetään tavuja ja kakkosen potensseja.
+Tietoliikenteessä siirtonopeudet ilmoitetaan aina bitteinä sekunnissa (b/s) ja etuliitteet (katso [wikipedian sivu](https://fi.wikipedia.org/wiki/Mittayksik%C3%B6n_etuliite)) ovat aina aitoja kymmenen potensseja, toisin kuin tiedon tallennuksessa, jossa usein käytetään tavuja ja kakkosen potensseja.
 
-Tietoliikenteessä käytämme aina SI-järjestelmän mukaisia kerrannaisyksiköitä etuliitteinä https://fi.wikipedia.org/wiki/Kansainv%C3%A4linen_yksikk%C3%B6j%C3%A4rjestelm%C3%A4#Kerrannaisyksik%C3%B6t. Näistä tärkeimpiä ovat nano, mikro, kilo, mega, giga ja tera.
+Tietoliikenteessä käytämme aina [SI-järjestelmän mukaisia kerrannaisyksiköitä etuliitteinä](https://fi.wikipedia.org/wiki/Kansainv%C3%A4linen_yksikk%C3%B6j%C3%A4rjestelm%C3%A4#Kerrannaisyksik%C3%B6t). Näistä tärkeimpiä ovat nano, mikro, kilo, mega, giga ja tera.
 
 Viestin kulkua hidastavat muut kuljetettavat viestit. Jos kaksi viestiä pitää siirtää samaa yhteyttä pitkin, niin ne eivät voi mennä yhtä aikaa vaan ne täytyy lähettää peräkkäin. Tällöin niiden yhteinen kokonaissiirtoaika on kummankin viestin siirtoaika yhteensä.
 
