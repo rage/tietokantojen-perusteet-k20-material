@@ -12,7 +12,7 @@ Kotiverkon laitteiden tarvitsevat verkkopalvelut eivät poikkea tietoverkkoon li
 
 Kaikki verkkoon liitetyt laitteet tarvitsevat IP-osoitteen, jotta ne voivat kommunikoida muiden kanssa käyttäen IP-protokollaa. Tämä osoite annettiin aikoinaan jokaiselle laitteelle käsin kirjoittamalla se sopivaan tiedostoon laitteen asetuksissa. Tietokoneiden ja verkkolaitteiden määrän kasvaessa osoitteiden päivittäminen käsin muuttui aivan liian työlääksi ja siksi kehitettiin protokolla, jolla verkkoon liitettävä laite voi itse automaattisesti pyytää IP-osoitetta erilliseltä palvelimelta. Tämä Dynamic Host Configuration Protocol (DHCP) pohjautuu aiempiin vastaaviin protokolliin, mutta se on siis tällä hetkellä yleisimmin käytetty tapa saada verkkoon liitettävälle tietokoneelle tai muulle laitteelle IP-osoite. DHCP-protokollan määrittelyssä on kuvattuna useita erilaisia protokollan käyttötapoja. Tässä materiaalissa käydään niistä läpi vain tämä verkkoon liittyvän laitteet tarvitsema viestien vaihtoprosessi.
 
-### KUVA: Tähän oma kopio kirjan kuvasta 4.21, mukailee tuon englanninkielisen wikipedia-artikkelin kuvaa
+![DHCP viestien vaihto alla kuvatulla tavalla](../img/dhcp.svg)
 
 DHCP-protokollassa asiakas aloittaa viestien vaihdon. Tämä on hyvin tyypillistä protokollille, koska yleensä asiakkaalla on jokin tarve ja palvelin on koko ajan valmiina vastaamaan asiakkaille. 
 
