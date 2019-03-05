@@ -33,10 +33,14 @@ Ruuhkaisessa verkossa tosin jonotusviive voi olla merkittävä, mutta jätetää
 
 Tehdään pari hyvin yksinkertaista laskutoimitusta.
 
+
 -- siirtoaika dvd
 <quiznator id="5c7d121314524713f95a6d1f"></quiznator>
 
+
 -- siirtoaika digikuva
-<quiznator id=" 5c7d1624ddb6b814af327841"></quiznator>
+<quiznator id="5c7d1624ddb6b814af327841"></quiznator>
 
 
+-- levyn siirto
+<quiznator id="5c7e246114524713f95a6fc9"></quiznator>
