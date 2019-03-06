@@ -14,6 +14,7 @@ hidden: false
 
 </text-box>
 
+
 ## WWW-palvelu
 
 
@@ -22,6 +23,7 @@ Ykkösosiosta toivottavasti muistat, että WWW-sivuihin viitataan URL-osoitteell
 Web-palvelimet ja web-selaimet käyttävät omaan keskinäiseen kommunikointiinsa HTTP-protokollaa. HTTP-protokolla on meidän ihmisten kannalta sikäli kiva, että se on tekstipohjainen, joten meidän on helppo lukea protokollan viestejä ja niiden sisältöjä. Jotkut muut protokollat siirtävät viestejä binäärilukuina. Yksi esimerkki tällaisesta protokollasta on HTTP:stä kehitetty salattu versio HTTPS.
 
 ![www-palvelin yhdistettynä useisiin selaimiin http-protokollalla](../img/www-http-selain.svg)
+
 
 ## HTTP - protokolla
 
@@ -53,6 +55,9 @@ HTTP protokolla on tilaton (stateless). Tämä tarkoittaa sitä, että selaimen 
 
 HTTP käyttää TCP:tä viestien välittämiseen. TCP on yhteydellinen, joten asiakas (eli selain) ja palvelin voivat erikseen sopia yhteyden säilyttämisestä tulevia pyyntöjä varten tai palvelin voi sulkea yhteyden heti vastausviestin lähetettyään, jolloin asiakas joutuu avaamaan uuden yhteyden seuraavalle pyynnölle. Koska www-sivun muodostaminen yleensä edellyttää useita sivun elementtien pyyntöjä, niin usein asiakas ja palvelin sopivat yhteyden säilyttämisestä. Toisaalta yhteyden säilyttäminen tilanteessa, jossa lisäpyyntöjä ei tulekaan, kuormittaa palvelimen rajallisia yhteyksiä.
 
+-- Tehtävä: HTT GET
+<quiznator id="5c7fd0bdfd9fd71425c68ad3"></quiznator>
+
 
 ## HTML - kuvauskieli
 
@@ -75,7 +80,10 @@ Voit omasta selaimestasi hallinnoida evästeitä ja jopa katsoa mihin kaikkiin s
 
 Jos haluat selvittää mitä eri evästeet tarkoittavat tai mihin käyttötarkoitukseen ne todennäköisesti liittyvät, on englanninkieliselle [Cookiepedia-sivustolle](https://cookiepedia.co.uk/all-about-cookies) koottu evästeisiin liittyvää informaatiota. Siellä voi tehdä hakuja evästeen nimellä.
 
-## Tehtävä: Etsi omalta koneeltasi tämän kurssin evästeistä _ga. Minä vuonna kyseisen evästeen voimassaolo päättyy (expires) 2019, 2020, 2021,2022? 
+
+-- Tehtävä: evästeistä
+<quiznator id="5c7fd7e2ddb6b814af327e20"></quiznator>
+
 
 ## Varmenteet
 
@@ -107,5 +115,8 @@ Välityspalvelin tarjoaa myös mahdollisuuksia valvoa verkkosivujen käyttöä. 
 ## Tehtävä voisi olla jonkunlainen oikein väärin väittämiä tai jotain muuta jolla testataan tekstin lukeminen.
 
 ## Toisaalta tehtävä voisi olla myös joltain sivulta selvittää jokin HTTP-protokollan argumentti ja sen käyttö. Tämän voisi laittaa jopa vertaisarvioitavaksi pikku esseeksi.
+
+-- Tehtävä: evästeistä
+<quiznator id="5c7fd7e2ddb6b814af327e20"></quiznator>
 
 
