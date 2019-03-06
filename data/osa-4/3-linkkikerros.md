@@ -29,7 +29,7 @@ Yhteys kahden laitteen välillä eli linkki voidaan toteuttaa usealla eri tavall
 
 Ethernet on ensimmäinen ja varsin vakiintunut tapa toteuttaa lähiverkko. Esimerkiksi kotiverkot on yleensä aina toteutettu ethernet-verkkoina, jos niissä on kaapeloituja yhteyksiä laitteiden välillä.  Ethernet on muuttunut vuosikymmenten aikana. Kaapelointitekniikoita on muokattu ja verkon liikennöintinopeuksia on samalla saatu moninkertaistettua. Wikipediassa on [suhteellisen kattava artikkeli tästä kehityksestä](https://fi.wikipedia.org/wiki/Ethernet).
 
-Tällä kurssilla keskitytään kuitenkin enemmän siihen millaisia viestejä ethernet-verkossa välitetään ja miten ne verkossa liikkuvat. Jätetään tuleville kursseille verkon sanomien välitystekniikka CDMA/CS ja toiminnallisuus. (TODO: mikä toiminnallisuus?)
+Tällä kurssilla keskitytään kuitenkin enemmän siihen millaisia viestejä ethernet-verkossa välitetään ja miten ne verkossa liikkuvat. Jätetään tuleville kursseille verkon sanomien välitystekniikka CDMA/CS ja sen toiminnallisuus.
 
 Ethernetissä kulkevia viestejä kutsutaan nimellä kehys (engl. frame). Kehyksen rakenne on määritelty tarkasti ja niillä on maksimipituus. IP-osoite oli verkkokerroksen vastaanottajan tunniste ja se kertoo lopullisen IP-paketin vastaanottavan koneen. Ethernet-verkossa viesti lähetetään aina saman verkon jollekin laitteelle, joten tässä verkossa käytetään MAC-osoitteita.
 
