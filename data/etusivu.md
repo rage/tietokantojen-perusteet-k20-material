@@ -17,24 +17,27 @@ Tämän kurssin jälkeen tunnet keskeiset tietoliikenteen käsitteet ja lyhentee
 
 ## Kenelle tarkoitettu
 
-Tämä kurssi on tarkoitettu
+Tämä kevään 2019 kurssi on tarkoitettu 
 
-a) Digital education for all (DEFA) -hankkeen mukaisia opintoja tekeville
+a) Avoimen yliopiston opiskekijoille, erityisesti heille, jotka tekevät Digital education for all (DEFA) -hankkeen mukaisia opintoja.
 
 b) Helsingin yliopiston tietojenkäsittelytieteen kandidaatin koulutuohjelman mukaisia opintoja tekeville
 
 
-### DEFA Opiskelijat
+### Avoimen yliopiston opiskelijat
 
-Teidän täytyy ilmoittautua Helsingin yliopiston avoimen yliopiston opiskelijaksi ja tämän kurssin opiskelijaksi siellä. Ilmoittautumisesta tulee tarkempaa tietoa tänne, kun se on mahdollista. Teille tarkentuu myöhemmin mahdollinen kuulustelu ja sen toteutus. On mahdollista, ett keväällä 2019 ei ole erillistä kuulustelua, vaan suoritus arvioidaan puhtaasti kurssin tehtävien perusteella.
+Teidän täytyy ilmoittautua Helsingin yliopiston avoimen yliopiston opiskelijaksi ja tämän kurssin opiskelijaksi siellä. Ilmoittautumisesta tulee tarkempaa tietoa tänne, kun se on mahdollista. Teillä on mahdollisuus saada kurssista [Johdastus Tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054) 2 op:n suoritusmerkintä noudattamalla kurssin ohjeita. Tähän kurssiin liittyy koe, joka tehdään yliopiston moodle-alustalla.
 
 
 ### HY:n omat opiskelijat
 
-Tämä on vain osa kurssin Tietoliikenteen perusteet (tilpe) suorittamista. Tämä ei siis ole itsenäinen opintokokonaisuus vaan vain osio  laajemmasta Tietoliikenteen perusteet opintojaksosta. Tämän osion hallinta testataan kursilla käytettävien minikokeiden avulla.
+Tämä on osa kurssia [Tietoliikenteen perusteet](https://courses.helsinki.fi/fi/tkt20004/124962079). Tämä ei siis ole itsenäinen opintokokonaisuus vaan vain osio laajemmasta Tietoliikenteen perusteet opintojaksosta. Tämän osion hallinta testataan kurssin ensimmäisessä minikokeessa. Tämän osien suorituksesta ei siis anneta erillistä suoritusmerkintää.
+
+Helsingin yliopiston opiskelijoiden pitää ilmoittautua kurssille OODIssa.
+
 
 ## Tulevaisuudessa
 
-Kurssin materiaalia päivitetään ja sille tehdään jatkokurssi, jotka yhdessä kattavat kandiohjelman pakolliset tietoliikenneopinnot.
+Kurssin materiaalia päivitetään tämän kevään kokemuksetn perusteella ja lisäksi toteutetaan jatkokurssi, jotka yhdessä kattavat tietojenkäsittelytieteen kandiohjelman pakollisen opintojakson Tietoliikenteen perusteet.
 
-Tästä kurssista tehdään myös opettajien ohjeistuksen avulla tulevaisuudessa niin sanottu kurkistuskurssi, joita lukion opettajat voivat halutessaan tarjota oppilailleen kurkistukseksi yliopisto-opintoihin. Jakko Kurhilan haastattelussa keväältä 2018 on kerrottu vähän enemmän näistä kurkistuskursseista.
+Tästä kurssille on tarkoitus tehdään myös ohjeistusta koulujen opettajille, jotka voivat halutessaan tarjota kurssia omille oppilailleen kurkistukseksi yliopisto-opintoihin. Nämä ohjeet eivät ole käytettävissä vielä keväällä 2019.
