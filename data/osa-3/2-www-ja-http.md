@@ -31,6 +31,7 @@ Ensimmäisessä versiossa HTTP-protokollasta oli määritelty vain sivun noutoon
  
 HTTP on siis siirtoprotokolla, joka huolehtii www-sivun sisällön siirtämisestä palvelimelta asiakkaalle. Siirto tapahtuu asiakkaan pyynnöstä.  HTTP:n kaikki sanomat ovat tekstimuotoisia, joten niitä on ihmistenkin helppo lukea. Esimerkiksi oheinen suoraan [wikipedian sivulta](https://fi.wikipedia.org/wiki/HTTP) lainattu GET-pyyntö
 
+
 <text-box variant='example' name='HTTP Get pyyntö'>
 
 ```
@@ -49,13 +50,14 @@ Cache-Control: max-age=0
 
 </text-box>
 
+
 Tästä näkyy hyvin tuo viestin rakenne. Viesti alkaa sanalla GET, jota seuraa pyydettävän sivun tunniste /wiki/HTTP ja käytettävän protokollan nimi ja versionumero. Muut rivit ovat tähän viestin liittyviä määrämuotoisia attribuutteja. Kukin rivi alkaa attribuutin nimellä, jota seuraa kaksoispiste. Loppurivi on sitten kyseisen attribuutin arvo. Jotkut attribuutit ovat valinnaisia ja jotkut pakollisia. Esimerkiksi HTTP versio 1.1 edellyttää, että viestissä on aina Host-attribuutti, jonka arvona on sen www-palvelimen nimi, jolle viesti on osoitettu.
 
 HTTP protokolla on tilaton (stateless). Tämä tarkoittaa sitä, että selaimen tai palvelimen ei tarvitse muistaa mitä oltiin tekemässä, vaan jokainen viestipari käsitellään muista irrallisena tapahtumana. Tämä muistamattomuus helpottaa sovelluksen suunnittelua ja toteutusta, kun ei tarvitse pitää kirjaa siitä mitä on aiemmin tehty.
 
 HTTP käyttää TCP:tä viestien välittämiseen. TCP on yhteydellinen, joten asiakas (eli selain) ja palvelin voivat erikseen sopia yhteyden säilyttämisestä tulevia pyyntöjä varten tai palvelin voi sulkea yhteyden heti vastausviestin lähetettyään, jolloin asiakas joutuu avaamaan uuden yhteyden seuraavalle pyynnölle. Koska www-sivun muodostaminen yleensä edellyttää useita sivun elementtien pyyntöjä, niin usein asiakas ja palvelin sopivat yhteyden säilyttämisestä. Toisaalta yhteyden säilyttäminen tilanteessa, jossa lisäpyyntöjä ei tulekaan, kuormittaa palvelimen rajallisia yhteyksiä.
 
--- Tehtävä: HTT GET
+-- Tehtävä: HTTP GET
 <quiznator id="5c7fd0bdfd9fd71425c68ad3"></quiznator>
 
 
@@ -87,7 +89,7 @@ Jos haluat selvittää mitä eri evästeet tarkoittavat tai mihin käyttötarkoi
 
 ## Varmenteet
 
-Varmenne (engl. certificate) on sähköinen todistus, jolla vahvistetaan, että todistuksen haltija on tietty henkilö, organisaatio tai järjestelmä. Varmenteen voi siis ajatella vastaavan sähköistä henkilötodistusta. Yksityishenkilöille niitä Suomessa myöntää Väestörekisterikeskus https://vrk.fi/varmenteet-fineid. Yksityishenkilön varmennetta kutsutaankin kansalaisvarmenteeksi ja se voidaan myöntää vain suomalaisen henkilökortin mukana. Väestörekisterikeskus myöntää erilaisia varmenteita myös organisaatioille. 
+Varmenne (engl. certificate) on sähköinen todistus, jolla vahvistetaan, että todistuksen haltija on tietty henkilö, organisaatio tai järjestelmä. Varmenteen voi siis ajatella vastaavan sähköistä henkilötodistusta. Yksityishenkilöille niitä Suomessa myöntää Väestörekisterikeskus https://vrk.fi/varmenteet-fineid. Väestörekisterikeskuksen myöntämää yksityishenkilön varmennetta kutsutaan kansalaisvarmenteeksi ja se voidaan myöntää vain suomalaisen henkilökortin mukana. Väestörekisterikeskus myöntää erilaisia varmenteita myös organisaatioille. 
 
 Varmenteita käytetään silloin kun on tarve luottavasti tunnistaa kommunikoinnin osapuolet tai ainakin toinen osapuoli. Esimerkiksi verkon kautta tapahtuvassa pankkiasioinnissa on hyvin tärkeää voida luottaa siihen, että annettu URL-osoite, kuten nordea.fi, s-pankki.fi, op.fi tai muu vastaava, vie oikean organisaation sivustolle, eikä jollekin pahantahtoiselle, mutta samannäköiselle sivustolle. Tätä varten organisaatiot antavat www-selaimelle varmenteen, jonka selain voi tarkistaa jostakin ulkopuolisesta varmennepalvelusta, kuten edellä ollut väestörekisterikeskus tai paljon käytetyt ulkomaiset Verisign, Thawte tai Entrust. Selaimilla on etukäteen asetettu joukko varmennepalveluja, joiden vahvistamia varmenteita ne hyväksyvät automaattisesti. 
 
@@ -108,15 +110,12 @@ Välityspalvelin (engl. proxy server) hakee internetistä tietoa työasemien puo
 
 Välityspalvelin siis katkaisee aiemmin suoran yhteyden asiakkaan ja palvelimen välillä ja ottaa itselleen molemmat roolit. Se toimii palvelimena alkuperäiselle asiakkaalle ja asiakkaana alkuperäiselle palvelimelle. Samalla se vaikuttaa evästeiden käyttöön, kun ne eivät valukaan alkuperäiseltä palvelimelta alkuperäiselle asiakkaalle vaan alkuperäisen palvelimen lähettämät evästeet jäävät välityspalvelimelle.
 
-Koska verkkoliikenne ei ole ilmaista, niin näin organisaatiot voivat vähentää liikennettä ja säästää kuluissa. Jos vaikkapa ajatellaan, että Helsingin yliopiston verkkokurssilla opiskelijoiden pitää katsoa joku youtubeen taltioitu video, niin silloin video siirretään vain kertaalleen youtuben palvelimelta yliopiston välityspalvelimelle ja opiskelijoiden selaimet hakevatkin videon tältä välityspalvelimelta eivätkä suoraan youtuben palvelimelta. Tämä toki edellyttää, että youtuben palvelin sallii sisällön tilapäisen varastoinnin välityspalvelimella. WWW-palvelin voi vastausviestinsä attribuuttien avulla ohjata tätä toimintaa ja halutessaan jopa kieltää tällaisen välivarastoinnin. (TODO: välityspalvelin myös nopeuttaa käyttäjän pyynnön vastauksen saamista.)
+Koska verkkoliikenne ei ole ilmaista, niin näin organisaatiot voivat vähentää liikennettä ja säästää kuluissa. Jos vaikkapa ajatellaan, että Helsingin yliopiston verkkokurssilla opiskelijoiden pitää katsoa joku youtubeen taltioitu video, niin silloin video siirretään vain kertaalleen youtuben palvelimelta yliopiston välityspalvelimelle ja opiskelijoiden selaimet hakevatkin videon tältä välityspalvelimelta eivätkä suoraan youtuben palvelimelta. Tämä toki edellyttää, että youtuben palvelin sallii sisällön tilapäisen varastoinnin välityspalvelimella. WWW-palvelin voi vastausviestinsä attribuuttien avulla ohjata tätä toimintaa ja halutessaan jopa kieltää tällaisen välivarastoinnin. Opiskelijoiden kannalta välityspalvelin käyttö säätää aikaa, koska vain ensimmäisenä sivua pyytänyt joutuu odottamaan videon lataamista alkuperäiseltä palvelimelta. Muut saavat sen suoraan yliopiston sisäverkosta. Tavallisesti organisaation oma verkko on aina nopeampi kuin organisaation internetin yhdistävän linkin nopeus.
 
 Välityspalvelin tarjoaa myös mahdollisuuksia valvoa verkkosivujen käyttöä. Jos kaikki tietyn organisaation liikenne ohjataan aina välityspalvelimen kautta, niin välityspalvelin ei välttämättä teekään kaikkia pyyntöjä eteenpäin vaan palauttaa virheruudun kyseistä sivua pyytäneelle asiakkaalle. Vastaavasti välityspalvelin voi seurata eri asiakkaiden liikennöintiä ja näin vaikuttaa käyttäjien yksityisyyden suojan heikkenemiseen. Onneksi yleensä voimme toki luottaa oman organisaation tai palveluntarjoajan toimintaan ja siihen, että sen välityspalvelin toimii lakien mukaan, mutta joskus terve epäilys on kuitenkin paikallaan.
 
-## Tehtävä voisi olla jonkunlainen oikein väärin väittämiä tai jotain muuta jolla testataan tekstin lukeminen.
 
-## Toisaalta tehtävä voisi olla myös joltain sivulta selvittää jokin HTTP-protokollan argumentti ja sen käyttö. Tämän voisi laittaa jopa vertaisarvioitavaksi pikku esseeksi.
-
--- Tehtävä: evästeistä
-<quiznator id="5c7fd7e2ddb6b814af327e20"></quiznator>
+-- Tehtävä: Välityspalvelimen vaikutus
+<quiznator id="5c8127a3017ffc13eddd02a7"></quiznator>
 
 
