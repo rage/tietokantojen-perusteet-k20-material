@@ -18,14 +18,17 @@ Tämän kurssin jälkeen tunnet keskeiset tietoliikenteen käsitteet ja lyhentee
 
 Tämä kevään 2019 kurssi on tarkoitettu 
 
-a) Avoimen yliopiston opiskekijoille, erityisesti heille, jotka tekevät Digital education for all (DEFA) -hankkeen mukaisia opintoja.
+a) Avoimen yliopiston opiskekijoille, erityisesti heille, jotka tekevät Digital education for all (DEFA) -hankkeen mukaisia opintoja. 
 
-b) Helsingin yliopiston tietojenkäsittelytieteen kandidaatin koulutuohjelman mukaisia opintoja tekeville
+b) Helsingin yliopiston tietojenkäsittelytieteen kandidaatin koulutuohjelman mukaisia opintoja tekeville.
 
 
 ### Avoimen yliopiston opiskelijat
 
-Teidän täytyy ilmoittautua Helsingin yliopiston avoimen yliopiston opiskelijaksi ja tämän kurssin opiskelijaksi siellä. Ilmoittautumisesta tulee tarkempaa tietoa tänne, kun se on mahdollista. Teillä on mahdollisuus saada kurssista [Johdastus Tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054) 2 op:n suoritusmerkintä noudattamalla kurssin ohjeita. Tähän kurssiin liittyy koe, joka tehdään yliopiston moodle-alustalla.
+Teidän täytyy ilmoittautua Helsingin yliopiston avoimen yliopiston opiskelijaksi ja tämän kurssin opiskelijaksi siellä. 
+Teillä on mahdollisuus saada kurssista [Johdastus Tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054) 2 op:n suoritusmerkintä noudattamalla kurssin ohjeita. Tähän kurssiin liittyy koe, joka tehdään yliopiston moodle-alustalla.
+
+Ilmoittautumisohjeet kurssin sivulla [Johdastus Tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054).
 
 
 ### HY:n omat opiskelijat
