@@ -44,3 +44,11 @@ Tehdään pari hyvin yksinkertaista laskutoimitusta.
 
 -- levyn siirto
 <quiznator id="5c7e246114524713f95a6fc9"></quiznator>
+
+
+## Yhteenveto
+
+Tässä osassa on käyty läpi kotiverkon toiminnan kannalta keskeiset laitteet ja palvelut. Lisäksi on opittu arvioimaan isojenkin datamäärien tarvitsemia siirtoaikoja.
+
+-- Osaamistavoitteet - Osa 2
+<quiznator id="5c811f16fd9fd71425c68d1a"></quiznator>
