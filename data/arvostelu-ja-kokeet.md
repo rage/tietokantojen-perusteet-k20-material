@@ -5,9 +5,25 @@ hidden: false
 information_page: true
 ---
 
-# Ohjelmointi MOOCin tiedot - Nämä on siis päivittämättä
+## Arvostelusta
 
-Ohjelmoinnin MOOC sisältää Helsingin yliopiston kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Kummastakin osasta järjestetään verkossa tehtävä koe, ja kummastakin osasta saa erillisen arvosanan. Ohjelmoinnin MOOCista on kaksi versiota: aikataulutettu kurssi ja aikatauluttamaton kurssi. Näiden arvostelu poikkeaa hieman toisistaan.
+Kurssin kaksi erillistä opiskelijaryhmää käsitellään arvostelussa täysin erillisinä.
+
+
+### Avoimen yliopiston opiskelijat, DEFA
+
+Teidän suorituksenne arvioidaan Johdatus Tietojenkäsittelytieteeseen 2 op mukaisena. Arvostelu tapahtuu puhtaasti moodlen kokeen perusteeella.  Tämän kurssin tehtävistä voi saada muutaman lisäpisteen arvostelun osaksi.
+
+Moodlen kokeen ajankohtaa ei ole vielä päätetty.
+
+
+### Helsingin yliopiston tutkinto-opiskelijat
+
+Teillä ei ole mahdollisuutta saada merkintää vain tästä osiosta, vaan tämä osa isompaa kurssia ja osion arvostelu tapahtuu isomman kurssin osana. Tämä osio katetaan yhdessä minikokeessa.
+
+
+
+# Loppu osa on vanhentunutta informaatiota
 
 ## Aikataulutettu kurssi
 
