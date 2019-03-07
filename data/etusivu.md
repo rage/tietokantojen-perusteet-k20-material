@@ -8,7 +8,8 @@ information_page: true
 
 # Tietoa kurssista
 
-Johdatus tietoliikenteeseen on osa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetusta.  Kurssin sisältö on valikoitu tietoliikenteen käyttäjän tarpeista lähtien.  TUleva jatko-osa kattaa loput kandiohjelman Tietoliikenteen perusteet -kurssista ja  tarkastelee asioita tulevan ammattilaisen näkökulmasta.
+Johdatus tietoliikenteeseen on osa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetusta.  Kurssin sisältö on valikoitu tietoliikenteen käyttäjän tarpeista lähtien.  
+
 
 Tämän kurssin jälkeen tunnet keskeiset tietoliikenteen käsitteet ja lyhenteet. Lisäksi sinulla on yleiskuva siitä, miten tietoliikenne ja erityisesti internet toimii. Näin sinulla on valmius itsenäisesti opiskella lisää ja lukea alan suomenkielistä kirjallisuutta.
 
