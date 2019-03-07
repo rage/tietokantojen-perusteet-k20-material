@@ -11,6 +11,7 @@ Lähes kaikki palvelut ja koko yhteiskunta toimii ja luottaa siihen, että viest
 </lead>
 </div>
 
+
 ## Tietoverkko ja sen käsitteitä
 
 Tietoverkoilla yhdistetään toisiinsa tietokoneita, jotka haluavat kommunikoida keskenään. Ihmiset keskustelevat, mutta laitteet kommunikoivat. Aluksi meidän täytyykin käyttää aikaa erilaisten asioiden nimeämiseen. Sanastokeskus TSK on vuosien aikana laatinut useita sanastoja eri teemoista. Nämä löytyvät www-osoitteesta: http://www.tsk.fi/tsk/fi/tsksarja-68.html. Kurssin kannalta kiinnostavin on laajakaistasanasto, mutta muissakin sanastoissa on paljon hyödyllistä termistöä kurssin tarpeisiin. 
@@ -85,6 +86,7 @@ Eli kun puhumme palvelusta, tarkoitamme jotain isompaa kokonaisuutta, jota tarjo
 Usein palvelua käyttävistä sovelluksista ja oikeammin niistä laitteista, joilla niitä suoritetaan, käytetään termiä asiakas (engl. client). Sovelluksesta voidaan tarvittaessa käyttää termiä asiakasohjelma. Tietoliikenteessä asiakas ei siis koskaan ole ihminen, vaan ihmisestä käytetään termiä 'käyttäjä', koska hän käyttää kyseistä sovellusta tai laitetta.
 
 Seuraavassa aliluvussa tarkastellaankin miten viestinvaihto viestin lähettäjän ja vastaanottajan välillä oikein tapahtuu.
+
 
 -- Quiz 1.1.Termeistä
 <div> <quiznator id="5c73f865fd9fd71425c674b7"> </quiznator> </div>
