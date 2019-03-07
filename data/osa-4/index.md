@@ -2,10 +2,9 @@
 path: '/osa-4'
 title: 'Osa 4: Muut kerrokset'
 overview: true
-hidden: false
+hidden: true
 ---
 
-<deadline>11.2.2019</deadline>
 
 Edellisessä osassa kävimme läpi sovelluskerroksen toiminnallisuutta. Nyt on vuorossa kaikki muut kerrokset. Käydään niiden toiminnallisuudet ja keskeiset protokollat pikaisesti läpi. Protokollien yksityiskohdat jätetään myöhemmille kursseille.
 
