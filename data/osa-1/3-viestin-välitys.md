@@ -60,3 +60,11 @@ Toisaalta internetin perusmalli, jossa vastaanottaja ei voi päättää mitä vi
 
 -- quiz: Väittämiä viestin välityksestä
 <div><quiznator id="5c77f30799236814c5bbdd50"></quiznator></div>
+
+## Yhteenveto
+
+Tämä osio kävi läpi tietoliikenteeseen liittyviä keskeisiä käsitteitä, verkon rakennetta ja internetin periaatteita.
+
+-- Osaamistavoitteet: Osa 1
+<div><quiznator id="5c811117c41ed4148d971561"></quiznator></div>
+
