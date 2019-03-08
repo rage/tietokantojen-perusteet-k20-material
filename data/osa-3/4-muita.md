@@ -41,4 +41,7 @@ Ajatuksellisesti VPN-yhteys on siis jonkinlainen suojattu putki tai tunneli, jok
 
 Lähettäjän sovellus lähettää viestin normaalisti ja protokollapinon eri kerroksilla siitä muodostetaan sisäverkon paketti. Koska sitä ei IP-osoitteidensa vuoksi voida suoraan lähettää julkiseen verkkoon, tämä paketti sijoitetaan ulkoverkon paketin sisään dataksi. Ulkoverkon paketti voidaan sitten lähettää vastaanottajalle, jonka VPN-palvelin vastaanottaa ulkoverkon paketin. Palvelin avaa datan ja ottaa sieltä tuon sisäverkon paketin, jonka se lähettää nyt sisäverkosta lopulliselle kohteelleen. Viestien paketointiin tutustutaan hiukan tarkemmin seuraavassa osiossa, jossa katsotaan muita protokollan pinon kerroksia ja niiden toimintoja.
 
-## Tässä voisi olla jonkunlainen pieni avokysymys ja siihen vastaus, jonka muut opiskelijat arvioivat tai sitten vain oikein väärin väittämiä.
+-- Tehtävä: PUSH-PULL
+<quiznator id="5c822c68244fe21455cbd3d8"></quiznator>
+
+
