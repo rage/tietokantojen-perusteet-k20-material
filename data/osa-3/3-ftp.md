@@ -7,7 +7,7 @@ hidden: false
 <text-box variant='learningObjectives' name='Oppimistavoitteet'>
 
 - Osaat kuvata, miten tiedostonjakopalvelut yleisellä tasolla toimivat
-- Osaat perustella, miksi ftp-protokolla on kaksi erillistä yhteyskanavaa
+- Osaat perustella, miksi ftp-protokollassa on kaksi erillistä yhteyskanavaa
 
 </text-box>
 
@@ -38,7 +38,7 @@ Palvelin voi muodostaa datayhteyden vain, kun molemmilla laitteilla on julkinen 
 
 Kontrolliyhteyden ja datayhteyden erottaminen on suhteellisen tavanomaista nykyisissä palveluissa. Tämä ratkaisumalli on siis paljon yleisempi, koska se usein helpottaa järjestelmän toteuttamista. Joskus erilaisille toiminnoille muodostetaan jopa useampiakin yhteyksiä, jotta eri toiminnot voidaan helpommin pitää erillään.
 
-FTP:tä ei enää perusmuotoisena käytetä, koska se ei salaa kontrolliyhteyden viestejä. Salaamttomalla kontrolliyhteydellä asiakkaan käyttäjätunnus ja salasana siirretään selväkielisenä asiakkaalta palvelimelle. Nykypäivänä tätä ei enää pidetä millään tavalla turvallisena toimintana. Modernimmat FTP-palvelut käyttävät salausta. 
+FTP:tä ei enää perusmuotoisena käytetä, koska se ei salaa kontrolliyhteyden viestejä. Salaamattomalla kontrolliyhteydellä asiakkaan käyttäjätunnus ja salasana siirretään selväkielisenä asiakkaalta palvelimelle. Nykypäivänä tätä ei enää pidetä millään tavalla turvallisena toimintana. Modernit FTP-palvelut käyttävät kuljetuskerroksella salaamattoman TCP:n sijaan salattua kuljetuskerroksen protokollaa. Näin voivat varmistaa käyttäjätunnuksen ja salasanan turvallisuuden hieman paremmin muuttamatta kuitenkaan perinteistä FTP-protokollaa. 
 
 Funet ylläpitää edelleen [FTP-palvelua ftp.funet.fi](ftp://ftp.funet.fi). Se oli aikoinaan merkittävä suomalainen tiedostojenjakopalvelu. Esimerkiksi LINUX-käyttöjärjestelmän ensimmäiset versiot olivat jaossa nimenomaan sen kautta.
 
