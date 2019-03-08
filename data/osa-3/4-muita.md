@@ -45,3 +45,11 @@ Lähettäjän sovellus lähettää viestin normaalisti ja protokollapinon eri ke
 <quiznator id="5c822c68244fe21455cbd3d8"></quiznator>
 
 
+## Yhteenveto
+
+Tässä osiossa oli paljon asiaa, mutta se oli samalla vain pintaraapaisu.  Tutustuimme sovelluskerroksen yleisiin palveluihin, mutta jätimme tarkastelun aika yleiselle tasolle. Kaikki uudet verkkosovellukset tehdään nimenomaan sovelluskerroksen tasolla, tai jopa sen päälle. Erityisesti selaimissa toimivat palvelut siirtävät omat viestinsä HTTP-protokollan sisällä. Niillä on siis oma protokolla asiakkaan ja palvelimen väliseen viestintään ja tämän protokolla käyttää HTTP-protokollaa viestiensä siirtämiseen.
+
+Tiedostojen siirtoon tai käyttäjien väliseen viestintään on tarjolla paljon erilaisia järjestelmiä. Tässä tutusttiin niistä perinteisimpiin, koska ne ovat helpompia hahmottaa kuin uudemmat ja monipuolisemmat palvelut.
+
+-- Tehtävä: Osaamistavoitteet - Osa 3
+<quiznator id="5c82321efd9fd71425c68e68"></quiznator>
