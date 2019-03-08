@@ -58,6 +58,6 @@ NOTE: Muistathan, että käytän termiä käyttäjä ihmisistä ja termiä asiak
 
 
 
-### Tähän on pakko laittaa joko termejä tarkastava oikein väärin kysymys. Nyt tuli paljon sisältöä pienessä tilassa.
-
+-- Tehtävä: Tiedostojakelu
+<quiznator id="5c820d9e244fe21455cbd3a6"></quiznator>
 
