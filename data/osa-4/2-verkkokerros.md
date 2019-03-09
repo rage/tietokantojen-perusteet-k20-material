@@ -32,7 +32,7 @@ IP:n kuvaus usein keskittyykin kuvaamaan yksityiskohtaisesti mitä tietoa IP-pak
 IP-paketille on ihan [oma wikipedian sivu](https://fi.wikipedia.org/wiki/IP-paketti).
 
 
-![Kuva IP-paketin otsaketiedoista](../img/paketti.svg)
+![Kuva IP-paketin otsaketiedoista](../img/ip-paketti.svg)
 
 ## Kuva paketista on kiva tässäkin (ihan kaikkia yksityiskohtia ei ehkä tarvita, jos ne tuntuvat hämäävän)
 
