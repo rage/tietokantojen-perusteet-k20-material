@@ -20,6 +20,8 @@ Olemme käyneet läpi tietoliikenteen erilaisia osa-alueita, joitakin tarkemmin 
 
 Kootaan vielä kaikki asiat yhdeksi isommaksi kokonaisuudeksi. Tässä ei siis pitäisi enää tulla varsinaisesti uutta asiaa, vaan katsotaan vaan kurssilla käsiteltyjen asioiden yhteistoimintaa.
 
+![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
+
 
 ## Kuva on kiva. Tämä kuva täytyy piirtää ensin käsin, koska tarina pohjautuu tähän kuvaan.
 

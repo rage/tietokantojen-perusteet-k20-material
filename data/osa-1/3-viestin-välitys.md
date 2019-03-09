@@ -31,6 +31,8 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 <illustrations motive="verkon-kaavakuva.pdf" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
+![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
+
 -- quiz: Viestin nimityksiä
 <div><quiznator id="5c77cf5799236814c5bbdcf4"></quiznator></div>
 
