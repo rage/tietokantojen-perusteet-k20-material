@@ -2,7 +2,7 @@
 path: '/osa-5'
 title: 'Osa 5: Yhteenveto'
 overview: true
-hidden: ture
+hidden: true
 ---
 
 
