@@ -31,7 +31,7 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 <illustrations motive="verkon-kaavakuva.pdf" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
-![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
+![viesti kulkee sovelluskerrokselta muiden kerrosten läpi fyysiselle kerrokselle ja sieltä vastaanottajan fyysiselle kerrokselle ja käänteisessä järjestyksessä kerrosten käpi sovelluskerrokselle](../img/kerrokset.svg)
 
 -- quiz: Viestin nimityksiä
 <div><quiznator id="5c77cf5799236814c5bbdcf4"></quiznator></div>
@@ -51,6 +51,9 @@ Ne  toimivat verkkokerroksella eli ne reitittävät IP-paketteja. Sitä varten n
 Käytännössä siis viesti kulkee lähettäjältä yhden tai useamman reitittimen kautta vastaanottajalle. Kun tietoverkkoa tarkastellaan verkkokerroksen näkökulmasta, niin lähettäjän ja vastaanottajan välissä on vain reitittimiä, jotka huolehtivat pakettien siirtymisestä yhdestä linkistä seuraavaan.
 
 Kahden reitittimen välissä olevassa linkissä voi toki olla myös linkkikerroksella toimivia [kytkimiä](https://fi.wikipedia.org/wiki/Kytkin_(tietoliikenne)), jotka siirtävät kehyksiä yhden aliverkon sisällä esim. fyysisestä kaapelista toiseen fyysiseen kaapeliin.
+
+![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
+
 
 ### Ongelmia
 
