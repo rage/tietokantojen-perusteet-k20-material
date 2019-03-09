@@ -12,7 +12,7 @@ title: "Viestin välitys"
 
 Käydään nyt ensimmäisen kerran tarinana läpi viestin kulkeminen lähettäjältä vastaanottajalle. Tähän tarinaan palataan kurssin aikana useaan kertaan ja lisätään mukaan paljon yksityiskohtia.
 
-Viestin kuljettaminen lähettäjältä vastaanottajalle on suhteellisen yksinkertaista, jos lähettäjän tietokone ja vastaanottajan tietokone on samassa osassa tietoverkkona. Tällöin lähettäjän sovellus (esim. www-selain) vain muodostaa sovellustason viestin, jota usein kutsutaan sanomaksi. Sovelluskerroksella toimiva sovellus pyytää kuljetuskerroksella toimivaa palvelua huolehtimaan tämän sanoman vastaanottajalle, joka on tarkemmin ottaen vastaanottavan koneen sovelluskerroksella toimiva sovellus, esim. www-palvelinohjelma.
+Viestin kuljettaminen lähettäjältä vastaanottajalle on suhteellisen yksinkertaista, jos lähettäjän tietokone ja vastaanottajan tietokone ovat samassa osassa tietoverkkoa. Tällöin lähettäjän sovellus (esim. www-selain) vain muodostaa sovellustason viestin, jota usein kutsutaan sanomaksi. Sovelluskerroksella toimiva sovellus pyytää kuljetuskerroksella toimivaa palvelua huolehtimaan tämän sanoman vastaanottajalle, joka on tarkemmin ottaen vastaanottavan koneen sovelluskerroksella toimiva sovellus, esim. www-palvelinohjelma.
 
 Kuljetuskerros puolestaan jakaa sovelluskerrokselta saamansa sanoman yhteen tai useampaan segmenttiin. Pieni sanoma mahtuu yhteen segmenttiin, mutta isompi sanoma joudutaan jakamaan useampaan segmenttiin. Tämä on täysin kuljetuskerroksen omaa toimintaa, eikä se näy sovelluskerrokselle.
 
