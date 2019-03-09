@@ -7,7 +7,7 @@ information_page: true
 
 ## Kiitos kaikille
 
-Tähän Kurssin ensimmäisen version (Kevät 2019) tekoon ovat osallistuneet vastuuhenkilön Tiina Niklander lisäksi kurssin muut opettajat Terho Oinonen ja Mikko Rinta-Komi. Erityisesti heille kuuluu kiitos siitä, että tässä versiossa on tekstin lisäksi myös kuvia.
+Tähän Kurssin ensimmäisen version (Kevät 2019) tekoon ovat osallistuneet vastuuhenkilön Tiina Niklander lisäksi kurssin muut opettajat Terho Uotila ja Mikko Rinta-Homi. Erityisesti heille kuuluu kiitos siitä, että tässä versiossa on tekstin lisäksi myös kuvia.
 
 
 ## Materiaalin lisenssi
