@@ -32,6 +32,10 @@ Sovelluksen ja TCP:n välinen yhteys on sovittu käsiteltäväksi tavuvirtana, j
 
 TCP:n keskeinen tehtävä on huolehtia sovellukselta tulevan viestijonon jaottelusta sopivan kokoisiin datagrammeihin, jotka sitten annetaan verkkokerrokselle toimitettavaksi vastaanottajan koneelle. Näihin datagrammeihin liitetään otsake, jossa on sekä porttinumero että vastaanottavan koneen IP-osoite. Vastaanottajan päässä kuljetuskerros käyttää tätä datagrammin otsakkeessa olevaa porttinumeroa oikean vastaanottavan prosessin tunnistamiseen.
 
+![erillisten ftp- ja www-prosessien lähettämä data lomittuu matkalla vastaanottajalle](../img/lomittuvat.svg)
+
+![erillisten ftp- ja www-prosessien lähettämä data lomittuu matkalla vastaanottajalle](../img/lomittuvat-alt.svg)
+
 ## Tähän kuva, jossa lähettävässä koneessa  on useampi erillinen prosessi (esim. www, ftp), joiden viestit lomittuvat kuljetuskerrokselta eteenpäin ja jotka kulkevat lomittuneina koneiden välillä. Lomitus sitten puretaan kuljetuskerroksella ja ne toimitetaan oikeille prosesseille.
 
 TCP-yhteyden ylläpitäminen edellyttää, että yhteys muodostetaan ja päätetään hallitusti. Yhteyden muodostaminen TCP-protokollassa tapahtuu erityisen kättelymenettelyn kautta. Myös yhteyden päättämiseen on oma kättelymenettelynsä. Kättelyssä yhteyttä avaavat osapuolet lähettävät protokollan mukaisia viestejä, joiden avulla ne sopivat yhteyden olemassaolosta ja vastaanottaja voi samalla kertoa miten paljon tietoa se voi ottaa vastaan sillä hetkellä. Yhteyden päättäminen hallitusti edellyttää, että kumpikin lähettää erityisen yhteyden päättämiseen liittyvän viestin.
