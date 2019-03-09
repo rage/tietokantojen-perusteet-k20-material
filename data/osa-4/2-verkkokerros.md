@@ -31,6 +31,9 @@ IP-protokolla on internetin kaikkein tärkein protokolla. Se liimaa sovellus- ja
 IP:n kuvaus usein keskittyykin kuvaamaan yksityiskohtaisesti mitä tietoa IP-paketti sisältää eli miten IP-paketin otsake on muodostettu. 
 IP-paketille on ihan [oma wikipedian sivu](https://fi.wikipedia.org/wiki/IP-paketti).
 
+
+![Kuva IP-paketin otsaketiedoista](../img/paketti.svg)
+
 ## Kuva paketista on kiva tässäkin (ihan kaikkia yksityiskohtia ei ehkä tarvita, jos ne tuntuvat hämäävän)
 
 IP-paketin otsakkeessa on siis kuljetuskerroksen protokollan tunnistenumero, lähettäjän ja vastaanottajan IP-osoitteet sekä joukko erilaisia lisätietoja, jotka tässä ohitetaan. Ihan ensimmäisenä otsakkeessa on versionumero, jotta tiedetään miten otsakkeen muodostava bittijono pitää tulkita. IPv4:n ja IPv6:n otsakkeet ovat erilaiset jo ihan sen takia, että käytettävät IP-osoitteet ovat erimittaisia.
