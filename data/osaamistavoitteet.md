@@ -5,7 +5,7 @@ hidden: false
 information_page: true
 ---
 
-Tietoliikenteen prusteet -kurssilla on Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmassa määritellyt oppimistavoitteet. Tämä Johdatus tietoliikenteeseen -kurssi kattaa niistä vain osan.
+Tietoliikenteen perusteet -kurssilla on Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmassa määritellyt oppimistavoitteet. Tämä Johdatus tietoliikenteeseen -kurssi kattaa niistä vain osan.
 
 ## Johdatus tietoliikenteeseen MOOC
 
