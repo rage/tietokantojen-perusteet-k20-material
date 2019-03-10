@@ -74,7 +74,7 @@ Eväste (engl. cookie) on Tietotekniikan termitalkoiden määritelmän mukaan ap
 
 Palvelimet käyttävät evästeitä, koska niiden avulla voi tavallaan kiertää edellä mainittua http-protokollan tilattomuutta. Palvelimen ei itsensä tarvitse ylläpitää jokaiseen asiakkaaseen liittyvää tilaa, vaan tilatietoa ylläpidetään asiakkaalle annetun evästeen avulla. Asiakas saa evästeen palvelimelta osana HTTP-protokollan vastausviestiä ja antaa evästeen takaisin palvelimelle aina lähettäessään sille HTTP-protokollan mukaisen viestin. Näin palvelimen tarvitsema tilatietoa kulkee viestien mukana ja sitä säilytetään aina asiakkaalla väliaikoina.
 
-## Mukaeltu kuva kirjan kuvasta 2.10  (Voisi olla jokin hauskempi sisältö, esim. tilaus, käyttöoikeus tms.
+![Kaavakuva evästeiden käytöstä selaimen ja palvelimen välisessä liikenteessä](../img/evaste.svg)
 
 Palvelin voi siis tallettaa evästeisiin tarvitsemiaan tietoja. Tyypillinen eväste on cfduid, johon palvelin yleensä tallettaa käyttäjän yksilöivän tunnisteen. Näin palvelin voi yhdistää saapuvan HTTP pyynnön aiempiin pyyntöihin ja selvittää mitä kyseinen käyttäjä on aiemmin palvelimen kanssa tehnyt. Näin palvelin voi analysoida saapuneita pyyntöjä ja havaita mitkä pyynnöt liittyvät samaan käyttäjään. Tällä voi olla nettipalvelun tarjoajan kannalta merkitystä esim. kohdennetussa mainonnassa tai vaikkapa palvelun eri osien kiinnostavuutta arvioitaessa.
 
