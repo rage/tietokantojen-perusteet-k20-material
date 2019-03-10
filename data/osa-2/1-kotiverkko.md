@@ -22,8 +22,7 @@ Jotkut kotikäyttäjät käyttävät mobiililaitteillaan, kuten älypuhelin tai 
  
 Kotiverkon laitteet kommunikoivat siis omassa aliverkossaan keskenään ilman, että liikenne näkyy muualle. Ulkopuolisen internetin kanssa ne kommunikoivat reitittimen välityksellä.
 
-## Tähän kaavakuva verkosta ja sen laitteista
-
+![Kaavakuva kotiverkosta](../img/kotiverkko.svg)
 
 ### Yhteys kotiin
 
