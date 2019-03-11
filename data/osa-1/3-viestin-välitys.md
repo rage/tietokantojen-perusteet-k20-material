@@ -26,14 +26,13 @@ Linkkikerros on siis saanut kehyksen fyysiseltä kerrokselta. Se poimii IP-paket
 
 Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lähetetään. Lähettäjän sovellus päättää viestin lähettämisestä. Vastaanottajan protokollapino ei voi valita, vaan sen täytyy vastaanottaa viesti silloin kun se on tietoverkosta tulossa. Sen sijaan usein vastaanottava sovellus voi vaikuttaa siihen miten ja milloin sanoma siirtyy kuljetuskerrokselta vastaanottavalle sovellukselle sovelluskerroksella. Tätä emme käsittele juurikaan tällä kurssilla, vaan erilaiset verkko-ohjelmoinnin kurssit käsittelevät sovelluksen rajapintoja tiedonsiirtopalveluun.
 
--- verkon kaavakuva
 <div>
 <illustrations motive="verkon-kaavakuva.pdf" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
 ![viesti kulkee sovelluskerrokselta muiden kerrosten läpi fyysiselle kerrokselle ja sieltä vastaanottajan fyysiselle kerrokselle ja käänteisessä järjestyksessä kerrosten käpi sovelluskerrokselle](../img/kerrokset.svg)
 
--- quiz: Viestin nimityksiä
+
 <div><quiznator id="5c77cf5799236814c5bbdcf4"></quiznator></div>
 
 ### Sanomanvälitys tietoliikenneverkossa, pakettikytkentä, reititys
@@ -63,13 +62,13 @@ Toisaalta tällainen pakettien siirtely vaiheittain antaa mahdollisuuden myös p
 
 Toisaalta internetin perusmalli, jossa vastaanottaja ei voi päättää mitä viestejä sille saapuu, sallii myös erilaisia hyökkäyksiä internetissä. Tähän perustuvat esim. palvelun esto -hyökkäykset ja erilaiset matojen ja virusten leviämiset. Tällä kurssilla emme keskity näihin uhkakuviin ja niiden torjuntaan. Erilaiset tietoturvaa käsittelevät kurssit käyvät kattavammin läpi näitä uhkia ja niiltä suojautumista.
 
--- quiz: Väittämiä viestin välityksestä
+
 <div><quiznator id="5c77f30799236814c5bbdd50"></quiznator></div>
 
 ## Yhteenveto
 
 Tämä osio kävi läpi tietoliikenteeseen liittyviä keskeisiä käsitteitä, verkon rakennetta ja internetin periaatteita.
 
--- Osaamistavoitteet: Osa 1
+
 <div><quiznator id="5c811117c41ed4148d971561"></quiznator></div>
 

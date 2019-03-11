@@ -54,7 +54,7 @@ Laitteet on voitu yhdistää toisiin erilaisilla verkkoteknologioilla. Kullakin 
 
 Internetin protokollapinon alin, fyysinen, kerros huolehtii bittien siirtämisestä linkkikerroksen laitteiden välillä. Tälläkin kerroksella bittien siirtoon voidaan käyttää erilaisia tekniikoita. Ne voidaan koodata valoksi valokuituun, sähköpulsseiksi koaksiaalikaapeliin tai radioaalloiksi langattoman verkon yhteyksillä. Näitä koodaustapoja emme tällä kurssilla käsittele.
 
--- quiz: Eri kerrosten tehtäviä
+
 <div><quiznator id="5c75241a99236814c5bbd859"></quiznator></div>
 
 
@@ -75,5 +75,4 @@ Monet tietokoneen käyttäjät ovat törmänneet MAC-osoitteeseen. Minun käytt�
 Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä sovelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään porttinumeroa. Porttinumeroita käsitellään hiukan enemmän myöhemmin kun tutustutaan tarkemmin kuljetuskerroksen toimintaan. Sovellukset liitetään tiettyyn porttinumeroon pistokkeilla (socket). Pistokkeet ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Koska emme kurssilla opettele tekemään verkkosovelluksia, niin emme tutustu myöskään pistokkeisiin. Eri protokollien kohdalla kerrotaan, jos niihin liittyy sovittuja, standardoituja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
 
 
--- quiz: Osoitteet ja kerrokset
 <div><quiznator id="5c7657ca244fe21455cbbf30"></quiznator></div>
