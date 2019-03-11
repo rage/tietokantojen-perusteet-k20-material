@@ -33,7 +33,6 @@ Nykyään kaikissa internet-verkon osissa on käytössä nimipalvelu (Domain Nam
 Kaikilla IP-osoitteilla ei ole pakko olla nimeä, mutta jos nimelle ei löydy IP-osoitetta, niin sen kanssa ei voi kommunikoida. Vastaavasti kaikilla IP-osoitteilla ei ole nimeä. Tämä ei kuitenkaan estä kommunikointia kyseisen IP-osoitteen kanssa.
 
 
--- quiz: Nimipalvelu
 <div><quiznator id="5c7ceb5a017ffc13eddcfa1a"></quiznator></div>
 
 
@@ -55,7 +54,5 @@ Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi
 Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin wikipedian [niitä käsittelevä sivu](https://fi.wikipedia.org/wiki/IP-osoite) on hyvä suomenkielinen kuvaus aiheesta.
 
 
-
--- quiz: yksityiset osoitteet
 <div><quiznator id="5c7cf1acddb6b814af3277b9"></quiznator></div>
 

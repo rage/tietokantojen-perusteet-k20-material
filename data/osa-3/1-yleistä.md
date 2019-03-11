@@ -60,6 +60,5 @@ UDP puolestaan on yksinkertaisempi. Se vain ottaa viestin kuljetettavaksi, mutta
 
 Kumpikaan kuljetuskerroksen protokollista ei lupaa mitään viestin välityksen ajankohtaan liittyen. Mitään aikatakeita ei sovelluskerrokselle ole tarjolla. Ne eivät myöskään salaa viestejä. Salausta varten on erikseen SSL (secure socket layer) -kirjasto, joka salaa viestit ensin ja käyttää sitten TCP:tä viestien kuljettamiseen.
 
--- Väittämiä verkkosovelluksista
 <quiznator id="5c7e56533972a91474108c67"></quiznator>
 

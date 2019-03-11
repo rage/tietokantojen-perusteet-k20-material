@@ -58,6 +58,5 @@ NOTE: Muistathan, että käytän termiä käyttäjä ihmisistä ja termiä asiak
 
 
 
--- Tehtävä: Tiedostojakelu
 <quiznator id="5c820d9e244fe21455cbd3a6"></quiznator>
 

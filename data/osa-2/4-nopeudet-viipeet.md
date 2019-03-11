@@ -34,15 +34,12 @@ Ruuhkaisessa verkossa tosin jonotusviive voi olla merkittävä, mutta jätetää
 Tehdään pari hyvin yksinkertaista laskutoimitusta.
 
 
--- siirtoaika dvd
 <quiznator id="5c7d121314524713f95a6d1f"></quiznator>
 
 
--- siirtoaika digikuva
 <quiznator id="5c7d1624ddb6b814af327841"></quiznator>
 
 
--- levyn siirto
 <quiznator id="5c7e246114524713f95a6fc9"></quiznator>
 
 
@@ -50,5 +47,4 @@ Tehdään pari hyvin yksinkertaista laskutoimitusta.
 
 Tässä osassa on käyty läpi kotiverkon toiminnan kannalta keskeiset laitteet ja palvelut. Lisäksi on opittu arvioimaan isojenkin datamäärien tarvitsemia siirtoaikoja.
 
--- Osaamistavoitteet - Osa 2
 <quiznator id="5c811f16fd9fd71425c68d1a"></quiznator>
