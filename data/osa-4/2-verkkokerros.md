@@ -26,10 +26,10 @@ Me tutustumme tällä kurssilla vain IP-protokollaan ja siitäkin lähinnä sen 
 
 ## IP-protokolla
 
-IP-protokolla on internetin kaikkein tärkein protokolla. Se liimaa sovellus- ja kuljetuskerrokset yhteen alemman linkkikerroksen kanssa. Kaikkien internetissä viestejä lähettävien ja vastaaottavien laitteiden on osattava IP-protokollaa. IP-protokollan yksityiskohtia on kuvattu wikipediassa [vastaavalla sivulla](https://fi.wikipedia.org/wiki/IP). Protokollana IP ei ole kovin kummallinen: muodostetaan IP-paketti ja lähetetään se linkkikerroksen avulla matkalle kohti vastaanottajaa. Vastaanottajalla puolestaan verkkokerros saa IP-paketin linkkikerrokselta, poistaa siitä omat otsaketiedot ja antaa sen oikealle kuljetuskerroksen protokollalle käsiteltäväksi.
+IP-protokolla on internetin kaikkein tärkein protokolla. Se liimaa sovellus- ja kuljetuskerrokset yhteen alemman linkkikerroksen kanssa. Kaikkien internetissä viestejä lähettävien ja vastaanottavien laitteiden on osattava IP-protokollaa. IP-protokollan yksityiskohtia on kuvattu Wikipediassa [vastaavalla sivulla](https://fi.wikipedia.org/wiki/IP). Protokollana IP ei ole kovin kummallinen: muodostetaan IP-paketti ja lähetetään se linkkikerroksen avulla matkalle kohti vastaanottajaa. Vastaanottajalla puolestaan verkkokerros saa IP-paketin linkkikerrokselta, poistaa siitä omat otsaketiedot ja antaa sen oikealle kuljetuskerroksen protokollalle käsiteltäväksi.
 
 IP:n kuvaus usein keskittyykin kuvaamaan yksityiskohtaisesti mitä tietoa IP-paketti sisältää eli miten IP-paketin otsake on muodostettu. 
-IP-paketille on ihan [oma wikipedian sivu](https://fi.wikipedia.org/wiki/IP-paketti).
+IP-paketille on ihan [oma Wikipedian sivu](https://fi.wikipedia.org/wiki/IP-paketti).
 
 
 ![Kuva IP-paketin otsaketiedoista](../img/ip-paketti.svg)
@@ -41,7 +41,7 @@ IP-paketin otsakkeessa on siis kuljetuskerroksen protokollan tunnistenumero, lä
 
 ## Reititin
 
-IP-protokollan keskeinen tehtävä  on huolehtia IP-paketin siirto lähettäjältä vastaanottajalle. Koska internet on toteutukseltaa etappivälitteinen, niin IP-paketit siirtyvät vaiheittain verkon sisällä lähettäjältä vastaanottajalle reitittimien muodostamaa verkostoa pitkin.  Muistat varmaan, että reitittimet yhdistävät eri aliverkkoja toisiinsa ja huolehivat viestien välittämisestä aliverkkojen välillä.  Tämä sama malli laajenee koko internetiin. Kukin reititin huolehtii viestien kuljettamisesta vain omalta osaltaan. Se vastaanottaa viestejä kahdesta tai useammasta aliverkosta ja lähettää ne edelleen kohti vastaanottajaa, vaikka vastaanottaja ei olisikaan missään suoraan reitittimeen liitetyssä aliverkossa vaan jossain kauempana. Reitittimellä pitää siis olla tietoa siitä missä päin verkkoa erilaiset IP-numerot oikein ovat. Tätä kutsutaan reititykseksi (wikipedian [sivulla](https://fi.wikipedia.org/wiki/Reititys) on paljon tähän liittyvää termistöä.)
+IP-protokollan keskeinen tehtävä  on huolehtia IP-paketin siirto lähettäjältä vastaanottajalle. Koska internet on toteutukseltaan etappivälitteinen, niin IP-paketit siirtyvät vaiheittain verkon sisällä lähettäjältä vastaanottajalle reitittimien muodostamaa verkostoa pitkin.  Muistat varmaan, että reitittimet yhdistävät eri aliverkkoja toisiinsa ja huolehtivat viestien välittämisestä aliverkkojen välillä.  Tämä sama malli laajenee koko internetiin. Kukin reititin huolehtii viestien kuljettamisesta vain omalta osaltaan. Se vastaanottaa viestejä kahdesta tai useammasta aliverkosta ja lähettää ne edelleen kohti vastaanottajaa, vaikka vastaanottaja ei olisikaan missään suoraan reitittimeen liitetyssä aliverkossa vaan jossain kauempana. Reitittimellä pitää siis olla tietoa siitä missä päin verkkoa erilaiset IP-numerot oikein ovat. Tätä kutsutaan reititykseksi (Wikipedian [sivulla](https://fi.wikipedia.org/wiki/Reititys) on paljon tähän liittyvää termistöä.)
 
 Reitityksessä on kaksi erilaista toimintoa. Toinen on reittien määrittely, jota tehdään erilaisilla reititysalgoritmeilla. Toinen tämän kurssin kannalta tärkeämpi vaihe, on reitittimen vastaanottamien IP-pakettien lähettäminen edelleen seuraavalle reitittimelle. Reititysalgoritmeja emme käsittele, vaan oletamme, että reitittimellä on jo valmiina reititystaulu, jonka perusteella IP-paketin edelleenlähetys (engl. forwarding) tapahtuu.
 
