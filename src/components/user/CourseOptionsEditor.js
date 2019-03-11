@@ -53,8 +53,8 @@ class CourseOptionsEditor extends React.Component {
         first_name: data.user_field?.first_name,
         last_name: data.user_field?.last_name,
         student_number: data.user_field?.organizational_id,
-        applies_for_study_right:
-          data.extra_fields?.applies_for_study_right === "t",
+        participates_in_real_tilpe:
+          data.extra_fields?.participates_in_real_tilpe === "t",
         digital_education_for_all:
           data.extra_fields?.digital_education_for_all === "t",
         marketing: data.extra_fields?.marketing === "t",
@@ -72,7 +72,7 @@ class CourseOptionsEditor extends React.Component {
     e.preventDefault()
     this.setState({ submitting: true })
     let extraFields = {
-      applies_for_study_right: this.state.applies_for_study_right,
+      participates_in_real_tilpe: this.state.participates_in_real_tilpe,
       digital_education_for_all: this.state.digital_education_for_all,
       marketing: this.state.marketing,
       research: this.state.research,
@@ -97,7 +97,7 @@ class CourseOptionsEditor extends React.Component {
     submitting: false,
     error: true,
     errorObj: {},
-    applies_for_study_right: false,
+    participates_in_real_tilpe: false,
     digital_education_for_all: false,
     marketing: false,
     research: undefined,
@@ -216,9 +216,9 @@ class CourseOptionsEditor extends React.Component {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={this.state.applies_for_study_right}
+                      checked={this.state.participates_in_real_tilpe}
                       onChange={this.handleCheckboxInput}
-                      name="applies_for_study_right"
+                      name="participates_in_real_tilpe"
                       value="1"
                     />
                   }

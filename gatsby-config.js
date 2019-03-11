@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Johdatus tietoliikenteeseen",
-    siteUrl: `https://tietoliikenteen-perusteet-material.mooc.fi`,
+    siteUrl: `https://johdatus-tietoliikenteeseen-19.mooc.fi`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",

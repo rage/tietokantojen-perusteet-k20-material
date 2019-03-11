@@ -62,7 +62,7 @@ class PointsBalloonContent extends React.Component {
       let data = await fetchProgress(this.context)
       let userDetails = await getCachedUserDetails()
       const appliesForStudyRight =
-        userDetails?.extra_fields?.applies_for_study_right === "t"
+        userDetails?.extra_fields?.participates_in_real_tilpe === "t"
       this.setState({ data, appliesForStudyRight })
     } catch (e) {
       this.setState({ error: e.toString() })
