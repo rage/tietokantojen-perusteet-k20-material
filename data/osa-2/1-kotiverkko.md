@@ -34,14 +34,11 @@ Näitä yhteyksiä tarjoavat puhelinoperaattorit, kuten Telia, Elisa ja DNA, ymp
 
 Osa palveluntarjoajista näyttää myyvän valokuitu-nimistä palvelua, vaikka valokuitu tulisikin vain taloyhtiöön ja siitä eteenpäin liikennöinti tapahtuisi parikaapelilla.
 
-Tietoliikenneyhteys voidaan rakentaa myös sähköverkon varaan. Tätä datasähköksi kutsuttua palveluakin on saatavilla eri puolilla maata.
-Kurkista esim. Nivos -nimisen yhtiön tarjontaa.
+Tietoliikenneyhteys voidaan rakentaa myös sähköverkon varaan. Tätä datasähköksi kutsuttua palveluakin on saatavilla eri puolilla maata. Kurkista esim. Nivos -nimisen yhtiön tarjontaa.
 
 Joillakin alueilla kaupalliset toimijat eivät koe laajakaistayhteyden toteuttamista kannattavaksi ja laajakaistayhteyttä tarjotaankin siellä täällä myös osuuskuntina. Esimerkiksi Verkko-osuuskunta Ylläksen Laajakaista tarjoaa laajakaistayhteyttä Ylläksellä.
 
 <div><quiznator id="5c77f8fcddb6b814af327046"></quiznator></div>
-
-
 
 
 ### Kotiverkon ja internetin välinen laite
@@ -66,7 +63,7 @@ Kaikissa näissä laitteissa on yksi liitin operaattorin verkkoon liittymistä v
  
 Kotiverkon laitteet voidaan liittää Ethernet-kaapeloinnilla kotiverkon reitittimeen joko suoraan reitittimen porttiin tai jos reitittimessä ei ole riittävästi portteja niin lisäämällä verkkoon esimerkiksi kytkimiä, joilla yhteen reitittimen porttiin voidaan liittää useita laitteita liittämällä ne ensin kytkimen portteihin ja vain kytkin liitetään reitittimeen.
 
-Mikäli kaapelointia ei ole tai sitä ei haluta asentaa, niin silloin yleensä otetaan käyttöön langaton lähiverkko (Wireless local area network, WLAN), joka tarvitsee sitten tukiaseman. Näistä tukiasemista käytetään sekä nimeä WLAN-tukiasema että wifi-tukiasema.  (Termeistä löydät lisätietoja wikipedian [WLAN-artikkelista](https://fi.wikipedia.org/wiki/WLAN).
+Mikäli kaapelointia ei ole tai sitä ei haluta asentaa, niin silloin yleensä otetaan käyttöön langaton lähiverkko (Wireless local area network, WLAN), joka tarvitsee sitten tukiaseman. Näistä tukiasemista käytetään sekä nimeä WLAN-tukiasema että wifi-tukiasema.  (Termeistä löydät lisätietoja Wikipedian [WLAN-artikkelista](https://fi.wikipedia.org/wiki/WLAN).
 
 Joissakin tilanteissa on mahdollista käyttää sähköverkon kaapelointia ethernet-signaalin siirtoon erillisten lisälaitteiden avulla. Vaihtoehtoja siis riittää ja eri tilanteissa on hyvä kartoittaa vaihtoehdot kunnolla ja tehdä sen jälkeen valinta. Olen itsekin kerrostaloasunnossa käyttänyt tällaista "ethernet over power" laitetta saadakseni ethernet-yhteyden tietokoneelle, jota ei voinut liittää langattomaan verkkoon ja joka oli hankalassa paikassa erillistä tietoliikennekaapelointia varten.
  

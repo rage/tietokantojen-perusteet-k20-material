@@ -23,12 +23,12 @@ DHCP-protokollassa asiakas aloittaa viestien vaihdon. Tämä on hyvin tyypillist
 
 Tämän viestien vaihdon yhteydessä palvelin voi toimittaa asiakkaalle myös muita verkon konfiguraation kannalta oleellisia tietoja. Näitä ovat tyypillisesti nimipalvelimen osoite, ulospäin menevän liikenteen oletusreitittimen osoite (default gateway) ja IP-osoitteen laina-aika. Laina-ajan päätyttyä asiakaan pitää erillisellä DHCP-protokollan viestillä tarkistaa palvelimelta saako se vielä käyttää tätä IP-osoitetta. 
 
-EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin englanninkielinen wikipedian [asiaa käsittelevä sivu](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) on hyvä lähtökohta. Sieltä löytyy linkit noihin DHCP:n toiminnallisuuden määritteleviin RFC-dokumentteihin.
+EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin englanninkielinen Wikipedian [asiaa käsittelevä sivu](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) on hyvä lähtökohta. Sieltä löytyy linkit noihin DHCP:n toiminnallisuuden määritteleviin RFC-dokumentteihin.
 
 
 ## Nimipalvelu (DNS)
 
-Nykyään kaikissa internet-verkon osissa on käytössä nimipalvelu (Domain Name Service, DNS). Nimipalvelu on maailmanlaajuinen, koko laajan internet-verkon kattava palvelu, joka pitää huolta verkon laitteiden nimien ja IP-osoitteiden kuvaamisesti toisilleen. Esimerkiksi pyytämällä www.helsinki.fi nimen tietoja nimipalvelusta saadaan tiedoksi, että "www.helsinki.fi canonical name adc-vip3.helsinki.fi" ja edelleen että "Name: adc-vip3.helsinki.fi Address: 128.214.189.90". Näistä tiedoista voidaan päätellä, että Helsingin yliopiston www-palvelu toimii tietokoneella, jonka nimi on adv-vip3.helsinki.fi ja sen IPv4 osoite on 128.214.189.90.
+Nykyään kaikissa internet-verkon osissa on käytössä nimipalvelu (Domain Name Service, DNS). Nimipalvelu on maailmanlaajuinen, koko laajan internet-verkon kattava palvelu, joka pitää huolta verkon laitteiden nimien ja IP-osoitteiden kuvaamisesta toisilleen. Esimerkiksi pyytämällä www.helsinki.fi nimen tietoja nimipalvelusta saadaan tiedoksi, että "www.helsinki.fi canonical name adc-vip3.helsinki.fi" ja edelleen että "Name: adc-vip3.helsinki.fi Address: 128.214.189.90". Näistä tiedoista voidaan päätellä, että Helsingin yliopiston www-palvelu toimii tietokoneella, jonka nimi on adv-vip3.helsinki.fi ja sen IPv4 osoite on 128.214.189.90.
 
 Kaikilla IP-osoitteilla ei ole pakko olla nimeä, mutta jos nimelle ei löydy IP-osoitetta, niin sen kanssa ei voi kommunikoida. Vastaavasti kaikilla IP-osoitteilla ei ole nimeä. Tämä ei kuitenkaan estä kommunikointia kyseisen IP-osoitteen kanssa.
 
@@ -49,9 +49,9 @@ Tietoturvan vuoksi kotiverkossa ei pitäisi olla omaa erillistä nimipalvelijaa,
 
 Osoitteiden muunnosta (Network address translation, NAT) käytetään silloin, kun omia yksityisiä verkkoja liitetään julkiseen internetiin. Verkon yksityisyys määräytyy sen käyttämien IP-osoitteiden kautta. Julkisen verkon IP-osoitteet täytyy erikseen anoa. Yksityisen verkon IP-osoitteet eli osoiteavaruudet 192.168.0.0 - 192.168.255.255, 172.16.0.0 - 172.31.255.255 ja 10.0.0.0 - 10.255.255.255 ovat kaikkien käytettävissä. Usein kotiverkon DHCP-palvelin käyttää noita B-luokan osoitteita osoiteavaruudesta 192.168.x.x.
 
-Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi oman kotiverkon ja palveluntarjoajan verkon yhdistävässä kohdassa täytyy olla laite, joka tekee osoitteen muunnoksen yksityisen verkon osoitteesta julkisen verkon osoitteeksi ja päinvastoin. Osoitteenmuunnos edellyttää, että NAT-laite pitää kirjaa mistä oman verkon osoitteesta lähetettiin viestejä mihin julkisen verkon osoitteeseen, jotta se osaa vastausviestit ohjata oikealle yksityisen verkon laitteelle. Tarkempaa tietoa osoitteenmuunnosten tekniikasta on esimerkiksi wikipedian [asiaa käsittelevällä sivulla](https://fi.wikipedia.org/wiki/Osoitteenmuunnos).
+Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi oman kotiverkon ja palveluntarjoajan verkon yhdistävässä kohdassa täytyy olla laite, joka tekee osoitteen muunnoksen yksityisen verkon osoitteesta julkisen verkon osoitteeksi ja päinvastoin. Osoitteenmuunnos edellyttää, että NAT-laite pitää kirjaa mistä oman verkon osoitteesta lähetettiin viestejä mihin julkisen verkon osoitteeseen, jotta se osaa vastausviestit ohjata oikealle yksityisen verkon laitteelle. Tarkempaa tietoa osoitteenmuunnosten tekniikasta on esimerkiksi Wikipedian [asiaa käsittelevällä sivulla](https://fi.wikipedia.org/wiki/Osoitteenmuunnos).
 
-Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin wikipedian [niitä käsittelevä sivu](https://fi.wikipedia.org/wiki/IP-osoite) on hyvä suomenkielinen kuvaus aiheesta.
+Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin Wikipedian [niitä käsittelevä sivu](https://fi.wikipedia.org/wiki/IP-osoite) on hyvä suomenkielinen kuvaus aiheesta.
 
 
 <div><quiznator id="5c7cf1acddb6b814af3277b9"></quiznator></div>

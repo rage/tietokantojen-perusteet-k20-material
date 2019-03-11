@@ -30,7 +30,7 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 <illustrations motive="verkon-kaavakuva.pdf" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
-![viesti kulkee sovelluskerrokselta muiden kerrosten läpi fyysiselle kerrokselle ja sieltä vastaanottajan fyysiselle kerrokselle ja käänteisessä järjestyksessä kerrosten käpi sovelluskerrokselle](../img/kerrokset.svg)
+![viesti kulkee sovelluskerrokselta muiden kerrosten läpi fyysiselle kerrokselle ja sieltä vastaanottajan fyysiselle kerrokselle ja käänteisessä järjestyksessä kerrosten läpi sovelluskerrokselle](../img/kerrokset.svg)
 
 
 <div><quiznator id="5c77cf5799236814c5bbdcf4"></quiznator></div>
@@ -56,7 +56,7 @@ Kahden reitittimen välissä olevassa linkissä voi toki olla myös linkkikerrok
 
 ### Ongelmia
 
-Koska viestit etenevät lähettäjältä vastaanottajalle pätkittäin reitittimeltä toiselle, on mahdollista, että joku reititin ei voikaan laittaa viestiä eteenpäin tai joku toinen reititin ei omien ongelmiensa vuoksi voi ottaa välitettävää viestiä vastaan. Tällöin viesti katoaa matkalla eikä se koskaa saavuta vastaanottajaa. Vastaavasti on myös mahdollista, että viestiä siirtäville reitittimille syntyy eri käsitys viestin etenemisestä ja lähettävä reititin laittaa viestin varmuuden vuoksi uudelleen eteenpäin. Tällöin viesti voi kahdentua, jolloin vastaanottajalle saapuukin kaksi kopiota samasta viestistä.
+Koska viestit etenevät lähettäjältä vastaanottajalle pätkittäin reitittimeltä toiselle, on mahdollista, että joku reititin ei voikaan laittaa viestiä eteenpäin tai joku toinen reititin ei omien ongelmiensa vuoksi voi ottaa välitettävää viestiä vastaan. Tällöin viesti katoaa matkalla eikä se koskaan saavuta vastaanottajaa. Vastaavasti on myös mahdollista, että viestiä siirtäville reitittimille syntyy eri käsitys viestin etenemisestä ja lähettävä reititin laittaa viestin varmuuden vuoksi uudelleen eteenpäin. Tällöin viesti voi kahdentua, jolloin vastaanottajalle saapuukin kaksi kopiota samasta viestistä.
 
 Toisaalta tällainen pakettien siirtely vaiheittain antaa mahdollisuuden myös pahantahtoiseen toimintaan. Verkossa on helppo kerätä kaikki tietyn pisteen kautta kulkevat viestit ja tutkia niitä. Julkisuudessa oli viitisen vuotta sitten paljonkin keskustelua siitä kuinka Yhdysvalloissa NSA kuuntelee viestejä tai kuinka Suomessa poliisin on mahdollisuus saada oikeus viestiliikenteen seurantaan.
 

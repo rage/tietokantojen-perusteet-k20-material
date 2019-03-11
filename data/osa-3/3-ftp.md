@@ -24,7 +24,7 @@ Tutustutaan ensin tuohon perinteiseen ja yksinkertaisempaan tiedostojen siirtoon
 
 ## FTP
 
-FTP palvelu poikkeaa aiemmin tarkastellusta WWW-palvelusta monella eri tavalla. FTP-protokollan määrittelyn mukaan asiakkaan ja palvelimen välinen kommunikointi on WWW:tä monipuolisempaa ja FTP-palvelimen pitää pitää kirjaa siitä, millaisia viestejä asiakkaalta on aiemmin tullut eli FTP-palvelimella on tila. Jotta FTP-palvelin ylläpitämä tilainformaatio ei kasvaisi rajattomasti, on sovittu, että FTP-palvelin ylläpitää tilatietoa asiakkaaseen liittyen vain aktiivin istunnon ajan. Istunto on määritelty yhdeksi jatkuvaksi yhteydeksi asiakkaan ja palvelimen välillä. Kun tämä yhteys päättyy tai katkeaa, niin palvelin voi unohtaa asiakkaan ja siihen liittyvän tilatiedon. Erityisesti hakemiston vaihdot muuttavat asiakkaaseen liittyvää tilatietoa. Tilatiedon osalta FTP-palvelin poikkeaa aiemmin tarkastelemastamme WWW-palvelimesta. WWW-palvelimen ei tarvitse ylläpitää tilatietoa, joten sen ei tarvitse lainkaan välittää siitä mitä asiakas on aiemmin tehnyt. FTP-palvelin puolestaan täytyy tietää esimerkiksi mikä on asiakkaan aktiivien työhakemisto juuri nyt.
+FTP palvelu poikkeaa aiemmin tarkastellusta WWW-palvelusta monella eri tavalla. FTP-protokollan määrittelyn mukaan asiakkaan ja palvelimen välinen kommunikointi on WWW:tä monipuolisempaa ja FTP-palvelimen tulee pitää kirjaa siitä, millaisia viestejä asiakkaalta on aiemmin tullut eli FTP-palvelimella on tila. Jotta FTP-palvelin ylläpitämä tilainformaatio ei kasvaisi rajattomasti, on sovittu, että FTP-palvelin ylläpitää tilatietoa asiakkaaseen liittyen vain aktiivin istunnon ajan. Istunto on määritelty yhdeksi jatkuvaksi yhteydeksi asiakkaan ja palvelimen välillä. Kun tämä yhteys päättyy tai katkeaa, niin palvelin voi unohtaa asiakkaan ja siihen liittyvän tilatiedon. Erityisesti hakemiston vaihdot muuttavat asiakkaaseen liittyvää tilatietoa. Tilatiedon osalta FTP-palvelin poikkeaa aiemmin tarkastelemastamme WWW-palvelimesta. WWW-palvelimen ei tarvitse ylläpitää tilatietoa, joten sen ei tarvitse lainkaan välittää siitä mitä asiakas on aiemmin tehnyt. FTP-palvelimen puolestaan täytyy tietää esimerkiksi mikä on asiakkaan aktiivinen työhakemisto juuri nyt.
 
 Jatkuva yhteys asiakkaan ja palvelimen välillä on nimetty kontrolliyhteydeksi. Sitä pitkin asiakas välittää kaikki toimenpidepyynnöt palvelimelle. Tyypillisiä toimenpidepyyntöjä ovat hakemiston tiedostolistaus, hakemiston vaihto, tiedosto nouto- ja tallennuspyynnöt.
 
@@ -42,7 +42,7 @@ FTP:tä ei enää perusmuotoisena käytetä, koska se ei salaa kontrolliyhteyden
 
 Funet ylläpitää edelleen [FTP-palvelua ftp.funet.fi](ftp://ftp.funet.fi). Se oli aikoinaan merkittävä suomalainen tiedostojenjakopalvelu. Esimerkiksi LINUX-käyttöjärjestelmän ensimmäiset versiot olivat jaossa nimenomaan sen kautta.
 
-FTP-palveluissakin pyritään välttämään verkon kuormittamista käyttämällä erityisiä peilisolmuja (Mirror site), joihin tiedostoja siirretään lähemmäs oletettuja käyttäjiä. Käyttäjän tehtäväksi jää päättää, mikä mahdollisista peilisolmuista olisi itselle sopivin ja ottaa sitten yhteyttä suoraan siihen. Aikoinaan peilisolmun valinta oli erittäin tärkeeä, koska se vaikutti merkittävästi tiedoston latausaikaan. Lähellä ja nopean yhteyden takana olevalta peililtä tiedosto saattoi tulla minuuteissa, kun kauempana olevalta peililtä latausaika saattoi olla tunteja.
+FTP-palveluissakin pyritään välttämään verkon kuormittamista käyttämällä erityisiä peilisolmuja (Mirror site), joihin tiedostoja siirretään lähemmäs oletettuja käyttäjiä. Käyttäjän tehtäväksi jää päättää, mikä mahdollisista peilisolmuista olisi itselle sopivin ja ottaa sitten yhteyttä suoraan siihen. Aikoinaan peilisolmun valinta oli erittäin tärkeä, koska se vaikutti merkittävästi tiedoston latausaikaan. Lähellä ja nopean yhteyden takana olevalta peililtä tiedosto saattoi tulla minuuteissa, kun kauempana olevalta peililtä latausaika saattoi olla tunteja.
 
 
 
@@ -54,7 +54,7 @@ Wikipediassa on [lyhyt kuvaus sisällönjakeluverkoista](https://fi.wikipedia.or
 
 Yleensä käyttäjä käyttää jotain sovellusta, joka sitten sisäisesti käyttääkin sisällön siirtoon jotain tiettyä sisällönjakopalvelua tarjoavaa organisaatiota. Käyttäjällä ei välttämättä ole edes käsitystä siitä, että tieto kulkeekin erillisen sisällönjakelijan kautta. Hyvä esimerkki tästä on Ylen vuonna 2015 laatima [kuvaus Areena-palvelun toiminnasta](https://yle.fi/aihe/artikkeli/2015/01/15/nain-areenan-jakelu-toimii).
 
-NOTE: Muistathan, että käytän termiä käyttäjä ihmisistä ja termiä asiakas laitteesta tai sen ohjelmistosta. Käyttäjä siis käyttää esimerkiksi tablettia, joka asiakkaana ottaa yhteyttä erilaisiin verkon palveluihin.
+HUOM: Muistathan, että käytän termiä käyttäjä ihmisistä ja termiä asiakas laitteesta tai sen ohjelmistosta. Käyttäjä siis käyttää esimerkiksi tablettia, joka asiakkaana ottaa yhteyttä erilaisiin verkon palveluihin.
 
 
 

@@ -7,7 +7,7 @@ title: 'Viestien ja verkon suojaus'
 
 ## Salaus
 
-Jotta voimme suojata verkon liikennettä ja siellä kulkevia viestejä, ne pitää salata. Salaaminen tarkoittaa viestin sisällön muokkaamista siten, että se ei ole ulkopuolisten luettavissa. Yksinkertaisia esimerkkejä ovat erilaiset historialliset salakirjoitustekniikat (katso wikipedia [sivua kryptologia](https://fi.wikipedia.org/wiki/Kryptologia), jos asia kiinnostaa enemmän).
+Jotta voimme suojata verkon liikennettä ja siellä kulkevia viestejä, ne pitää salata. Salaaminen tarkoittaa viestin sisällön muokkaamista siten, että se ei ole ulkopuolisten luettavissa. Yksinkertaisia esimerkkejä ovat erilaiset historialliset salakirjoitustekniikat (katso Wikipedian [sivua kryptologia](https://fi.wikipedia.org/wiki/Kryptologia), jos asia kiinnostaa enemmän).
 
 Tietokoneiden nykyisin käyttämät salausmenetelmät perustuvat edistyneeseen matematiikkaan. Me emme tutustu itse salausmenetelmien toimintaan tai niihin liittyviin analyyseihin, vaan otamme ne annettuna ja käytämme muualla kehitettyjä salausmenetelmiä tietoliikenteessä viestien välityksen turvaamiseen.
 
