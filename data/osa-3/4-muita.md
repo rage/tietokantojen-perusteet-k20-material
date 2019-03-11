@@ -31,15 +31,15 @@ Emme millään pysty tutustumaan kaikkiin mahdollisiin internetin kautta saatavi
 
 Virtuaalinen yksityisverkko (engl. virtual private network, VPN) tapa muodostaa suojattu yhteys esimerkiksi työpaikan verkkoon silloinkin, kun käyttäjä todellisuudessa on jossain muualla. VPN-yhteyden avulla oman koneensa saa liitettyä työpaikan verkkoon siten, että koneella ovat käytettävissä ihan samat palvelut kuin työpaikallakin. Usein tietoturvan parantamiseksi organisaatiot rajoittavat palvelujen käyttöä ja näkyvyyttä siten, että ne ovat käytettävissä vain organisaation omassa verkossa.
 
-Virtuaalinen yksityisverkko ei oikeastaan ole vain sovelluskerroksen asia, koska se vaikuttaa myös verkkokerroksen toimintaan. Käyttäjälle se on sovellus muiden joukossa ja siksi käsitellään jo tässä yhteydessä. 
+Virtuaalinen yksityisverkko ei oikeastaan ole vain sovelluskerroksen asia, koska se vaikuttaa myös verkkokerroksen toimintaan. Käyttäjälle se on sovellus muiden joukossa ja siksi käsitellään jo tässä yhteydessä.
 
 Esimerkiksi Helsingin yliopiston opiskelijoille ja henkilökunnalle on käytettävissä paljon enemmän palveluja yliopiston omassa verkossa kuin verkon ulkopuolella. Moni meistä on törmännyt tähän esimerkiksi tieteellisten artikkelien kanssa. Artikkeli on luettavissa ilman maksua, kun sen hakee yliopiston verkossa, mutta kun samaa artikkelia yrittää lukea kotiverkosta käsin, niin artikkelin julkaisija haluaakin maksun siitä. Tämä ero johtuu siitä, että yliopisto on jo maksanut artikkelien käyttöoikeudesta omassa verkossaan, muilta käyttäjiltä kustantaja haluaa edelleen maksun. Tällöin tilanne on helppo ratkaista muodostamalla ensin VPN-yhteys yliopiston verkkoon ja sitten hakemalla kyseinen artikkeli.
 
-Ajatuksellisesti VPN-yhteys on siis jonkinlainen suojattu putki tai tunneli, joka johtaa omalta koneelta organisaation VPN-palvelimelle ja johon kukaan matkan varrella oleva ulkopuolinen toimija ei voi nähdä sisälle. Näin se on helppo vielä hahmottaa. Lisätään tähän vähän yksityiskohtia lisää. Putken sisällä liikenne on organisaation oman sisäisen verkon liikennettä, eli esimerkiksi www-selaimen lähettämiä pyyntöjä ja sen saamia vastauksia. Putken ulkopuolella liikenne puolestaan on julkisen internetin liikennettä. Sisäpuolella liikennöidään siis yrityksen sisäverkon IP-osoitteilla ja ulkopuolella julkisen internetin osoitteilla. 
+Ajatuksellisesti VPN-yhteys on siis jonkinlainen suojattu putki tai tunneli, joka johtaa omalta koneelta organisaation VPN-palvelimelle ja johon kukaan matkan varrella oleva ulkopuolinen toimija ei voi nähdä sisälle. Näin se on helppo vielä hahmottaa. Lisätään tähän vähän yksityiskohtia lisää. Putken sisällä liikenne on organisaation oman sisäisen verkon liikennettä, eli esimerkiksi www-selaimen lähettämiä pyyntöjä ja sen saamia vastauksia. Putken ulkopuolella liikenne puolestaan on julkisen internetin liikennettä. Sisäpuolella liikennöidään siis yrityksen sisäverkon IP-osoitteilla ja ulkopuolella julkisen internetin osoitteilla.
 
 Lähettäjän sovellus lähettää viestin normaalisti ja protokollapinon eri kerroksilla siitä muodostetaan sisäverkon paketti. Koska sitä ei IP-osoitteidensa vuoksi voida suoraan lähettää julkiseen verkkoon, tämä paketti sijoitetaan ulkoverkon paketin sisään dataksi. Ulkoverkon paketti voidaan sitten lähettää VPN-palvelimelle. Palvelin avaa saamansa paketin ja ottaa sieltä tuon sisäverkon paketin, jonka se lähettää nyt sisäverkosta lopulliselle kohteelleen. Viestien paketointiin tutustutaan hiukan tarkemmin seuraavassa osiossa, jossa katsotaan muita protokollapinon kerroksia ja niiden toimintoja.
 
-<quiznator id="5c822c68244fe21455cbd3d8"></quiznator>
+<quiz id="5c822c68244fe21455cbd3d8"></quiz>
 
 
 ## Yhteenveto
@@ -48,4 +48,4 @@ Tässä osiossa oli paljon asiaa, mutta se oli samalla vain pintaraapaisu.  Tutu
 
 Tiedostojen siirtoon tai käyttäjien väliseen viestintään on tarjolla paljon erilaisia järjestelmiä. Tässä tutustuttiin niistä perinteisimpiin, koska ne ovat helpompia hahmottaa kuin uudemmat ja monipuolisemmat palvelut.
 
-<quiznator id="5c82321efd9fd71425c68e68"></quiznator>
+<quiz id="5c82321efd9fd71425c68e68"></quiz>

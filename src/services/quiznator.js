@@ -13,7 +13,7 @@ export async function fetchManyQuizDetails(quizIds) {
   return res.data
 }
 
-export async function fetchQuiznatorProgress() {
+export async function fetchquizProgress() {
   let res = []
   const partToTag = [
     {

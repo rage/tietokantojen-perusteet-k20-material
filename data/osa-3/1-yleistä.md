@@ -38,7 +38,7 @@ Tämän kurssin kannalta noiden termien asiakas-palvelija ja vertaisverkko tunni
 
 Sovelluksille, joiden toiminta edellyttää, että kaikki viestit pääsevät perille, kuljetuskerros tarjoaa luotettavaa tiedonsiirtopalvelua. Se takaa, että viestit menevät perille samassa muodossa kuin ne on lähetetty, että ne eivät monistu matkalla ja että ne toimitetaan perille ennemmin tai myöhemmin. Jos esimerkiksi kaivinkone on katkaissut kaapelin tai palvelinkone on päivityksen vuoksi poissa käytöstä, niin viestiä ei voida toimittaa saman tien, vaan viestin toimitusviive voi olla hyvinkin pitkä. Sovellus voi toki asettaa aikarajan viestin välitykselle, mutta silloin voi olla, että viestiä ei saada toimitettua perille, kun vastaanottajaa ei tavoiteta ajoissa.
 
-Jotkut sovellukset, kuten esimerkiksi verkkopelit, eivät puolestaan siedä pitkiä siirtoviiveitä tai suurta vaihtelua viestien kulkunopeuksissa. Sama koskee myös esim. videoiden katselua, silloinkin datan pitäisi siirtyä mahdollisimman tasaisesti. Videot tarvitsevat paljon siirtokapasiteettia, jolloin verkon nopeuden pitäisi olla mahdollisimman suuri. Tieverkossa puhutaan läpäisykyvystä (throughput) eli kuinka paljon liikennettä mahtuu kyseistä tietä pitkin kulkemaan. Tietoverkoissakin tämä olisi oikeampi termi, mutta yleisesti kuitenkin on otettu käyttöön termi 'verkon nopeus' vaikka verkko ei itse mihinkään liiku. Verkon maksimisiirtonopeus, esimerkiksi 1 Gb/s, asettaa teoreettisen maksimin verkon läpäisykyvylle, koska sitä suurempaa siirtonopeutta ei kyseisessä verkossa ole mahdollista saada. Käytännössä todelliset siirretyt datamäärät ovat huomattavan paljon pienempiä, koska verkossa liikkuu muitakin viestejä ja siirretyn datan määrään ei lasketa mukaan viestin otsakkeita. 
+Jotkut sovellukset, kuten esimerkiksi verkkopelit, eivät puolestaan siedä pitkiä siirtoviiveitä tai suurta vaihtelua viestien kulkunopeuksissa. Sama koskee myös esim. videoiden katselua, silloinkin datan pitäisi siirtyä mahdollisimman tasaisesti. Videot tarvitsevat paljon siirtokapasiteettia, jolloin verkon nopeuden pitäisi olla mahdollisimman suuri. Tieverkossa puhutaan läpäisykyvystä (throughput) eli kuinka paljon liikennettä mahtuu kyseistä tietä pitkin kulkemaan. Tietoverkoissakin tämä olisi oikeampi termi, mutta yleisesti kuitenkin on otettu käyttöön termi 'verkon nopeus' vaikka verkko ei itse mihinkään liiku. Verkon maksimisiirtonopeus, esimerkiksi 1 Gb/s, asettaa teoreettisen maksimin verkon läpäisykyvylle, koska sitä suurempaa siirtonopeutta ei kyseisessä verkossa ole mahdollista saada. Käytännössä todelliset siirretyt datamäärät ovat huomattavan paljon pienempiä, koska verkossa liikkuu muitakin viestejä ja siirretyn datan määrään ei lasketa mukaan viestin otsakkeita.
 
 
 
@@ -50,7 +50,7 @@ Kuljetuskerroksen palveluja valittaessa sovelluksen suunnittelijan pitää siis 
    <li> kuinka turvallista kommunikointia tarvitaan vai voiko vain lähettää siten, että kaikki voivat nähdä viestit?
 </ul>
 
-Eri verkkosovelluksissa on tehty erilaisia ratkaisuja ja siksi ne toimivat eri tavoin. 
+Eri verkkosovelluksissa on tehty erilaisia ratkaisuja ja siksi ne toimivat eri tavoin.
 
 Kuljetuskerroksella on käytössä kaksi vaihtoehtoista protokollaa TCP ja UDP, joiden toimintaan tutustutaan tarkemmin hiukan myöhemmin. Nyt kuitenkin katsotaan niiden tarjoamien palvelujen erot, koska sovelluksen täytyy valita kumpaa kuljetusprotokollaa se minkäkin viestin kanssa käyttää.
 
@@ -60,5 +60,4 @@ UDP puolestaan on yksinkertaisempi. Se vain ottaa viestin kuljetettavaksi, mutta
 
 Kumpikaan kuljetuskerroksen protokollista ei lupaa mitään viestin välityksen ajankohtaan liittyen. Mitään aikatakeita ei sovelluskerrokselle ole tarjolla. Ne eivät myöskään salaa viestejä. Salausta varten on erikseen SSL (secure socket layer) -kirjasto, joka salaa viestit ensin ja käyttää sitten TCP:tä viestien kuljettamiseen.
 
-<quiznator id="5c7e56533972a91474108c67"></quiznator>
-
+<quiz id="5c7e56533972a91474108c67"></quiz>

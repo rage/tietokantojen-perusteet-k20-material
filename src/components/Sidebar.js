@@ -118,7 +118,10 @@ var content2 = [
   { separator: true },
 ]
 
-var futurePages = []
+var futurePages = [
+  { title: "Osa 4", tba: "15.3.2019" },
+  { title: "Osa 5", tba: "15.3.2019" },
+]
 
 const MobileWrapper = styled.div`
   @media only screen and (max-width: ${SMALL_MEDIUM_BREAKPOINT}) {

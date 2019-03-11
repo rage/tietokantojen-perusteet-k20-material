@@ -12,7 +12,7 @@ hidden: false
 
 </text-box>
 
-<quiznator id="5c498c7c017ffc13eddc84f1"></quiznator>
+<quiz id="5c498c7c017ffc13eddc84f1"></quiz>
 
 
 
@@ -27,7 +27,7 @@ Tietoliikenteen [porteilla](https://fi.wikipedia.org/wiki/Portti_(tietoliikenne)
 
 ##  TCP
 
-TCP:n avulla sovelluskerroksen prosessit voivat muodostaa loogisen yhteyden lähettäjän ja vastaanottajan välille. Yhteys on kaksisuuntainen, joten molemmat voivat lähettää ja vastaanottaa viestejä samaa yhteyttä pitkin. Yhteys on looginen, koska meillä ei ole yhtä tiettyä kiinteää putkimaista reittiä, jota pitkin kaikki viestit aina kulkisivat lähettäjän ja vastaanottajan välillä. 
+TCP:n avulla sovelluskerroksen prosessit voivat muodostaa loogisen yhteyden lähettäjän ja vastaanottajan välille. Yhteys on kaksisuuntainen, joten molemmat voivat lähettää ja vastaanottaa viestejä samaa yhteyttä pitkin. Yhteys on looginen, koska meillä ei ole yhtä tiettyä kiinteää putkimaista reittiä, jota pitkin kaikki viestit aina kulkisivat lähettäjän ja vastaanottajan välillä.
 Sovelluksen ja TCP:n välinen yhteys on sovittu käsiteltäväksi tavuvirtana, jolloin TCP:n ei tarvitse tietää sovelluksen sanomien rakennetta tai niiden kokoa etukäteen, vaan kaikki sovelluksen viestit tulevat TCP:lle pistokkeen kautta tavujonona, ihan samaan tapaan kuin tiedostoissa on vain tavuja.
 
 TCP:n keskeinen tehtävä on huolehtia sovellukselta tulevan viestijonon jaottelusta sopivan kokoisiin datagrammeihin, jotka sitten annetaan verkkokerrokselle toimitettavaksi vastaanottajan koneelle. Näihin datagrammeihin liitetään otsake, jossa on sekä porttinumero että vastaanottavan koneen IP-osoite. Vastaanottajan päässä kuljetuskerros käyttää tätä datagrammin otsakkeessa olevaa porttinumeroa oikean vastaanottavan prosessin tunnistamiseen.
@@ -45,7 +45,7 @@ Mitä lähettäjä sitten tekee, jos kuittausta ei saavu? Se ei voi tietää onk
 
 ### Viestin katoaminen ja siihen reagointi
 
-Viestin katoamiseen tai vahingoittumiseen on monta syytä. Jossain matkan varrella tai vastaanottajalla ei ole tilaa viestin vastaanottamiseen. Koska valo, sähkö tai radioaallot eivät voi odottaa matkalla, katoaa viesti aina, jos sitä ei ajoissa voida ottaa talteen johonkin. Toisaalta matkalla minkä tahansa kahden pisteen välillä signaali on myös alttiina erilaisille häiriöille. Auringon energiapurkaus, satunnainen muu säteily tai joku muu häiriö voi sekoittaa viestin bittejä, jolloin viesti ei enää olekaan alkuperäinen. 
+Viestin katoamiseen tai vahingoittumiseen on monta syytä. Jossain matkan varrella tai vastaanottajalla ei ole tilaa viestin vastaanottamiseen. Koska valo, sähkö tai radioaallot eivät voi odottaa matkalla, katoaa viesti aina, jos sitä ei ajoissa voida ottaa talteen johonkin. Toisaalta matkalla minkä tahansa kahden pisteen välillä signaali on myös alttiina erilaisille häiriöille. Auringon energiapurkaus, satunnainen muu säteily tai joku muu häiriö voi sekoittaa viestin bittejä, jolloin viesti ei enää olekaan alkuperäinen.
 Tällainen vaurioitunut viesti pyritään aina tunnistamaan ja poistamaan, jolloin viesti ei taaskaan päädy vastaanottajalle.
 
 Viestien ja kuittausten katoamista vastaan lähettäjät käyttävät ajastimia (timer). Kun ne lähettävät viestin, ne laittavat ajastimen käyntiin. Jos kuittausta ei ole saapunut siihen mennessä, kun ajastin laukeaa, lähettäjä olettaa viestin kadonneen ja lähettää sen uudelleen. Lähettäjää ei siis kiinnosta oliko kadonnut alkuperäinen viesti vai kuittaus. Sitä kiinnostaa ainoastaan se, että sillä ei ole varmuutta viestin perillemenosta.
@@ -64,7 +64,7 @@ UDP yksinkertaisesti vain ottaa sovellukselta viestin välitettäväksi ja laitt
 
 UDP siis vain lupaa lähettää viestin, mutta ei anna mitään takuita viestin perille menosta eikä käytä kuittauksia tämän tarkistamiseen.
 
-UDP:tä käytetäänkin yleensä silloin, kun sovellukselle ei ole merkitystä että kaikki viestit menevät sellaisenaan perille tai sovellus haluaa itse huolehtia mahdollisista uudelleenlähetyksistä. Näin on usein esimerkiksi erilaisten reaaliaikaisten sovellusten kuten verkkopelien tai videoiden kanssa. Ehkä tunnetuin UDP:tä käyttävä järjestelmä on nimipalvelu (Domain Name Service, DNS). 
+UDP:tä käytetäänkin yleensä silloin, kun sovellukselle ei ole merkitystä että kaikki viestit menevät sellaisenaan perille tai sovellus haluaa itse huolehtia mahdollisista uudelleenlähetyksistä. Näin on usein esimerkiksi erilaisten reaaliaikaisten sovellusten kuten verkkopelien tai videoiden kanssa. Ehkä tunnetuin UDP:tä käyttävä järjestelmä on nimipalvelu (Domain Name Service, DNS).
 
 UDP jää tällä kurssillä hyvin vähälle huomiolle. Tärkeintä onkin tunnistaa termi ja muistaa, että kyse on kuljetuskerroksen yksinkertaisesta protokollasta.
 
@@ -72,6 +72,4 @@ UDP jää tällä kurssillä hyvin vähälle huomiolle. Tärkeintä onkin tunnis
 
 ## TLS
 
-Alkuperäiset kuljetuskerroksen protokollat eivät tarjoa salausta tiedonsiirron turvallisuuden parantamiseksi. Sitä varten on kehitetty aluksi SSL ja siitä edelleen TLS (Transport Layer Security), jolla voidaan salata TCP-yhteyksissä kulkevaa dataa. Yksinkertaistetusti voidaan ajatella että TLS on vain salattu TCP-yhteys. Salauksessa haastavinta salausalgoritmien lisäksi on suunnitella ja toteuttaa luotettava avainten hallinta. Avainten hallinta kuuluu erilaisilla tietoturva-kursseilla ja siksi emme sitä tällä kurssilla käsittele enempää kuin jo aiemmin esillä olleet varmenteet edellyttivät. 
-
-
+Alkuperäiset kuljetuskerroksen protokollat eivät tarjoa salausta tiedonsiirron turvallisuuden parantamiseksi. Sitä varten on kehitetty aluksi SSL ja siitä edelleen TLS (Transport Layer Security), jolla voidaan salata TCP-yhteyksissä kulkevaa dataa. Yksinkertaistetusti voidaan ajatella että TLS on vain salattu TCP-yhteys. Salauksessa haastavinta salausalgoritmien lisäksi on suunnitella ja toteuttaa luotettava avainten hallinta. Avainten hallinta kuuluu erilaisilla tietoturva-kursseilla ja siksi emme sitä tällä kurssilla käsittele enempää kuin jo aiemmin esillä olleet varmenteet edellyttivät.

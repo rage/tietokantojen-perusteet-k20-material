@@ -19,7 +19,7 @@ Paljon käytetty <b>julkisen avaimen salakirjoitus</b> perustuu avainpareihin, j
 
 Näiden salausmenetelmien turvallisuus perustuu hyvään avainhallintaan. Emmehän me jaa kotiavaintakaan (tai sen kopioita) vapaasti muille. Samoin pitää menetellä oman salaisen avaimen kanssa. Jos joku epäluotettava taho saa haltuunsa minun salaisen avaimeni, niin mikään minun viestintäni ei ole sen jälkeen enää luottamuksellista, koska tämä taho voi vapaasti tutkia kaikkia minulle tulevia salattuja viestejä. Lisäksi kyseinen taho voi väittää olevansa minä salaamalla lähettämänsä viestit minun salaisella avaimellani. Julkista avainta ei pidetä piilossa, joten sen oletetaan olevan kaikilla, jotka haluavat lähettää viestejä minulle.
 
-<div><quiznator id="5c78f913fd9fd71425c67e56"></quiznator></div>
+<div><quiz id="5c78f913fd9fd71425c67e56"></quiz></div>
 
 ## Viestien salaus
 
@@ -39,7 +39,7 @@ Jos kaikki kotiverkon laitteet liikennöivät langallisesti (valokuitu, parikaap
 
 Useimmissa kotiverkoissa on kuitenkin käytössä myös langaton verkko, jonka suojaaminen on haasteellisempaa, koska verkko kuuluu myös ulkopuoliseen tilaan ja fyysinen pääsy kuuluvuusalueelle on usein mahdotonta estää. Langattoman verkon osalta luvaton käyttö voidaan estää käyttämällä WLAN-verkkosalasanaa. Useimmissa WLAN-tukiasemissa on nykyään jo valmiiksi asennettuna verkkosalasana, jota edellytetään, jotta verkkoon voi liittyä. Kaikki laitteet, jotka antavat oikean verkkosalasanan saavat pääsyn verkkoon. Helpot salasanat on suhteellisen helppo arvata. Riittävän vaikea verkkosalasanan käyttö on hyvä ja yksinkertainen tapa rajoittaa verkon käyttöä.
 
-Langalliseen tai langattomaan verkkoon pääsy voidaan rajata myös vain tietyille laitteille. Linkkikerroksella Ethernet-verkossa käytettävä MAC-osoite on yksi mahdollinen tapa rajoittaa verkon käyttöä. Perinteisesti laitteilla on ollut kiinteä MAC-osoite, jolla laite voidaan tunnistaa. Nykyisin laitteiden MAC-osoitteita voidaan ohjelmallisesti vaihtaa, joten tämä ei enää ole kovin turvallinen tapa rajoittaa verkkoon liitettäviä laitteita. 
+Langalliseen tai langattomaan verkkoon pääsy voidaan rajata myös vain tietyille laitteille. Linkkikerroksella Ethernet-verkossa käytettävä MAC-osoite on yksi mahdollinen tapa rajoittaa verkon käyttöä. Perinteisesti laitteilla on ollut kiinteä MAC-osoite, jolla laite voidaan tunnistaa. Nykyisin laitteiden MAC-osoitteita voidaan ohjelmallisesti vaihtaa, joten tämä ei enää ole kovin turvallinen tapa rajoittaa verkkoon liitettäviä laitteita.
 
 
 ### Luvattoman tulevan liikenteen estäminen - Palomuuri
@@ -54,13 +54,12 @@ Osa palomuuriohjelmistoista tai laitteista on oletusarvoisesti auki, jolloin ne 
 
 Verkon liikenteen suojaamisen lisäksi on ihan yhtä tärkeää suojata verkon laitteet luvattomalta käytöltä. Tämä suojaaminen usein perustuu käyttäjätunnuksiin ja salasanoihin. Useimmilla verkkolaitteillakin on hallintatunnus (esimerkiksi admin) ja sillä salasana. Tämä salasana saattaa vieläkin olla turhan helppo arvata tai olla jopa sama kaikilla laitteilla. Tällöin tärkeää vaihtaa salasana riittävän vahvaksi ja aidosti salaiseksi.
 
-Joissakin markkinoilla olevissa WLAN-laitteissa hallintatunnuksen oletussalasana on sama kuin verkon salasana. Jos salasana on riittävän hyvä ja voidaan luottaa kaikkiin verkon käyttäjiin, niin silloin oletussalasanaa ei ehkä tarvitse vaihtaa. 
+Joissakin markkinoilla olevissa WLAN-laitteissa hallintatunnuksen oletussalasana on sama kuin verkon salasana. Jos salasana on riittävän hyvä ja voidaan luottaa kaikkiin verkon käyttäjiin, niin silloin oletussalasanaa ei ehkä tarvitse vaihtaa.
 
 Salasanojen hallinnasta on vuonna 2014 julkaistu [Viestintäviraston kyberturvallisuuskeskuksen ohje](https://www.kyberturvallisuuskeskus.fi/sites/default/files/media/file/Salasanat_haltuun.pdf).
 
 Salasanat eivät ole tämän kurssin keskeistä sisältöä, mutta jokaiselle joka ylläpitää tai hallinnoi omaa tietoliikenneverkkoaan niiden oikea käyttö on tärkeä osa oman verkon turvallisuutta.
 
-<div><quiznator id="5c790cf3ddb6b814af3271b0"></quiznator></div>
+<div><quiz id="5c790cf3ddb6b814af3271b0"></quiz></div>
 
-<div><quiznator id="5c791dc5fd9fd71425c67eaf"></quiznator></div>
-
+<div><quiz id="5c791dc5fd9fd71425c67eaf"></quiz></div>

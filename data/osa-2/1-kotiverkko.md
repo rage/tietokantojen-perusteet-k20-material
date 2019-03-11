@@ -19,7 +19,7 @@ Kotiverkko on tyypillisesti yhdistetty palveluntarjoajan verkkoon laajakaistayht
 Useimmat kotiverkon internetin puoleisella reunalla oleva laitteet ovat monitoimilaitteita, jotka tarjoavat kotiverkolle muitakin palveluja kuin vain verkon liittämiseen tarvittavan kytkimen tai reitittimen. Hyvin tyypillisesti nämä laitteet toimivat langattoman verkon (wifi, WLAN) tukiasemana. Tällöin kotiverkon omassa sisäisessä rakenteessa ei tarvita kaapelointia, vaan laitteet voivat kommunikoida tämän langattoman verkon välityksellä.
 
 Jotkut kotikäyttäjät käyttävät mobiililaitteillaan, kuten älypuhelin tai tabletti, suoraan palveluntarjoajan mobiiliverkkoa. Silloin heillä ei ole erillistä kotiverkkoa, vaan laitteet on suoraan liitetty palveluntarjoajan verkkoon. Tätä internetin käyttötapaa ei luokitella kotiverkoksi, koska käyttäjällä ei ole omaa aliverkkoa, vaan liikennöinti tapahtuu suoraan palveluntuottajan mobiiliverkossa.
- 
+
 Kotiverkon laitteet kommunikoivat siis omassa aliverkossaan keskenään ilman, että liikenne näkyy muualle. Ulkopuolisen internetin kanssa ne kommunikoivat reitittimen välityksellä.
 
 ![Kaavakuva kotiverkosta](../img/kotiverkko.svg)
@@ -30,7 +30,7 @@ Suomessa näitä kotien internet-yhteyksiä kutsutaan usein laajakaistayhteyksik
 
 Tyypillisesti yhteys kotiin toteutetaan joko perinteistä puhelinverkkoa pitkin ADSL-yhteytenä, kaapeli-TV -verkossa kaapelimodeemin avulla tai asuntoon tulevan parikaapelin tai valokuidun kautta. Wikipedian [laajakaistaa käsittelevällä sivulla](https://fi.wikipedia.org/wiki/Laajakaista) luetellaan muitakin tekniikoita, joilla laajakaistayhteyden voi saada kotiin.
 
-Näitä yhteyksiä tarjoavat puhelinoperaattorit, kuten Telia, Elisa ja DNA, ympäri maata. Myös muita palveluntarjoajia on alueellisesti saatavilla. Erityisesti, jos käytetään muita kuin puhelinverkon tekniikoita. 
+Näitä yhteyksiä tarjoavat puhelinoperaattorit, kuten Telia, Elisa ja DNA, ympäri maata. Myös muita palveluntarjoajia on alueellisesti saatavilla. Erityisesti, jos käytetään muita kuin puhelinverkon tekniikoita.
 
 Osa palveluntarjoajista näyttää myyvän valokuitu-nimistä palvelua, vaikka valokuitu tulisikin vain taloyhtiöön ja siitä eteenpäin liikennöinti tapahtuisi parikaapelilla.
 
@@ -38,7 +38,7 @@ Tietoliikenneyhteys voidaan rakentaa myös sähköverkon varaan. Tätä datasäh
 
 Joillakin alueilla kaupalliset toimijat eivät koe laajakaistayhteyden toteuttamista kannattavaksi ja laajakaistayhteyttä tarjotaankin siellä täällä myös osuuskuntina. Esimerkiksi Verkko-osuuskunta Ylläksen Laajakaista tarjoaa laajakaistayhteyttä Ylläksellä.
 
-<div><quiznator id="5c77f8fcddb6b814af327046"></quiznator></div>
+<div><quiz id="5c77f8fcddb6b814af327046"></quiz></div>
 
 
 ### Kotiverkon ja internetin välinen laite
@@ -47,26 +47,26 @@ Käytettävästä verkkotekniikasta riippuen laitteen nimi voi olla ADSL-modeemi
 
 ADSL-modeemi on perinteinen tapa yhdistää kotiverkko internetiin. Siinä palveluntarjoajana toimii puhelinoperaattori. Yhteys muodostetaan olemassa olevaa langallista puhelinverkkoa pitkin.  Tämä on vähitellen poistuva tekniikka Suomesta, kun operaattorit pikkuhiljaa purkavat vanhoja puhelinverkkoja ja korvaavat ne nopeammilla verkkoyhteyksillä.
 
-Kaapelimodeemin avulla internet-yhteys kotiverkkoon voidaan saada kaapeli-TV:tä tarjoavalta operaattorilta. Pääkaupunkiseudulla tämä palvelun tarjoaja on yleensä DNA. 
+Kaapelimodeemin avulla internet-yhteys kotiverkkoon voidaan saada kaapeli-TV:tä tarjoavalta operaattorilta. Pääkaupunkiseudulla tämä palvelun tarjoaja on yleensä DNA.
 
-Kuitumuunnin on näistä uusin ja silloin valokuituyhteys tarvitaan tähän muuntimeen asti. Jos kotiin tulee suoraan Ethernetiä käyttävä parikaapeliyhteys, niin silloin voidaan käyttää tavanomaista reititintä. 
+Kuitumuunnin on näistä uusin ja silloin valokuituyhteys tarvitaan tähän muuntimeen asti. Jos kotiin tulee suoraan Ethernetiä käyttävä parikaapeliyhteys, niin silloin voidaan käyttää tavanomaista reititintä.
 
-Kotiverkon ja palveluntarjoajan verkon välissä on aina reititin. Yleensä reititystä kotiverkossa hoitaa tämä verkkoja toisiinsa liittävä laite, mutta teknisesti olisi mahdollista jättää reititys kokonaan operaattorin huoleksi. Käytännössä oman kotiverkon turvallisuuden vuoksi on hyvä, että kotiverkon oma sisäinen liikenne ei vuoda operaattorille asti ja siksi tarvitaan reititin oman verkon puolelle. 
+Kotiverkon ja palveluntarjoajan verkon välissä on aina reititin. Yleensä reititystä kotiverkossa hoitaa tämä verkkoja toisiinsa liittävä laite, mutta teknisesti olisi mahdollista jättää reititys kokonaan operaattorin huoleksi. Käytännössä oman kotiverkon turvallisuuden vuoksi on hyvä, että kotiverkon oma sisäinen liikenne ei vuoda operaattorille asti ja siksi tarvitaan reititin oman verkon puolelle.
 Muistathan, että reititys on protokollapinon verkkokerroksen toiminnallisuutta ja yhteystekniikka kuuluu linkkikerrokselle.
 
-Monitoimilaitteessa on linkkikerroksen yhteystekniikoiden ja verkkokerroksen reititystoiminnallisuuden lisäksi yleensä myös langattoman verkon wifi-tukiasema ja usein myös palomuuri. Palomuurin tehtävänä on suojata kotiverkon liikennettä siten, että kotiverkkoon asti pääsee vain sinne aidosti kuuluva liikenne. Palataan palomuureihin myöhemmin tällä kurssilla. 
+Monitoimilaitteessa on linkkikerroksen yhteystekniikoiden ja verkkokerroksen reititystoiminnallisuuden lisäksi yleensä myös langattoman verkon wifi-tukiasema ja usein myös palomuuri. Palomuurin tehtävänä on suojata kotiverkon liikennettä siten, että kotiverkkoon asti pääsee vain sinne aidosti kuuluva liikenne. Palataan palomuureihin myöhemmin tällä kurssilla.
 
 Kaikissa näissä laitteissa on yksi liitin operaattorin verkkoon liittymistä varten sekä 0-4 liitintä kotiverkon laitteille.
 
 
 ### Laitteiden liittäminen kotiverkkoon
- 
+
 Kotiverkon laitteet voidaan liittää Ethernet-kaapeloinnilla kotiverkon reitittimeen joko suoraan reitittimen porttiin tai jos reitittimessä ei ole riittävästi portteja niin lisäämällä verkkoon esimerkiksi kytkimiä, joilla yhteen reitittimen porttiin voidaan liittää useita laitteita liittämällä ne ensin kytkimen portteihin ja vain kytkin liitetään reitittimeen.
 
 Mikäli kaapelointia ei ole tai sitä ei haluta asentaa, niin silloin yleensä otetaan käyttöön langaton lähiverkko (Wireless local area network, WLAN), joka tarvitsee sitten tukiaseman. Näistä tukiasemista käytetään sekä nimeä WLAN-tukiasema että wifi-tukiasema.  (Termeistä löydät lisätietoja Wikipedian [WLAN-artikkelista](https://fi.wikipedia.org/wiki/WLAN).
 
 Joissakin tilanteissa on mahdollista käyttää sähköverkon kaapelointia ethernet-signaalin siirtoon erillisten lisälaitteiden avulla. Vaihtoehtoja siis riittää ja eri tilanteissa on hyvä kartoittaa vaihtoehdot kunnolla ja tehdä sen jälkeen valinta. Olen itsekin kerrostaloasunnossa käyttänyt tällaista "ethernet over power" laitetta saadakseni ethernet-yhteyden tietokoneelle, jota ei voinut liittää langattomaan verkkoon ja joka oli hankalassa paikassa erillistä tietoliikennekaapelointia varten.
- 
+
 
 ### WLAN-tukiasema vai WLAN-reititin
 
@@ -75,5 +75,4 @@ WLAN-tukiasema tarjoaa verkkoyhteyden palveluna kaikille laitteille, jotka siihe
 WLAN-reititin tarjoaa langattoman yhteyden lisäksi myös reitityksen langattomaan verkkoon liitettyjen laitteiden ja langallisen verkon laitteiden välillä. Näin meille syntyy kaksi toisistaan loogisesti eristettyä verkkoa. Langattoman verkon laitteiden kommunikoidessa keskenään niiden liikennettä ei ohjata eteenpäin langalliseen verkkoon. Kotiverkko jakautuukin kahteen aliverkkoon, joista toinen on langallinen ja toinen langaton.
 
 
-<div><quiznator id="5c78ea6014524713f95a65fb"></quiznator></div>
-
+<div><quiz id="5c78ea6014524713f95a65fb"></quiz></div>

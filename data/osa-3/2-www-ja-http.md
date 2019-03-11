@@ -18,7 +18,7 @@ hidden: false
 ## WWW-palvelu
 
 
-Ykkösosiosta toivottavasti muistat, että WWW-sivuihin viitataan URL-osoitteella. Esimerkiksi tämän sivun URL-osoite on https://tilpe-19.now.sh/osa-3/2-www-ja-http. Osoitteen alku https kertoo, että kommunikointi web-selaimen ja web-palvelimen välillä tapahtuu käyttäen HTTPS-protokollaa. Se on HTTP-protokollan salattu versio. Tällä kurssilla tutustumme HTTP-protokollaan, jota ei ole salattu. Seuraava osa tilpe-19.now.sh on web-palvelimen nimi. Tämän nimen perusteella tietoliikenteessä osataan ensin hakea laitteen oikea IP-osoite DNS-nimipalvelun avulla. Koska näitä sivuja jakava web-palvelin toimii googlen pilvipalvelulla, niin eri käyttäjät voivat saada sille eri IP-osoitteen. Minulle sivut tulivat juuri äsken IP-osoitteesta 130.211.93.80. (TODO: korjaa url yms kun julkaisuosoite on tiedossa)
+Ykkösosiosta toivottavasti muistat, että WWW-sivuihin viitataan URL-osoitteella. Esimerkiksi tämän sivun URL-osoite on https://johdatus-tietoliikenteeseen-19.mooc.fi/osa-3/2-www-ja-http. Osoitteen alku https kertoo, että kommunikointi web-selaimen ja web-palvelimen välillä tapahtuu käyttäen HTTPS-protokollaa. Se on HTTP-protokollan salattu versio. Tällä kurssilla tutustumme HTTP-protokollaan, jota ei ole salattu. Seuraava osa johdatus-tietoliikenteeseen-19.mooc.fi on web-palvelimen nimi. Tämän nimen perusteella tietoliikenteessä osataan ensin hakea laitteen oikea IP-osoite DNS-nimipalvelun avulla. Koska näitä sivuja jakava web-palvelin toimii googlen pilvipalvelulla, niin eri käyttäjät voivat saada sille eri IP-osoitteen. Minulle sivut tulivat juuri äsken IP-osoitteesta 130.211.93.80. (TODO: korjaa url yms kun julkaisuosoite on tiedossa)
 
 Web-palvelimet ja web-selaimet käyttävät omaan keskinäiseen kommunikointiinsa HTTP-protokollaa. HTTP-protokolla on meidän ihmisten kannalta sikäli kiva, että se on tekstipohjainen, joten meidän on helppo lukea protokollan viestejä ja niiden sisältöjä. Jotkut muut protokollat siirtävät viestejä binäärilukuina. Yksi esimerkki tällaisesta protokollasta on HTTP:stä kehitetty salattu versio HTTPS.
 
@@ -28,7 +28,7 @@ Web-palvelimet ja web-selaimet käyttävät omaan keskinäiseen kommunikointiins
 ## HTTP - protokolla
 
 Ensimmäisessä versiossa HTTP-protokollasta oli määritelty vain sivun noutoon tarvittavat GET-pyyntö ja siihen liittyvä vastaus. Nämä ovat edelleen eniten käytetyt HTTP-protokollan viestit. Uudemmassa protokollassa on lisäksi paljon enemmän viestityyppejä, joiden avulla nettiselain voi myös antaa tietoja palvelimelle eikä vain pyytää siltä tietoja. Tämän kurssin osalta tarkastelemme lähinnä GET-pyyntöä. Jos sinua kiinnostavat myös nuo muut viestityypit, niin [wikipedian artikkelissa](https://fi.wikipedia.org/wiki/HTTP) on lyhyet kuvaukset niistä.
- 
+
 HTTP on siis siirtoprotokolla, joka huolehtii www-sivun sisällön siirtämisestä palvelimelta asiakkaalle. Siirto tapahtuu asiakkaan pyynnöstä.  HTTP:n kaikki sanomat ovat tekstimuotoisia, joten niitä on ihmistenkin helppo lukea. Esimerkiksi oheinen suoraan [wikipedian sivulta](https://fi.wikipedia.org/wiki/HTTP) lainattu GET-pyyntö
 
 
@@ -57,7 +57,7 @@ HTTP protokolla on tilaton (stateless). Tämä tarkoittaa sitä, että selaimen 
 
 HTTP käyttää TCP:tä viestien välittämiseen. TCP on yhteydellinen, joten asiakas (eli selain) ja palvelin voivat erikseen sopia yhteyden säilyttämisestä tulevia pyyntöjä varten tai palvelin voi sulkea yhteyden heti vastausviestin lähetettyään, jolloin asiakas joutuu avaamaan uuden yhteyden seuraavalle pyynnölle. Koska www-sivun muodostaminen yleensä edellyttää useita sivun elementtien pyyntöjä, niin usein asiakas ja palvelin sopivat yhteyden säilyttämisestä. Toisaalta yhteyden säilyttäminen tilanteessa, jossa lisäpyyntöjä ei tulekaan, kuormittaa palvelimen rajallisia yhteyksiä.
 
-<quiznator id="5c7fd0bdfd9fd71425c68ad3"></quiznator>
+<quiz id="5c7fd0bdfd9fd71425c68ad3"></quiz>
 
 
 ## HTML - kuvauskieli
@@ -67,7 +67,7 @@ HTTP-protokolla ja sen viesteillä www-selain ja www-palvelin voivat siirtää w
 Tämä sisällön kuvauksen ja siirtoprotokollan välinen erillisyys on vahva ajattelumalli koko tiedonsiirron taustalla. Tiedonsiirrossa keskitytään vain siihen, että sisältö saadaan siirrettyä muuttumattomana paikasta toiseen, mutta ei oteta lainkaan kantaa siihen, mitä sisältöä siirretään. Tähän ajattelumalliin perustuvat useimmat sisältöä jakavat palvelut, kuten Facebook, Snapchat, Napster, Youtube, jne. Osalle näistä sisältöpalvelua tuottaville organisaatioille on viranomaisten taholta asetettu myöhemmin (tai jo alun perin) vaatimuksia myös sisällön valvontaan. Tästä palveluntarjoajan tekemästä oman palvelunsa verkkosisällön sensuroinnista olemme saaneet viime aikoina lukea myös uutisista, esimerkiksi Iltasanomissa oli kesällä 2018 artikkeli [Facebookin sensuuri iski – Jopa maalaus Jeesuksesta rikkoi siveyssääntöä](https://www.is.fi/digitoday/art-2000005768708.html).
 
 
-## Evästeet 
+## Evästeet
 
 Eväste (engl. cookie) on Tietotekniikan termitalkoiden määritelmän mukaan aputiedosto tai tunniste, jonka sisältämiä tietoja voidaan käyttää selaimen ja palvelimen välisen yhteydenpidon ohjaamiseen.
 
@@ -82,18 +82,18 @@ Voit omasta selaimestasi hallinnoida evästeitä ja jopa katsoa mihin kaikkiin s
 Jos haluat selvittää mitä eri evästeet tarkoittavat tai mihin käyttötarkoitukseen ne todennäköisesti liittyvät, on englanninkieliselle [Cookiepedia-sivustolle](https://cookiepedia.co.uk/all-about-cookies) koottu evästeisiin liittyvää informaatiota. Siellä voi tehdä hakuja evästeen nimellä.
 
 
-<quiznator id="5c7fd7e2ddb6b814af327e20"></quiznator>
+<quiz id="5c7fd7e2ddb6b814af327e20"></quiz>
 
 
 ## Varmenteet
 
 Varmenne (engl. certificate) on sähköinen todistus, jolla vahvistetaan, että todistuksen haltija on tietty henkilö, organisaatio tai järjestelmä. Varmenteen voi siis ajatella vastaavan sähköistä henkilötodistusta. Yksityishenkilöille niitä Suomessa [myöntää Väestörekisterikeskus](https://vrk.fi/varmenteet-fineid). Väestörekisterikeskuksen myöntämää yksityishenkilön varmennetta kutsutaan kansalaisvarmenteeksi ja se voidaan myöntää vain suomalaisen henkilökortin mukana. Väestörekisterikeskus myöntää erilaisia varmenteita myös organisaatioille.
 
-Varmenteita käytetään silloin kun on tarve luottavasti tunnistaa kommunikoinnin osapuolet tai ainakin toinen osapuoli. Esimerkiksi verkon kautta tapahtuvassa pankkiasioinnissa on hyvin tärkeää voida luottaa siihen, että annettu URL-osoite, kuten nordea.fi, s-pankki.fi, op.fi tai muu vastaava, vie oikean organisaation sivustolle, eikä jollekin pahantahtoiselle, mutta samannäköiselle sivustolle. Tätä varten organisaatiot antavat www-selaimelle varmenteen, jonka selain voi tarkistaa jostakin ulkopuolisesta varmennepalvelusta, kuten edellä ollut väestörekisterikeskus tai paljon käytetyt ulkomaiset Verisign, Thawte tai Entrust. Selaimilla on etukäteen asetettu joukko varmennepalveluja, joiden vahvistamia varmenteita ne hyväksyvät automaattisesti. 
+Varmenteita käytetään silloin kun on tarve luottavasti tunnistaa kommunikoinnin osapuolet tai ainakin toinen osapuoli. Esimerkiksi verkon kautta tapahtuvassa pankkiasioinnissa on hyvin tärkeää voida luottaa siihen, että annettu URL-osoite, kuten nordea.fi, s-pankki.fi, op.fi tai muu vastaava, vie oikean organisaation sivustolle, eikä jollekin pahantahtoiselle, mutta samannäköiselle sivustolle. Tätä varten organisaatiot antavat www-selaimelle varmenteen, jonka selain voi tarkistaa jostakin ulkopuolisesta varmennepalvelusta, kuten edellä ollut väestörekisterikeskus tai paljon käytetyt ulkomaiset Verisign, Thawte tai Entrust. Selaimilla on etukäteen asetettu joukko varmennepalveluja, joiden vahvistamia varmenteita ne hyväksyvät automaattisesti.
 
 Sivustolla voi myös olla varmenne, jonka sivusto on ihan itse määritellyt ja jolla ei ole minkään varmennepalvelun vahvistusta. Usein tällaisista varmenteista selain saattaa antaa varoituksen ja silloin käyttäjän pitää huolellisesti miettiä luottaako sivustoon niin paljon, että sallii varmenteen ja kyseisen sivuston käytön.
 
-Varmenteisiin tuleekin törmättyä lähinnä silloin, kun jonkun organisaation varmenne on päässyt vanhenemaan tai siinä on muuten jotain vikaa ja www-selain varoittaa tästä. Näissä tilanteissa on aina olemassa erittäin suuri tietoturvariski, joten varmennetarkistuksen ohittamista ei voi suositella. Kyseessä voi pahimmillaan olla jonkinlainen verkkohyökkäys tai tietokalastelu (engl. phishing). 
+Varmenteisiin tuleekin törmättyä lähinnä silloin, kun jonkun organisaation varmenne on päässyt vanhenemaan tai siinä on muuten jotain vikaa ja www-selain varoittaa tästä. Näissä tilanteissa on aina olemassa erittäin suuri tietoturvariski, joten varmennetarkistuksen ohittamista ei voi suositella. Kyseessä voi pahimmillaan olla jonkinlainen verkkohyökkäys tai tietokalastelu (engl. phishing).
 
 Varmenteita käytetään siis osana julkisen avaimen salakirjoitusjärjestelmää ja oikeastaan tässä vain varmennetaan, että julkinen avain ja siihen liittyvä salainen avain on varmennuspalvelun mukaan oikeasti kyseisen henkilön tai organisaation käytössä. Tämän vuoksi varmenteet ovat Wikipediassa kuvattu osana [julkisten avainten hallintajärjestelmää](https://fi.wikipedia.org/wiki/PKI).
 
@@ -102,7 +102,7 @@ Jos varmenteet ja ylipäätään sähköiseen asiointiin liittyvä teemat kiinno
 
 ## Välityspalvelin
 
-Välityspalvelin (engl. proxy server) hakee internetistä tietoa työasemien puolesta ja säilyttää työasemien toistuvasti käyttämiä tietoja niiden saannin nopeuttamiseksi (Lähde: tietotekniikan termitalkoot). WWW-palvelun kannalta se siis sijoittuu www-selaimen ja www-palvelun väliin. Välityspalvelimia käyttävät yleensä suuret organisaatiot, jolloin ne voivat pienentää omasta organisaatiosta ulkopuolisille www-palvelimille menevää liikennettä silloin, kun useammat organisaation sisäverkon asiakkaan haluavat käyttää samaa sivua. Välityspalvelin pitää siis omassa välimuistissaan (engl. cache) aiemmin pyydettyjä sivuja, joita se sitten antaa vastauksena pyyntöihin. Esimerkiksi Helsingin yliopistolla on oma välityspalvelin, myös useimmilla kotiverkoille internet-yhteyksiä tarjoavilla organisaatioilla on omat välityspalvelimet. 
+Välityspalvelin (engl. proxy server) hakee internetistä tietoa työasemien puolesta ja säilyttää työasemien toistuvasti käyttämiä tietoja niiden saannin nopeuttamiseksi (Lähde: tietotekniikan termitalkoot). WWW-palvelun kannalta se siis sijoittuu www-selaimen ja www-palvelun väliin. Välityspalvelimia käyttävät yleensä suuret organisaatiot, jolloin ne voivat pienentää omasta organisaatiosta ulkopuolisille www-palvelimille menevää liikennettä silloin, kun useammat organisaation sisäverkon asiakkaan haluavat käyttää samaa sivua. Välityspalvelin pitää siis omassa välimuistissaan (engl. cache) aiemmin pyydettyjä sivuja, joita se sitten antaa vastauksena pyyntöihin. Esimerkiksi Helsingin yliopistolla on oma välityspalvelin, myös useimmilla kotiverkoille internet-yhteyksiä tarjoavilla organisaatioilla on omat välityspalvelimet.
 
 ![Kuva jossa viestit kulkevat asiakkaalta välityspalvelimen kautta palvelimelle](../img/asiakas-valityspalvelin-palvelin.svg)
 
@@ -113,6 +113,4 @@ Koska verkkoliikenne ei ole ilmaista, niin näin organisaatiot voivat vähentä�
 Välityspalvelin tarjoaa myös mahdollisuuksia valvoa verkkosivujen käyttöä. Jos kaikki tietyn organisaation liikenne ohjataan aina välityspalvelimen kautta, niin välityspalvelin ei välttämättä teekään kaikkia pyyntöjä eteenpäin vaan palauttaa virheruudun kyseistä sivua pyytäneelle asiakkaalle. Vastaavasti välityspalvelin voi seurata eri asiakkaiden liikennöintiä ja näin vaikuttaa käyttäjien yksityisyyden suojan heikkenemiseen. Onneksi yleensä voimme toki luottaa oman organisaation tai palveluntarjoajan toimintaan ja siihen, että sen välityspalvelin toimii lakien mukaan, mutta joskus terve epäilys on kuitenkin paikallaan.
 
 
-<quiznator id="5c8127a3017ffc13eddd02a7"></quiznator>
-
-
+<quiz id="5c8127a3017ffc13eddd02a7"></quiz>

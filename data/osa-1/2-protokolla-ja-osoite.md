@@ -55,7 +55,7 @@ Laitteet on voitu yhdistää toisiin erilaisilla verkkoteknologioilla. Kullakin 
 Internetin protokollapinon alin, fyysinen, kerros huolehtii bittien siirtämisestä linkkikerroksen laitteiden välillä. Tälläkin kerroksella bittien siirtoon voidaan käyttää erilaisia tekniikoita. Ne voidaan koodata valoksi valokuituun, sähköpulsseiksi koaksiaalikaapeliin tai radioaalloiksi langattoman verkon yhteyksillä. Näitä koodaustapoja emme tällä kurssilla käsittele.
 
 
-<div><quiznator id="5c75241a99236814c5bbd859"></quiznator></div>
+<div><quiz id="5c75241a99236814c5bbd859"></quiz></div>
 
 
 ## Verkkotunnus eli laitteen osoite
@@ -66,7 +66,7 @@ Käymme myöhemmin läpi Internet-verkon nimipalvelun (Domain Name Service, DNS)
 
 IP-numero liittyy siis protokollapinon verkkokerroksen toimintaan. Muillakin kerroksilla on tarvetta tunnistaa vastapuoli, mutta niillä kerroksilla käytetään erilaisia kyseiseen toimintaan paremmin sopivia osoitteita.
 
-IP-numeroita on kahta tyyppiä. Meillä on käytössä IP-protokollasta sekä versio 4 että versio 6. Näillä versioilla on käytössään erilainen IP-osoite. Se perinteisempi osoite IPv4 on muodoltaan 128.214.189.90  eli siinä on neljä ryhmää numeroita erotettuna pisteillä toisistaan. Kussakin ryhmässä voi olla numerot 0-255. Eli kukin numero esittää yhden tavun (=8 bittiä) arvon. Tuota eecs.berkeley.edu nimeä vastaava IPv4 osoite on 23.185.0.1. Sillä on myös IPv6 osoite, joka on 2620:12a:8001::1 
+IP-numeroita on kahta tyyppiä. Meillä on käytössä IP-protokollasta sekä versio 4 että versio 6. Näillä versioilla on käytössään erilainen IP-osoite. Se perinteisempi osoite IPv4 on muodoltaan 128.214.189.90  eli siinä on neljä ryhmää numeroita erotettuna pisteillä toisistaan. Kussakin ryhmässä voi olla numerot 0-255. Eli kukin numero esittää yhden tavun (=8 bittiä) arvon. Tuota eecs.berkeley.edu nimeä vastaava IPv4 osoite on 23.185.0.1. Sillä on myös IPv6 osoite, joka on 2620:12a:8001::1
 
 Koska IP-osoite on laitteen tunniste maailmanlaajuisesti, sen pitää olla globaalisti ainutlaatuinen, ja siksi IP-osoitteita (katso Wikipedian [artikkeli](https://fi.wikipedia.org/wiki/IP-osoite)) hallinnoi [IANA (Internet Assigned Numbers Authority)](https://www.iana.org/). Joitakin IP-osoitteista on varattu yksityiseen käyttöön. Nämä osoitteet voi ottaa käyttöön koska tahansa, mutta niille ei voi eikä saa liikennöidä julkisessa internetissä. Palataan osoitteiden tarkempaan rakenteeseen myöhemmin.
 
@@ -75,4 +75,4 @@ Monet tietokoneen käyttäjät ovat törmänneet MAC-osoitteeseen. Minun käytt�
 Vastaavasti verkkokerroksella käytetty  IP-osoite riittää yksittäisen laitteen tunnistamiseen, mutta se ei riitä kuljetuskerroksella tai ylemmällä sovelluskerroksella tietyn kommunikointiyhteyden tai sovelluksen tunnistamiseen. Tähän käytetään porttinumeroa. Porttinumeroita käsitellään hiukan enemmän myöhemmin kun tutustutaan tarkemmin kuljetuskerroksen toimintaan. Sovellukset liitetään tiettyyn porttinumeroon pistokkeilla (socket). Pistokkeet ovat tarpeen ohjelmoijille, jotka tekevät tietoliikennesovelluksia. Koska emme kurssilla opettele tekemään verkkosovelluksia, niin emme tutustu myöskään pistokkeisiin. Eri protokollien kohdalla kerrotaan, jos niihin liittyy sovittuja, standardoituja porttinumeroita, jotka ovat aina ko. sovelluksen käytössä.
 
 
-<div><quiznator id="5c7657ca244fe21455cbbf30"></quiznator></div>
+<div><quiz id="5c7657ca244fe21455cbbf30"></quiz></div>

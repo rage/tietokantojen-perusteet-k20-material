@@ -14,7 +14,7 @@ Lähes kaikki palvelut ja koko yhteiskunta toimii ja luottaa siihen, että viest
 
 ## Tietoverkko ja sen käsitteitä
 
-Tietoverkoilla yhdistetään toisiinsa tietokoneita, jotka haluavat kommunikoida keskenään. Ihmiset keskustelevat, mutta laitteet kommunikoivat. Aluksi meidän täytyykin käyttää aikaa erilaisten asioiden nimeämiseen. Sanastokeskus TSK on vuosien aikana laatinut useita sanastoja eri teemoista [(http://www.tsk.fi/tsk/fi/tsksarja-68.html)](http://www.tsk.fi/tsk/fi/tsksarja-68.html). Kurssin kannalta kiinnostavin on laajakaistasanasto, mutta muissakin sanastoissa on paljon hyödyllistä termistöä kurssin tarpeisiin. 
+Tietoverkoilla yhdistetään toisiinsa tietokoneita, jotka haluavat kommunikoida keskenään. Ihmiset keskustelevat, mutta laitteet kommunikoivat. Aluksi meidän täytyykin käyttää aikaa erilaisten asioiden nimeämiseen. Sanastokeskus TSK on vuosien aikana laatinut useita sanastoja eri teemoista [(http://www.tsk.fi/tsk/fi/tsksarja-68.html)](http://www.tsk.fi/tsk/fi/tsksarja-68.html). Kurssin kannalta kiinnostavin on laajakaistasanasto, mutta muissakin sanastoissa on paljon hyödyllistä termistöä kurssin tarpeisiin.
 
 Hyvä esimerkki nimeämisen ongelmista on se, että olisin äskeistä www-osoitetta voinut kutsua myös nettiosoitteeksi tai URL-osoitteeksi. Nämä kaikki nimet ovat noissa sanastoissa ja vaikka ne lähtökohtaisesti tarkoittavat samaa merkkijonoa, niin eri käyttötilanteissa on käytetty eri nimeä ja siksi samalla asialla voi olla useita nimiä. Näistä tuo www-osoite tulee taustaltaan englanninkielisestä World Wide Web (WWW) käsitteestä. URL-osoite puolestaan on ottanut tuon alkuosansa englanninkielisestä Uniform Resource Locator (URL), jossa se on määritelmänsä mukaan merkkijono, jolla voidaan osoittaa www-sivun paikkaa. Nettiosoite ei suoraan sitoudu juuri www-palveluun ja siihen liittyvään käsitteistöön, vaikka sitä usein vain tähän palveluun liittyen käytetäänkin.
 
@@ -27,7 +27,7 @@ Itse asiassa tuossa sanastojen osoitteessa on monta eri osaa. Käydään ne nyt 
 [Sanastokeskus TSK](http://www.tsk.fi/tsk/):n [Tietotekniikan termitalkoot](http://www.tsk.fi/tsk/termitalkoot/) -sivustolta on mahdollista etsiä näitä käsitteitä ja niiden kuvauksia ilman, että täytyy tietää missä sanastossa se on esitelty. Jos eri asioiden nimet ja käsitteiden selitykset kiinnostavat, niin tätä sivustoa kannattaa käyttää. Kurssin aikana se toivottavasti auttaa uusien käsitteiden opiskelua, jos käsite jää tässä materiaalissa kuitenkin oudoksi. Jotta sanaston käyttö tulisi hiukan tutummaksi, niin käy katsomassa ainakin [tietoverkko-käsitteen käsitekaaviota](http://www.tsk.fi/tsk/termitalkoot/haku-266.html?page=resurssi&tiedosto=tietoverkko.svg). Kurssin kuluessa tutustumme lähes kaikkiin näistä termeistä.
 
 
-<div> <quiznator id="5c1ce20564cf001162cb949d"> </quiznator> </div>
+<div> <quiz id="5c1ce20564cf001162cb949d"> </quiz> </div>
 
 
 ## Internet
@@ -43,7 +43,7 @@ Näitä internetiin liitettyjä tietoverkkoja hallinnoivat palveluntarjoajat (In
 FICIX julkaisee tilastotietoa sen verkon kautta kulkeneesta liikenteestä. Tilastosta on tarjolla myös [graafinen kuva](https://stats-ficix.basen.com/#/page?name=StatsWelcome&source=wiki)
 
 
-<div> <quiznator id="5c1ce4a1054d71123e35cb5b"> </quiznator> </div>
+<div> <quiz id="5c1ce4a1054d71123e35cb5b"> </quiz> </div>
 
 
 Internetin keskeisin ominaisuus onkin sen kyky siirtää viestejä tietoverkosta toiseen. Tämän tekevät verkkoja yhdistävät [reitittimet](https://fi.wikipedia.org/wiki/Reititin) (engl. router), jotka vastaanottavat viestin yhdestä verkosta ja välittävät sen edelleen toiseen verkkoon. Kahden eri verkon välissä on aina reititin, joka huolehtii viestien siirtämisestä verkkojen välillä. Usein kummassakin verkossa on oma reitittimensä, joka poimii omasta verkosta ulospäin menevät viestit välitettäväksi toiseen verkkoon.
@@ -63,7 +63,7 @@ Verkkolaitteita ovat puolestaan laitteet, jotka ovat verkon sisäpuolella. Niide
 Kotiverkossa saattaa olla ADSL-modeemi, joka yhdistää sen internetpalvelua tarjoavan teleoperaattorin verkkoon. Aiemmin ADSL-modeemi oli vain ADSL-modeemi. Nykyään kyseessä yleensä on monitoimilaite, joka samalla toimii reitittimenä ja saattaa sisältää muitakin internet-verkon toiminnallisuuksia, kuten langattoman verkon (WLAN, WiFi) tukiasema.
 
 
-<div> <quiznator id="5bf6a05dcd84693e7889b274"> </quiznator> </div>
+<div> <quiz id="5bf6a05dcd84693e7889b274"> </quiz> </div>
 
 
 ## Palvelin ja palvelu
@@ -85,7 +85,7 @@ Usein palvelua käyttävistä sovelluksista ja oikeammin niistä laitteista, joi
 Seuraavassa aliluvussa tarkastellaankin miten viestinvaihto viestin lähettäjän ja vastaanottajan välillä oikein tapahtuu.
 
 
-<div> <quiznator id="5c73f865fd9fd71425c674b7"> </quiznator> </div>
+<div> <quiz id="5c73f865fd9fd71425c674b7"> </quiz> </div>
 
 <div>
 <key-terminology

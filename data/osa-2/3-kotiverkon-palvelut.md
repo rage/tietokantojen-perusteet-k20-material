@@ -5,7 +5,7 @@ title: 'Kotiverkon palvelut'
 
 # Kotiverkon palvelut
 
-Kotiverkon laitteiden tarvitsevat verkkopalvelut eivät poikkea tietoverkkoon liitettyjen laitteiden tarvitsemista palveluista. Kaikki laitteet tarvitsevat itselleen oman IP-osoitteen, jonka avulla ne voidaan tunnistaa. Niiden pitää myös pystyä löytämään muiden laitteiden IP-osoitteita, jotta ne voivat lähettää näille viestejä. 
+Kotiverkon laitteiden tarvitsevat verkkopalvelut eivät poikkea tietoverkkoon liitettyjen laitteiden tarvitsemista palveluista. Kaikki laitteet tarvitsevat itselleen oman IP-osoitteen, jonka avulla ne voidaan tunnistaa. Niiden pitää myös pystyä löytämään muiden laitteiden IP-osoitteita, jotta ne voivat lähettää näille viestejä.
 
 
 ## Konfigurointi (DHCP)
@@ -14,14 +14,14 @@ Kaikki verkkoon liitetyt laitteet tarvitsevat IP-osoitteen, jotta ne voivat komm
 
 ![DHCP viestien vaihto alla kuvatulla tavalla](../img/dhcp.svg)
 
-DHCP-protokollassa asiakas aloittaa viestien vaihdon. Tämä on hyvin tyypillistä protokollille, koska yleensä asiakkaalla on jokin tarve ja palvelin on koko ajan valmiina vastaamaan asiakkaille. 
+DHCP-protokollassa asiakas aloittaa viestien vaihdon. Tämä on hyvin tyypillistä protokollille, koska yleensä asiakkaalla on jokin tarve ja palvelin on koko ajan valmiina vastaamaan asiakkaille.
 
 * Asiakas lähettää ensin DHCPDiscover-viestin verkkoon. Miten asiakas voi tämän viestin lähettää palvelimelle, kun ei se tiedä palvelimen osoitetta, eikä sillä vielä ole omaakaan osoitetta? Internetissä asia on ratkaistu siten, että laitteet voivat yhden vastaanottajan sijaan lähettää yhden ja saman viestin kaikille verkon laitteille. Tätä kaikille lähetettävää viestiä kutsutaan <b>yleislähetykseksi</b> ja sille on varattu ihan oma IP-osoite (255.255.255.255), jota ei siis voi käyttää mihinkään muuhun viestien välittämiseen kuin yleislähetykseen kaikille. DHCP käyttää porttinumeroita 67 ja 68, joilla sille saapuvat viestit on mahdollista erottaa muiden sovellusten ja niiden protokollien viesteistä.
 * Palvelin vastaanottaa tämän viestin ja vastaa siihen DHCPOffer viestillä. Palvelin siis tarjoaa asiakkaalle yhtä IP-numeroa. Tämäkin viesti täytyy lähettää yleislähetyksenä, kun palvelimella ei ole keinoa yksilöidä asiakasta. Edellinen pyyntö ja tämä siihen tuleva vastaus yhdistetään toisiinsa viestin sisällä kulkevalla tunnisteella, joka on tässä viestiparissa sama.
 * DHCP:n erikoisuus on se, että protokollan mukaan yhdessä verkossa saa olla useita DHCP-palvelimia, jotka kaikki voivat ehdottaa asiakkaalle IP-numeroa. Asiakas päättää minkä tarjotuista IP-numeroista se ottaa käyttöönsä.  Asiakkaan pitääkin siksi vielä tarkistaa palvelimelta, että saanhan pitää tämän IP-osoitteen. Tämä tehdään DHCPRequest-viestillä.
 * Palvelija kuittaa ja hyväksyy osoitteen käytön DHCPAck-viestillä.
 
-Tämän viestien vaihdon yhteydessä palvelin voi toimittaa asiakkaalle myös muita verkon konfiguraation kannalta oleellisia tietoja. Näitä ovat tyypillisesti nimipalvelimen osoite, ulospäin menevän liikenteen oletusreitittimen osoite (default gateway) ja IP-osoitteen laina-aika. Laina-ajan päätyttyä asiakaan pitää erillisellä DHCP-protokollan viestillä tarkistaa palvelimelta saako se vielä käyttää tätä IP-osoitetta. 
+Tämän viestien vaihdon yhteydessä palvelin voi toimittaa asiakkaalle myös muita verkon konfiguraation kannalta oleellisia tietoja. Näitä ovat tyypillisesti nimipalvelimen osoite, ulospäin menevän liikenteen oletusreitittimen osoite (default gateway) ja IP-osoitteen laina-aika. Laina-ajan päätyttyä asiakaan pitää erillisellä DHCP-protokollan viestillä tarkistaa palvelimelta saako se vielä käyttää tätä IP-osoitetta.
 
 EXTRA: Jos sinua kiinnostaa opetella tarkemmin DHCP-protokollan toimintaa, niin englanninkielinen Wikipedian [asiaa käsittelevä sivu](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) on hyvä lähtökohta. Sieltä löytyy linkit noihin DHCP:n toiminnallisuuden määritteleviin RFC-dokumentteihin.
 
@@ -33,7 +33,7 @@ Nykyään kaikissa internet-verkon osissa on käytössä nimipalvelu (Domain Nam
 Kaikilla IP-osoitteilla ei ole pakko olla nimeä, mutta jos nimelle ei löydy IP-osoitetta, niin sen kanssa ei voi kommunikoida. Vastaavasti kaikilla IP-osoitteilla ei ole nimeä. Tämä ei kuitenkaan estä kommunikointia kyseisen IP-osoitteen kanssa.
 
 
-<div><quiznator id="5c7ceb5a017ffc13eddcfa1a"></quiznator></div>
+<div><quiz id="5c7ceb5a017ffc13eddcfa1a"></quiz></div>
 
 
 Mooc.fi on toteutustapansa vuoksi hiukan hankalampi nimipalvelun osalta. Kyselyllä "nslookup mooc.fi" vastaukseksi tulee useita IP-osoitteita. Tämä johtuu siitä, että mooc.fi on toteutettu pilvipalveluna ja kyseisellä pilvipalvelulla on käytössään sekä useita IP-osoitteita, että kuormatasauksen vuoksi tarve jakaa nimipalvelun kautta useita osoitteita, jolloin eri asiakkaan ottavat yhteyttä eri osiin pilveä ja näin kaikki saavat palvelua sujuvasti. Jos kaikki yrittäisivät yhteyttä samaan kohtaa se voisi tukkeutua, jolloin osa ei ehkä saisi palvelua lainkaan ja useimmilla sivu toimisi todella hitaasti.
@@ -54,5 +54,4 @@ Näillä osoitteilla ei siis saa liikennöidä julkisessa internetissä ja siksi
 Käydään IP-osoitteet ja osoitteenmuunnokset sekä niiden käyttö reitityksen apuna tarkemmin osiossa 4, kun tutustutaan verkkokerroksen toiminnallisuuteen. Jos jo nyt haluat lukea tarkemmin IP-osoitteista, niin Wikipedian [niitä käsittelevä sivu](https://fi.wikipedia.org/wiki/IP-osoite) on hyvä suomenkielinen kuvaus aiheesta.
 
 
-<div><quiznator id="5c7cf1acddb6b814af3277b9"></quiznator></div>
-
+<div><quiz id="5c7cf1acddb6b814af3277b9"></quiz></div>
