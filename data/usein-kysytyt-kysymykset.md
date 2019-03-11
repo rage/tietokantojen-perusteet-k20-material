@@ -11,7 +11,7 @@ Tässä usein kysyttyjä kysymyksiä ja ongelmia. Jos et löydä kysymykseesi va
 
 ### Löysin materiaalista virheen
 
-Avaa joko issue tai muutosehdoitus kurssin Github-repossa: https://github.com/rage/tietoliikenteen-perusteet-material.
+Avaa joko issue tai muutosehdoitus kurssin Github-repossa: https://github.com/rage/johdatus-tietoliikenteeseen-19.
 
 
 ### Työ- ja elinkeinotoimisto haluaa minulta selvityksen kurssista
