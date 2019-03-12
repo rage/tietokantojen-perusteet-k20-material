@@ -49,13 +49,27 @@ Kun IP-paketti saapuu reitittimelle, niin reititin katsoo reititystaulustaan mih
 Reititin ei voi ylläpitää reititystaulussaan kaikkia mahdollisia IP-osoitteita. joten se tallettaa tietoja käyttäen IP-osoitteiden yhteisiä alkuosia. JOs esimerkiksi osoitteet 192.168.0.x on yhden linkin takana ja 192.168.1.x toisen, niin reititystaulussa on rivi kummallekin ryhmälle. Yhteinen alkuosa voi olla bittitasolla muuallakin kuin tavurajalla. Siksi tässä esimerkkitaulussa osoitteet on kuvattu bittitasolla eikä numeroina kuten muualla materiaalissa. 192.168.0.x bittitasolla 11000000 10101000 00000000 xxxxxxxx.
 
 Reitittimen reititystaulu voisi näyttää vaikka seuraavanlaiselta:
-| Osoitteet                           | Linkin numero  |
-| ----------------------------------- |:--------------:|
-| 11000000 10101000 00000000 ******** | 3 |
-| 11000000 10101000 00000001 ******** | 2 |
-| 11000000 10101000 00010*** ******** | 1 |
-| 11000000 10101000 ******** ******** | 4 |
-| *                                   | 0 |
+
+<table>
+  <tr>
+    <th>Osoitteet</th> <th> Linkin numero </th>
+  </tr>
+  <tr>
+    <th> 11000000 10101000 00000000 ******** </th> <th> 3 </th>
+  </tr>
+  <tr>
+    <th> 11000000 10101000 00000001 ******** </th> <th> 2 </th>
+  </tr>
+  <tr>
+    <th> 11000000 10101000 00010*** ******** </th> <th> 1 </th>
+  </tr>
+  <tr>
+    <th> 11000000 10101000 ******** ******** </th> <th> 4 </th>
+  </tr>
+  <tr>
+    <th> *                                   </th> <th> 0 </th>
+  </tr>
+</table>
 
 Tämän taulun perusteella viesti, jonka vastaanottajan IP-numero on 11000000 10101000 00010101 00100010 ohjataan linkkiin 1, koska osoitteiden alkuosat ovat identtiset. Sitä ei ohjata linkkiin 4, koska sillä pidempi yhteinen alkuosa linkkiin yksi menevien osoitteiden kanssa. Tähtien tilalla voi olla joko 0 tai 1, joten niiden kohdalla osoitteet voivat erota. Vastaavasti osoite, joka alkaa 01... ohjataan linkkiin 0, johon ohjataan kaikki viestit, joiden vastaanottajat eivät täsmää muiden osoitteiden kanssa.
 
