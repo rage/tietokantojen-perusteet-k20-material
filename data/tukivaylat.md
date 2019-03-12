@@ -16,7 +16,7 @@ Pääset kanavalle tästä linkistä: [https://t.me/tkt_tilpe](https://t.me/tkt_
 
 Kanavan osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Kanavan toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti.
 
-Kanava on luotu laajemman Tietoliikenteen perusteet- kurssin tarpeisiin, joten osa kanavan keskustelusta menee tämän verkkokurssin ohi, mutta koska suurin osa verkkokurssin osallistujista tekee tuota laajemptaa Tietoliikenteen perusteet -kurssia, niin tämä kanava toimii parhaiten tukikanavana myös verkkokurssilla.
+Kanava on luotu laajemman Tietoliikenteen perusteet- kurssin tarpeisiin, joten osa kanavan keskustelusta menee tämän verkkokurssin ohi, mutta koska suurin osa verkkokurssin osallistujista tekee tuota laajempaa Tietoliikenteen perusteet -kurssia, niin tämä kanava toimii parhaiten tukikanavana myös verkkokurssilla.
 
 
 ## Moodle-foorumi
