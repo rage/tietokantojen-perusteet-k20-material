@@ -92,7 +92,8 @@ class EndOfSubSection extends React.Component {
               )}
               <p>
                 Muistathan tarkistaa pistetilanteesi materiaalin oikeassa
-                alareunassa olevasta pallosta! Pistilanne ilmestyy materiaaliin myöhemmin.
+                alareunassa olevasta pallosta! Pistilanne ilmestyy materiaaliin
+                myöhemmin.
               </p>
             </div>
           )
