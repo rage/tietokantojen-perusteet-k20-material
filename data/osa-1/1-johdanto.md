@@ -37,7 +37,7 @@ Internet on englanninkielisen nimensä mukaisesti verkkojen verkko. Se siis yhdi
 Näitä internetiin liitettyjä tietoverkkoja hallinnoivat palveluntarjoajat (Internet service provider, ISP). Suomessa toimii kymmeniä palveluntarjoajia, joista tavalliselle kuluttajalle tunnetuimpia ovat teleoperaattorit kuten DNA, Elisa ja Telia. Helsingin yliopistolle kuten muillekin suomalaisille yliopistoille ja korkeakouluille internet yhteyden palveluntarjoajana toimii [CSC - Tieteen tietotekniikan keskus](www.csc.fi). Se hallinnoi FUNET-verkkoa, jonka kautta Helsingin yliopiston internet yhteydet kulkevat. FUNET-verkko on puolestaan liitetty muuhun internetiin [FICIXin](www.ficix.fi/fi/) operoiman internetliikenteen yhdysliikennepisteen (internet exchange point) kautta. FICIXin yhdysliikennepiste on tietoverkko, joka puolestaan on liitetty eurooppalaisen yhdysliikennepisteen tietoverkkoon, joka puolestaan taas on liitetty edelleen muiden organisaatioiden tietoverkkoihin ja niin edelleen.  Näin internet verkkona rakentuu toisiinsa liitetyistä palasista. Sillä ei ole yhtä keskitettyä hallitsevaa organisaatiota. Jokaisen yksittäisen verkon omistaja päättää oman verkkonsa toiminnasta. Omistaja voi esimerkiksi irrottaa oman verkkonsa muista tai vaihtaa omaa yhteyspistettään.
 
 
-![Kuvassa on verkko](../img/kotiverkko.svg)
+![Kuvassa on verkko](../img/verkko.svg)
 
 
 FICIX julkaisee tilastotietoa sen verkon kautta kulkeneesta liikenteestä. Tilastosta on tarjolla myös [graafinen kuva](https://stats-ficix.basen.com/#/page?name=StatsWelcome&source=wiki)
