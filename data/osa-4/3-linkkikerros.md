@@ -14,7 +14,9 @@ hidden: false
 </text-box>
 
 
-##  Heti alkuun quizz, jossa kysytään mikä aiemmin käsitellyistä osoitteita liittyy nimenomaan linkkikerrokseen :  porttinumero, IP-osoite, MAC-osoite, ei omaa osoitetta tällä kerroksella
+Aimmissa osioissa on jo ollut paljon materiaalia eri kerrosten osoitteista.
+
+<quiz id="9e9179e8-7e45-4c81-b0e0-d19cab054a7f"></quiz>
 
 
 ##  Linkkikerros
@@ -39,8 +41,8 @@ Ethernet lisää kehyksen alkuun (ja loppuun) omat otsake (ja lopuke) -tietonsa.
 
 Ethernet on suunniteltu monilähetysverkoksi, jossa kaikki verkon laitteet kuulevat kaiken liikenteen. Nykyiset verkot ovat jo niin laajoja, että vaikka ne loogisesti ovat edelleen monilähetysverkkoja, joissa kaikki kuulevat kaiken liikenteen, niin todellisuudessa niitä on pyritty osittamaan siten, että viestit eivät törmäilisi keskenään. Tähän osittamiseen käytetään nykyisin kytkimiä. Aiemmin käytettiin myös siltoja ja toistimia (repeater). 
 
+<quiz id="9ecd2877-7e75-44ee-96f5-d1eb8fd17917"></quiz>
 
-## Joku kysymys ethernet-kehykseen liittyen. Kuva kehyksesta ja sitten jotain kysymyksiä sen sisällöstä esimerkiksi mikä on lähettäjän / vastaanottajan MAC-osoite
 
 
 ## Kytkin
