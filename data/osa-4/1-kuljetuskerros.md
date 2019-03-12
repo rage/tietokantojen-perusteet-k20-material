@@ -22,8 +22,7 @@ Kuljetuskerros tarjoaa kuljetuspalvelun sovelluskerrokselle siten, että sovellu
 
 Tietoliikenteen [porteilla](https://fi.wikipedia.org/wiki/Portti_(tietoliikenne)) on porttinumerot, joiden avulla ne erotetaan toisistaan. Osa porttinumeroista on yhdessä sovittu tiettyjen sovellusten käyttöön ja osa on vapaasti käytettävissä. Porttinumeron avulla kuljetuskerros osaa tunnistaa sovelluskerroksen viestin vastaanottajan. Se on tavallaan paikallinen postiluukku, johon saapuvat viestit laitetaan. Lähettäjän täytyy siis tietää vastaanottavan koneen sovelluksen käyttämä porttinumero. Tämä on mahdotonta, jos meillä ei olisi etukäteen tietoa siitä mihin asiakkaan ensimmäinen viesti pitää toimittaa. Siksi yleisimmille sovelluksille on sovittu tietyt porttinumerot, joita ne käyttävät. Tällöin asiakas voi lähettää viestin 'arvaamalla', että palvelimella on käytössä nimenomaan tämä yhteisesti sovittu porttinumero.
 
-## Tähän quizz porttinumeroista. Niitä on lueteltu tuossa Wikipedian artikkelissa varsin kattavasti
-
+<quiz id="a3a4050f-824f-4d9a-b57b-d85137b3f786"></quiz>
 
 ##  TCP
 
@@ -53,8 +52,6 @@ Viestien ja kuittausten katoamista vastaan lähettäjät käyttävät ajastimia 
 Lähettäjän viestien uudelleen lähetyksestä valitettavasti seuraa se, että vastaanottaja saattaa saada saman viestin kahteen kertaan.
 Näin käy aina, kun alkuperäinen viesti meni perille, mutta kuittaus katosi. Koska sovellus on kuitenkin lähettänyt vain yhden viestin, on tärkeää, että tämä monistunut viesti päätyy vastaanottavalle sovellukselle vain kertaalleen. TCP estää tämän näkymisen sovellukselle numeroimalla viestit ja näin se voi tunnistaa mahdolliset monistumiset ja poistaa ylimääräiset viestit ennen kuin ne pääsevät sovellukselle asti.
 
-### Tämä vaatii jonkunlainen tehtävän asian hahmottamiseksi.
-
 
 ## UDP
 
@@ -73,3 +70,5 @@ UDP jää tällä kurssillä hyvin vähälle huomiolle. Tärkeintä onkin tunnis
 ## TLS
 
 Alkuperäiset kuljetuskerroksen protokollat eivät tarjoa salausta tiedonsiirron turvallisuuden parantamiseksi. Sitä varten on kehitetty aluksi SSL ja siitä edelleen TLS (Transport Layer Security), jolla voidaan salata TCP-yhteyksissä kulkevaa dataa. Yksinkertaistetusti voidaan ajatella että TLS on vain salattu TCP-yhteys. Salauksessa haastavinta salausalgoritmien lisäksi on suunnitella ja toteuttaa luotettava avainten hallinta. Avainten hallinta kuuluu erilaisilla tietoturva-kursseilla ja siksi emme sitä tällä kurssilla käsittele enempää kuin jo aiemmin esillä olleet varmenteet edellyttivät.
+
+<quiz id="200e3099-5a4a-4be5-9696-d7718b0302ba"></quiz>
