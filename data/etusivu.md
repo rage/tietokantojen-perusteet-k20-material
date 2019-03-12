@@ -42,4 +42,4 @@ Helsingin yliopiston opiskelijoiden pitää ilmoittautua kurssille OODIssa.
 
 Kurssin materiaalia päivitetään tämän kevään kokemuksen perusteella ja lisäksi toteutetaan jatkokurssi, jotka yhdessä kattavat tietojenkäsittelytieteen kandiohjelman pakollisen opintojakson Tietoliikenteen perusteet.
 
-Tästä kurssille on tarkoitus tehdään myös ohjeistusta koulujen opettajille, jotka voivat halutessaan tarjota kurssia omille oppilailleen kurkistukseksi yliopisto-opintoihin. Nämä ohjeet eivät ole käytettävissä vielä keväällä 2019.
+Tästä kurssille on tarkoitus tehdä myös ohjeistusta koulujen opettajille, jotka voivat halutessaan tarjota kurssia omille oppilailleen kurkistukseksi yliopisto-opintoihin. Nämä ohjeet eivät ole käytettävissä vielä keväällä 2019.
