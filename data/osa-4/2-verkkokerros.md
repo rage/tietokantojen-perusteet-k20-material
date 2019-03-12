@@ -34,7 +34,6 @@ IP-paketille on ihan [oma Wikipedian sivu](https://fi.wikipedia.org/wiki/IP-pake
 
 ![Kuva IP-paketin otsaketiedoista](../img/ip-paketti.svg)
 
-## Kuva paketista on kiva tässäkin (ihan kaikkia yksityiskohtia ei ehkä tarvita, jos ne tuntuvat hämäävän)
 
 IP-paketin otsakkeessa on siis kuljetuskerroksen protokollan tunnistenumero, lähettäjän ja vastaanottajan IP-osoitteet sekä joukko erilaisia lisätietoja, jotka tässä ohitetaan. Ihan ensimmäisenä otsakkeessa on versionumero, jotta tiedetään miten otsakkeen muodostava bittijono pitää tulkita. IPv4:n ja IPv6:n otsakkeet ovat erilaiset jo ihan sen takia, että käytettävät IP-osoitteet ovat erimittaisia.
 
@@ -46,6 +45,20 @@ IP-protokollan keskeinen tehtävä  on huolehtia IP-paketin siirto lähettäjäl
 Reitityksessä on kaksi erilaista toimintoa. Toinen on reittien määrittely, jota tehdään erilaisilla reititysalgoritmeilla. Toinen tämän kurssin kannalta tärkeämpi vaihe, on reitittimen vastaanottamien IP-pakettien lähettäminen edelleen seuraavalle reitittimelle. Reititysalgoritmeja emme käsittele, vaan oletamme, että reitittimellä on jo valmiina reititystaulu, jonka perusteella IP-paketin edelleenlähetys (engl. forwarding) tapahtuu.
 
 Kun IP-paketti saapuu reitittimelle, niin reititin katsoo reititystaulustaan mihin linkkiin paketti pitää lähettää, jotta se aikanaan päätyisi vastaanottajalleen. IP-paketissa on vastaanottajan IP-numero, jonka avulla tämä reititystaulusta linkkitiedon poimiminen tehdään.  Yleensä reititystauluihin on määritelty oletusyhdyskäytävä (engl. default gateway), jolle annetaan kaikki ne saapuvat IP-paketit, joille ei ole määritelty tarkempaa suuntaa reititystaulussa. Tällä tekniikalla esimerkiksi kotiverkon ja  muun internetin yhdistävällä reitittimellä on varsin pieni reititystaulu. Kotiverkon osoitteet ovat kotiverkon puoleisessa linkissä ja kaikki muut ovat palveluntarjoajan verkkoon vievän linkin takana. Myös kaikkien verkkoon liitettävien laitteiden täytyy tietää vähintään oletusyhdyskäytävän osoite. Tosin niiden oletusyhdyskäytävä on oman aliverkon reititin. Tämän tiedon ne nykyisin saavat jo DHCP-kyselyn vastauksena. 
+
+Reititin ei voi ylläpitää reititystaulussaan kaikkia mahdollisia IP-osoitteita. joten se tallettaa tietoja käyttäen IP-osoitteiden yhteisiä alkuosia. JOs esimerkiksi osoitteet 192.168.0.x on yhden linkin takana ja 192.168.1.x toisen, niin reititystaulussa on rivi kummallekin ryhmälle. Yhteinen alkuosa voi olla bittitasolla muuallakin kuin tavurajalla. Siksi tässä esimerkkitaulussa osoitteet on kuvattu bittitasolla eikä numeroina kuten muualla materiaalissa. 192.168.0.x bittitasolla 11000000 10101000 00000000 xxxxxxxx.
+
+Reitittimen reititystaulu voisi näyttää vaikka seuraavanlaiselta:
+| Osoitteet                           | Linkin numero  |
+| ----------------------------------- |:--------------:|
+| 11000000 10101000 00000000 ******** | 3 |
+| 11000000 10101000 00000001 ******** | 2 |
+| 11000000 10101000 00010*** ******** | 1 |
+| 11000000 10101000 ******** ******** | 4 |
+| *                                   | 0 |
+
+Tämän taulun perusteella viesti, jonka vastaanottajan IP-numero on 11000000 10101000 00010101 00100010 ohjataan linkkiin 1, koska osoitteiden alkuosat ovat identtiset. Sitä ei ohjata linkkiin 4, koska sillä pidempi yhteinen alkuosa linkkiin yksi menevien osoitteiden kanssa. Tähtien tilalla voi olla joko 0 tai 1, joten niiden kohdalla osoitteet voivat erota. Vastaavasti osoite, joka alkaa 01... ohjataan linkkiin 0, johon ohjataan kaikki viestit, joiden vastaanottajat eivät täsmää muiden osoitteiden kanssa.
+
 
 ##  Yksinkertainen tehtävä, jossa reitittimelle on kuvattu yksinkertainen reititystaulu ja sitten sille annetaan joukko erilaisia IP-osoitteita ja kysytään, että mihin linkkinumeroon mikin niistä toimitetaan
 
