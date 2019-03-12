@@ -12,7 +12,7 @@ Kurssin kaksi erillistä opiskelijaryhmää käsitellään arvostelussa täysin 
 
 ### Avoimen yliopiston opiskelijat, DEFA
 
-Teidän suorituksenne arvioidaan Johdatus Tietojenkäsittelytieteeseen 2 op mukaisena. Arvostelu tapahtuu puhtaasti moodlen kokeen perusteeella.  Tämän kurssin tehtävistä voi saada muutaman lisäpisteen arvostelun osaksi. Katso tarkempi tieto kurssin moodlesta.
+Teidän suorituksenne arvioidaan Johdatus Tietojenkäsittelytieteeseen 2 op mukaisena. Arvostelu tapahtuu puhtaasti moodlen kokeen perusteella.  Tämän kurssin tehtävistä voi saada muutaman lisäpisteen arvostelun osaksi. Katso tarkempi tieto kurssin moodlesta.
 
 Moodlen kokeen ajankohtaa ei ole vielä päätetty.
 
