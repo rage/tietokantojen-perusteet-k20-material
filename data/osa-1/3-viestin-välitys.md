@@ -37,7 +37,7 @@ Tämä tarina tapahtuu aina lähettäjällä ja vastaanottajalla, kun sanoma lä
 
 ### Sanomanvälitys tietoliikenneverkossa, pakettikytkentä, reititys
 
-Lähettäjä ja vastaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet-verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjältä koneelta vastaanottajan koneelle.
+Lähettäjä ja vastaanottaja ovat hyvin harvoin samassa aliverkossa, jossa ne voivat kommunikoida suoraan keskenään. Tyypillisempää on, että ne ovat eri internet-verkon aliverkoissa, jolloin ne tarvitsevat tietoverkon palveluja sanoman kuljettamiseen lähettäjän koneelta vastaanottajan koneelle.
 
 Kuten edellisestä tarinasta kävi jo ilmi, niin internet-verkossa tapahtuva sanomien kuljetus tapahtuu paketteina. Se onkin toteutustavaltaan [pakettikytkentäinen](https://fi.wikipedia.org/wiki/Pakettikytkent%C3%A4).
 
