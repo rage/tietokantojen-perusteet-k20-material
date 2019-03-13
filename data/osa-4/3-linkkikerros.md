@@ -54,9 +54,6 @@ Kytkin siis vastaanottaa liikennettä kaikista porteista ja välittää sitä my
 Kytkin kirjaa omaan kytkintauluunsa välittämistään viesteistä niiden lähettäjän MAC-osoitteen ja sen mistä portista kehys saapui. Näin se vähitellen oppii, minkä portin kautta mikin MAC-osoite liikennöi.
 
 
-## Kytkimellä voisi olla tehtävänä tarina, jossa kerrotaan mitä viestejä kulkee ja sitten kysytään mitä tietoja kytkin on ehtinyt keräämään. Laitetaan tarinaan vaikka kaksi kytkintä, niin kumpikin ei opi kaikkea
-
-
 ### Reititin, kytkin ja toistin - erot
 
 Erilaiset verkkolaitteet on kaikki suunniteltu välittämään pakettikytkentäisen verkon viestejä, kutsutaanpa niitä millä nimellä tahansa.
@@ -66,3 +63,6 @@ Reititin tekee tätä välitystyötään verkkokerroksen tasolla ja päättää 
 Kytkin tekee välitystyötä linkkikerroksella ja päättää kehyksen vastaanottajan MAC-osoitteen perusteella, mihin porttiin kyseinen kehys pitää välittää.
 
 Toistin (repeater) on näistä yksinkertaisin. Se vain välittää kaikki viestit kahden eri segmentin välillä. Toistimia käytetään esimerkiksi pitkillä yhteyksillä signaalin vahvistamiseen. Sen voidaan ajatella toimivan fyysisellä kerroksella, koska se ei millään tavalla tutki välittämänsä sanoman sisältöä. Se vain toistaa viestin bitit sellaisenaan seuraavaan segmenttiin.
+
+
+<quiz id="a1dbfb46-80e4-4b18-ae80-d5f66102e887"></quiz>
