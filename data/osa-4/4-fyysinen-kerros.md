@@ -29,7 +29,9 @@ Tällä hetkellä on voimakas siirtymä kohti valokuituja, koska valolla saadaan
 Erilaiset fyysiset johtimet edellyttävät myös niihin liitettäviltä laitteista kyseistä yhteystapaa tukevaa liitosta. Yleisin liityntätapa [parikaapelien](https://fi.wikipedia.org/wiki/Parikaapeli) kanssa on RJ45, tai oikeammin 8P8C. Yleensä näistä ethernet-liittimistä ja -parikaapeleista käytetään nimitystä rj45, on se sitten oikein tai väärin. Toinen parikaapeleihin liittyvät numeroryhmä on Cat5, Cat6 vai peräti Cat7. Tämä kategoria (category) kertoo miten hyvin kaapelin on suojattu erilaisilta häiriöiltä.
 
 
-## Yksi tehtävä, jossa voisi olla kuva erilaisista liittimistä ja sitten joku helppo kysymys niihin liittyen. Vaikka, että minkä nimisiä mikäkin liitin on?  (ja joku linkki materiaalin, josta voi selvittää).
+<!--  Osion 4 osaamistavoitteet -->
+
+<quiz id="a3c24883-8267-4f32-91f5-d8793915f2d9"></quiz>
 
 
 
