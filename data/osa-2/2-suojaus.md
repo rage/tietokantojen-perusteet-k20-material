@@ -31,7 +31,7 @@ Tällä kurssilla keskitymme tietoliikenneverkon ja sen protokollien perustoimin
 
 ## Verkon suojaus
 
-Tietoliikenteeseen kotiverkossa voi kohdistua monenlaisia uhkia ja niiltä täytyy suojautua eri tavoin. Kotiverkon luvattoman käytön estäminen edellyttää, että verkkoon pääsy on jollain tavalla rajattu. Liikenteen kuuntelun estämiseen tyypillisesti käytetään liikenteen salausta. Ulkopuolisesta verkosta tulevaa liikennettä voidaan suodattaa palomuurilla, jolloin vain aidosti omaan verkkoon tulossa oleva liikenne pääse palomuurin läpi.
+Tietoliikenteeseen kotiverkossa voi kohdistua monenlaisia uhkia ja niiltä täytyy suojautua eri tavoin. Kotiverkon luvattoman käytön estäminen edellyttää, että verkkoon pääsy on jollain tavalla rajattu. Liikenteen kuuntelun estämiseen tyypillisesti käytetään liikenteen salausta. Ulkopuolisesta verkosta tulevaa liikennettä voidaan suodattaa palomuurilla, jolloin vain aidosti omaan verkkoon tulossa oleva liikenne pääsee palomuurin läpi.
 
 ### Luvattoman käytön estäminen verkon sisällä
 
