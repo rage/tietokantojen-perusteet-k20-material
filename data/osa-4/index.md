@@ -2,7 +2,7 @@
 path: '/osa-4'
 title: 'Osa 4: Muut kerrokset'
 overview: true
-hidden: true
+hidden: false
 ---
 
 
