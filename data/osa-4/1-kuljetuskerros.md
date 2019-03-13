@@ -12,7 +12,8 @@ hidden: false
 
 </text-box>
 
-<quiz id="5c498c7c017ffc13eddc84f1"></quiz>
+<!-- Osoitteet ja kerrokset -->
+<quiz id="302a3048-1ea7-4e48-8feb-f64cf6b0053b"></quiz>
 
 
 
@@ -22,6 +23,7 @@ Kuljetuskerros tarjoaa kuljetuspalvelun sovelluskerrokselle siten, että sovellu
 
 Tietoliikenteen [porteilla](https://fi.wikipedia.org/wiki/Portti_(tietoliikenne)) on porttinumerot, joiden avulla ne erotetaan toisistaan. Osa porttinumeroista on yhdessä sovittu tiettyjen sovellusten käyttöön ja osa on vapaasti käytettävissä. Porttinumeron avulla kuljetuskerros osaa tunnistaa sovelluskerroksen viestin vastaanottajan. Se on tavallaan paikallinen postiluukku, johon saapuvat viestit laitetaan. Lähettäjän täytyy siis tietää vastaanottavan koneen sovelluksen käyttämä porttinumero. Tämä on mahdotonta, jos meillä ei olisi etukäteen tietoa siitä mihin asiakkaan ensimmäinen viesti pitää toimittaa. Siksi yleisimmille sovelluksille on sovittu tietyt porttinumerot, joita ne käyttävät. Tällöin asiakas voi lähettää viestin 'arvaamalla', että palvelimella on käytössä nimenomaan tämä yhteisesti sovittu porttinumero.
 
+<!-- Porttinumeroita -->
 <quiz id="a3a4050f-824f-4d9a-b57b-d85137b3f786"></quiz>
 
 ##  TCP
@@ -71,4 +73,5 @@ UDP jää tällä kurssillä hyvin vähälle huomiolle. Tärkeintä onkin tunnis
 
 Alkuperäiset kuljetuskerroksen protokollat eivät tarjoa salausta tiedonsiirron turvallisuuden parantamiseksi. Sitä varten on kehitetty aluksi SSL ja siitä edelleen TLS (Transport Layer Security), jolla voidaan salata TCP-yhteyksissä kulkevaa dataa. Yksinkertaistetusti voidaan ajatella että TLS on vain salattu TCP-yhteys. Salauksessa haastavinta salausalgoritmien lisäksi on suunnitella ja toteuttaa luotettava avainten hallinta. Avainten hallinta kuuluu erilaisilla tietoturva-kursseilla ja siksi emme sitä tällä kurssilla käsittele enempää kuin jo aiemmin esillä olleet varmenteet edellyttivät.
 
+<!-- kuljetuskerroksen tehtävistä essee -->
 <quiz id="200e3099-5a4a-4be5-9696-d7718b0302ba"></quiz>
