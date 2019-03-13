@@ -73,5 +73,8 @@ UDP jää tällä kurssillä hyvin vähälle huomiolle. Tärkeintä onkin tunnis
 
 Alkuperäiset kuljetuskerroksen protokollat eivät tarjoa salausta tiedonsiirron turvallisuuden parantamiseksi. Sitä varten on kehitetty aluksi SSL ja siitä edelleen TLS (Transport Layer Security), jolla voidaan salata TCP-yhteyksissä kulkevaa dataa. Yksinkertaistetusti voidaan ajatella että TLS on vain salattu TCP-yhteys. Salauksessa haastavinta salausalgoritmien lisäksi on suunnitella ja toteuttaa luotettava avainten hallinta. Avainten hallinta kuuluu erilaisilla tietoturva-kursseilla ja siksi emme sitä tällä kurssilla käsittele enempää kuin jo aiemmin esillä olleet varmenteet edellyttivät.
 
+
+
 <!-- kuljetuskerroksen tehtävistä essee -->
-<quiz id="200e3099-5a4a-4be5-9696-d7718b0302ba"></quiz>
+<quiz id="a9702473-86ed-4b36-b0d5-dffb15b68730"></quiz>
+(Esseetehtävä vaihdettu 13.3.2019 - tehtäväksi anto lisätty.)
