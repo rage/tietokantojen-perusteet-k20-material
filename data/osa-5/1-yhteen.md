@@ -23,15 +23,20 @@ Kootaan vielä kaikki asiat yhdeksi isommaksi kokonaisuudeksi. Tässä ei siis p
 ![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
 
 
-## Kuva on kiva. Tämä kuva täytyy piirtää ensin käsin, koska tarina pohjautuu tähän kuvaan.
-
 Lähdetään liikkeelle siitä, että käyttäjä kirjoittaa kotonaan www-selaimeen tietyn sivun URL-osoitteen (käytetään erimerkissä osoitetta http://www.helsinki.fi/opiskelijaksi
 
-## Quizz: Mikä osa osoitteestä on yliopiston www-palvelimen nimi: http, helsinki.fi, www.helsinki.fi opiskelijaksi
+<!--  URL-osoite -->
+
+<quiz id="44a72ec8-66d2-4116-83a7-40b5ecd154fa"></quiz>
 
 Kuten muistamme, niin palvelimen nimi täytyy muuttaa IP-osoitteeksi, jotta pyyntö voidaan laittaa eteenpäin verkossa
 
 ## Quizz:  Millä järjestelmää tuo verkkonimen kuvaaminen IP-osoitteeksi tehdään: DHCP, DNS, ARP, FTP, oliko vielä muita lyhenteitä kurssin materiaalissa
+
+<!--  URL-osoite -->
+
+<quiz id="44a72ec8-66d2-4116-83a7-40b5ecd154fa"></quiz>
+
 
 Nyt tiedetään jo palvelimen IP-osoite, joten sovelluskerroksella ei enää tehdä kovin paljoa.
 
