@@ -107,15 +107,10 @@ Palataan vielä lopuksi reitittimien toimintaan tarkemmin. Oheisessa kuvassa Rei
 
 ![Kaavakuva missä viesti kulkee lähettäjältä (käyttäjän tietokone) vastaanottajalle (www-palveliin) kahden reitittimen kautta. Käyttäjän tietokoneen IP-osoite on 192.168.0.24 ja MAC-osoite A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjän tietokoneeseen ja sen käyttäjän tietokoneen puoleinen IP-osoite on 192.168.0.3 ja MAC-osoite E6-E9-00-11-22-33. Reititin 1:n toisen puolen on IP-osoite on 242.242.242.42 ja MAC-osoite E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetyn puolen IP-osoite on 24.2.242.242.11 ja MAC-osoite C4:11:E3:EE:11:11. Reititin 2:n toisella puolella IP-osoite on 111.112.113.10 ja MAC-osoite C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä www-palvelimeen, jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
 
-## Tänne vielä pari soveltavaa quizzia, jossa kysymyksiä juuri kuvassa oleviin tunnisteisiin liittyen.
 
-<!--  verkkonimi IP-osoitteeksi -->
+<!--  Reititin 1 -->
+<quiz id="a408fd4b-82a0-4415-9d85-d8d6b095782e">
 
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac">
-
-</quiz><!--  verkkonimi IP-osoitteeksi -->
-
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 ## Yhteenvetona
 
@@ -123,3 +118,7 @@ Tietoliikenteessä on paljon toimijoita, mutta jokainen niistä hoitaa vain oman
 
 Seuraavilla kursseilla tutustutaan tarkemmin eri protokollien toimintaan, niiden viestien rakenteisiin sekä erityisesti verkon kuormitukseen ja luotettavaan toimintaan liittyviin periaatteisiin.
 
+Anna vielä lopuksia palautetta tästä kurssista. 
+
+</quiz><!-- Palautetta -->
+<quiz id="a18fe51a-80a8-41a7-99a5-d591ccba2f9a"></quiz>
