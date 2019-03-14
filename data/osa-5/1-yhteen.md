@@ -22,7 +22,7 @@ Kootaan vielä kaikki asiat yhdeksi isommaksi kokonaisuudeksi. Tässä ei siis p
 
 ![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
 
-![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle kahden reitittimen kautta. Lähettäjän IP on 192.168.0.24 ja MAC A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjään ja sen käyttäjän puoleinen IP on 192.168.0.3 ja MAC E6-E9-00-11-22-33. Reititin 1:n toinen puoli on IP 242.242.242.42 ja MAC E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetty puoli on IP 24.2.242.242.11 ja MAC C4:11:E3:EE:11:11. Reititin 2:n toisella puolella on IP 111.112.113.10 ja MAC C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä tietokoneeseen jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
+
 
 Lähdetään liikkeelle siitä, että käyttäjä kirjoittaa kotonaan www-selaimeen tietyn sivun URL-osoitteen (käytetään erimerkissä osoitetta http://www.helsinki.fi/opiskelijaksi
 
@@ -89,6 +89,10 @@ Yliopiston reititin vastaanottaa viestin. Sekin tarkastelee vastaanottajan IP-os
 Näin viesti on monien vaiheiden kautta saapunut vastaanottajalle. Linkkikerros antaa oman kehyksensä datan verkkokerrokselle. Verkkokerros vielä tarkistaa, että viesti on itselle ja antaa sitten IP-paketin datan kuljetuskerrokselle. Kuljetuskerros katsoo oman viestinsä otsikoista vastaanottajan palvelun porttinumeron ja laittaa kuljetuskerroksen sanomassa olleen data sinne. Näin sovelluskerros voi vihdoin saadaa itselleen lähettäneen sovelluskerroksen viestin ja käsitellä sen.
 
 Koska kyseessä on www-palvelin ja viesti oli tiettyyn sivuun liittynyt GET-pyyntö, palvelin etsii kyseisen sivun ja muodostaa vastausviestin. Vastausviestin vastaanottajana on siis www-selain. Vastausviesti kulkee nyt päinvastaiseen suuntaan, mutta käy läpi samat vaiheet kuin pyyntöviesti. Nyt on tärkeä huomata, että reitti eri reitittimien kautta ei välttämättä ole sama kuin jota pitkin pyyntö tuli. Reitittimet tekevät jokaiselle paketille itsenäisen reitityspäätöksen, joten viestit voivat kulkea eri reittejä.
+
+Palataan vielä vähäksi aikaa reitittimien toimintaan. Oheisessa kuvassa Reititin 1 vastaanottaa viestin, jonka alkuperäisen lähettäjä on A ja lopullinen vastaanottaja B. Se lähettää sen edelleen reitittimelle 2, joka lähettää viestin edelleen vastaanottajalle B
+
+![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle kahden reitittimen kautta. Lähettäjän IP on 192.168.0.24 ja MAC A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjään ja sen käyttäjän puoleinen IP on 192.168.0.3 ja MAC E6-E9-00-11-22-33. Reititin 1:n toinen puoli on IP 242.242.242.42 ja MAC E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetty puoli on IP 24.2.242.242.11 ja MAC C4:11:E3:EE:11:11. Reititin 2:n toisella puolella on IP 111.112.113.10 ja MAC C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä tietokoneeseen jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
 
 ## Yhteenvetona
 
