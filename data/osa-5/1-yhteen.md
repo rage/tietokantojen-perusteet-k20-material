@@ -109,7 +109,7 @@ Palataan vielä lopuksi reitittimien toimintaan tarkemmin. Oheisessa kuvassa Rei
 
 
 <!--  Reititin 1 -->
-<quiz id="a408fd4b-82a0-4415-9d85-d8d6b095782e">
+<quiz id="a408fd4b-82a0-4415-9d85-d8d6b095782e"></quiz>
 
 
 ## Yhteenvetona
