@@ -32,11 +32,9 @@ Lähdetään liikkeelle siitä, että käyttäjä kirjoittaa kotonaan www-selaim
 
 Kuten muistamme, niin palvelimen nimi täytyy muuttaa IP-osoitteeksi, jotta pyyntö voidaan laittaa eteenpäin verkossa
 
-## Quizz:  Millä järjestelmää tuo verkkonimen kuvaaminen IP-osoitteeksi tehdään: DHCP, DNS, ARP, FTP, oliko vielä muita lyhenteitä kurssin materiaalissa
+<!--  verkkonimi IP-osoitteeksi -->
 
-<!--  URL-osoite -->
-
-<quiz id="44a72ec8-66d2-4116-83a7-40b5ecd154fa"></quiz>
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 
 Nyt tiedetään jo palvelimen IP-osoite, joten sovelluskerroksella ei enää tehdä kovin paljoa.
@@ -90,9 +88,11 @@ Näin viesti on monien vaiheiden kautta saapunut vastaanottajalle. Linkkikerros 
 
 Koska kyseessä on www-palvelin ja viesti oli tiettyyn sivuun liittynyt GET-pyyntö, palvelin etsii kyseisen sivun ja muodostaa vastausviestin. Vastausviestin vastaanottajana on siis www-selain. Vastausviesti kulkee nyt päinvastaiseen suuntaan, mutta käy läpi samat vaiheet kuin pyyntöviesti. Nyt on tärkeä huomata, että reitti eri reitittimien kautta ei välttämättä ole sama kuin jota pitkin pyyntö tuli. Reitittimet tekevät jokaiselle paketille itsenäisen reitityspäätöksen, joten viestit voivat kulkea eri reittejä.
 
-Palataan vielä vähäksi aikaa reitittimien toimintaan. Oheisessa kuvassa Reititin 1 vastaanottaa viestin, jonka alkuperäisen lähettäjä on A ja lopullinen vastaanottaja B. Se lähettää sen edelleen reitittimelle 2, joka lähettää viestin edelleen vastaanottajalle B
+Palataan vielä lopuksi reitittimien toimintaan tarkemmin. Oheisessa kuvassa Reititin 1 vastaanottaa viestin, jonka alkuperäinen lähettäjä on käyttäjän tietokone ja lopullinen vastaanottaja reitittimen takana oleva palvelin (IP-osoite 111.112.113.56). Reititin 1 l lähettää viestin edelleen reitittimelle 2, joka lähettää viestin palvelimelle.
 
 ![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle kahden reitittimen kautta. Lähettäjän IP on 192.168.0.24 ja MAC A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjään ja sen käyttäjän puoleinen IP on 192.168.0.3 ja MAC E6-E9-00-11-22-33. Reititin 1:n toinen puoli on IP 242.242.242.42 ja MAC E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetty puoli on IP 24.2.242.242.11 ja MAC C4:11:E3:EE:11:11. Reititin 2:n toisella puolella on IP 111.112.113.10 ja MAC C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä tietokoneeseen jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
+
+## Tänne vielä pari soveltavaa quizzia, jossa kysymyksiä juuri kuvassa oleviin tunnisteisiin liittyen.
 
 ## Yhteenvetona
 
