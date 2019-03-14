@@ -39,11 +39,18 @@ Kuten muistamme, niin palvelimen nimi täytyy muuttaa IP-osoitteeksi, jotta pyyn
 
 Nyt tiedetään jo palvelimen IP-osoite, joten sovelluskerroksella ei enää tehdä kovin paljoa.
 
-## Quizz: Kumpaa kuljetuskerroksen protokolla HTTP käyttää? TCP vai UDP
+
+<!--  HTTP ja kuljetuskerros -->
+<quiz id="9e304b9a-7df8-464c-8573-d11c344dc324"></quiz>
+
 
 Kuljetuskerroksen omissa otsaketiedoissa täytyy olla sovelluskerroksen palvelun/prosessin tunniste. Ajatellaan tätä siis kirjekuoreksi, jossa kuljetuskerroksen otsake on kirjekuoren päällä oleva osoite ja sovelluskerroksen viesti on kuoren sisällä oleva materiaali. (Sovelluskerros on jo voinut tehdä omasta viestistään erillisen kuoren ja antanut sen kuljetuskerrokselle. Uudemmissa verkkosovelluksissa tässä HTTP-protokollalta tulleessa viestissä voi olla jo useita sisäkkäisiä kuoria, mutta ne eivät näy kuljetuskerrokselle.)
 
 ## Quizz: Mitä tunnistetta kuljetuskerros käyttää sovelluskerroksen oikean prosessin tunnistamiseen: porttinumero, IP-numero, MAC-osoite?
+<!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
+
 
 Nyt meillä on siis kuljetuskerroksen viestissä kuljetuskerroksen otsake ja sen data, joka sisältää sovelluskerroksen otsakkeen ja datan.
 
@@ -51,9 +58,17 @@ Seuraavaksi kuljetuskerros antaa verkkokerrokselle tämän viestin (kirjekuoren)
 
 ## Quizz: Mitä tunnistetta verkkokerros käyttää omassa otsakkeessa oikean vastaanottajan löytämiseen: porttinumero, IP-numero, MAC-osoite?
 
+<!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
+
 Nyt puolestaan verkkokerros laittaa kuljetuskerrokselta saamansa viestin omaa kirjekuoreen ja sen päälle tämän verkkokerroksen käyttämän osoitteen ja antaa tämän kuoren edelleen linkkikerrokselle.
 
 ## Quizz: Mitä tunnistetta linkkikerros käyttää omassa otsakkeessa oikean vastaanottajan löytämiseen: porttinumero, IP-numero, MAC-osoite?
+
+<!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 Ja linkkikerros lisää vielä yhden uuden kirjekuoren saamansa verkkokerroksen paketin ympärille. Tähän kuoreen kirjoitetaan päälle linkkikerroksen vastaanottajan osoite.
 
@@ -68,6 +83,10 @@ Viesti on menossa www-palvelimelle, joka ei ole www-selaimen kanssa samassa aliv
 Tämä tapahtuu reitityksen avulla. Jokainen kone tietää oman aliverkkonsa peitteen ja vähintään oletusyhdyskäytävänsä IP-osoitteen.
 
 ## Quizz: Aliverkkopeitteestä ja osoitteista. Aliverkkopeite ei ole ollut aiemmin esillä, mutta tässä se on luontevasti mukana.
+<!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
+
 Eli aliverkkopeitteen selitys ja sitten joukko osoitteita, joista osa on samassa aliverkossa ja osa ei.
 
 Verkkokerros antaakin todellisuudessa linkkikerrokselle kirjekuoren, jonka päällä on IP-osoite, mutta haluaa, että linkkikerros toimittaa sen ensin ihan eri IP-osoitteella varustetulle reitittimelle. Tätä IP-osoitetta ei kirjoiteta verkkokerroksen kirjekuoren vastaanottajaksi, vaan vastaanottaja on edelleen tuo www-palvelimen IP-osoite. Siksi verkkokerroksen pitää tähän välityspyyntöön liittää nimenomaan reitittimen linkkikerroksen MAC-osoite.
@@ -75,6 +94,9 @@ Verkkokerros antaakin todellisuudessa linkkikerrokselle kirjekuoren, jonka pää
 Jos viesti olisi ollut menossa saman aliverkon laitteelle, esim. verkkokirjoittimelle, niin silloin linkkikerrokselle olisi annettu kyseisen laitteen MAC-osoite eikä reititystä olisi tarvittu.
 
 ## Quizz: Millä protokollalla IP-osoitteen kuvaaminen MAC-osoitteeksi tehdään, jos lähettäjä ei sitä etukäteen tiedä: DHCP, DNS, ARP, FTP? 
+<!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 Näiden vaiheiden jälkeen likkikerros on vihdoin siirtänyt viestin linkkikerroksen vastaanottajalle, joka on kotiverkon reititin.
 
@@ -93,6 +115,14 @@ Palataan vielä lopuksi reitittimien toimintaan tarkemmin. Oheisessa kuvassa Rei
 ![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle kahden reitittimen kautta. Lähettäjän IP on 192.168.0.24 ja MAC A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjään ja sen käyttäjän puoleinen IP on 192.168.0.3 ja MAC E6-E9-00-11-22-33. Reititin 1:n toinen puoli on IP 242.242.242.42 ja MAC E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetty puoli on IP 24.2.242.242.11 ja MAC C4:11:E3:EE:11:11. Reititin 2:n toisella puolella on IP 111.112.113.10 ja MAC C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä tietokoneeseen jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
 
 ## Tänne vielä pari soveltavaa quizzia, jossa kysymyksiä juuri kuvassa oleviin tunnisteisiin liittyen.
+
+<!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac">
+
+</quiz><!--  verkkonimi IP-osoitteeksi -->
+
+<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 ## Yhteenvetona
 
