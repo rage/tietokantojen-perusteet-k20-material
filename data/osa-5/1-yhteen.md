@@ -26,14 +26,15 @@ Kootaan vielä kaikki asiat yhdeksi isommaksi kokonaisuudeksi. Tässä ei siis p
 
 Lähdetään liikkeelle siitä, että käyttäjä kirjoittaa kotonaan www-selaimeen tietyn sivun URL-osoitteen (käytetään erimerkissä osoitetta http://www.helsinki.fi/opiskelijaksi
 
-<!--  URL-osoite -->
 
+<!--  URL-osoite -->
 <quiz id="44a72ec8-66d2-4116-83a7-40b5ecd154fa"></quiz>
+
 
 Kuten muistamme, niin palvelimen nimi täytyy muuttaa IP-osoitteeksi, jotta pyyntö voidaan laittaa eteenpäin verkossa
 
-<!--  verkkonimi IP-osoitteeksi -->
 
+<!--  verkkonimi IP-osoitteeksi -->
 <quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 
@@ -46,52 +47,48 @@ Nyt tiedetään jo palvelimen IP-osoite, joten sovelluskerroksella ei enää teh
 
 Kuljetuskerroksen omissa otsaketiedoissa täytyy olla sovelluskerroksen palvelun/prosessin tunniste. Ajatellaan tätä siis kirjekuoreksi, jossa kuljetuskerroksen otsake on kirjekuoren päällä oleva osoite ja sovelluskerroksen viesti on kuoren sisällä oleva materiaali. (Sovelluskerros on jo voinut tehdä omasta viestistään erillisen kuoren ja antanut sen kuljetuskerrokselle. Uudemmissa verkkosovelluksissa tässä HTTP-protokollalta tulleessa viestissä voi olla jo useita sisäkkäisiä kuoria, mutta ne eivät näy kuljetuskerrokselle.)
 
-## Quizz: Mitä tunnistetta kuljetuskerros käyttää sovelluskerroksen oikean prosessin tunnistamiseen: porttinumero, IP-numero, MAC-osoite?
-<!--  verkkonimi IP-osoitteeksi -->
 
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
+<!--  prosessin tunnistaminen -->
+<quiz id="adfc179d-8a8c-496a-9e82-e5fdb6ec5949"></quiz>
 
 
 Nyt meillä on siis kuljetuskerroksen viestissä kuljetuskerroksen otsake ja sen data, joka sisältää sovelluskerroksen otsakkeen ja datan.
 
 Seuraavaksi kuljetuskerros antaa verkkokerrokselle tämän viestin (kirjekuoren) välitettäväksi eteenpäin. Samalla se kertoo  verkkokerrokselle, sen tarvitsemat tiedot vastaanottavasta palvelimesta.
 
-## Quizz: Mitä tunnistetta verkkokerros käyttää omassa otsakkeessa oikean vastaanottajan löytämiseen: porttinumero, IP-numero, MAC-osoite?
 
-<!--  verkkonimi IP-osoitteeksi -->
+<!--  vastaanottaja verkkokerroksen otsakkeessa  -->
+<quiz id="a530a00f-838b-4adc-9e74-da5d7de5a090"></quiz>
 
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
 Nyt puolestaan verkkokerros laittaa kuljetuskerrokselta saamansa viestin omaa kirjekuoreen ja sen päälle tämän verkkokerroksen käyttämän osoitteen ja antaa tämän kuoren edelleen linkkikerrokselle.
 
 ## Quizz: Mitä tunnistetta linkkikerros käyttää omassa otsakkeessa oikean vastaanottajan löytämiseen: porttinumero, IP-numero, MAC-osoite?
 
-<!--  verkkonimi IP-osoitteeksi -->
+<!--  vastaanottaja linkkikerroksen otsakkeessa -->
 
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
+<quiz id="a707fee7-8503-40b8-895a-dccc9927715d"></quiz>
 
 Ja linkkikerros lisää vielä yhden uuden kirjekuoren saamansa verkkokerroksen paketin ympärille. Tähän kuoreen kirjoitetaan päälle linkkikerroksen vastaanottajan osoite.
 
-Todellisuudessa mitään kirjekuoria ei käytetä, vaan kukin kerroksen protokollalla on oma määritelty viestin rakenne, jonka alussa ovat kyseisen kerroksen otsaketiedot ja ylemmän kerroksen viesti otsakkeineen on tälle protokollalle vain välitettävää dataa.
+Todellisuudessa mitään kirjekuoria ei käytetä, vaan jokaisen kerroksen protokollalla on oma määritelty viestin rakenne, jonka alussa ovat kyseisen kerroksen otsaketiedot ja ylemmän kerroksen viesti otsakkeineen on tälle protokollalle vain välitettävää dataa.
 
 Nyt vihdoin tuo välitettävä viesti on valmis poistumaan lähettäjän koneelta ja ensimmäiseksi se meneekin samassa linkissä olevalle laitteelle, jonka osoite on tässä uloimmassa linkkikerroksen otsakkeessa (eli linkkikerroksen kirjekuoressa).
 
-Äskeisessä kuorituksessa jäi vielä miettimättä, että miten linkkikerros pystyy päättelemään tuo oikean MAC-osoitteen, kun verkokerrokselta tuli kirjekuori, jonka päällä oli vain IP-osoite. 
+Äskeisessä kuorituksessa jäi vielä miettimättä, että miten linkkikerros pystyy päättelemään tuon oikean MAC-osoitteen, kun verkokerrokselta tuli kirjekuori, jonka päällä oli vain IP-osoite. Tämä selvitetään ARP-protokollalla.
 
-Viesti on menossa www-palvelimelle, joka ei ole www-selaimen kanssa samassa aliverkosssa. Esimerkiksi käyttäjä on kotona ja haluaa lukea tuon kyseisen www-sivun. Viesti pitää siis lähettää kotiverkosta ulos, mutta miten?
+Tämä lähtevä viesti on menossa www-palvelimelle, joka ei ole www-selaimen kanssa samassa aliverkossa. Esimerkiksi käyttäjä on kotona ja haluaa lukea www-sivun. Viesti pitää siis lähettää kotiverkosta ulos, mutta miten?
 
-Tämä tapahtuu reitityksen avulla. Jokainen kone tietää oman aliverkkonsa peitteen ja vähintään oletusyhdyskäytävänsä IP-osoitteen.
+Tämä tapahtuu reitityksen avulla. Jokainen kone tietää oman oletusyhdyskäytävänsä IP-osoitteen.
 
-## Quizz: Aliverkkopeitteestä ja osoitteista. Aliverkkopeite ei ole ollut aiemmin esillä, mutta tässä se on luontevasti mukana.
+## Quizz: Oltusyhdyskäytävä. Aliverkkopeite ei ole ollut aiemmin esillä, mutta tässä se on luontevasti mukana.
 <!--  verkkonimi IP-osoitteeksi -->
 
 <quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
-Eli aliverkkopeitteen selitys ja sitten joukko osoitteita, joista osa on samassa aliverkossa ja osa ei.
-
 Verkkokerros antaakin todellisuudessa linkkikerrokselle kirjekuoren, jonka päällä on IP-osoite, mutta haluaa, että linkkikerros toimittaa sen ensin ihan eri IP-osoitteella varustetulle reitittimelle. Tätä IP-osoitetta ei kirjoiteta verkkokerroksen kirjekuoren vastaanottajaksi, vaan vastaanottaja on edelleen tuo www-palvelimen IP-osoite. Siksi verkkokerroksen pitää tähän välityspyyntöön liittää nimenomaan reitittimen linkkikerroksen MAC-osoite.
 
-Jos viesti olisi ollut menossa saman aliverkon laitteelle, esim. verkkokirjoittimelle, niin silloin linkkikerrokselle olisi annettu kyseisen laitteen MAC-osoite eikä reititystä olisi tarvittu.
+Jos viesti olisi ollut menossa saman aliverkon laitteelle, esim. verkkokirjoittimelle, niin silloin linkkikerrokselle olisi annettu kyseisen laitteen MAC-osoite eikä reititystä olisi tarvittu. Tähän erotteluun käytetään aliverkon peitettä (network mask). Peitteen  avulla tietokone voi päätellä onko vastaanottaja samassa aliverkossa vai ei.
 
 ## Quizz: Millä protokollalla IP-osoitteen kuvaaminen MAC-osoitteeksi tehdään, jos lähettäjä ei sitä etukäteen tiedä: DHCP, DNS, ARP, FTP? 
 <!--  verkkonimi IP-osoitteeksi -->
