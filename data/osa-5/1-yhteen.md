@@ -63,53 +63,49 @@ Seuraavaksi kuljetuskerros antaa verkkokerrokselle tämän viestin (kirjekuoren)
 
 Nyt puolestaan verkkokerros laittaa kuljetuskerrokselta saamansa viestin omaa kirjekuoreen ja sen päälle tämän verkkokerroksen käyttämän osoitteen ja antaa tämän kuoren edelleen linkkikerrokselle.
 
-## Quizz: Mitä tunnistetta linkkikerros käyttää omassa otsakkeessa oikean vastaanottajan löytämiseen: porttinumero, IP-numero, MAC-osoite?
 
 <!--  vastaanottaja linkkikerroksen otsakkeessa -->
-
 <quiz id="a707fee7-8503-40b8-895a-dccc9927715d"></quiz>
+
 
 Ja linkkikerros lisää vielä yhden uuden kirjekuoren saamansa verkkokerroksen paketin ympärille. Tähän kuoreen kirjoitetaan päälle linkkikerroksen vastaanottajan osoite.
 
 Todellisuudessa mitään kirjekuoria ei käytetä, vaan jokaisen kerroksen protokollalla on oma määritelty viestin rakenne, jonka alussa ovat kyseisen kerroksen otsaketiedot ja ylemmän kerroksen viesti otsakkeineen on tälle protokollalle vain välitettävää dataa.
 
-Nyt vihdoin tuo välitettävä viesti on valmis poistumaan lähettäjän koneelta ja ensimmäiseksi se meneekin samassa linkissä olevalle laitteelle, jonka osoite on tässä uloimmassa linkkikerroksen otsakkeessa (eli linkkikerroksen kirjekuoressa).
-
-Äskeisessä kuorituksessa jäi vielä miettimättä, että miten linkkikerros pystyy päättelemään tuon oikean MAC-osoitteen, kun verkokerrokselta tuli kirjekuori, jonka päällä oli vain IP-osoite. Tämä selvitetään ARP-protokollalla.
-
-Tämä lähtevä viesti on menossa www-palvelimelle, joka ei ole www-selaimen kanssa samassa aliverkossa. Esimerkiksi käyttäjä on kotona ja haluaa lukea www-sivun. Viesti pitää siis lähettää kotiverkosta ulos, mutta miten?
+Nyt vihdoin tuo välitettävä viesti on valmis poistumaan lähettäjän koneelta. Tämä lähtevä viesti on menossa www-palvelimelle, joka ei ole www-selaimen kanssa samassa aliverkossa. Esimerkiksi käyttäjä on kotona ja haluaa lukea www-sivun. Viesti pitää siis lähettää kotiverkosta ulos, mutta miten?
 
 Tämä tapahtuu reitityksen avulla. Jokainen kone tietää oman oletusyhdyskäytävänsä IP-osoitteen.
 
-## Quizz: Oltusyhdyskäytävä. Aliverkkopeite ei ole ollut aiemmin esillä, mutta tässä se on luontevasti mukana.
-<!--  verkkonimi IP-osoitteeksi -->
 
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
+<!--  Oletusyhdyskäytävä -->
+<quiz id="9dada389-7d90-4591-b1fc-d06f7d29525c"></quiz>
 
-Verkkokerros antaakin todellisuudessa linkkikerrokselle kirjekuoren, jonka päällä on IP-osoite, mutta haluaa, että linkkikerros toimittaa sen ensin ihan eri IP-osoitteella varustetulle reitittimelle. Tätä IP-osoitetta ei kirjoiteta verkkokerroksen kirjekuoren vastaanottajaksi, vaan vastaanottaja on edelleen tuo www-palvelimen IP-osoite. Siksi verkkokerroksen pitää tähän välityspyyntöön liittää nimenomaan reitittimen linkkikerroksen MAC-osoite.
+
+Verkkokerros antaakin todellisuudessa linkkikerrokselle kirjekuoren, jonka päällä on IP-osoite, mutta haluaa, että linkkikerros toimittaa sen ensin ihan eri IP-osoitteella varustetulle reitittimelle. Tätä IP-osoitetta ei kirjoiteta verkkokerroksen kirjekuoren vastaanottajaksi, vaan vastaanottaja on edelleen tuo www-palvelimen IP-osoite. Siksi verkkokerroksen pitää tähän välityspyyntöön liittää nimenomaan yhdyskäytävänä toimivan reitittimen linkkikerroksen MAC-osoite.
 
 Jos viesti olisi ollut menossa saman aliverkon laitteelle, esim. verkkokirjoittimelle, niin silloin linkkikerrokselle olisi annettu kyseisen laitteen MAC-osoite eikä reititystä olisi tarvittu. Tähän erotteluun käytetään aliverkon peitettä (network mask). Peitteen  avulla tietokone voi päätellä onko vastaanottaja samassa aliverkossa vai ei.
+ 
 
-## Quizz: Millä protokollalla IP-osoitteen kuvaaminen MAC-osoitteeksi tehdään, jos lähettäjä ei sitä etukäteen tiedä: DHCP, DNS, ARP, FTP? 
-<!--  verkkonimi IP-osoitteeksi -->
+<!--  MAC-osoitteen selvittäminen -->
+<quiz id="a8b24c90-8656-485e-b374-df00215a71e0"></quiz>
 
-<quiz id="a9535cfa-86d6-4c87-9580-dfd50aa298ac"></quiz>
 
-Näiden vaiheiden jälkeen likkikerros on vihdoin siirtänyt viestin linkkikerroksen vastaanottajalle, joka on kotiverkon reititin.
+Näiden vaiheiden jälkeen viesti on vihdoin saatu siirrettyä yhden linkin verran eteenpäin koht vastaanottajaa. Ensimmäisen linkin jälkeen viesti on siis päätynyt kotiverkon yhdyskäytävänä toimivalle reitittimelle.
 
-Reitittimen linkkikerros poistaa viestistä oman linkkikerroksen kirjekuoren ja antaa verkkokerroksen kirjekuoren verkkokerrokselle tarkasteltavaksi. Reititin huomaa että viesti ei ole sille tarkoitettu, joten se selvittää seuraavan vastaanottajan (usein joku toinen reititin) IP-osoitteen ja sen perusteella kyseisen laitteen linkkikerroksen osoitteen ja antaa viestin linkkikerrokselle välitettäväsksi tälle laitteelle.
+Reitittimen linkkikerros poistaa viestistälinkkikerroksen kirjekuoren ja antaa verkkokerroksen kirjekuoren verkkokerrokselle tarkasteltavaksi. Reititin huomaa, että viesti ei ole sille tarkoitettu, joten se selvittää seuraavan vastaanottajan (usein joku toinen reititin) IP-osoitteen ja sen perusteella kyseisen laitteen linkkikerroksen osoitteen ja antaa viestin linkkikerrokselle välitettäväsksi tälle laitteelle.
 
 Näin viesti etenee vähitellen reitittimeltä toiselle, kunnes se saapuu Helsingin ylipiston reitittimelle.
 
 Yliopiston reititin vastaanottaa viestin. Sekin tarkastelee vastaanottajan IP-osoitetta ja aliverkkopeitteen avulla havaitsee sen kuuluvan tiettyyn reitittimeen liitettyyn aliverkkoon, joten se lähettää viestin linkkikerroksen avulla sinne. Enää ei siis lähetetä viestiä jollekin välittävälle laitteelle vaan suoraan palvelimelle.
 
-Näin viesti on monien vaiheiden kautta saapunut vastaanottajalle. Linkkikerros antaa oman kehyksensä datan verkkokerrokselle. Verkkokerros vielä tarkistaa, että viesti on itselle ja antaa sitten IP-paketin datan kuljetuskerrokselle. Kuljetuskerros katsoo oman viestinsä otsikoista vastaanottajan palvelun porttinumeron ja laittaa kuljetuskerroksen sanomassa olleen data sinne. Näin sovelluskerros voi vihdoin saadaa itselleen lähettäneen sovelluskerroksen viestin ja käsitellä sen.
+Näin viesti on monien vaiheiden kautta saapunut vastaanottajalle. Linkkikerros antaa oman kehyksensä datan verkkokerrokselle. Verkkokerros vielä tarkistaa, että viesti on tarkoitettu juuri tälle koneelle ja antaa sitten IP-paketin datan kuljetuskerrokselle. Kuljetuskerros katsoo oman viestinsä otsikoista vastaanottavan prosessin porttinumeron ja laittaa kuljetuskerroksen sanomassa olleen datan sinne. Näin sovelluskerros voi vihdoin saada itselleen lähetetyn sovelluskerroksen viestin ja käsitellä sen.
 
 Koska kyseessä on www-palvelin ja viesti oli tiettyyn sivuun liittynyt GET-pyyntö, palvelin etsii kyseisen sivun ja muodostaa vastausviestin. Vastausviestin vastaanottajana on siis www-selain. Vastausviesti kulkee nyt päinvastaiseen suuntaan, mutta käy läpi samat vaiheet kuin pyyntöviesti. Nyt on tärkeä huomata, että reitti eri reitittimien kautta ei välttämättä ole sama kuin jota pitkin pyyntö tuli. Reitittimet tekevät jokaiselle paketille itsenäisen reitityspäätöksen, joten viestit voivat kulkea eri reittejä.
 
-Palataan vielä lopuksi reitittimien toimintaan tarkemmin. Oheisessa kuvassa Reititin 1 vastaanottaa viestin, jonka alkuperäinen lähettäjä on käyttäjän tietokone ja lopullinen vastaanottaja reitittimen takana oleva palvelin (IP-osoite 111.112.113.56). Reititin 1 l lähettää viestin edelleen reitittimelle 2, joka lähettää viestin palvelimelle.
 
-![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle kahden reitittimen kautta. Lähettäjän IP on 192.168.0.24 ja MAC A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjään ja sen käyttäjän puoleinen IP on 192.168.0.3 ja MAC E6-E9-00-11-22-33. Reititin 1:n toinen puoli on IP 242.242.242.42 ja MAC E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetty puoli on IP 24.2.242.242.11 ja MAC C4:11:E3:EE:11:11. Reititin 2:n toisella puolella on IP 111.112.113.10 ja MAC C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä tietokoneeseen jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
+Palataan vielä lopuksi reitittimien toimintaan tarkemmin. Oheisessa kuvassa Reititin 1 vastaanottaa viestin, jonka alkuperäinen lähettäjä on käyttäjän tietokone ja lopullinen vastaanottaja reitittimen takana oleva palvelin (IP-osoite 111.112.113.56). Reititin 1 lähettää viestin edelleen reitittimelle 2, joka lähettää viestin palvelimelle.
+
+![Kaavakuva missä viesti kulkee lähettäjältä (käyttäjän tietokone) vastaanottajalle (www-palveliin) kahden reitittimen kautta. Käyttäjän tietokoneen IP-osoite on 192.168.0.24 ja MAC-osoite A3-24-67-EF-11-A6. Reititin 1 on yhdistetty käyttäjän tietokoneeseen ja sen käyttäjän tietokoneen puoleinen IP-osoite on 192.168.0.3 ja MAC-osoite E6-E9-00-11-22-33. Reititin 1:n toisen puolen on IP-osoite on 242.242.242.42 ja MAC-osoite E6-E9-00-11-22-44. Reititin 1:n tämä puoli on yhdistetty Reititin 2:een. Reititin 2:n Reititin 1:n yhdistetyn puolen IP-osoite on 24.2.242.242.11 ja MAC-osoite C4:11:E3:EE:11:11. Reititin 2:n toisella puolella IP-osoite on 111.112.113.10 ja MAC-osoite C4:11:E3:EE:11:00. Reititin 2 on tältä puolelta yhdistettynä www-palvelimeen, jonka IP on 111.112.113.56 ja MAC AA:E1:86:11:3D:3E](../img/osa5-kuva.svg)
 
 ## Tänne vielä pari soveltavaa quizzia, jossa kysymyksiä juuri kuvassa oleviin tunnisteisiin liittyen.
 
