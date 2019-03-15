@@ -29,6 +29,8 @@ Teillä on mahdollisuus saada kurssista [Johdatus tietoliikenteeseen](https://co
 
 Ilmoittautumisohjeet kurssin sivulla [Johdatus tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054).
 
+Jos teillä ei ole vielä Helsingin yliopiston tunnuksia, odottakaa ilmoittautumisen jälkeen 24 tuntia, jotta tietonne voi siirtyä seuraavana yönä järjestelmien välillä. Sen jälkeen saatte tunnukset seuraamalla Helsingin yliopiston ohjetta käyttäjätunnusten aktivointiin: [https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin](https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin). Huom! Osa oppilaista on raportoinut, että aktivointi ei toimi Safari-selaimella. Suosittelemme että teette aktivoinnin joko Chromella tai Firefoxilla.
+
 
 ### HY:n omat opiskelijat
 
