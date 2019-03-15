@@ -42,6 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
             path
             overview
             information_page
+            banner
           }
         }
       }

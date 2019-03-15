@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Background from "../images/taustakuva.png"
+import Background from "../images/background.jpg"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const BannerWrapper = styled.header`
@@ -14,6 +14,8 @@ const BannerWrapper = styled.header`
   background-color: white;
   background-image: url(${Background});
   text-align: center;
+  background-position: center;
+  background-size: 100%;
   h1 {
   }
   h2 {
