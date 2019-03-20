@@ -1,15 +1,9 @@
-import { fetchProgrammingProgress } from "./moocfi"
-import { fetchCrowdsorcererProgress } from "./crowdsorcerer"
 import { zip } from "../util/arrays"
-import { fetchQuiznatorProgress } from "./quiznator"
+import { fetchQuizzesProgress } from "./quizzes"
 
 export async function fetchProgress() {
-  const serviceIdentifiers = ["Ohjelmointitehtävät", "Kyselyt", "Crowdsorcerer"]
-  const progressesCollection = await Promise.all([
-    fetchProgrammingProgress(),
-    fetchQuiznatorProgress(),
-    fetchCrowdsorcererProgress(),
-  ])
+  const serviceIdentifiers = ["Kyselyt"]
+  const progressesCollection = await Promise.all([fetchQuizzesProgress()])
   const progressByGroup = {}
 
   zip(serviceIdentifiers, progressesCollection).forEach(
@@ -22,14 +16,14 @@ export async function fetchProgress() {
       })
     },
   )
-  const toBeDeleted = []
-  Object.entries(progressByGroup).forEach(([group, serviceEntries]) => {
-    if (!Object.keys(serviceEntries).find(o => o === "Ohjelmointitehtävät")) {
-      toBeDeleted.push(group)
-    }
-  })
-  toBeDeleted.forEach(o => {
-    delete progressByGroup[o]
-  })
+  // const toBeDeleted = []
+  // Object.entries(progressByGroup).forEach(([group, serviceEntries]) => {
+  //   if (!Object.keys(serviceEntries).find(o => o === "Ohjelmointitehtävät")) {
+  //     toBeDeleted.push(group)
+  //   }
+  // })
+  // toBeDeleted.forEach(o => {
+  //   delete progressByGroup[o]
+  // })
   return progressByGroup
 }
