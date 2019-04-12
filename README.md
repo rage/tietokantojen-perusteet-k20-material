@@ -1,5 +1,7 @@
 # Tietorakenteet ja algoritmit s19
 
+https://tira-s19.now.sh
+
 ## Development environment
 
 Requirements: recent Node
