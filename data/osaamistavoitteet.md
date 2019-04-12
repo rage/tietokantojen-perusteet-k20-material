@@ -5,9 +5,9 @@ hidden: false
 information_page: true
 ---
 
-Tietoliikenteen perusteet -kurssilla on Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmassa määritellyt oppimistavoitteet. Tämä Johdatus tietoliikenteeseen -kurssi kattaa niistä vain osan.
+Tietoliikenteen perusteet -kurssilla on Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmassa määritellyt oppimistavoitteet. Tämä Tietorakenteet ja algoritmit syksy 19 -kurssi kattaa niistä vain osan.
 
-## Johdatus tietoliikenteeseen MOOC
+## Tietorakenteet ja algoritmit syksy 19 MOOC
 
 <table>
     <thead>

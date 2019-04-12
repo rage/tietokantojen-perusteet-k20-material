@@ -7,7 +7,7 @@ banner: true
 
 # Tietoa kurssista
 
-Johdatus tietoliikenteeseen on osa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetusta.  Kurssin sisältö on valikoitu tietoliikenteen käyttäjän tarpeista lähtien.
+Tietorakenteet ja algoritmit syksy 19 on osa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetusta.  Kurssin sisältö on valikoitu tietoliikenteen käyttäjän tarpeista lähtien.
 
 
 Tämän kurssin jälkeen tunnet keskeiset tietoliikenteen käsitteet ja lyhenteet. Lisäksi sinulla on yleiskuva siitä, miten tietoliikenne ja erityisesti internet toimii. Näin sinulla on valmius itsenäisesti opiskella lisää ja lukea alan suomenkielistä kirjallisuutta.
@@ -25,9 +25,9 @@ b) Helsingin yliopiston tietojenkäsittelytieteen kandidaatin koulutusohjelman m
 ### Avoimen yliopiston opiskelijat
 
 Teidän täytyy ilmoittautua Helsingin yliopiston avoimen yliopiston opiskelijaksi ja tämän kurssin opiskelijaksi avoimen yliopiston kautta.
-Teillä on mahdollisuus saada kurssista [Johdatus tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054) 2 op:n suoritusmerkintä noudattamalla kurssin ohjeita. Tähän kurssiin liittyy koe, joka tehdään yliopiston moodle-alustalla.
+Teillä on mahdollisuus saada kurssista [Tietorakenteet ja algoritmit syksy 19](https://courses.helsinki.fi/fi/aytkt200041/128807054) 2 op:n suoritusmerkintä noudattamalla kurssin ohjeita. Tähän kurssiin liittyy koe, joka tehdään yliopiston moodle-alustalla.
 
-Ilmoittautumisohjeet kurssin sivulla [Johdatus tietoliikenteeseen](https://courses.helsinki.fi/fi/aytkt200041/128807054).
+Ilmoittautumisohjeet kurssin sivulla [Tietorakenteet ja algoritmit syksy 19](https://courses.helsinki.fi/fi/aytkt200041/128807054).
 
 Jos teillä ei ole vielä Helsingin yliopiston tunnuksia, odottakaa ilmoittautumisen jälkeen 24 tuntia, jotta tietonne voi siirtyä seuraavana yönä järjestelmien välillä. Sen jälkeen saatte tunnukset seuraamalla Helsingin yliopiston ohjetta käyttäjätunnusten aktivointiin: [https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin](https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin). Huom! Osa oppilaista on raportoinut, että aktivointi ei toimi Safari-selaimella. Suosittelemme että teette aktivoinnin joko Chromella tai Firefoxilla.
 

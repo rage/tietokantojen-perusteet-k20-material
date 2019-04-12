@@ -18,51 +18,51 @@ export async function fetchquizProgress() {
   const partToTag = [
     {
       part: "osa01",
-      tag: "johdatus-tietoliikenteeseen-19-1",
+      tag: "tietorakenteet-ja-algoritmit-s19-1",
     },
     {
       part: "osa02",
-      tag: "johdatus-tietoliikenteeseen-19-2",
+      tag: "tietorakenteet-ja-algoritmit-s19-2",
     },
     {
       part: "osa03",
-      tag: "johdatus-tietoliikenteeseen-19-3",
+      tag: "tietorakenteet-ja-algoritmit-s19-3",
     },
     {
       part: "osa04",
-      tag: "johdatus-tietoliikenteeseen-19-4",
+      tag: "tietorakenteet-ja-algoritmit-s19-4",
     },
     {
       part: "osa05",
-      tag: "johdatus-tietoliikenteeseen-19-5",
+      tag: "tietorakenteet-ja-algoritmit-s19-5",
     },
     {
       part: "osa06",
-      tag: "johdatus-tietoliikenteeseen-19-6",
+      tag: "tietorakenteet-ja-algoritmit-s19-6",
     },
     {
       part: "osa07",
-      tag: "johdatus-tietoliikenteeseen-19-7",
+      tag: "tietorakenteet-ja-algoritmit-s19-7",
     },
     {
       part: "osa08",
-      tag: "johdatus-tietoliikenteeseen-19-8",
+      tag: "tietorakenteet-ja-algoritmit-s19-8",
     },
     {
       part: "osa09",
-      tag: "johdatus-tietoliikenteeseen-19-9",
+      tag: "tietorakenteet-ja-algoritmit-s19-9",
     },
     {
       part: "osa010",
-      tag: "johdatus-tietoliikenteeseen-19-10",
+      tag: "tietorakenteet-ja-algoritmit-s19-10",
     },
     {
       part: "osa11",
-      tag: "johdatus-tietoliikenteeseen-19-11",
+      tag: "tietorakenteet-ja-algoritmit-s19-11",
     },
     {
       part: "osa12",
-      tag: "johdatus-tietoliikenteeseen-19-12",
+      tag: "tietorakenteet-ja-algoritmit-s19-12",
     },
   ]
   const quizIdInformation = await fetchQuizIds()
@@ -94,7 +94,7 @@ export async function fetchquizProgress() {
 export async function fetchQuizIds() {
   const res = await axios.post(
     `${BASE_URL}/api/v1/tags/quizids`,
-    { tags: ["johdatus-tietoliikenteeseen-19"] },
+    { tags: ["tietorakenteet-ja-algoritmit-s19"] },
     { headers: { Authorization: `Bearer ${accessToken()}` } },
   )
   return res.data

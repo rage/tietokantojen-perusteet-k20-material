@@ -33,7 +33,7 @@ export function createAccount(data) {
   data.username = uuidv4()
   const body = {
     user: data,
-    origin: "Johdatus tietoliikenteeseen",
+    origin: "Tietorakenteet ja algoritmit syksy 19",
     language: "fi",
   }
   return new Promise((resolve, reject) => {
@@ -87,7 +87,7 @@ export function onLoginStateChanged(callback) {
 
 export async function userDetails() {
   const res = await axios.get(
-    `${BASE_URL}/users/current?show_user_fields=true&extra_fields=johdatus-tietoliikenteeseen-19`,
+    `${BASE_URL}/users/current?show_user_fields=true&extra_fields=tietorakenteet-ja-algoritmit-s19`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +128,7 @@ export async function updateUserDetails({ extraFields, userField }) {
     {
       user: {
         extra_fields: {
-          namespace: "johdatus-tietoliikenteeseen-19",
+          namespace: "tietorakenteet-ja-algoritmit-s19",
           data: extraFields,
         },
       },

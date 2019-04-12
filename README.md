@@ -1,4 +1,4 @@
-# Johdatus tietoliikenteeseen 19
+# Tietorakenteet ja algoritmit s19
 
 ## Development environment
 
