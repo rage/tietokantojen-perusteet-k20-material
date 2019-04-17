@@ -7,40 +7,40 @@ banner: true
 
 # Tietoa kurssista
 
-Tietorakenteet ja algoritmit syksy 19 on osa Helsingin yliopiston tietojenkäsittelytieteen kandiohjelman tietoliikenteen opetusta.  Kurssin sisältö on valikoitu tietoliikenteen käyttäjän tarpeista lähtien.
+_Tietorakenteet ja algoritmit_ on tietojenkäsittelytieteen aineopintokurssi,
+joka käsittelee tehokkaiden algoritmien suunnittelua.
+Kurssin aiheita ovat tietorakenteet listat, joukot ja hakemistot,
+dynaaminen ohjelmointi sekä verkkoalgoritmit.
 
+## Luennot ja ohjaus
 
-Tämän kurssin jälkeen tunnet keskeiset tietoliikenteen käsitteet ja lyhenteet. Lisäksi sinulla on yleiskuva siitä, miten tietoliikenne ja erityisesti internet toimii. Näin sinulla on valmius itsenäisesti opiskella lisää ja lukea alan suomenkielistä kirjallisuutta.
+Luento on kerran viikossa, keskiviikkoisin klo 14–16 Exactumin salissa A111.
+Luennoilla käydään läpi viikkojen aiheiden teoriaa ja käytäntöä.
 
+Kurssin yhteydessä toimii paja, jossa voit ratkoa kurssin tehtäviä ja saada
+neuvoja ohjaajilta. Pajan aukioloajat ilmoitetaan myöhemmin.
 
-## Kenelle tarkoitettu
+Kurssin Telegram-ryhmässä voit keskustella netissä muiden opiskelijoiden ja
+kurssin järjestäjien kanssa. Pääset ryhmään [tästä](https://t.me/tiratg).
 
-Tämä kevään 2019 kurssi on tarkoitettu
+## Tehtävät ja arvostelu
 
-a) Avoimen yliopiston opiskelijoille, erityisesti heille, jotka tekevät Digital education for all (DEFA) -hankkeen mukaisia opintoja.
+Kurssi muodostuu 14 viikosta, joista jokaisella on 6 tehtävää
+(eli yhteensä 84 tehtävää).
+Tehtävät palautetaan sähköisesti, ja niiden arvostelu on automaattinen.
 
-b) Helsingin yliopiston tietojenkäsittelytieteen kandidaatin koulutusohjelman mukaisia opintoja tekeville.
+Pääset kurssin läpi, jos ratkaiset yhteensä ainakin 42 tehtävää
+ja lisäksi jokaiselta viikolta ainakin 2 tehtävää.
+Arvosanarajat ovat:
 
+* 42–50 tehtävää: arvosana 1
+* 51–59 tehtävää: arvosana 2
+* 60–68 tehtävää: arvosana 3
+* 69–77 tehtävää: arvosana 4
+* 78–84 tehtävää: arvosana 5
 
-### Avoimen yliopiston opiskelijat
+## Yhteystiedot
 
-Teidän täytyy ilmoittautua Helsingin yliopiston avoimen yliopiston opiskelijaksi ja tämän kurssin opiskelijaksi avoimen yliopiston kautta.
-Teillä on mahdollisuus saada kurssista [Tietorakenteet ja algoritmit syksy 19](https://courses.helsinki.fi/fi/aytkt200041/128807054) 2 op:n suoritusmerkintä noudattamalla kurssin ohjeita. Tähän kurssiin liittyy koe, joka tehdään yliopiston moodle-alustalla.
-
-Ilmoittautumisohjeet kurssin sivulla [Tietorakenteet ja algoritmit syksy 19](https://courses.helsinki.fi/fi/aytkt200041/128807054).
-
-Jos teillä ei ole vielä Helsingin yliopiston tunnuksia, odottakaa ilmoittautumisen jälkeen 24 tuntia, jotta tietonne voi siirtyä seuraavana yönä järjestelmien välillä. Sen jälkeen saatte tunnukset seuraamalla Helsingin yliopiston ohjetta käyttäjätunnusten aktivointiin: [https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin](https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin). Huom! Osa oppilaista on raportoinut, että aktivointi ei toimi Safari-selaimella. Suosittelemme että teette aktivoinnin joko Chromella tai Firefoxilla.
-
-
-### HY:n omat opiskelijat
-
-Tämä on osa kurssia [Tietoliikenteen perusteet](https://courses.helsinki.fi/fi/tkt20004/124962079). Tämä ei siis ole itsenäinen opintokokonaisuus vaan vain osio laajemmasta Tietoliikenteen perusteet -opintojaksosta. Tämän osion hallinta testataan kurssin ensimmäisessä minikokeessa. Tämän osien suorituksesta ei siis anneta erillistä suoritusmerkintää.
-
-Helsingin yliopiston opiskelijoiden pitää ilmoittautua kurssille OODIssa.
-
-
-## Tulevaisuudessa
-
-Kurssin materiaalia päivitetään tämän kevään kokemuksen perusteella ja lisäksi toteutetaan jatkokurssi, jotka yhdessä kattavat tietojenkäsittelytieteen kandiohjelman pakollisen opintojakson Tietoliikenteen perusteet.
-
-Tästä kurssille on tarkoitus tehdä myös ohjeistusta koulujen opettajille, jotka voivat halutessaan tarjota kurssia omille oppilailleen kurkistukseksi yliopisto-opintoihin. Nämä ohjeet eivät ole käytettävissä vielä keväällä 2019.
+Kurssin luennoija syksyllä 2019 on Antti Laaksonen.
+Voit ottaa yhteyttä lähettämällä [sähköpostia](mailto:ahslaaks@cs.helsinki.fi)
+tai viestin Telegramissa. 

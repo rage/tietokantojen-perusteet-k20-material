@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Tietorakenteet ja algoritmit syksy 19",
+    title: "Tietorakenteet ja algoritmit, syksy 2019",
     siteUrl: `https://tietorakenteet-ja-algoritmit-s19.mooc.fi`,
   },
   plugins: [

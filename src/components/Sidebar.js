@@ -99,21 +99,8 @@ var content2 = [
     path: "/",
   },
   {
-    title: "Osaamistavoitteet",
-    path: "/osaamistavoitteet",
-  },
-  {
-    title: "Arvostelu ja kokeet",
-    path: "/arvostelu-ja-kokeet",
-  },
-  { title: "Tukiväylät", path: "/tukivaylat" },
-  {
-    title: "Opettajille ja opinto-ohjaajille",
-    path: "/opettajille",
-  },
-  {
-    title: "Usein kysytyt kysymykset",
-    path: "/usein-kysytyt-kysymykset",
+    title: "Kurssimateriaali",
+    path: "/materiaali",
   },
   { separator: true },
 ]
@@ -172,7 +159,7 @@ class Sidebar extends React.Component {
           </Button>
         </MenuExpanderWrapper>
         <SidebarContainer mobileMenuOpen={this.props.mobileMenuOpen}>
-          <Brand>Tietorakenteet ja algoritmit syksy 19</Brand>
+          <Brand>Tietorakenteet ja algoritmit, syksy 2019</Brand>
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>
