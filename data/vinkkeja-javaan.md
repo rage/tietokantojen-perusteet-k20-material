@@ -35,23 +35,27 @@ aaltosulkujen `{` ja `}` sisällä:
 int[] luvut = {1,2,3};
 ```
 
+Taulukko on hyvä valinta algoritmien toteutuksessa,
+jos sen ominaisuudet riittävät,
+koska se on paljon kevyempi kuin `ArrayList`.
+
+
+## Taulukon tulostaminen
+
 Taulukon sisällön tulostaminen vaatii hieman työtä,
 koska seuraava koodi ei toimi halutulla tavalla:
 
 ```java
+int[] luvut = {1,2,3};
 System.out.println(luvut); // [I@3cd1a2f1
 ```
 
 Sisällön pystyy kuitenkin tulostamaan näin:
 
 ```java
+int[] luvut = {1,2,3};
 System.out.println(Arrays.toString(luvut)); // [1, 2, 3]
 ```
-
-
-Taulukko on hyvä valinta algoritmien toteutuksessa,
-jos sen ominaisuudet riittävät,
-koska se on paljon kevyempi kuin `ArrayList`.
 
 ## Viittaukset ja kopiointi
 
@@ -208,14 +212,124 @@ vaikka testit eivät liity toisiinsa.
 Ratkaisu on kerrankin helppo: kun sanan `static` poistaa,
 niin koodi alkaa toimia moitteetta.
 
-## String vs. StringBuilder
+## Merkki ja merkkijono
+
+Merkki (`char`) on yksittäinen symboli,
+kuten kirjain tai numero. Merkki kirjoitetaan koodissa
+heittomerkkien sisään.
+
+Merkkijono (`String`) on jono peräkkäin olevia merkkejä.
+Merkkijono kirjoitetaan koodissa lainausmerkkien sisään.
+
+```java
+char c = 'a';
+String s = "apina";
+```
+
+Javassa merkkijonoa ei pysty muuttamaan sen määrittelyn jälkeen.
+Seuraava koodi kuitenkin näyttää lisäävän merkkijonon loppuun merkin:
+
+```java
+String s = "apina";
+s = s+"x";
+System.out.println(s); // apinax
+```
+
+Tässä on kysymys siitä, että `+`-operaatio luo uuden merkkijonon,
+johon se kopioi ensin merkkijonon `s` merkit ja lopuksi merkin `"x"`.
+
+```java
+String s = "";
+for (int i = 0; i < 1000000; i++) {
+    s += "a";
+}
+```
+
+```java
+StringBuilder b = new StringBuilder();
+for (int i = 0; i < 1000000; i++) {
+    b.append("a");
+}
+String s = b.toString();
+```
 
 ## Lukujen esittäminen
 
-## Komentorivin käyttäminen
+Yleisimmin käytetyt tietotyypit lukujen esittämiseen ovat
+`int`, `long` ja `double`.
+
+Tyyppi `int` on 32-bittinen kokonaislukutyyppi,
+jonka arvoalue on –2^31...2^31–1
+(eli luvun suuruus voi olla enintään noin kaksi miljardia).
+Tämä on yleensä hyvä valinta kokonaisluvun tyypiksi.
+
+Jos on tarvetta suuremmille kokonaisluvuille,
+apuun tulee 64-bittinen tyyppi `long`,
+jonka arvoalue on –2^63...2^63–1
+(eli luvun suuruus voi olla enintään noin 9&middot;10^18).
+
+Tyyppi `double` on 64-bittinen liukulukutyyppi,
+jonka avulla voi esittää desimaalilukuja.
+Huomaa kuitenkin, että esim. Tirassa on hyvin harvoin tarvetta
+käyttää liukulukuja.
+Sen sijaan kannattaa miettiä, miten koodin voi tehdä tarkasti
+kokonaisluvuilla.
 
 ## Lause vs. lauseke
 
+_Lause_ (_statement_) on ohjelmassa oleva komento,
+kun taas _lauseke_ (_expression_) on jokin koodin osa, jolla on arvo.
+Esimerkiksi `System.out.println(a+b)` on lause,
+jonka osana on lauseke `a+b`.
+
+Javassa melko moni lauseelta näyttävä ilmaisu on itse asiassa
+lauseke, jolla on arvo.
+Esimerkiksi sijoitus `a = b` on lauseke,
+jonka arvona on `b`.
+Seuraava koodi samaan aikaan sijoittaa muuttujan `a` arvoksi 5
+ja tulostaa arvon.
+
+```java
+int a = 3;
+System.out.println(a = 5); // 5
+```
+
+Lausekkeet `a++` ja `++a` kasvattavat molemmat `a`:n arvoa yhdellä,
+mutta `a++` on arvoltaan `a`, kun taas `++a` on arvoltaan `a+1`.
+Seuraavat koodit havainnollistavat asiaa:
+
+```java
+int a = 3;
+System.out.println(a++); // 3
+System.out.println(a); // 4
+```
+
+```java
+int a = 3;
+System.out.println(++a); // 4
+System.out.println(a); // 4
+```
+
 ## Ehdollinen lauseke
 
-## Tyyppimuunnokset
+Ehdollinen lauseke `a ? b : c` on arvoltaan `b`,
+jos ehto `a` pätee, ja muuten `c`.
+Esimerkiksi seuraavassa koodissa ehdollisen lausekkeen arvo
+on `"parillinen"`, jos ehto `x%2 == 0` pätee
+(eli `x` on parillinen), ja muuten `"pariton"`.
+
+```java
+int x;
+// ...
+String s = x%2 == 0 ? "parillinen" : "pariton";
+```
+
+## Komentorivin käyttäminen
+
+```
+$ javac Koodi.java
+```
+
+```
+$ java Koodi
+```
