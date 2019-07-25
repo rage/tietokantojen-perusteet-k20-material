@@ -5,13 +5,11 @@ hidden: false
 information_page: true
 ---
 
-Miten voi suunnitella tehokkaan algoritmin?
-Tähän kysymykseen ei ole yhtä vastausta.
-Yhtä hyvin voisi kysyä,
-miten voi säveltää hyvää musiikkia tai
-kirjoittaa suositun kirjan.
+Algoritmien suunnitteluun
+ei ole selkeää reseptiä, vaan kyseessä on taito,
+joka kehittyy harjoittelun myötä.
 Tällä sivulla on kuitenkin joitakin vinkkejä,
-joista voi olla apua algoritmien suunnittelussa.
+joista voi olla apua.
 
 ## Lähtökohta
 
@@ -60,18 +58,20 @@ Jotkin yksityiskohdat toki tarkentuvat vielä koodatessa.
 Usein ei ole menestyksekäs tapa toimia käänteisesti eli sännätä koodaamaan heti,
 vaikka ei tiedä, mitä pitäisi koodata.
 
-## Apuneuvot
+## Itsenäisyys
 
 Kurssin tärkeä tavoite on saavuttaa _itsenäistä_ taitoa algoritmien suunnittelussa.
-On selvää, että tämä tavoite ei toteudu, jos etsii algoritmien ideat jostain valmiina.
+On selvää, että tämä tavoite ei toteudu, jos saa algoritmien ideat jostain valmiina
+(esim. kaverilta tai netistä).
 
-Google on tärkeä tietolähde, mutta sitä kannattaa käyttää harkiten.
-Googlesta voi mainiosti etsiä tietoa liittyen Java-ohjelmointiin
-(esim. miten Javassa voi selvittää merkkijonon pituuden).
-Tällaisessa tiedossa ei ole mitään syvällistä itse keksittävää,
-vaan Javassa on vain jokin tietty tapa hoitaa asia, jonka voi tarkastaa Googlesta.
+Huomaa, että algoritmien suunnittelun oppiminen on toisenlaista
+kuin ohjelmointikielen ominaisuuksien oppiminen.
+Jos haluat tehdä Java-ohjelman, joka piirtää näytölle ympyrän, mutta et tiedä,
+miten sen voi tehdä, ei ole mitään pahaa etsiä suoraa ratkaisua Googlesta.
+Tällaisessa asiassa ei ole mitään syvällistä itse keksittävää,
+vaan Javassa on vain jokin tietty tapa hoitaa asia, joka pitää vain tietää.
 
-Sen sijaan ei ole hyvä tapa etsiä algoritmin _ideaa_ Googlesta sen sijaan,
-että algoritmin suunnittelee itse.
-Tällöin jää pois oleellinen vaihe: oma miettiminen.
-Onkin kunniakkaampaa jättää tehtävä ratkaisematta kuin lähettää Googlesta kopioitu ratkaisu.
+Algoritmien suunnittelussa tilanne on kuitenkin täysin toinen,
+koska olennaista on oppia miettimään itse.
+Jos kaveri kertoo algoritmin idean tai löydät valmiin algoritmin Googlesta,
+tämä ei kehitä omaa ajatteluasi.
