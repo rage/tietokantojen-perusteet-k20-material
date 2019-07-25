@@ -12,7 +12,7 @@ Kurssi perustuu avoimeen oppikirjaan
 jonka voit ladata itsellesi PDF-muodossa. Tämä on riittävä oppimateriaali kurssilla.
 
 Kurssi käsittelee kirjan luvut 1–14, joka viikko yhden luvun.
-Luvussa 15 on NP-ongelmiin liittyvää lisämateriaalia, joka ei kuulu kurssin alueeseen.
+Luvussa 15 on NP-ongelmiin liittyvää tietoa, joka ei kuulu kurssin alueeseen.
 
 ## Lisämateriaalia
 

@@ -48,7 +48,7 @@ for (int i = 0; i < n; i++) {
 ## Ajanmittaus
 
 Kätevä tapa mitata aikaa on Javan metodi `System.nanoTime`.
-Se antaa lukuarvon, joka on nanosekunteina kulunut aika jostain ajanhetkestä.
+Se antaa lukuarvon, joka on nanosekunteina kulunut aika jostain kiinteästä ajanhetkestä.
 Kun tällainen arvo laitetaan muistiin juuri ennen algoritmin suoritusta
 ja heti suorituksen jälkeen, arvojen erotus kertoo, kauanko algoritmin suoritus vei aikaa.
 Mittauksen voi toteuttaa näin:
