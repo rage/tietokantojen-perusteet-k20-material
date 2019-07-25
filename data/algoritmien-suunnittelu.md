@@ -73,5 +73,5 @@ vaan Javassa on vain jokin tietty tapa hoitaa asia, joka pitää vain tietää.
 
 Algoritmien suunnittelussa tilanne on kuitenkin täysin toinen,
 koska olennaista on oppia miettimään itse.
-Jos kaveri kertoo algoritmin idean tai löydät valmiin algoritmin Googlesta,
+Jos kaveri kertoo algoritmin idean tai löydät ratkaisun Googlesta,
 tämä ei kehitä omaa ajatteluasi.
