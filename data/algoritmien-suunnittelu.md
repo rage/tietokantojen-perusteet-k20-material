@@ -55,7 +55,7 @@ Sitten kun tietää melko hyvin, miten algoritmi tulee toimimaan,
 sitä on mukava alkaa toteuttaa koodaamalla.
 Jotkin yksityiskohdat toki tarkentuvat vielä koodatessa.
 
-Usein ei ole menestyksekäs tapa toimia käänteisesti eli sännätä koodaamaan heti,
+Usein ei ole menestyksekäs tapa toimia käänteisesti eli ryhtyä koodaamaan heti,
 vaikka ei tiedä, mitä pitäisi koodata.
 
 ## Itsenäisyys

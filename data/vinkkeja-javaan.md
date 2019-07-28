@@ -14,11 +14,14 @@ mutta ne eivät ehkä ole enää tuoreessa muistissa.
 
 ### Kokonaisluvut
 
-Javan tavallisimmat kokonaislukutyypit ovat `int` ja `long`.
-Tyyppi `int` on 32-bittinen, ja siinä olevan luvun suuruus
-voi olla noin 2&middot;10⁹.
-Tyyppi `long` on puolestaan 64-bittinen,
-ja siinä olevan luvun suuruus voi olla noin 9&middot;10¹⁸.
+<p>Javan tavallisimmat kokonaislukutyypit ovat
+<code class="language-id">int</code> ja
+<code class="language-id">long</code>.
+Tyyppi <code class="language-id">int</code> on 32-bittinen,
+ja siinä olevan luvun suuruus
+voi olla noin 2 &middot; 10<sup>9</sup>.
+Tyyppi <code class="language-id">long</code> on puolestaan 64-bittinen,
+ja siinä olevan luvun suuruus voi olla noin 9 &middot; 10<sup>18</sup>.</p>
 
 Yleensä hyvä valinta kokonaisluvun tyypiksi on `int`.
 Jos sen arvoalue on liian pieni, voi käyttää
@@ -30,12 +33,21 @@ on negatiivinen luku, vaikka sellaista ei pitäisi tulla.
 Näin käy esimerkiksi seuraavassa koodissa:
 
 ```java
-int x = 123456789*987654321;
-System.out.println(x); // -67153019
+int a = 123456789;
+int b = 987654321;
+System.out.println(a*b); // -67153019
 ```
 
 Tässä on ongelmana, että laskun tulos ei mahdu `int`-tyyppiin.
-Ongelman voi yrittää korjata `long`-tyypillä, mutta sekään ei tunnu auttavan:
+Ongelman voi korjata käyttämällä `long`-tyyppiä:
+
+```java
+long a = 123456789;
+long b = 987654321;
+System.out.println(a*b); // 121932631112635269
+```
+
+Seuraavassa koodissa on vielä yksi sudenkuoppa:
 
 ```java
 long x = 123456789*987654321;
