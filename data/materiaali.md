@@ -20,6 +20,7 @@ Tästä lisämateriaalista voi olla sinulle hyötyä kurssin aikana:
 
 - [Vinkkejä Java-ohjelmointiin](/vinkkeja-javaan)
 - [Kuinka suunnitella algoritmeja?](/algoritmien-suunnittelu)
+- [Rekursio käytännössä](/rekursio-kaytannossa)
 - [Tehokkuusvertailun toteuttaminen](/tehokkuusvertailu)
 
 ## Muut kirjat
