@@ -101,21 +101,21 @@ class Footer extends React.Component {
             <StyledCardContent>
               <GithubContainer>
                 <OutboundLink
-                  href="https://github.com/rage/tietorakenteet-ja-algoritmit-s19"
+                  href="https://github.com/rage/tietorakenteet-ja-algoritmit-s19-material"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <StyledIcon
                     icon={faGithub}
                     size="3x"
-                    title="Materiaalin lähdekoodi"
+                    title="Sivuston lähdekoodi"
                   />
-                  <div>Materiaalin lähdekoodi</div>
+                  <div>Sivuston lähdekoodi</div>
                 </OutboundLink>
               </GithubContainer>
 
               <ContentContainer>
-                <Link to="/credits">Kiitokset ja materiaalista</Link>.
+                <Link to="/credits">Tietoa tekijöistä</Link>
               </ContentContainer>
               <SocialContainer>
                 <OutboundLink
