@@ -417,16 +417,16 @@ Muissa ympäristöissä komentoriviä käytetään melko samalla tavalla.
 
 ### Käännös ja suoritus
 
-Seuraava koodi kääntää tiedostossa `Koodi.java` olevan luokan:
+Seuraava komento kääntää tiedostossa `Koodi.java` olevan luokan:
 
-```java
-$ javac Koodi.java
+```x
+javac Koodi.java
 ```
 
 Tästä syntyy käännetty tiedosto `Koodi.class`, jonka voi suorittaa näin:
 
-```java
-$ java Koodi
+```x
+java Koodi
 ```
 
 ### Komentoriviparametrit
@@ -447,13 +447,13 @@ public class Koodi {
 
 Voimme testata ohjelmaa suorittamalla se näin:
 
-```java
-$ java Koodi apina banaani cembalo
+```x
+java Koodi apina banaani cembalo
 ```
 
 Nyt ohjelman tulostus on seuraava:
 
-```java
+```x
 0 apina
 1 banaani
 2 cembalo
@@ -475,9 +475,9 @@ public class Koodi {
 
 Ohjelman suorituksen jälkeen palautusarvoon pääsee käsiksi `$?`-muuttujan kautta:
 
-```java
-$ java Koodi
-$ echo $?
+```x
+java Koodi
+echo $?
 42
 ```
 

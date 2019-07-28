@@ -179,14 +179,14 @@ public class Vertailu2 {
 
 Algoritmin 1 testauksen tulos:
 
-```java
+```x
 Algoritmin tulos: 1250858484
 Aikaa kului 16.224270262 s
 ```
 
 Algoritmin 2 testauksen tulos:
 
-```java
+```x
 Algoritmin tulos: 1250858484
 Aikaa kului 0.002792366 s
 ```
