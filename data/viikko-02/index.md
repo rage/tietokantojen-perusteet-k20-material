@@ -4,5 +4,4 @@ title: 'Viikko 2: Tehokkuus'
 overview: true
 ---
 
-
-Testi
+Tehtäviä ei ole vielä julkaistu

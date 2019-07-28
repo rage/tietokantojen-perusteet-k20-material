@@ -4,5 +4,4 @@ title: 'Viikko 6: Binäärihakupuu'
 overview: true
 ---
 
-
-Testi
+Tehtäviä ei ole vielä julkaistu

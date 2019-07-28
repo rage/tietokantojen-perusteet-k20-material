@@ -4,5 +4,4 @@ title: 'Viikko 12: Suunnatut syklittömät verkot'
 overview: true
 ---
 
-
-Testi
+Tehtäviä ei ole vielä julkaistu

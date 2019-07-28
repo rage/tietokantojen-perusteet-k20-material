@@ -4,5 +4,4 @@ title: 'Viikko 7: Keko'
 overview: true
 ---
 
-
-Testi
+Tehtäviä ei ole vielä julkaistu

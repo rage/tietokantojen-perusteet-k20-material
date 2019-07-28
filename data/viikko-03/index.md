@@ -4,5 +4,4 @@ title: 'Viikko 3: Järjestäminen'
 overview: true
 ---
 
-
-Testi
+Tehtäviä ei ole vielä julkaistu
