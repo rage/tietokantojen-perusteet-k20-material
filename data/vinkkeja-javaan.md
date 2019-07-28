@@ -458,29 +458,3 @@ Nyt ohjelman tulostus on seuraava:
 1 banaani
 2 cembalo
 ```
-
-### Palautusarvo
-
-Ohjelma voi myös _palauttaa_ kokonaisluvun, jonka voi tarkastaa komentorivillä
-ohjelman suorituksen jälkeen.
-Tämä tapahtuu poistumalla ohjelmasta metodilla `System.exit`:
-
-```java
-public class Koodi {
-    public static void main(String[] args) {
-        System.exit(42);
-    }
-}
-```
-
-Ohjelman suorituksen jälkeen palautusarvoon pääsee käsiksi `$?`-muuttujan kautta:
-
-```x
-java Koodi
-echo $?
-42
-```
-
-Yleensä periaatteena on, että jos ohjelman suoritus päättyy onnistuneesti,
-palautusarvo on 0 (Javan oletus, jos ei käytä komentoa `System.exit`),
-ja muut palautusarvot ilmaisevat mahdollisia virhetilanteita.
