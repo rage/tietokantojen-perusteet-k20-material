@@ -67,7 +67,7 @@ On selvää, että tämä tavoite ei toteudu, jos saa algoritmien ideat jostain 
 Huomaa, että algoritmien suunnittelun oppiminen on toisenlaista
 kuin ohjelmointikielen ominaisuuksien oppiminen.
 Jos haluat muuttaa Javassa merkkijonon kokonaisluvuksi,
-mutta et tiedä tai muista miten sen voi tehdä,
+mutta et tiedä tai muista, miten sen voi tehdä,
 ei ole mitään pahaa etsiä suoraa ratkaisua Googlesta.
 Tällaisessa asiassa ei ole mitään syvällistä itse keksittävää,
 vaan Javassa on vain jokin tietty tapa hoitaa asia, joka pitää vain tietää.
