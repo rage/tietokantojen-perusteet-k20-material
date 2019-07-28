@@ -12,6 +12,8 @@ joka käsittelee tehokkaiden algoritmien suunnittelua.
 Kurssin aiheita ovat tietorakenteet listat, joukot ja hakemistot,
 dynaaminen ohjelmointi sekä verkkoalgoritmit.
 
+[Tietoa DEFA-opiskelijoille](/defa-tietoa)
+
 ## Luennot ja ohjaus
 
 Luento on kerran viikossa, keskiviikkoisin klo 14–16 Exactumin salissa A111.
