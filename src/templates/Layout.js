@@ -121,11 +121,11 @@ class Layout extends React.Component {
                     {
                       name: "description",
                       content:
-                        "Helsingin yliopiston kaikille avoin ja ilmainen tietoliikenteen perusteet opettava verkkokurssi. Kurssilla opitaan miten internet toimii ja miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli.",
+                        "Helsingin yliopiston tietojenkäsittelytieteen aineopintokurssi, joka käsittelee tehokkaiden algoritmien suunnittelua.",
                     },
                     {
                       name: "keywords",
-                      content: "tietoliikenne, kurssi",
+                      content: "tietorakenteet, algoritmit",
                     },
                   ]}
                 />
