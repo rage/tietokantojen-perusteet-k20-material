@@ -10,7 +10,7 @@ banner: true
 _Tietorakenteet ja algoritmit_ on tietojenkäsittelytieteen aineopintokurssi,
 joka käsittelee tehokkaiden algoritmien suunnittelua.
 Kurssin aiheita ovat mm. järjestäminen,
-tavallisimmat tietorakenteet,
+lista- ja joukkorakenteet,
 dynaaminen ohjelmointi sekä verkkoalgoritmit.
 
 [Tietoa DEFA-opiskelijoille](/defa-tietoa)
