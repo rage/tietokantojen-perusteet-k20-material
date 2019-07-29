@@ -5,35 +5,26 @@ overview: true
 ---
 
 
-<programming-exercise name='Merkkijonojen lukumäärä' tmcname='osa04-Osa04_01.MerkkijonojenLukumaara'>
+<programming-exercise name='Onnenluku' tmcname='X'>
 
-Kirjoita ohjelma, joka lukee käyttäjältä merkkijonoja kunnes käyttäjä syöttää merkkijonon "loppu". Tämän jälkeen ohjelma tulostaa luettujen merkkijonojen lukumäärän. Merkkijonoa "loppu" ei tule huomioida syötettyjen merkkijonojen lukumäärän laskemisessa. Alla muutamia esimerkkejä ohjelman toiminnasta.
+Positiivinen kokonaisluku on _onnenluku_,
+jos sen jokainen numero on 3 tai 7.
 
+Tee luokka `Onnenluku`, jossa on seuraava metodi:
 
-<sample-output>
+* `boolean tarkasta(int x)`: palauttaa `true`, jos `x` on onnenluku, ja muuten `false`
 
-**minulla**
-**on**
-**sellainen**
-**olo**
-**että**
-**olen**
-**kirjoittanut**
-**jade**
-**vun**
-**väärin**
-**aiemminkin**
-**loppu**
-11
+Rajat:
 
-</sample-output>
+- 1 &le; `x` &le; 10<sup>9</sup>
 
+Seuraava koodi esittelee metodin käyttämistä:
 
-<sample-output>
-
-**loppu**
-0
-
-</sample-output>
+```java
+Onnenluku t;
+System.out.println(t.tarkasta(37)); // true
+System.out.println(t.tarkasta(7193)); // false
+System.out.println(t.tarkasta(7373)); // true
+```
 
 </programming-exercise>
