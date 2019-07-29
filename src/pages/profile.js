@@ -51,16 +51,7 @@ class MissingInfo extends React.Component {
       <Layout>
         <Container>
           <Helmet title="Profiili" />
-          <h1>Profiili</h1>
 
-          <p>
-            Täällä voit muokata mooc.fi -tilisi asetuksia tämän kurssin osalta.
-            Katso myös profiilisi mooc.fi:n Test My Code -palvelussa:{" "}
-            <OutboundLink href="https://tmc.mooc.fi" rel="noopener noreferrer">
-              https://tmc.mooc.fi
-            </OutboundLink>
-            .
-          </p>
           <CourseOptionsEditor onComplete={this.onStepComplete} />
         </Container>
         <Snackbar

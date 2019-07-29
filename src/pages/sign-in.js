@@ -82,16 +82,9 @@ class SignInPage extends React.Component {
             <h1>Kirjaudu sisään</h1>
             <Form>
               <InfoBox>
-                Tämä kurssi käyttää{" "}
-                <OutboundLink
-                  href="https://mooc.fi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  mooc.fi
-                </OutboundLink>{" "}
-                käyttäjätunnuksia. Jos olet aikaisemmin tehnyt mooc.fi -kursseja
-                voit käyttää olemassaolevia tunnuksiasi.
+                Tämä kurssi käyttää mooc.fi-käyttäjätunnuksia. Jos olet
+                aikaisemmin osallistunut mooc.fi-kursseihin, voit käyttää
+                olemassa olevia tunnuksiasi.
               </InfoBox>
 
               <Row>

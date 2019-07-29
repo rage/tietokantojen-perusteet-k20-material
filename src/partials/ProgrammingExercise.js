@@ -188,7 +188,7 @@ class ProgrammingExercise extends React.Component {
         </Header>
         <Body>
           <div>
-            {this.context.loggedIn ? (
+            {!this.context.loggedIn ? (
               <div>
                 {children}
                 {this.state.exerciseDetails === null && (

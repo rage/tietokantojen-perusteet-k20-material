@@ -144,12 +144,7 @@ class CourseOptionsEditor extends React.Component {
       <FormContainer>
         <h1>Opiskelijan tiedot</h1>
         <Form>
-          <InfoBox>
-            Kerro itsestäsi. Nämä tiedot auttavat suoritusten merkitsemisessä ja
-            kurssin järjestämisessä. Voit muokata tietoja myöhemmin kurssin
-            asetuksista. Tietojen täyttämisen jälkeen paina "Tallenna" sivun
-            alareunasta.
-          </InfoBox>
+          <InfoBox />
           <Loading loading={this.state.loading} heightHint="490px">
             <div>
               <Row>
@@ -211,126 +206,8 @@ class CourseOptionsEditor extends React.Component {
                   onBlur={this.handleUnFocus}
                 />
               </Row>
-
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={this.state.participates_in_real_tilpe}
-                      onChange={this.handleCheckboxInput}
-                      name="participates_in_real_tilpe"
-                      value="1"
-                    />
-                  }
-                  label="Teen Tietoliikenteen perusteet -kurssia Helsingin yliopistossa keväällä 2019."
-                />
-              </Row>
-
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={this.state.digital_education_for_all}
-                      onChange={this.handleCheckboxInput}
-                      name="digital_education_for_all"
-                      value="1"
-                    />
-                  }
-                  label="Olen tällä hetkellä opiskelijana Digital Education for All -hankkeessa. Jätä tämä valitsematta mikäli et tiedä kyseisestä hankkeesta."
-                />
-              </Row>
-
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={this.state.marketing}
-                      onChange={this.handleCheckboxInput}
-                      name="marketing"
-                      value="1"
-                    />
-                  }
-                  label="Minulle voi lähettää tietoa uusista kursseista"
-                />
-              </Row>
             </div>
           </Loading>
-
-          <h2>Kurssilla tehtävästä tutkimuksesta</h2>
-
-          <p>
-            Kurssilla tehdään oppimiseen liittyvää tutkimusta. Tällä
-            tutkimuksella on useampia tavoitteita:
-          </p>
-
-          <ol>
-            <li>
-              luoda oppimateriaali, joka ottaa yksilölliset erot huomioon ja
-              reagoi tarvittaessa tarjoten kohdennetumpaa oppisisältöä
-            </li>
-            <li>
-              kehittää digitaalisissa ympäristöissä tapahtuvaan oppimiseen
-              liittyvää ymmärrystä ja tietoa, sekä
-            </li>
-            <li>
-              tukea tutkimustiedon kautta muita oppimateriaalien kehittäjiä ja
-              oppimisen tutkijoita. Tämä johtaa luonnollisesti myös parempaan
-              oppimiskokemukseen opiskelijoille.
-            </li>
-          </ol>
-
-          <p>
-            Tällaisesta oppimisanalytiikaksi kutsutusta tutkimuksesta
-            kiinnostuneiden kannattaa tutustua esimerkiksi artikkeliin{" "}
-            <OutboundLink
-              href="https://dl.acm.org/citation.cfm?id=2858798"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Educational Data Mining and Learning Analytics in Programming:
-              Literature Review and Case Studies
-            </OutboundLink>
-            .
-          </p>
-
-          <p>
-            Tutkimusdatan hallinnasta vastaa Helsingin yliopiston
-            tietojenkäsittelytieteen laitoksen Agile Education Research -ryhmän
-            Arto Hellas. Anonymisoimattomaan tutkimusdataan eivät pääse käsiksi
-            muut tutkijat. Voit myös pyytää milloin tahansa sinusta kerätyn
-            datan poistamista lähettämällä sähköpostin osoitteeseen
-            arto.hellas@cs.helsinki.fi
-          </p>
-
-          <p>
-            Työskentelystä kerättyä tietoa käytetään tutkimuksessa. Kerätty
-            tieto sisältää tietoa oppimateriaalien käytöstä, kurssitehtävien
-            tekemisestä sekä kokeissa pärjäämisestä. Tutkimustuloksista ei
-            pystytä tunnistamaan yksittäisiä opiskelijoita. Jos et osallistu
-            tutkimukseen, siitä ei tule minkäänlaisia seuraamuksia.
-          </p>
-
-          <Row>
-            <Loading loading={this.state.loading} heightHint="115px">
-              <RadioGroup
-                aria-label="Tutkimukseen osallistuminen"
-                name="research"
-                value={this.state.research}
-                onChange={this.handleInput}
-              >
-                <FormControlLabel
-                  value="1"
-                  control={<Radio color="primary" />}
-                  label="Osallistun oppimiseen liittyvään tutkimukseen. Valitsemalla tämän autat sekä nykyisiä että tulevia opiskelijoita."
-                />
-                <FormControlLabel
-                  value="0"
-                  control={<Radio />}
-                  label="En osallistu oppimiseen liittyvään tutkimukseen."
-                />
-              </RadioGroup>
-            </Loading>
-          </Row>
 
           <Row>
             <Button
@@ -344,11 +221,6 @@ class CourseOptionsEditor extends React.Component {
             </Button>
           </Row>
         </Form>
-        {this.state.error && (
-          <InfoBox>
-            <b>Täytä vaaditut kentät.</b>
-          </InfoBox>
-        )}
       </FormContainer>
     )
   }
