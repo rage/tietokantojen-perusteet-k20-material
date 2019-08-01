@@ -20,8 +20,8 @@ dynaaminen ohjelmointi sekä verkkoalgoritmit.
 Luento on kerran viikossa, keskiviikkoisin klo 14–16 Exactumin salissa A111.
 Luennoilla käydään läpi viikkojen aiheiden teoriaa ja käytäntöä.
 
-* Periodin 1 luentopäivät: 4.9., 11.9., 18.9., 25.9., 2.10., 9.10., 16.10.
-* Periodin 2 luentopäivät: 30.10., 6.11., 13.11., 20.11., 27.11., 4.12., 11.12.
+* Periodin 1 luennot: 4.9., 11.9., 18.9., 25.9., 2.10., 9.10., 16.10.
+* Periodin 2 luennot: 30.10., 6.11., 13.11., 20.11., 27.11., 4.12., 11.12.
 
 Huom! 4.12. luento on poikkeuksellisesti Chemicumin salissa A110.
 
@@ -43,9 +43,9 @@ seuraavan aikataulun mukaisesti:
 * Viikot 1&ndash;7: 15.9., 22.9., 29.9., 6.10., 13.10., 20.10., 27.10.
 * Viikot 8&ndash;14: 10.11., 17.11., 24.11., 1.12., 8.12., 15.12., 22.12.
 
-Saat kurssin suorituksen, jos ratkaiset yhteensä ainakin 42 tehtävää
-ja lisäksi jokaiselta viikolta ainakin 2 tehtävää.
-Arvosanarajat ovat:
+Kurssin suorittaminen edellyttää,
+että ratkaiset joka viikon tehtävistä ainakin 3 tehtävää
+deadlineen mennessä. Arvosanarajat ovat:
 
 * 42–50 tehtävää: arvosana 1
 * 51–59 tehtävää: arvosana 2
