@@ -95,7 +95,7 @@ class CourseOptionsEditor extends React.Component {
 
   state = {
     submitting: false,
-    error: true,
+    error: false,
     errorObj: {},
     participates_in_real_tilpe: false,
     digital_education_for_all: false,
@@ -134,9 +134,9 @@ class CourseOptionsEditor extends React.Component {
   }
 
   validate = () => {
-    this.setState(prev => ({
+    /*this.setState(prev => ({
       error: prev.research === undefined,
-    }))
+    }))*/
   }
 
   render() {
