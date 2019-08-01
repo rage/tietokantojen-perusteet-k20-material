@@ -7,13 +7,20 @@ banner: true
 
 # Tietoa kurssista
 
-_Tietorakenteet ja algoritmit_ on tietojenkäsittelytieteen aineopintokurssi,
+_Tietorakenteet ja algoritmit_ on 10 op laajuinen
+tietojenkäsittelytieteen aineopintokurssi,
 joka käsittelee tehokkaiden algoritmien suunnittelua.
 Kurssin aiheita ovat mm. järjestäminen,
 lista- ja joukkorakenteet,
 dynaaminen ohjelmointi sekä verkkoalgoritmit.
 
-[Tietoa DEFA-opiskelijoille](/defa-tietoa)
+Syksyllä 2019 kurssi muodostuu viikoittaisista tehtävistä,
+jotka arvostellaan automaattisesti.
+Kurssilla järjestetään myös luentoja ja pajaohjausta,
+joihin osallistuminen on vapaaehtoista.
+Vaihtoehtoinen tapa suorittaa kurssi on osallistua erilliskokeeseen.
+
+[Tietoa DEFA-opiskelijoille](/defa-tietoa) (Avoin yliopisto)
 
 ## Luennot ja ohjaus
 
@@ -43,7 +50,7 @@ seuraavan aikataulun mukaisesti:
 * Viikot 1&ndash;7: 15.9., 22.9., 29.9., 6.10., 13.10., 20.10., 27.10.
 * Viikot 8&ndash;14: 10.11., 17.11., 24.11., 1.12., 8.12., 15.12., 22.12.
 
-Kurssin suorittaminen edellyttää,
+Kurssin suorittaminen vaatii,
 että ratkaiset joka viikon tehtävistä ainakin 3 tehtävää
 deadlineen mennessä. Arvosanarajat ovat:
 
