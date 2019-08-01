@@ -52,7 +52,6 @@ class LoginControls extends React.Component {
       </Fragment>
     ) : (
       <Fragment>
-        <Button to="/sign-up">Luo uusi tunnus</Button>
         <Button to="/sign-in">Kirjaudu sisään</Button>
       </Fragment>
     )

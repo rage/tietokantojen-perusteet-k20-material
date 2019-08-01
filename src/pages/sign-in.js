@@ -129,7 +129,13 @@ class SignInPage extends React.Component {
               </InfoBox>
             )}
             <Row>
-              <Link to="/sign-up">Luo uusi tunnus</Link>
+              <OutboundLink
+                href="https://tmc.mooc.fi/user/new"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Luo uusi tunnus
+              </OutboundLink>
             </Row>
             <Row>
               <OutboundLink
