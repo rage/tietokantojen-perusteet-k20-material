@@ -99,6 +99,10 @@ var content2 = [
     path: "/",
   },
   {
+    title: "Esitiedot ja ilmoittautuminen",
+    path: "/esitiedot-ja-ilmo",
+  },
+  {
     title: "Kurssimateriaali",
     path: "/materiaali",
   },
