@@ -68,11 +68,11 @@ Huomaa, että algoritmien suunnittelun oppiminen on toisenlaista
 kuin ohjelmointikielen ominaisuuksien oppiminen.
 Jos haluat muuttaa Javassa merkkijonon kokonaisluvuksi,
 mutta et tiedä tai muista, miten sen voi tehdä,
-ei ole mitään pahaa etsiä suoraa ratkaisua Googlesta.
+ei ole mitään pahaa etsiä suoraa ratkaisua netistä.
 Tällaisessa asiassa ei ole mitään syvällistä itse keksittävää,
-vaan Javassa on vain jokin tietty tapa hoitaa asia, joka pitää vain tietää.
+vaan Javassa on jokin tietty tapa hoitaa asia, joka pitää vain tietää.
 
 Algoritmien suunnittelussa tilanne on kuitenkin täysin toinen,
 koska olennaista on oppia miettimään itse.
-Jos kaveri kertoo algoritmin idean tai löydät ratkaisun Googlesta,
+Jos kaveri kertoo algoritmin idean tai löydät ratkaisun netistä,
 tämä ei kehitä omaa ajatteluasi.

@@ -7,8 +7,7 @@ information_page: true
 
 ## Kurssin esitiedot
 
-Kurssin olennainen esitietovaatimus on sujuva ohjelmointitaito:
-sinun tulee osata käyttää muuttujia, ehtoja, silmukoita ja taulukoita.
+Kurssin olennainen esitietovaatimus on sujuva ohjelmointitaito.
 
 ## Helsingin yliopiston tutkinto-opiskelijoille
 
