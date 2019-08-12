@@ -18,7 +18,6 @@ Syksyllä 2019 kurssi muodostuu viikoittaisista tehtävistä,
 jotka arvostellaan automaattisesti.
 Kurssilla järjestetään myös luentoja ja pajaohjausta,
 joihin osallistuminen on vapaaehtoista.
-Vaihtoehtoinen tapa suorittaa kurssi on osallistua erilliskokeeseen.
 
 ## Luennot ja ohjaus
 
