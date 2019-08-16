@@ -81,7 +81,7 @@ Liukuluvuissa on kuitenkin ongelmana, että niissä tapahtuu pyöristysvirheitä
 Seuraava koodi havainnollistaa asiaa:
 
 ```java
-double x = 3*0.3+1;
+double x = 3*0.3+0.1;
 double y = 1;
 if (x == y) System.out.println("x ja y ovat samat");
 if (x < y) System.out.println("x on pienempi kuin y");
@@ -90,7 +90,7 @@ if (x > y) System.out.println("x on suurempi kuin y");
 
 Vaikka `x`:n ja `y`:n arvon pitäisi olla sama,
 koodi tulostaa `x on pienempi kuin y`.
-Syynä on, että laskua `3*0.3+1` ei pystytä laskemaan tarkasti,
+Syynä on, että laskua `3*0.3+0.1` ei pystytä laskemaan tarkasti,
 vaan `x`:n arvoksi tulee hieman alle 1.
 
 Tämän vuoksi liukulukuja kannattaa välttää _aina kun mahdollista_.
