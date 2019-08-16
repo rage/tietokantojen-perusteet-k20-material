@@ -106,6 +106,10 @@ var content2 = [
     title: "Kurssimateriaali",
     path: "/materiaali",
   },
+  {
+    title: "Algoritmipaja",
+    path: "/algoritmipaja",
+  },
   { separator: true },
 ]
 

@@ -29,8 +29,8 @@ Luennoilla käydään läpi viikkojen aiheiden teoriaa ja käytäntöä.
 
 Huom! 4.12. luento on poikkeuksellisesti Chemicumin salissa A110.
 
-Kurssin yhteydessä toimii paja, jossa voit ratkoa kurssin tehtäviä ja saada
-neuvoja ohjaajilta. Pajan aukioloajat ilmoitetaan myöhemmin.
+Kurssin yhteydessä toimii algoritmipaja, jossa voit ratkoa kurssin tehtäviä ja saada
+neuvoja ohjaajilta. [Pajan aukioloajat](/algoritmipaja)
 
 Kurssin Telegram-ryhmässä voit keskustella netissä muiden opiskelijoiden ja
 kurssin järjestäjien kanssa. [Liity ryhmään](https://t.me/tiratg)
