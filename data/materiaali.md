@@ -28,6 +28,11 @@ Tästä lisämateriaalista voi olla sinulle hyötyä kurssin aikana:
 Kurssin aihepiiristä on julkaistu suuri määrä englanninkielisiä oppikirjoja.
 Alan klassikko on
 [_Introduction to Algorithms_](http://mitpress.mit.edu/algorithms/),
-joka tunnetaan myös nimellä _CLRS_ tekijöiden sukunimien mukaan.
+joka tunnetaan myös nimellä CLRS tekijöiden sukunimien mukaan.
 Tässä kirjassa on huomattavasti enemmän materiaalia kuin
 tällä kurssilla.
+
+Jos sinulla on Helsingin yliopiston tunnukset,
+saat käyttöösi CLRS:n (ja muitakin kirjoja) sähköisesti
+[Helsingin yliopiston kirjaston sivuilta](http://libraryguides.helsinki.fi/cs)
+kohdasta "Textbooks".
