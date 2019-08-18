@@ -13,14 +13,14 @@ Näin on seuraavassa koodissa:
 
 ```java
 public class Rekursio {
-    public static void testi(int n) {
+    static void testi(int n) {
         System.out.print(n + " ");
         if (n == 1) return;
         testi(n-1);
     }
 
     public static void main(String[] args) {
-        testi(4);
+        testi(10);
     }
 }
 ```
@@ -31,7 +31,7 @@ Muussa tapauksessa metodi kutsuu itseään yhtä pienemmällä
 parametrilla `n-1`. Koodin tulos on seuraava:
 
 ```x
-4 3 2 1
+10 9 8 7 6 5 4 3 2 1
 ```
 
 ## Monta kutsua
@@ -43,7 +43,7 @@ mutta metodin lopussa on kaksi rekursiivista kutsua:
 
 ```java
 public class Rekursio {
-    public static void testi(int n) {
+    static void testi(int n) {
         System.out.print(n + " ");
         if (n == 1) return;
         testi(n-1);
@@ -75,7 +75,7 @@ Seuraavassa koodissa metodi `summa` laskee summan
 
 ```java
 public class Rekursio {
-    public static long summa(int n) {
+    static long summa(int n) {
         if (n == 0) return 0;
         else return summa(n-1)+n;
     }
@@ -106,4 +106,78 @@ jolloin saamme laskettua suurenkin summan.
 
 ```x
 java -Xss128m Rekursio
+```
+
+## Esimerkki: Tiedostot
+
+Yksi luonteva rekursion käyttötarkoitus on
+sisäkkäisissä hakemistoissa olevien tiedostojen läpikäynti.
+Käytämme esimerkkinä seuraavaa hakemistorakennetta:
+
+```x
+testi
+├── 1.txt
+├── 2.txt
+├── maija
+│   ├── 3.txt
+│   ├── 4.txt
+│   ├── apina
+│   │   ├── 5.txt
+│   │   └── 6.txt
+│   ├── banaani
+│   │   ├── 7.txt
+│   │   └── 8.txt
+│   └── cembalo
+│       ├── 10.txt
+│       └── 9.txt
+└── uolevi
+    ├── 11.txt
+    └── 12.txt       
+```
+
+Seuraavassa koodissa oleva metodi `tutki`
+käy läpi annetun hakemiston sisällön.
+Parametrina annettu `File`-olio voi viitata
+sekä hakemistoon että tiedostoon.
+Jos kyseessä on hakemisto,
+metodi käy rekursiivisesti läpi sen sisällön.
+Jos taas kyseessä on tiedosto,
+metodi tulostaa sen nimen.
+
+```java
+import java.io.*;
+
+public class Tiedostot {
+    static void tutki(File f) {
+        if (f.isDirectory()) {
+            for (File u : f.listFiles()) {
+                tutki(u);
+            }
+        } else {
+            System.out.println(f);
+        }
+    }
+
+    public static void main(String[] args) {
+        File f = new File("testi");
+        tutki(f);
+    }
+}
+```
+
+Esimerkissämme ohjelman tulostus on seuraava:
+
+```x
+testi/1.txt
+testi/2.txt
+testi/uolevi/11.txt
+testi/uolevi/12.txt
+testi/maija/4.txt
+testi/maija/3.txt
+testi/maija/cembalo/9.txt
+testi/maija/cembalo/10.txt
+testi/maija/apina/5.txt
+testi/maija/apina/6.txt
+testi/maija/banaani/7.txt
+testi/maija/banaani/8.txt
 ```
