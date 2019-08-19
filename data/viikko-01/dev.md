@@ -37,7 +37,7 @@ Jos et halua käyttää NetBeansia, voit palauttaa
 ohjelmointitehtäviä myös
 [TMC-sivuston kautta](https://tmc.mooc.fi/org/mooc/courses/497).
 
-<programming-exercise name='Numeroiden summa' tmcname='X'>
+<programming-exercise name='Numeroiden summa' tmcname='viikko01-Viikko01Tehtava1'>
 
 Tehtäväsi on laskea annetun positiivisen kokonaisluvun
 numeroiden summa.

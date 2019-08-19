@@ -222,8 +222,5 @@ export async function getCourseVariant() {
 }
 
 async function getCourse() {
-  if ((await getCourseVariant()) === "nodl") {
-    return "2019-ohjelmointi-nodl"
-  }
-  return "2019-ohjelmointi"
+  return "tira-s19"
 }
