@@ -16,16 +16,22 @@ const StyledTypography = styled(Typography)`
   margin-bottom: 0.5rem !important;
 `
 
+const StyledExpansionPanelSummary = styled(ExpansionPanelSummary)`
+  div {
+    height: 22px;
+  }
+`
+
 const ExtraDetails = ({ exerciseDetails, onUpdate, noCoins }) => {
   if (!exerciseDetails) {
-    return <Loading heightHint="305px" />
+    return <Loading heightHint="10px" />
   }
   return (
     <div>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+        <StyledExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Ohjeet tehtävän palauttamiseen</Typography>
-        </ExpansionPanelSummary>
+        </StyledExpansionPanelSummary>
         <ExpansionPanelDetails>
           <div>
             <StyledTypography>
