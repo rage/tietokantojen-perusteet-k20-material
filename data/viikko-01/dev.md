@@ -9,13 +9,13 @@ Viikon 1 tehtävien deadline: su 15.9. klo 23:59
 ## Alkutoimet
 
 Kurssin suorittamista varten tarvitset mooc.fi-tunnuksen.
-Jos olet suorittanut muita mooc.fi-kursseja,
+Jos olet osallistunut muihin mooc.fi-kursseihin,
 sinulla on jo tällainen tunnus,
-mutta muuten voit [luoda tunnuksen](https://tmc.mooc.fi/user/new).
+mutta muuten voit [luoda uuden tunnuksen](https://tmc.mooc.fi/user/new).
 
 Jotta voit saada kurssista suorituksen
 Helsingin yliopiston opintorekisteriin,
-varmista vielä, että olet ilmoittanut vaaditut tiedot
+varmista vielä, että olet ilmoittanut tietosi
 mooc.fi-profiilissa.
 Pystyt tekemään tämän kirjautumalla sisään tämän
 sivun ylälaidassa olevasta napista.
@@ -23,7 +23,7 @@ sivun ylälaidassa olevasta napista.
 ## Tehtävät
 
 Kurssin jokaisella viikolla ilmestyy kuusi tehtävää.
-Saat suorituksen kurssista, jos ratkot jokaisella viikolla
+Saat suorituksen kurssista, jos ratkaiset jokaisella viikolla
 ainakin kolme tehtävää deadlineen mennessä.
 Tarkemmat tiedot arvostelusta ja tehtävien aikataulusta
 löydät [kurssin etusivulta](/).
