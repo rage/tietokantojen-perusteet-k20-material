@@ -37,7 +37,7 @@ Jos et halua käyttää NetBeansia, voit palauttaa
 ohjelmointitehtäviä myös
 [TMC-sivuston kautta](https://tmc.mooc.fi/org/mooc/courses/497).
 
-<programming-exercise name='Numeroiden summa' tmcname='viikko01-Viikko01Tehtava1'>
+<programming-exercise name='1. Numeroiden summa' tmcname='viikko01-Viikko01Tehtava1'>
 
 Tehtäväsi on laskea annetun positiivisen kokonaisluvun
 numeroiden summa.
@@ -63,7 +63,7 @@ System.out.println(n.summa(999999999)); // 81
 
 </programming-exercise>
 
-<programming-exercise name='Osajonot' tmcname='X'>
+<programming-exercise name='2. Osajonot' tmcname='viikko01-Viikko01Tehtava2'>
 
 Merkkijonon _osajono_ (_substring_) on merkkijonon
 osana oleva toinen merkkijono.
@@ -91,7 +91,7 @@ System.out.println(o.laske("apina","banaani")); // 0
 
 </programming-exercise>
 
-<programming-exercise name='Kolmen summa' tmcname='X'>
+<programming-exercise name='3. Kolmen summa' tmcname='viikko01-Viikko01Tehtava3'>
 
 Tehtäväsi on laskea,
 monellako eri tavalla luvun `x`
@@ -120,7 +120,7 @@ System.out.println(k.laske(99)); // 768
 
 </programming-exercise>
 
-<programming-exercise name='Taulukko' tmcname='X'>
+<programming-exercise name='4. Taulukko' tmcname='viikko01-Viikko01Tehtava4'>
 
 Annettuna on taulukko, jossa on kokonaislukuja.
 Joka askeleella muodostat taulukosta uuden taulukon,
@@ -152,7 +152,7 @@ System.out.println(t.laske(new int[] {4,2,9,1,9,2,5})); // 323
 
 </programming-exercise>
 
-<programming-exercise name='Ruudukko' tmcname='X'>
+<programming-exercise name='5. Ruudukko' tmcname='viikko01-Viikko01Tehtava5'>
 
 Tehtäväsi on muodostaa `n` &times `n` -ruudukko,
 jonka vasemmassa yläkulmassa on luku 0
@@ -194,7 +194,7 @@ Koodin tulostuksen tulisi olla seuraava:
 
 </programming-exercise>
 
-<programming-exercise name='Onnenluvut' tmcname='X'>
+<programming-exercise name='6. Onnenluvut' tmcname='viikko01-Viikko01Tehtava6'>
 
 Positiivinen kokonaisluku on _onnenluku_,
 jos sen jokainen numero on 3 tai 7.
