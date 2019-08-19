@@ -1,18 +1,23 @@
 import { zip } from "../util/arrays"
 import { fetchQuizzesProgress } from "./quizzes"
+import { fetchProgrammingProgress } from "./moocfi"
 
 export async function fetchProgress() {
-  const serviceIdentifiers = ["Kyselyt"]
-  const progressesCollection = await Promise.all([fetchQuizzesProgress()])
+  const serviceIdentifiers = ["Ohjelmointitehtävät", "Kyselyt"]
+  const progressesCollection = await Promise.all([
+    fetchProgrammingProgress(),
+    fetchQuizzesProgress(),
+  ])
   const progressByGroup = {}
 
   zip(serviceIdentifiers, progressesCollection).forEach(
     ([identifier, progresses]) => {
       progresses.forEach(progressEntry => {
-        if (!progressByGroup[progressEntry.group]) {
-          progressByGroup[progressEntry.group] = {}
+        const group = progressEntry.group.replace("osa", "viikko")
+        if (!progressByGroup[group]) {
+          progressByGroup[group] = {}
         }
-        progressByGroup[progressEntry.group][identifier] = progressEntry
+        progressByGroup[group][identifier] = progressEntry
       })
     },
   )
