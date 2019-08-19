@@ -55,10 +55,10 @@ Rajat:
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-Numerot t;
-System.out.println(t.summa(4075)); // 16
-System.out.println(t.summa(3)); // 3
-System.out.println(t.summa(999999999)); // 81
+Numerot n = new Numerot();
+System.out.println(n.summa(4075)); // 16
+System.out.println(n.summa(3)); // 3
+System.out.println(n.summa(999999999)); // 81
 ```
 
 </programming-exercise>
@@ -83,10 +83,10 @@ Rajat:
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-Osajonot t;
-System.out.println(t.laske("aybabtu","bab"); // 1
-System.out.println(t.laske("aaaaa","aa"); // 4
-System.out.println(t.laske("apina","banaani"); // 0
+Osajonot o = new Osajonot();
+System.out.println(o.laske("aybabtu","bab"); // 1
+System.out.println(o.laske("aaaaa","aa"); // 4
+System.out.println(o.laske("apina","banaani"); // 0
 ```
 
 </programming-exercise>
@@ -112,10 +112,10 @@ Rajat:
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-KolmenSumma t;
-System.out.println(t.laske(9)); // 3
-System.out.println(t.laske(2)); // 0
-System.out.println(t.laske(99)); // 768
+KolmenSumma k = new KolmenSumma();
+System.out.println(k.laske(9)); // 3
+System.out.println(k.laske(2)); // 0
+System.out.println(k.laske(99)); // 768
 ```
 
 </programming-exercise>
@@ -144,7 +144,7 @@ Rajat:
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-Taulukko t;
+Taulukko t = new Taulukko();
 System.out.println(t.laske(new int[] {1,2,3,2})); // 18
 System.out.println(t.laske(new int[] {5})); // 5
 System.out.println(t.laske(new int[] {4,2,9,1,9,2,5})); // 159
@@ -172,11 +172,11 @@ Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
 int n = 5;
-Ruudukko t;
-int[][] r = t.muodosta(n);
+Ruudukko r = new Ruudukko();
+int[][] u = r.muodosta(n);
 for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
-        System.out.print(r[i][j]+" ");
+        System.out.print(u[i][j]+" ");
     }
     System.out.println();
 }
@@ -215,10 +215,10 @@ Rajat:
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-Onnenluvut t;
-System.out.println(t.laske(1,10)); // 2
-System.out.println(t.laske(123,321)); // 0
-System.out.println(t.laske(1,1000000)); // 63
+Onnenluvut o = new Onnenluvut();
+System.out.println(o.laske(1,10)); // 2
+System.out.println(o.laske(123,321)); // 0
+System.out.println(o.laske(1,1000000)); // 63
 ```
 
 Huomaa, että tässä ja kaikissa muissakin kurssin ohjelmointitehtävissä
