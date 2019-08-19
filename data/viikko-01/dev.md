@@ -84,9 +84,9 @@ Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
 Osajonot o = new Osajonot();
-System.out.println(o.laske("aybabtu","bab"); // 1
-System.out.println(o.laske("aaaaa","aa"); // 4
-System.out.println(o.laske("apina","banaani"); // 0
+System.out.println(o.laske("aybabtu","bab")); // 1
+System.out.println(o.laske("aaaaa","aa")); // 4
+System.out.println(o.laske("apina","banaani")); // 0
 ```
 
 </programming-exercise>
