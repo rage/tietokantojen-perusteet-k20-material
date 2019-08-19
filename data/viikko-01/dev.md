@@ -138,7 +138,7 @@ Tee luokka `Taulukko`, jossa on seuraavat metodit:
 
 Rajat:
 
-- taulukossa on enintään 100 alkiota
+- taulukossa on enintään 20 alkiota
 - jokainen alkio on välillä 1...100
 
 Seuraava koodi esittelee luokan käyttämistä:
@@ -147,7 +147,7 @@ Seuraava koodi esittelee luokan käyttämistä:
 Taulukko t = new Taulukko();
 System.out.println(t.laske(new int[] {1,2,3,2})); // 18
 System.out.println(t.laske(new int[] {5})); // 5
-System.out.println(t.laske(new int[] {4,2,9,1,9,2,5})); // 159
+System.out.println(t.laske(new int[] {4,2,9,1,9,2,5})); // 323
 ```
 
 </programming-exercise>
@@ -166,7 +166,7 @@ Tee luokka `Ruudukko`, jossa on seuraavat metodit:
 
 Rajat:
 
-- 1 &le; `n` &le; 100
+- 1 &le; `n` &le; 50
 
 Seuraava koodi esittelee luokan käyttämistä:
 
@@ -218,7 +218,7 @@ Seuraava koodi esittelee luokan käyttämistä:
 Onnenluvut o = new Onnenluvut();
 System.out.println(o.laske(1,10)); // 2
 System.out.println(o.laske(123,321)); // 0
-System.out.println(o.laske(1,1000000)); // 63
+System.out.println(o.laske(1,1000000)); // 126
 ```
 
 Huomaa, että tässä ja kaikissa muissakin kurssin ohjelmointitehtävissä
