@@ -72,8 +72,8 @@ ovat `bab` ja `abtu`.
 
 Tee luokka `Osajonot`, jossa on seuraavat metodit:
 
-* `int laske(String a, String b)`: palauttaa osajonon `b`
-esiintymien määrän merkkijonossa `a`
+* `int laske(String a, String b)`: palauttaa,
+montako kertaa `b` esiintyy osajonona `a`:ssa
 
 Rajat:
 
@@ -94,7 +94,7 @@ System.out.println(o.laske("apina","banaani")); // 0
 <programming-exercise name='3. Kolmen summa' tmcname='viikko01-Viikko01Tehtava3'>
 
 Tehtäväsi on laskea,
-monellako eri tavalla luvun `x`
+monellako tavalla luvun `x`
 voi esittää kolmen eri positiivisen
 kokonaisluvun summana.
 Esimerkiksi jos `x` = 9, oikea vastaus on 3,
@@ -196,7 +196,7 @@ Koodin tulostuksen tulisi olla seuraava:
 
 <programming-exercise name='6. Onnenluvut' tmcname='viikko01-Viikko01Tehtava6'>
 
-Positiivinen kokonaisluku on _onnenluku_,
+Kokonaisluku on _onnenluku_,
 jos sen jokainen numero on 3 tai 7.
 Esimerkiksi luvut 7, 37 ja 73373
 ovat onnenlukuja.
@@ -221,9 +221,8 @@ System.out.println(o.laske(123,321)); // 0
 System.out.println(o.laske(1,1000000)); // 126
 ```
 
-Huomaa, että tässä ja kaikissa muissakin kurssin ohjelmointitehtävissä
-yksittäisen testin aikarajana on yksi sekunti.
-Tässä tehtävässä olisi liian hidasta käydä läpi kaikki välin `a`...`b`
+Huomaa, että tehtävän aikaraja on yksi sekunti,
+joten olisi liian hidasta käydä läpi kaikki välin `a`...`b`
 luvut, vaan sinun tulee keksiä tehokkaampi ratkaisutapa.
 
 </programming-exercise>
