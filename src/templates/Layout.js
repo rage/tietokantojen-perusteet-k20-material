@@ -5,7 +5,6 @@ import ContentArea from "../components/ContentArea"
 import TopBar from "../components/TopBar"
 import { StaticQuery, graphql } from "gatsby"
 import * as store from "store"
-import withMaterialUiRoot from "./withMaterialUiRoot"
 import Pheromones from "../util/pheromones"
 import styled from "styled-components"
 
@@ -154,4 +153,4 @@ class Layout extends React.Component {
   }
 }
 
-export default withMaterialUiRoot(Layout)
+export default Layout

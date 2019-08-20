@@ -10,8 +10,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/data`,
-        name: "markdown-pages"
-      }
+        name: "markdown-pages",
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
@@ -26,8 +26,8 @@ module.exports = {
               quotes: false,
               ellipses: false,
               backticks: false,
-              dashes: "inverted"
-            }
+              dashes: "inverted",
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -60,8 +60,8 @@ module.exports = {
               showLineNumbers: false,
               // If setting this to true, the parser won't handle and highlight inline
               // code used in markdown i.e. single backtick code like `this`.
-              noInlineHighlight: false
-            }
+              noInlineHighlight: false,
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -71,15 +71,15 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 920,
               withWebp: true,
-              wrapperStyle: "margin-bottom: 1rem;"
-            }
+              wrapperStyle: "margin-bottom: 1rem;",
+            },
           },
           {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "noopener noreferrer"
-            }
+              rel: "noopener noreferrer",
+            },
           },
           {
             resolve: "gatsby-remark-emojis",
@@ -97,13 +97,13 @@ module.exports = {
                 "margin-top": "1px",
                 position: "relative",
                 top: "5px",
-                width: "25px"
-              }
-            }
+                width: "25px",
+              },
+            },
           },
-          `gatsby-remark-component`
-        ]
-      }
+          `@rstacruz/gatsby-remark-component`,
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -112,8 +112,8 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
-        anonymize: true
-      }
+        anonymize: true,
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -138,12 +138,16 @@ module.exports = {
               }
             }
           }
-      }`
-      }
+      }`,
+      },
     },
     {
-      resolve: "gatsby-transformer-moocfi-exercises"
+      resolve: "gatsby-transformer-moocfi-exercises",
     },
-    `gatsby-plugin-meta-redirect` // make sure to put last in the array
-  ]
-};
+    {
+      resolve: "gatsby-plugin-material-ui",
+    },
+    `gatsby-plugin-top-layout`,
+    `gatsby-plugin-meta-redirect`, // make sure to put last in the array
+  ],
+}
