@@ -8,6 +8,8 @@ Viikon 2 tehtävien deadline: su 22.9. klo 23:59
 
 ## Tehtävät
 
+<quiz id="b066bc51-8c79-43b7-9f56-e92f8060e711"></quiz>
+
 <programming-exercise name='2. Pisin toisto' tmcname='viikko02-Viikko02Tehtava2'>
 
 Annettuna on taulukko, jossa on `n` kokonaislukua.
