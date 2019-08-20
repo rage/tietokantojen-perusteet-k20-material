@@ -37,6 +37,11 @@ Jos et halua käyttää NetBeansia, voit palauttaa
 ohjelmointitehtäviä myös
 [TMC-sivuston kautta](https://tmc.mooc.fi/org/mooc/courses/497).
 
+Saat hyödyntää tämän ja tulevien viikkojen ohjelmointitehtävissä
+haluamallasi tavalla Javan valmiita luokkia ja metodeja,
+ellei tehtävän aiheena ole oman toteutuksen tekeminen,
+jolloin tämä on erikseen mainittu tehtävänannossa.
+
 <programming-exercise name='1. Numeroiden summa' tmcname='viikko01-Viikko01Tehtava1'>
 
 Tehtäväsi on laskea annetun positiivisen kokonaisluvun

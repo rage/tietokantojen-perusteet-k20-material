@@ -8,6 +8,23 @@ Viikon 2 tehtävien deadline: su 22.9. klo 23:59
 
 ## Tehtävät
 
+Tämän viikon ensimmäisessä tehtävässä sinun tulee määrittää
+annetun koodin aikavaativuus O-merkinnän avulla.
+Muut viikon tehtävät ovat ohjelmointitehtäviä,
+jotka opettavat algoritmien suunnittelua.
+
+Tämän ja tulevien viikkojen ohjelmointitehtävissä
+jokaisen yksittäisen testin aikarajana on yksi sekunti,
+mikä vaatii tehokkaan algoritmin keksimistä.
+Tällä viikolla jokaisen tehtävän syötteenä on taulukko,
+jossa on miljoona alkiota, ja algoritmin tulisi toimia
+ajassa O(n).
+Käytännössä algoritmissa voi olla yksi tai useampi
+silmukka, jotka käyvät läpi taulukon alkiot,
+mutta ei sisäkkäisiä silmukoita.
+
+
+
 <quiz id="b066bc51-8c79-43b7-9f56-e92f8060e711"></quiz>
 
 <programming-exercise name='2. Pisin toisto' tmcname='viikko02-Viikko02Tehtava2'>
