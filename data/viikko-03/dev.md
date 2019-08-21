@@ -60,6 +60,9 @@ System.out.println(v.etsi(new int[] {1})); // 1
 System.out.println(v.etsi(new int[] {1,10,10,100,100})); // 1
 ```
 
+Lisähaaste: Kehitä ratkaisu,
+jonka aikavaativuus on O(`n`) ja tilavaativuus on O(1).
+
 </programming-exercise>
 
 <programming-exercise name='3. Pysäkit' tmcname='viikko03-Viikko03Tehtava3'>
