@@ -201,7 +201,7 @@ class CourseOptionsEditor extends React.Component {
                   fullWidth
                   value={this.state.student_number}
                   onChange={this.handleInput}
-                  helperText="Jätä tyhjäksi, jos et ole tällä hetkellä Helsingin yliopiston opiskelija."
+                  helperText="Jos et tiedä opiskelijanumeroa, jätä tämä tyhjäksi."
                   onFocus={this.handleFocus}
                   onBlur={this.handleUnFocus}
                 />
