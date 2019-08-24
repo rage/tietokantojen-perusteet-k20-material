@@ -86,7 +86,7 @@ class PointsBalloonContent extends React.Component {
       >
         <ModalContent>
           <ModalControls>
-            <Title>Edistyminen (beta)</Title>
+            <Title>Edistyminen</Title>
             <Button onClick={this.handleClose}>Sulje</Button>
           </ModalControls>
           <Loading loading={!this.state.data && !this.state.error}>
