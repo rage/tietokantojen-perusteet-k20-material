@@ -77,7 +77,7 @@ ovat `bab` ja `abtu`.
 Tee luokka `Osajonot`, jossa on seuraavat metodit:
 
 * `int laske(String a, String b)`: palauttaa,
-montako kertaa `b` esiintyy osajonona `a`:ssa
+montako kertaa merkkijono `b` esiintyy osajonona merkkijonossa `a`
 
 Rajat:
 
@@ -103,7 +103,7 @@ voi esittää kolmen eri positiivisen
 kokonaisluvun summana.
 Esimerkiksi jos `x` = 9, oikea vastaus on 3,
 koska mahdolliset tavat ovat
-1 + 2 + 6, 1 + 3 + 5 ja 2 + 3 + 4.
+1+2+6, 1+3+5 ja 2+3+4.
 
 Tee luokka `KolmenSumma`, jossa on seuraavat metodit:
 
