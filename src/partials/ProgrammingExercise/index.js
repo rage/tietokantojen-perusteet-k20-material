@@ -306,7 +306,7 @@ class ProgrammingExercise extends React.Component {
               )}
             </div>
 
-            {this.context.loggedIn && (
+            {this.context.loggedIn && false && (
               <div>
                 <StyledDivider />
                 <ExtraDetails
