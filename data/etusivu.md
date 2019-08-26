@@ -41,53 +41,8 @@ Kurssi muodostuu 14 viikosta, joista jokaisella on 6 tehtävää
 (eli yhteensä 84 tehtävää).
 Tehtävät palautetaan sähköisesti, ja niiden arvostelu on automaattinen.
 
-Tehtävien deadlinet ovat sunnuntaisin klo 23:59
-seuraavan aikataulun mukaisesti:
-
-<table>
-<tr><td>Viikko</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-<tr><td></td>
-<td>15.9.</td>
-<td>22.9.</td>
-<td>29.9.</td>
-<td>6.10.</td>
-<td>13.10.</td>
-<td>20.10.</td>
-<td>27.10.</td>
-</tr>
-</table>
-
-<table>
-<tr><td>Viikko</td>
-<td>8</td>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-<td>13</td>
-<td>14</td>
-</tr>
-<tr><td></td>
-<td>10.11.</td>
-<td>17.11.</td>
-<td>24.11.</td>
-<td>1.12.</td>
-<td>8.12.</td>
-<td>15.12.</td>
-<td>22.12.</td>
-</tr>
-</table>
-
-Kurssin suorittaminen vaatii,
-että ratkaiset joka viikon tehtävistä ainakin 3 tehtävää
+Kurssin suorittaminen vaatii, että ratkaiset
+**joka viikon tehtävistä ainakin kolme tehtävää**
 deadlineen mennessä. Arvosanarajat ovat:
 
 * 42–50 tehtävää: arvosana 1
@@ -95,6 +50,27 @@ deadlineen mennessä. Arvosanarajat ovat:
 * 60–68 tehtävää: arvosana 3
 * 69–77 tehtävää: arvosana 4
 * 78–84 tehtävää: arvosana 5
+
+Seuraava taulukko näyttää tehtävien julkaisupäivät ja deadlinet.
+Tehtävien deadlinet ovat sunnuntaisin klo 23:59.
+
+<table>
+<tr><td>Viikko</td><td>Tehtävien julkaisu</td><td>Tehtävien deadline</td></tr>
+<tr><td>1</td><td>26.8.</td><td>15.9.</td></tr>
+<tr><td>2</td><td>2.9.</td><td>22.9.</td></tr>
+<tr><td>3</td><td>9.9.</td><td>29.9.</td></tr>
+<tr><td>4</td><td>16.9.</td><td>6.10.</td></tr>
+<tr><td>5</td><td>23.9.</td><td>13.10.</td></tr>
+<tr><td>6</td><td>30.9.</td><td>20.10.</td></tr>
+<tr><td>7</td><td>7.10.</td><td>27.10.</td></tr>
+<tr><td>8</td><td>21.10.</td><td>10.11.</td></tr>
+<tr><td>9</td><td>28.10.</td><td>17.11.</td></tr>
+<tr><td>10</td><td>4.11.</td><td>24.11.</td></tr>
+<tr><td>11</td><td>11.11.</td><td>1.12.</td></tr>
+<tr><td>12</td><td>18.11.</td><td>8.12.</td></tr>
+<tr><td>13</td><td>25.11.</td><td>15.12.</td></tr>
+<tr><td>14</td><td>2.12.</td><td>22.12.</td></tr>
+</table>
 
 ## Yhteystiedot
 
