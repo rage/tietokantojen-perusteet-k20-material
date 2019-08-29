@@ -15,3 +15,7 @@ Exactumin salissa BK107. Pajan aukioloajat ovat seuraavat:
 Voit ratkoa pajassa kurssin tehtäviä muiden osallistujien kanssa,
 ja paikalla on aina ohjaaja, joka tuntee kurssin tehtävät
 ja jolta voit kysyä neuvoa.
+
+Poikkeusaikataulut:
+
+- ma 2.9. ei ole pajaa yliopiston avajaisten vuoksi
