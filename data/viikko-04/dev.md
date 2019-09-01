@@ -107,7 +107,7 @@ Seuraava koodi esittelee luokan käyttämistä:
 Piirileikki p = new Piirileikki();
 System.out.println(p.viimeinen(7)); // 7
 System.out.println(p.viimeinen(4)); // 1
-System.out.println(p.viimeinen(123)); // X
+System.out.println(p.viimeinen(123)); // 119
 ```
 
 </programming-exercise>
