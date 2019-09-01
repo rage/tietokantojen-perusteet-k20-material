@@ -29,7 +29,7 @@ Rajat:
 
 - 1 &le; `x` &le; 10<sup>9</sup>
 - `k` osoittaa johonkin listan kohtaan
-- jokaisessa testissä metodeita kutsutaan enintään 10<sup>6</sup> kertaa
+- jokaisessa testissä metodeita kutsutaan yhteensä enintään 10<sup>6</sup> kertaa
 
 Seuraava koodi esittelee luokan käyttämistä:
 
@@ -50,7 +50,14 @@ System.out.println(l.haeAlkio(1)); // 3
 Annettuna on taulukko, jossa on `n` kokonaislukua.
 Joka vuorolla poistat taulukosta kaksi vierekkäistä
 alkiota, jotka ovat samat, kunnes et voi enää poistaa mitään.
+Jos poiston voi tehdä monella tavalla,
+poistat alkiot mahdollisimman vasemmalta.
 Montako alkiota on lopullisessa taulukossa?
+
+Esimerkiksi jos taulukko on `[1,2,2,3,3,1]`,
+siitä tulee ensin `[1,3,3,1]`,
+sitten `[1,1]` ja lopuksi `[]`, eli tässä
+tapauksessa taulukossa ei ole yhtään alkiota lopuksi.
 
 Tee luokka `Poistot`, jossa on seuraavat metodit:
 
@@ -65,7 +72,7 @@ Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
 Poistot p = new Poistot();
-System.out.println(p.laske(new int[] {1,2,2,3})); // 1
+System.out.println(p.laske(new int[] {1,2,2,3})); // 2
 System.out.println(p.laske(new int[] {1,2,3,4})); // 4
 System.out.println(p.laske(new int[] {1,2,2,3,3,1})); // 0
 ```
