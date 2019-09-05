@@ -113,7 +113,7 @@ Rajat:
 
 - 1 &le; `n` &le; 10<sup>6</sup>
 - 1 &le; `x` &le; 10<sup>9</sup>
-- jokainen taulukon alkio on välillä &ndash;10<sup>9</sup>...10<sup>9</sup>
+- jokainen taulukon alkio on välillä &ndash;100...100
 
 Seuraava koodi esittelee luokan käyttämistä:
 
