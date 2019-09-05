@@ -4,7 +4,7 @@ title: 'Viikko 5: Hajautustaulu'
 overview: true
 ---
 
-Viikon 4 tehtävien deadline: su 13.10. klo 23:59
+Viikon 5 tehtävien deadline: su 13.10. klo 23:59
 
 ## Tehtävät
 
