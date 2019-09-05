@@ -105,7 +105,7 @@ Annettuna on taulukko, jossa on `n` kokonaislukua.
 Tehtäväsi on laskea, monessako yhtenäisessä alitaulukossa
 lukujen summa on `x`.
 
-Tee luokka `Summat`, jossa on seuraavat metodit:
+Tee luokka `Alitaulukot`, jossa on seuraavat metodit:
 
 * `long laske(int[] t, int x)`: palauttaa alitaulukoiden määrän
 
