@@ -92,12 +92,21 @@ System.out.println(m.laske(new int[] {1,1,1,1,1})); // 2
 
 Annettuna on taulukko, jossa on `n` kokonaislukua.
 Monellako tavalla voit halkaista taulukon
-kahteen osaan niin, että kummankin osan
+vasempaan ja oikeaan osaan niin, että kummankin osan
 lukujen summat ovat yhtä suuret?
 
-Esimerkiksi taulukossa `[1,2,-1,4,0]` tapoja on yksi:
-vasen osa on `[1,2]` ja oikea osa on `[-1,4,0]`.
-Molemmissa osissa lukujen summa on 3.
+Esimerkiksi taulukossa `[1,2,-1,4,0]` 
+mahdolliset halkaisutavat ovat:
+
+- `[1]` ja `[2,-1,4,0]`
+- `[1,2]` ja `[-1,4,0]`
+- `[1,2,-1]` ja `[4,0]`
+- `[1,2,-1,4]` ja `[0]`
+
+Tässä taulukossa oikea vastaus on 1,
+koska vasemman ja oikean osan summat ovat samat
+vain silloin, kun osat ovat `[1,2]` ja `[-1,4,0]`.
+Tällöin kummankin osan summa on 3.
 
 Tee luokka `Halkaisu`, jossa on seuraavat metodit:
 
