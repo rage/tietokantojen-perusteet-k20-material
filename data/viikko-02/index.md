@@ -171,6 +171,11 @@ Tehtäväsi on laskea,
 monessako taulukon yhtenäisessä alitaulukossa
 on enintään kaksi eri lukua.
 
+Esimerkiksi taulukossa `[1,2,3]` yhtenäiset alitaulukot ovat
+`[1]`, `[2]`, `[3]`, `[1,2]`, `[2,3]` ja `[1,2,3]`.
+Näistä kaikissa paitsi viimeisessä on enintään kaksi eri lukua,
+joten oikea vastaus tälle taulukolle on 5.
+
 Tee luokka `Alitaulukot`, jossa on seuraavat metodit:
 
 * `long laske(int[] t)`: palauttaa alitaulukoiden määrän
