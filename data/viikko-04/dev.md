@@ -8,7 +8,18 @@ Viikon 4 tehtävien deadline: su 6.10. klo 23:59
 
 ## Tehtävät
 
+Tehtävässä 1 pääset tutustumaan tarkemmin Javan ArrayList-rakenteen
+tehokkuuteen.
+Tehtävässä kannattaa hyödyntää Javan dokumentaatiota ja muita
+nettiaineistoja.
+Tehtävässä 2 selviää, kuinka tehokkaita taulukko ja ArrayList
+ovat toisiinsa nähden.
+Tehtävät 3–6 ovat ohjelmointitehtäviä, jotka liittyvät tavalla tai toisella
+viikon aiheisiin.
+
 <quiz id="ae417cad-8ac3-4d97-9f99-e659729a0500"></quiz>
+
+<quiz id="a5e8c196-841e-44ec-8d0c-db50e5361691"></quiz>
 
 <programming-exercise name='3. Listan rakennus' tmcname='viikko04-Viikko04Tehtava3'>
 
