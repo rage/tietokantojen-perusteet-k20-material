@@ -99,13 +99,13 @@ if (x.matches("[ab]+") && y.matches("[ab]+") && !x.equals(y) && x.hashCode() == 
 
 </programming-exercise>
 
-<programming-exercise name='6. Alitaulukot' tmcname='viikko05-Viikko05Tehtava6'>
+<programming-exercise name='6. Summahaku' tmcname='viikko05-Viikko05Tehtava6'>
 
 Annettuna on taulukko, jossa on `n` kokonaislukua.
 Tehtäväsi on laskea, monessako yhtenäisessä alitaulukossa
 lukujen summa on `x`.
 
-Tee luokka `Alitaulukot`, jossa on seuraavat metodit:
+Tee luokka `Summahaku`, jossa on seuraavat metodit:
 
 * `long laske(int[] t, int x)`: palauttaa alitaulukoiden määrän
 
@@ -118,10 +118,10 @@ Rajat:
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-Alitaulukot a = new Alitaulukot();
-System.out.println(a.laske(new int[] {1,3,2,4}, 4)); // 2
-System.out.println(a.laske(new int[] {0,0,0,0}, 0)); // 10
-System.out.println(a.laske(new int[] {1,-1,1,-1}, 0)); // 4
+SamaSumma s = new Summahaku();
+System.out.println(s.laske(new int[] {1,3,2,4}, 4)); // 2
+System.out.println(s.laske(new int[] {0,0,0,0}, 0)); // 10
+System.out.println(s.laske(new int[] {1,-1,1,-1}, 0)); // 4
 ```
 
 </programming-exercise>
