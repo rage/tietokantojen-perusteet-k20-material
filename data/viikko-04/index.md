@@ -27,8 +27,8 @@ Tehtäväsi on toteuttaa listarakenne,
 jossa pystyy lisäämään tehokkaasti alkion listan alkuun ja loppuun
 sekä hakemaan annetussa kohdassa olevan alkion.
 
-Lista on alussa tyhjä,
-ja alkiot on numeroitu aina 0, 1, 2, jne. listan alusta alkaen.
+Lista on alussa tyhjä. Kun siihen lisätään alkioita,
+ne numeroidaan 0, 1, 2, jne. listan alusta alkaen.
 
 Tee luokka `Lista`, jossa on seuraavat metodit:
 
