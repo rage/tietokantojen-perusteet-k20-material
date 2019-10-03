@@ -24,6 +24,8 @@ Luvussa 15 on NP-ongelmiin liittyvää tietoa, joka ei kuulu kurssin alueeseen.
   [tiedostot](https://www.cs.helsinki.fi/u/ahslaaks/tira19/luento3/)
 - Viikko 4: [videotallenne](https://www.helsinki.fi/en/unitube/video/59eef7f1-add8-486d-81bb-cad0a7e3b06a),
   [tiedostot](https://www.cs.helsinki.fi/u/ahslaaks/tira19/luento4/)
+- Viikko 5: [videotallenne](https://www.helsinki.fi/en/unitube/video/2c439b84-697c-4b38-8ca2-b2e07323cf1e),
+  [tiedostot](https://www.cs.helsinki.fi/u/ahslaaks/tira19/luento5/)
 
 ## Lisämateriaalia
 
