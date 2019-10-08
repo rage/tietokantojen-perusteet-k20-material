@@ -86,6 +86,11 @@ Tee luokka `Tormays`, jossa on seuraavat metodit:
 * `String merkkijono1()`: palauttaa ensimmäisen merkkijonon
 * `String merkkijono2()`: palauttaa toisen merkkijonon
 
+Voit etsiä merkkijonot haluamallasi tavalla ja
+toteuttaa kummankin yllä olevan metodin yhtenä `return`-komentona,
+joka palauttaa sopivan merkkijonon (eli ei haittaa,
+vaikka merkkijonojen etsiminen vie aikaa).
+
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
