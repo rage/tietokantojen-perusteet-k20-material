@@ -125,8 +125,10 @@ System.out.println(p.laske(4)); // 2
 _Latinalainen neliö_ on `n` &times; `n` -ruudukko,
 jonka jokaisella rivillä ja jokaisessa sarakkeessa
 on tasan kerran jokainen luku väliltä 1...`n`.
-Tehtäväsi on laskea latinalaisten neliöiden määrä
-annetulle `n`:lle.
+Esimerkiksi kun `n` = 3, latinalaisen neliön voi
+muodostaa kaikkiaan 12 tavalla:
+
+<img src="latina.png">
 
 Tee luokka `Latinalaiset`, jossa on seuraavat metodit:
 
@@ -151,13 +153,17 @@ System.out.println(l.laske(4)); // 576
 
 </programming-exercise>
 
-<programming-exercise name='6. Neliö neliöiksi' tmcname='viikko08-Viikko08Tehtava6'>
+<programming-exercise name='6. Polut ruudukossa' tmcname='viikko08-Viikko08Tehtava6'>
 
-Tehtäväsi on laskea, monellako tavalla
-`n` &times; `n` -ruudukon voi muodostaa
-neliöruudukoista.
+Tehtäväsi on laskea, monellako tavalla voit
+kulkea `n` &times; `n` -ruudukossa vasemmasta yläkulmasta
+alkaen niin, että liikut aina askeleen vasemmalle, oikealle,
+ylöspäin tai alaspäin ja käyt tasan kerran joka ruudussa.
+Esimerkiksi kun `n` = 3, mahdollisia polkuja on kaikkiaan 8:
 
-Tee luokka `Nelioiksi`, jossa on seuraavat metodit:
+<img src="polut.png">
+
+Tee luokka `Polut`, jossa on seuraavat metodit:
 
 * `int laske(int n)`: laskee ratkaisuiden määrän
 
@@ -166,16 +172,20 @@ Huomaa, että metodin `laske` tulee laskea tulos tyhjästä
 
 Rajat:
 
-- 1 &le; `n` &le; X
+- 1 &le; `n` &le; 7
 
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
-Latinalaiset l = new Latinalaiset();
-System.out.println(l.laske(1)); // X
-System.out.println(l.laske(2)); // X
-System.out.println(l.laske(3)); // X
-System.out.println(l.laske(4)); // X
+Polut p = new Polut();
+System.out.println(p.laske(1)); // 1
+System.out.println(p.laske(2)); // 2
+System.out.println(p.laske(3)); // 8
+System.out.println(p.laske(4)); // 52
 ```
+
+Koska tapaus `n` = 7 on selvästi muita vaikeampi,
+saat käyttää siihen 10 sekuntia.
+Tästä huolimatta tarvitset hyviä optimointeja koodiin.
 
 </programming-exercise>
