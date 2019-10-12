@@ -18,7 +18,10 @@ Esimerkiksi jos `x` = 4, tapoja on kaikkiaan 8:
 
 Tee luokka `Nopanheitto`, jossa on seuraavat metodit:
 
-* `int laske(int n)`: palauttaa heittotapojen määrän
+* `long laske(int n)`: palauttaa heittotapojen määrän
+
+Huomaa, että metodin `laske` tulee laskea tulos tyhjästä
+(eli siinä ei saa olla suurten tapausten vastauksia sisällä).
 
 Rajat:
 
@@ -31,7 +34,7 @@ Nopanheitto n = new Nopanheitto();
 System.out.println(n.laske(1)); // 1
 System.out.println(n.laske(2)); // 2
 System.out.println(n.laske(4)); // 8
-System.out.println(n.laske(10)); // X
+System.out.println(n.laske(10)); // 492
 ```
 
 </programming-exercise>
@@ -41,7 +44,7 @@ System.out.println(n.laske(10)); // X
 Annettuna on taulukko lukuja ja
 tehtäväsi on selvittää,
 kuinka pitkä on pisin alijono,
-jossa jokaisen vierekkäisen luvun ero on tasan 1.
+jossa jokaisen peräkkäisen luvun ero on tasan 1.
 
 Esimerkiksi taulukossa `[6,2,3,5,2,4,1,8]` vastaus on 4,
 koska voimme muodostaa alijonon `[2,3,2,1]`.
@@ -52,16 +55,16 @@ Tee luokka `Alijonot`, jossa on seuraavat metodit:
 
 Rajat:
 
-- 1 &le; `n` &le; 5000
+- 1 &le; `n` &le; 1000
 - jokainen taulukon luku on välillä 1...10<sup>9</sup>
 
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
 Alijonot a = new Alijonot();
-System.out.println(a.laske(new int[] {1,1,1,1,1,1,1,1)); // 1
-System.out.println(a.laske(new int[] {1,2,3,4,1,2,3,4)); // 6
-System.out.println(a.laske(new int[] {6,2,3,5,2,4,1,8)); // 4
+System.out.println(a.laske(new int[] {1,1,1,1,1,1,1,1})); // 1
+System.out.println(a.laske(new int[] {1,2,3,4,1,2,3,4})); // 6
+System.out.println(a.laske(new int[] {6,2,3,5,2,4,1,8})); // 4
 ```
 
 </programming-exercise>
@@ -91,7 +94,7 @@ Ruudukko r = new Ruudukko();
 int[][] t = {{2,3,1},
              {1,4,5},
              {2,3,4}};
-System.out.println(r.laske(t)); // 16
+System.out.println(r.laske(t)); // 18
 ```
 
 </programming-exercise>
@@ -133,20 +136,23 @@ Monellako tavalla voit ratkoa tasan `x` tehtävää kurssilla?
 
 Tee luokka `Tehtavat`, jossa on seuraavat metodit:
 
-* `int laske(int x)`: laskee tapojen määrän
+* `long laske(int x)`: laskee tapojen määrän
+
+Huomaa, että metodin `laske` tulee laskea tulos tyhjästä
+(eli siinä ei saa olla suurten tapausten vastauksia sisällä).
 
 Rajat:
 
-- 42 &le; `x` &le; 84
+- 42 &le; `x` &le; 84 (vastaus mahtuu tyyppiin `long`)
 
 Seuraava koodi esittelee luokan käyttämistä:
 
 ```java
 Tehtavat t = new Tehtavat();
-System.out.println(l.laske(42)); // 1
-System.out.println(l.laske(50)); // X
-System.out.println(l.laske(64)); // X
-System.out.println(l.laske(84)); // 1
+System.out.println(t.laske(42)); // 1
+System.out.println(t.laske(50)); // 170261
+System.out.println(t.laske(64)); // 24608948
+System.out.println(t.laske(84)); // 1
 ```
 
 </programming-exercise>
@@ -154,8 +160,10 @@ System.out.println(l.laske(84)); // 1
 <programming-exercise name='6. Peli' tmcname='viikko09-Viikko09Tehtava6'>
 
 Kahden pelaajan pelissä on neljä pinoa ja jokaisessa
-jokin määrä kolikoita.
-Joka siirrolla pelaaja valitsee jonkin pinon
+aluksi jokin määrä kolikoita.
+Pelaajat siirtävät vuorotellen,
+ja joka siirrolla pelaaja valitsee jonkin pinon,
+jossa on vielä kolikoita,
 ja poistaa siitä minkä tahansa määrän kolikoita.
 Pelin voittaa se, joka tekee viimeisen siirron.
 Tehtäväsi on selvittää, kumpi pelaaja voittaa,
