@@ -129,7 +129,8 @@ Tehtäväsi on etsiä labyrintissa lyhin reitti kohdasta
 `x` kohtaan `y`. Labyrintti on `n` &times; `m` -ruudukko,
 jonka kuvauksessa merkki `#` tarkoittaa
 seinää ja merkki `.` tarkoittaa lattiaa.
-Kaikki reunaruudut ovat seinää.
+Kaikki reunaruudut ovat seinää ja merkkejä
+`x` ja `y` on tarkalleen yksi labyrintissa.
 
 Saat liikkua joka vuorolla askeleen vasemmalle,
 oikealle, ylöspäin tai alaspäin.
@@ -140,7 +141,7 @@ voit antaa minkä tahansa niistä.
 
 Tee luokka `Labyrintti`, jossa on seuraavat metodit:
 
-* `String etsi(char[][] t)`: palauttaa lyhimmän reitin kuvauksen merkkijonona
+* `String etsi(char[][] laby)`: palauttaa lyhimmän reitin kuvauksen merkkijonona
 (jos reittiä ei ole, metodin tulee palauttaa `null`)
 
 Rajat:
@@ -168,14 +169,14 @@ mutta lisäksi labyrintissa voi olla avaimia
 ja lukittuja ovia.
 Voit kulkea ovesta vain, jos sinulla on vastaava avain.
 Avaimet on merkitty karttaan `a`&ndash;`d`
-ja vastaavat lukot `A`&ndash;`D`.
-Labyrintissa voi olla useita samanlaisia
-avaimia ja lukkoja.
+ja vastaavat ovet `A`&ndash;`D`.
+Labyrintissa voi olla useita saman tyyppisiä
+avaimia ja ovia.
 
 
 Tee luokka `Labyrintti`, jossa on seuraavat metodit:
 
-* `String etsi(char[][] t)`: palauttaa lyhimmän reitin kuvauksen merkkijonona
+* `String etsi(char[][] laby)`: palauttaa lyhimmän reitin kuvauksen merkkijonona
 (jos reittiä ei ole, metodin tulee palauttaa `null`)
 
 Rajat:
