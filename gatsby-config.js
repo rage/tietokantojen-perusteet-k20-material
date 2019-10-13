@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Tietorakenteet ja algoritmit, syksy 2019",
-    siteUrl: `https://tietorakenteet-ja-algoritmit-s19.mooc.fi`,
+    title: "Tietokantojen perusteet, kevät 2020",
+    siteUrl: `https://tikape-k20.mooc.fi`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",

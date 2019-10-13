@@ -106,10 +106,6 @@ var content2 = [
     title: "Kurssimateriaali",
     path: "/materiaali",
   },
-  {
-    title: "Algoritmipaja",
-    path: "/algoritmipaja",
-  },
   { separator: true },
 ]
 
@@ -167,7 +163,7 @@ class Sidebar extends React.Component {
           </Button>
         </MenuExpanderWrapper>
         <SidebarContainer mobileMenuOpen={this.props.mobileMenuOpen}>
-          <Brand>Tietorakenteet ja algoritmit, syksy 2019</Brand>
+          <Brand>Tietokantojen perusteet, kevät 2020</Brand>
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>

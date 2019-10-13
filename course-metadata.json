@@ -1,8 +1,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Course",
-  "name": "Tietorakenteet ja algoritmit, syksy 2019",
-  "description": "Helsingin yliopiston kaikille avoin verkkokurssi, joka opettaa miten internet toimii. Opit miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet?.",
+  "name": "Tietokantojen perusteet, kevät 2020",
+  "description": "",
   "provider": {
     "@type": "Organization",
     "name": "MOOC.fi",
@@ -16,7 +16,7 @@
   "hasCourseInstance": [
     {
       "@type": "CourseInstance",
-      "name": "Tietorakenteet ja algoritmit, syksy 2019",
+      "name": "Tietokantojen perusteet, kevät 2020",
       "courseMode": ["MOOC", "online"],
       "location": {
         "@type": "Place",
