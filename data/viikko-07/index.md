@@ -113,8 +113,9 @@ System.out.println(m.mediaani()); // 3
 <programming-exercise name='5. Lukujono' tmcname='viikko07-Viikko07Tehtava5'>
 
 Tarkastellaan lukujonoa, joka sisältää pienimmästä suurimpaan
-kaikki positiiviset kokonaisluvut,
-jotka saadaan kertomalla lukuja 2, 3 ja 5 keskenään.
+kaikki kokonaisluvut,
+jotka ovat suurempia kuin 1 ja
+joiden jokainen alkutekijä on 2, 3 tai 5.
 Lukujono alkaa näin:
 
 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, ...
