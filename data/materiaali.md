@@ -8,7 +8,7 @@ information_page: true
 ## Verkkomateriaali
 
 Löydät kurssin materiaalin ja tehtävät tältä sivustolta.
-Materiaali muodostuu seitsemästä viikosta:
+Kurssin osat ovat:
 
 <ol>
 <li>Tiedon esittäminen
