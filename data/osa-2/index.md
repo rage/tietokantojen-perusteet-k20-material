@@ -1,6 +1,6 @@
 ---
-path: '/osa-03'
-title: 'Osa 3: Usean taulun käsittely'
+path: '/osa-2'
+title: 'Osa 2: Johdatus SQL-kieleen'
 overview: true
 ---
 

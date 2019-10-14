@@ -1,6 +1,6 @@
 ---
-path: '/osa-06'
-title: 'Osa 6: Tehokkuus ja indeksit'
+path: '/osa-5'
+title: 'Osa 5: Tietokannan suunnittelu'
 overview: true
 ---
 

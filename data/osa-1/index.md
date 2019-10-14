@@ -1,5 +1,5 @@
 ---
-path: '/osa-01'
+path: '/osa-1'
 title: 'Osa 1: Tiedon esittäminen'
 overview: true
 ---

@@ -1,6 +1,6 @@
 ---
-path: '/osa-02'
-title: 'Osa 2: Johdatus SQL-kieleen'
+path: '/osa-4'
+title: 'Osa 4: Lisää kyselyitä'
 overview: true
 ---
 

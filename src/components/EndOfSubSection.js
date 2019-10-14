@@ -78,7 +78,6 @@ class EndOfSubSection extends React.Component {
           }
           return (
             <div>
-              Pääsit aliluvun loppuun!{" "}
               {nextPart && (
                 <Fragment>
                   Jatka tästä seuraavaan osaan:{" "}
@@ -90,11 +89,6 @@ class EndOfSubSection extends React.Component {
                   </ButtonWrapper>
                 </Fragment>
               )}
-              <p>
-                Muistathan tarkistaa pistetilanteesi materiaalin oikeassa
-                alareunassa olevasta pallosta! Pistilanne ilmestyy materiaaliin
-                myöhemmin.
-              </p>
             </div>
           )
         }}

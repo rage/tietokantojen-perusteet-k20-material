@@ -1,6 +1,6 @@
 ---
-path: '/osa-07'
-title: 'Osa 7: Tiedon eheys ja transaktiot'
+path: '/osa-6'
+title: 'Osa 6: Tehokkuus ja indeksit'
 overview: true
 ---
 

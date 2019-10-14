@@ -1,6 +1,6 @@
 ---
-path: '/osa-04'
-title: 'Osa 4: Lisää kyselyitä'
+path: '/osa-3'
+title: 'Osa 3: Usean taulun käsittely'
 overview: true
 ---
 

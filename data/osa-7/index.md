@@ -1,6 +1,6 @@
 ---
-path: '/osa-05'
-title: 'Osa 5: Tietokannan suunnittelu'
+path: '/osa-7'
+title: 'Osa 7: Tiedon eheys ja transaktiot'
 overview: true
 ---
 

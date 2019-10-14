@@ -56,7 +56,7 @@ export default class CourseContentTemplate extends React.Component {
     /*if (research === undefined) {
       navigate("/missing-info")
     }*/
-    if (typeof window !== "undefined" && window.location.hash) {
+    if (typeof window !== undefined && window.location.hash) {
       const selector = window.location.hash
       setTimeout(() => {
         tryToScrollToSelector(selector)
