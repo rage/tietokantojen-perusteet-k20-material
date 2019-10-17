@@ -1,6 +1,6 @@
 ---
 path: '/osa-2'
-title: 'Osa 2: Johdatus SQL-kieleen'
+title: 'Osa 2: SQL:n perusteet'
 overview: true
 ---
 
