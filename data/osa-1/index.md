@@ -1,6 +1,6 @@
 ---
 path: '/osa-1'
-title: 'Osa 1: Tiedon esittäminen'
+title: 'Osa 1: Johdanto'
 overview: true
 ---
 

@@ -11,7 +11,7 @@ _Tietokantojen ja perusteet_ on 5 op laajuinen
 tietojenkäsittelytieteen perusopintokurssi,
 joka esittelee suurien tietomäärien käsittelyyn
 liittyviä tekniikoita ja haasteita.
-Tutustumme kurssilla erityisesti relaatiotietokantoihin
+Tutustumme kurssilla relaatiotietokantoihin
 ja niihin liittyvään SQL-kieleen.
 
 Keväällä 2020 kurssi muodostuu automaattisesti
