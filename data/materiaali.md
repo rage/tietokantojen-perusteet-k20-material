@@ -8,16 +8,16 @@ information_page: true
 ## Verkkomateriaali
 
 Löydät kurssin materiaalin ja tehtävät tältä sivustolta.
-Kurssin osat ovat:
+Materiaali muodostu seuraavista luvuista:
 
 <ol>
-<li>Tiedon esittäminen
-<li>Johdatus SQL-kieleen
+<li>Johdanto
+<li>SQL:n perusteet
 <li>Usean taulun käsittely
-<li>Lisää kyselyitä
-<li>Tietokannan suunnittelu
-<li>Tehokkuus ja indeksit
+<li>Lisää tekniikoita
+<li>Tietokannan rakenne
 <li>Tiedon eheys ja transaktiot
+<li>Tehokkuus ja indeksit
 </ol>
 
 ## Lisämateriaali
