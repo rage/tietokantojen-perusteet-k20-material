@@ -1,6 +1,6 @@
 ---
 path: '/osa-5'
-title: 'Osa 5: Tietokannan suunnittelu'
+title: 'Osa 5: Tietokannan rakenne'
 overview: true
 ---
 
