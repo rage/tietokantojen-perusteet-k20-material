@@ -1,6 +1,6 @@
 ---
 path: '/luku-5'
-title: 'Luku 5: Tietokannan rakenne'
+title: 'Luku 5: Tietokannan suunnittelu'
 overview: true
 ---
 
