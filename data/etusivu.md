@@ -15,9 +15,8 @@ Tutustumme kurssilla relaatiotietokantoihin
 ja niihin liittyvään SQL-kieleen.
 
 Keväällä 2020 kurssi muodostuu automaattisesti
-arvosteltavista SQL-tehtävistä sekä
-kurssin lopussa palautettavasta harjoitustyöstä,
-jonka aiheena on tietokannan suunnittelu.
+tarkastettavista tehtävistä sekä
+kurssin lopussa palautettavasta harjoitustyöstä.
 Kurssiin kuuluu myös aloitusluento sekä
 viikoittaista pajaohjausta,
 joihin osallistuminen on vapaaehtoista.
@@ -38,8 +37,8 @@ kurssin järjestäjien kanssa. [Liity ryhmään](https://t.me/tkt_tikape)
 
 Kurssi muodostuu seuraavista osasuorituksista:
 
-* SQL-tehtävät, 40 pistettä
-* harjoitustyö, 20 pistettä
+* tehtävät, 30 pistettä
+* harjoitustyö, 30 pistettä
 
 Sinun tulee saada vähintään puolet pisteistä kummastakin osasuorituksesta,
 jotta pääset kurssin läpi.
