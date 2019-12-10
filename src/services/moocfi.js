@@ -87,7 +87,7 @@ export function onLoginStateChanged(callback) {
 
 export async function userDetails() {
   const res = await axios.get(
-    `${BASE_URL}/users/current?show_user_fields=true&extra_fields=tietorakenteet-ja-algoritmit-s19`,
+    `${BASE_URL}/users/current?show_user_fields=true&extra_fields=tietokantojen-perusteet-k20`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +128,7 @@ export async function updateUserDetails({ extraFields, userField }) {
     {
       user: {
         extra_fields: {
-          namespace: "tietorakenteet-ja-algoritmit-s19",
+          namespace: "tietokantojen-perusteet-k20",
           data: extraFields,
         },
       },
