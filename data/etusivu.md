@@ -40,8 +40,8 @@ jotka molemmat arvioidaan asteikolla 1–5.
 Kurssin arvosana on näiden keskiarvo (pyöristettynä ylöspäin).
 
 Sinun tulee saada vähintään arvosana 1 kummastakin osasuorituksesta,
-jotta pääset kurssin läpi.
-Suorituksilla on yhteinen deadline la 29.2.2020.
+jotta saat suorituksen kurssista.
+Osasuorituksilla on yhteinen deadline la 29.2.2020.
 
 ## Yhteystiedot
 
