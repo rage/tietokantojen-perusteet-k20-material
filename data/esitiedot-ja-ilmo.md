@@ -20,10 +20,3 @@ Voit osallistua kurssille samaan tapaan kuin Helsingin yliopiston tutkinto-opisk
 Jos haluat saada kurssista suoritusmerkinnän Helsingin yliopiston opintorekisteriin,
 ilmoittaudu kurssille [Avoimen yliopiston kurssisivun](https://courses.helsinki.fi/fi/aytkt10004/129165425) 
 (eli opinto-ohjelman) kautta.
-
-Huomaa seuraavat asiat ilmoittautumiseen liittyen:
-
-- Ilmoittautumislomake on auki xx.x.xxxx asti.
-- Suorituksia on mahdollista rekisteröidä vain henkilöille, joilla on suomalainen henkilötunnus.
-- Jos ilmoittautumislomakkeelle tai MOOC-sivustolle syötetyissä henkilötiedoissa on puutteita tai ne ovat virheellisiä,
-suoritusta ei voida rekisteröidä.

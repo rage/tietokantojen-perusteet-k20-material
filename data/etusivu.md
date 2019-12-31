@@ -15,7 +15,7 @@ Tutustumme kurssilla relaatiotietokantoihin
 ja niihin liittyvään SQL-kieleen.
 
 Keväällä 2020 kurssi muodostuu automaattisesti
-tarkastettavista tehtävistä sekä
+tarkastettavista SQL-tehtävistä sekä
 palautettavasta harjoitustyöstä.
 Kurssiin kuuluu myös aloitusluento sekä
 viikoittaista pajaohjausta,
@@ -35,22 +35,13 @@ kurssin järjestäjien kanssa. [Liity ryhmään](https://t.me/tkt_tikape)
 
 ## Tehtävät ja arvostelu
 
-Kurssi muodostuu seuraavista osasuorituksista:
+Kurssin osasuoritukset ovat SQL-tehtävät ja harjoitustyö,
+jotka molemmat arvioidaan asteikolla 1–5.
+Kurssin arvosana on näiden keskiarvo (pyöristettynä ylöspäin).
 
-* tehtävät, 30 pistettä
-* harjoitustyö, 30 pistettä
-
-Sinun tulee saada vähintään puolet pisteistä kummastakin osasuorituksesta,
+Sinun tulee saada vähintään arvosana 1 kummastakin osasuorituksesta,
 jotta pääset kurssin läpi.
 Suorituksilla on yhteinen deadline la 29.2.2020.
-
-Kurssin arvosanarajat ovat seuraavat:
-
-* 30–35 pistettä: arvosana 1
-* 36–41 pistettä: arvosana 2
-* 42–47 pistettä: arvosana 3
-* 48–54 pistettä: arvosana 4
-* 55–60 pistettä: arvosana 5
 
 ## Yhteystiedot
 

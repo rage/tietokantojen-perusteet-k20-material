@@ -8,28 +8,26 @@ information_page: true
 ## Verkkomateriaali
 
 Löydät kurssin materiaalin ja tehtävät tältä sivustolta.
-Materiaali muodostu seuraavista luvuista:
+Materiaali muodostuu seuraavista luvuista:
 
-<ol>
-<li>Johdanto
-<li>SQL:n perusteet
-<li>Usean taulun käsittely
-<li>Lisää tekniikoita
-<li>Tietokannan rakenne
-<li>Tiedon eheys ja transaktiot
-<li>Tehokkuus ja indeksit
-</ol>
+1. [Johdanto](/luku-1)
+2. [SQL:n perusteet](/luku-2)
+3. [Usean taulun käsittely](/luku-3)
+4. [Lisää tekniikoita](/luku-4)
+5. [Tietokannan rakenne](/luku-5)
+6. [Tiedon eheys ja transaktiot](/luku-6)
+7. [Tehokkuus ja indeksit](/luku-7)
 
 ## Lisämateriaali
 
-Verkkomateriaali on riittävä kurssin suoritukseen.
-Jos haluat oppia myöhemmin lisää tietokannoista,
-yksi hyvä kirja on seuraava:
+Tietokannan käyttäjälle tärkeä lähde ovat tietokantojen dokumentaatiot,
+joissa kerrotaan tarkasti niiden ominaisuuksista:
 
-<ul>
-<li>
-Martin Kleppmann:
-<i>
-Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
-</i>
-</ul>
+* [SQLite-dokumentaatio](https://www.sqlite.org/docs.html)
+* [PostgreSQL-dokumentaatio](https://www.postgresql.org/docs/)
+
+Jos haluat oppia myöhemmin lisää tietokantoja käyttävien
+järjestelmien suunnittelusta, yksi hyvä kirja on seuraava:
+
+* Martin Kleppmann:
+_Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems_
