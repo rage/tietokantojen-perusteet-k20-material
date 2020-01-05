@@ -120,11 +120,11 @@ class Layout extends React.Component {
                     {
                       name: "description",
                       content:
-                        "Helsingin yliopiston tietojenkäsittelytieteen aineopintokurssi, joka käsittelee tehokkaiden algoritmien suunnittelua.",
+                        "Helsingin yliopiston tietojenkäsittelytieteen perusopintokurssi, joka esittelee suurten tietomäärien käsittelyyn liittyviä tekniikoita ja haasteita.",
                     },
                     {
                       name: "keywords",
-                      content: "tietorakenteet, algoritmit",
+                      content: "tietokannat, SQL-kieli",
                     },
                   ]}
                 />
