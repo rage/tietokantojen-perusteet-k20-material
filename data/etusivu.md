@@ -23,7 +23,7 @@ joihin osallistuminen on vapaaehtoista.
 
 ## Luento ja ohjaus
 
-Kurssilla on yksi luento: aloitusluento ti 14.1.2020 Exactumin salissa A111.
+Kurssilla on yksi luento: aloitusluento ti 14.1.2020 klo 10 Exactumin salissa A111.
 Luennon tarkoituksena on antaa yleiskuva kurssin aiheista
 ja suoritustavasta.
 
