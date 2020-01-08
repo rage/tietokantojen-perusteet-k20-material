@@ -9,22 +9,21 @@ banner: true
 
 _Tietokantojen ja perusteet_ on 5 op laajuinen
 tietojenkäsittelytieteen perusopintokurssi,
-joka esittelee suurien tietomäärien käsittelyyn
+joka esittelee suurten tietomäärien käsittelyyn
 liittyviä tekniikoita ja haasteita.
 Tutustumme kurssilla relaatiotietokantoihin
 ja niihin liittyvään SQL-kieleen.
 
 Keväällä 2020 kurssi muodostuu automaattisesti
-arvosteltavista SQL-tehtävistä sekä
-kurssin lopussa palautettavasta harjoitustyöstä,
-jonka aiheena on tietokannan suunnittelu.
+tarkastettavista SQL-tehtävistä sekä
+palautettavasta harjoitustyöstä.
 Kurssiin kuuluu myös aloitusluento sekä
 viikoittaista pajaohjausta,
 joihin osallistuminen on vapaaehtoista.
 
 ## Luento ja ohjaus
 
-Kurssilla on yksi luento: aloitusluento ti 14.1.2020 Exactumin salissa A111.
+Kurssilla on yksi luento: aloitusluento ti 14.1.2020 klo 10 Exactumin salissa A111.
 Luennon tarkoituksena on antaa yleiskuva kurssin aiheista
 ja suoritustavasta.
 
@@ -36,22 +35,13 @@ kurssin järjestäjien kanssa. [Liity ryhmään](https://t.me/tkt_tikape)
 
 ## Tehtävät ja arvostelu
 
-Kurssi muodostuu seuraavista osasuorituksista:
+Kurssin osasuoritukset ovat SQL-tehtävät ja harjoitustyö,
+jotka molemmat arvioidaan asteikolla 1–5.
+Kurssin arvosana on näiden keskiarvo (pyöristettynä ylöspäin).
 
-* SQL-tehtävät, 40 pistettä
-* harjoitustyö, 20 pistettä
-
-Sinun tulee saada vähintään puolet pisteistä kummastakin osasuorituksesta,
-jotta pääset kurssin läpi.
-Suorituksilla on yhteinen deadline la 29.2.2020.
-
-Kurssin arvosanarajat ovat seuraavat:
-
-* 30–35 pistettä: arvosana 1
-* 36–41 pistettä: arvosana 2
-* 42–47 pistettä: arvosana 3
-* 48–54 pistettä: arvosana 4
-* 55–60 pistettä: arvosana 5
+Sinun tulee saada vähintään arvosana 1 kummastakin osasuorituksesta,
+jotta saat suorituksen kurssista.
+Osasuorituksilla on yhteinen deadline la 29.2.2020.
 
 ## Yhteystiedot
 

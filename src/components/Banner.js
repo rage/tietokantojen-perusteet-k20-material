@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Background from "../images/tiratausta.png"
+import Background from "../images/tikapetausta.jpg"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const BannerWrapper = styled.header`
@@ -53,7 +53,7 @@ const SubHeading = styled.div`
 const Banner = () => (
   <BannerWrapper>
     <Heading>Tietokantojen perusteet, kevät 2020</Heading>
-    <SubHeading>Kuinka käsitellä suurta tietomäärää</SubHeading>
+    <SubHeading>Johdatus suurten tietomäärien käsittelyyn</SubHeading>
   </BannerWrapper>
 )
 

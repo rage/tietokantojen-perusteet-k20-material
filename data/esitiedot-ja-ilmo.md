@@ -11,7 +11,7 @@ Kurssia ennen on hyvä suorittaa ohjelmoinnin peruskurssi.
 
 ## Helsingin yliopiston tutkinto-opiskelijoille
 
-Ilmoittaudu kurssille [Helsingin yliopiston kurssisivun](https://courses.helsinki.fi/en/tkt10004/131058724) kautta.
+Ilmoittaudu kurssille [Helsingin yliopiston kurssisivun](https://courses.helsinki.fi/fi/tkt10004/131058724) kautta.
 
 ## Muille opiskelijoille
 
@@ -20,10 +20,3 @@ Voit osallistua kurssille samaan tapaan kuin Helsingin yliopiston tutkinto-opisk
 Jos haluat saada kurssista suoritusmerkinnän Helsingin yliopiston opintorekisteriin,
 ilmoittaudu kurssille [Avoimen yliopiston kurssisivun](https://courses.helsinki.fi/fi/aytkt10004/129165425) 
 (eli opinto-ohjelman) kautta.
-
-Huomaa seuraavat asiat ilmoittautumiseen liittyen:
-
-- Ilmoittautumislomake on auki xx.x.xxxx asti.
-- Suorituksia on mahdollista rekisteröidä vain henkilöille, joilla on suomalainen henkilötunnus.
-- Jos ilmoittautumislomakkeelle tai MOOC-sivustolle syötetyissä henkilötiedoissa on puutteita tai ne ovat virheellisiä,
-suoritusta ei voida rekisteröidä.
