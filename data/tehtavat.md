@@ -13,13 +13,21 @@ johon pääset tästä:
 Jokaisessa tehtävässä sinun tulee rakentaa SQL-kysely,
 jonka toiminta vastaa tehtävänantoa.
 Saat pisteen tehtävästä, jos kyselysi toimii oikein kaikissa testeissä.
+Voit lähettää samaan tehtävään vastauksen useita kertoja,
+eikä väärästä vastauksesta tule sakkoa.
 
 Pystyt kirjautumaan SQL Traineriin mooc.fi-tunnuksellasi,
 minkä jälkeen pisteesi tallentuvat.
 Varmistathan ensin, että olet ilmoittanut tietosi mooc.fi-profiilissasi.
 Voit tehdä tämän kirjautumalla sisään tämän sivun oikeasta ylänurkasta.
 
-Sinun tulee ratkaista vähintään 60 SQL-tehtävää,
+Tehtävät 1–20 liittyvät lukuun 2,
+tehtävät 21–40 liittyvät lukuun 3,
+tehtävät 41–60 liittyvät lukuun 4 ja
+tehtävät 61–100 ovat soveltavia tehtäviä
+lukujen 2–4 aiheista.
+
+Sinun tulee ratkaista vähintään 60 tehtävää,
 jotta saat suorituksen kurssista.
 Osasuorituksen arvosana määräytyy seuraavasti:
 
