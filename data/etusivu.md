@@ -7,7 +7,7 @@ banner: true
 
 # Tietoa kurssista
 
-_Tietokantojen ja perusteet_ on 5 op laajuinen
+_Tietokantojen perusteet_ on 5 op laajuinen
 tietojenkäsittelytieteen perusopintokurssi,
 joka esittelee suurten tietomäärien käsittelyyn
 liittyviä tekniikoita ja haasteita.
