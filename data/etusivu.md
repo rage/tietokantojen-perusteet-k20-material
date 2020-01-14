@@ -26,9 +26,13 @@ joihin osallistuminen on vapaaehtoista.
 Kurssilla on yksi luento: aloitusluento ti 14.1.2020 klo 10 Exactumin salissa A111.
 Luennon tarkoituksena on antaa yleiskuva kurssin aiheista
 ja suoritustavasta.
+[Videotallenne](https://www.helsinki.fi/en/unitube/video/a9e6eb6e-8cda-4a15-9e67-e635da0c8bce)
 
 Kurssin yhteydessä toimii paja, jossa voit ratkoa kurssin tehtäviä ja saada
-neuvoja ohjaajilta. Pajan aukioloajat ilmoitetaan myöhemmin.
+neuvoja ohjaajilta.
+Paja järjestetään viikoittain Exactumin salissa BK107,
+ja tämän kurssin ohjausta on tarjolla
+erityisesti ti klo 12–14 ja pe klo 14–16.
 
 Kurssin Telegram-ryhmässä voit keskustella netissä muiden opiskelijoiden ja
 kurssin järjestäjien kanssa. [Liity ryhmään](https://t.me/tkt_tikape)
