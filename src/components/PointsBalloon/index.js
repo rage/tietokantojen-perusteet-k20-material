@@ -37,6 +37,7 @@ class PointsBalloon extends React.Component {
     if (!this.state.render || !this.context.loggedIn) {
       return <Fragment />
     }
+    return <Fragment />
     return (
       <PointsBalloonContainer>
         {!this.state.open && <PointsBalloonBalloon onClick={this.onClick} />}
