@@ -114,6 +114,10 @@ var content2 = [
     title: "Harjoitustyö",
     path: "/harjoitustyo",
   },
+  {
+    title: "Kurssiblogi",
+    path: "/blogi",
+  },
   { separator: true },
 ]
 
