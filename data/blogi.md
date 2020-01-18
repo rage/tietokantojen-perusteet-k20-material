@@ -71,18 +71,16 @@ SELECT * FROM Nimet A, Nimet B WHERE B.nimi <= A.nimi;
 ```
 
 ```x
-id          nimi        id          nimi      
-----------  ----------  ----------  ----------
 1           Uolevi      1           Uolevi    
 1           Uolevi      2           Maija     
 1           Uolevi      3           Liisa     
-1           Uolevi      4           Kaaleppi  
 2           Maija       2           Maija     
 2           Maija       3           Liisa     
-2           Maija       4           Kaaleppi  
 3           Liisa       3           Liisa     
-3           Liisa       4           Kaaleppi  
-4           Kaaleppi    4           Kaaleppi
+4           Vihtori     1           Uolevi    
+4           Vihtori     2           Maija     
+4           Vihtori     3           Liisa     
+4           Vihtori     4           Vihtori   
 ```
 
 Tämä on yleensäkin hyvä keino suunnitella kyselyä:
