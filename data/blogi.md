@@ -71,6 +71,8 @@ SELECT * FROM Nimet A, Nimet B WHERE B.nimi <= A.nimi;
 ```
 
 ```x
+id          nimi        id          nimi      
+----------  ----------  ----------  ----------
 1           Uolevi      1           Uolevi    
 1           Uolevi      2           Maija     
 1           Uolevi      3           Liisa     
