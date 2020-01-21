@@ -8,6 +8,74 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 21.1.2020
+
+SQL:ssä rivien järjestämisen `ORDER BY` -osassa voi toteuttaa myös
+ilmoittamalla lukuna, _monennenko_ sarakkeen mukaan järjestetään.
+Esimerkiksi seuraava kysely järjestää rivit toisen sarakkeen
+eli nimen mukaan:
+
+```sql
+SELECT * FROM Tuotteet ORDER BY 2;
+```
+
+```x
+id          nimi        hinta     
+----------  ----------  ----------
+4           lanttu      8         
+3           nauris      4         
+2           porkkana    5         
+1           retiisi     7         
+5           selleri     4
+```
+
+Tässä ei ole vielä mitään yllättävää, mutta seuraava kysely näyttää,
+että SQL:ssä `1+1` ei aina ole `2`.
+Tämä kysely _ei_ järjestä rivejä toisen sarakkeen mukaan:
+
+```sql
+SELECT * FROM Tuotteet ORDER BY 1+1;
+```
+
+```x
+id          nimi        hinta     
+----------  ----------  ----------
+1           retiisi     7         
+2           porkkana    5         
+3           nauris      4         
+4           lanttu      8         
+5           selleri     4     
+```
+
+Tässä on kysymys siitä, että sarakkeen järjestysnumeron antaminen toimii
+vain silloin, kun annetaan yksittäinen luku.
+Jos kuitenkin annetaan jokin muu lauseke,
+järjestäminen tapahtuu tämän lausekkeen arvon mukaan.
+
+Lauseke `1+1` ei ole kovin mielekäs järjestämisessä,
+koska sen arvo jokaiselle riville on sama eli jokainen rivi
+on "yhtä suuri".
+Tässä on järkevämpi esimerkki, jossa järjestetään lausekkeen
+`LENGTH(nimi)` mukaan eli nimen pituuden mukaan:
+
+```sql
+SELECT * FROM Tuotteet ORDER BY LENGTH(nimi);
+```
+
+```
+id          nimi        hinta     
+----------  ----------  ----------
+3           nauris      4         
+4           lanttu      8         
+1           retiisi     7         
+5           selleri     4         
+2           porkkana    5    
+```
+
+Toinen esimerkki on kurssimateriaalissa mainittu
+`ORDER BY RANDOM()`, jossa jokaiselle riville
+tulee satunnainen luku järjestyksen perustaksi.
+
 ## 20.1.2020
 
 `LEFT JOIN` on usein mystiseltä tuntuva hakutapa SQL:n perusteiden opettelussa.
