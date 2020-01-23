@@ -8,6 +8,77 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 23.1.2020
+
+Tarkastellaan tilannetta, jossa taulussa `Elokuvat` on elokuvia
+ja haluamme selvittää, mikä on suurin määrä elokuvia,
+jotka ovat ilmestyneet samana vuonna.
+Esimerkiksi taulussa
+
+```x
+id          nimi        vuosi     
+----------  ----------  ----------
+1           Lumikki     1937      
+2           Fantasia    1940      
+3           Pinocchio   1940      
+4           Dumbo       1941      
+5           Bambi       1942    
+```
+
+haluttu tulos on 2, koska vuonna 1940 ilmestyi kaksi elokuvaa.
+
+Tämä on vähän hankalalta vaikuttava tilanne,
+koska meidän tulisi tehdä sisäkkäin kyselyt
+`COUNT`, joka laskee ilmestymismääriä,
+ja sitten `MAX`, joka hakee suurimman arvon.
+SQL ei salli kuitenkaan kyselyä `SELECT MAX(COUNT(vuosi))` tai vastaavaa.
+
+Voimme ottaa kuitenkin lähtökohdaksi kyselyn,
+joka ryhmittelee elokuvat vuoden mukaan ja hakee jokaisesta ryhmästä
+elokuvien määrän:
+
+```sql
+SELECT COUNT(*) FROM Elokuvat GROUP BY vuosi;
+```
+
+```x
+COUNT(*)  
+----------
+1         
+2         
+1         
+1       
+```
+
+Näistä luvuista pitää vielä saada haettua suurin, mikä onnistuu alikyselyn avulla.
+Tässä tapauksessa kätevä tapa on käyttää alikyselyä niin,
+että sen tulos on pääkyselyn `FROM`-osassa,
+jolloin alikysely luo taulun, josta pääkysely hakee tietoa:
+
+```sql
+SELECT MAX(c) FROM (SELECT COUNT(*) c FROM Elokuvat GROUP BY vuosi);
+```
+
+```x
+MAX(c)    
+----------
+2      
+```
+
+Entä voisiko tehtävän ratkaista ilman alikyselyä?
+Kyllä, koska voimme järjestää tulokset
+suurimmasta pienimpään ja valita tulostaulun ensimmäisen rivin:
+
+```sql
+SELECT COUNT(*) c FROM Elokuvat GROUP BY vuosi ORDER BY c DESC LIMIT 1;
+```
+
+```x
+c         
+----------
+2      
+```
+
 ## 21.1.2020
 
 SQL:ssä rivien järjestämisen `ORDER BY` -osassa voi toteuttaa myös
