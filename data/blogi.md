@@ -8,6 +8,71 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 25.1.2020
+
+Harva asia on puhuttanut kurssilla yhtä paljon kuin SQL Trainerin 
+tehtävät 93 ja 94, joissa tulee vertailla käyttäjien kaverilistoja.
+Kuinka moinen onnistuu SQL:llä?
+
+Hyvä askel kohti ratkaisua on koettaa ensin laskea jokaiselle
+käyttäjäparille, montako yhteistä kaveria heillä on.
+Koska jokainen kaverisuhde on oma rivinsä taulussa `Kaverit`,
+meidän täytyy pohjimmiltaan vertailla kaverisuhteita toisiinsa
+yksi kerrallaan.
+
+Seuraava kysely käy läpi päätasolla kaikki käyttäjäparit ja
+hakee heidän nimensä.
+Kolmas tulostaulun sarake tulee alikyselystä,
+joka käy läpi käyttäjien kaverilistat ja vertailee
+niitä toisiinsa.
+Tuloksena saamme jokaisesta parista tietoon yhteisten
+kaverien määrät.
+
+```sql
+SELECT A.nimi, B.nimi, (SELECT SUM(C.kaveri_id=D.kaveri_id) 
+                        FROM Kaverit C, Kaverit D
+                        WHERE C.kayttaja_id=A.id AND D.kayttaja_id=B.id) tulos
+FROM Kayttajat A, Kayttajat B;
+```
+
+Tehtävän 93 tilanteessa kyselyn tulos on seuraava:
+
+```x
+nimi        nimi        tulos     
+----------  ----------  ----------
+Uolevi      Uolevi      2         
+Uolevi      Maija       0         
+Uolevi      Liisa       1         
+Uolevi      Kaaleppi    2         
+Maija       Uolevi      0         
+Maija       Maija       1         
+Maija       Liisa       1         
+Maija       Kaaleppi    0         
+Liisa       Uolevi      1         
+Liisa       Maija       1         
+Liisa       Liisa       2         
+Liisa       Kaaleppi    1         
+Kaaleppi    Uolevi      2         
+Kaaleppi    Maija       0         
+Kaaleppi    Liisa       1         
+Kaaleppi    Kaaleppi    2
+```
+
+Tulostaulusta selviää esimerkiksi,
+että Uolevilla ja Kaalepilla on kaksi yhteistä kaveria
+sekä että Maijalla ja Liisalla on yksi yhteinen kaveri.
+
+Ehkä oudoin kohta kyselyssä on summa `SUM(C.kaveri_id=D.kaveri_id)`.
+Tässä käytetään hyväksi SQL:n ehtojen ominaisuutta:
+jos ehto on tosi, niin sen tulos on luku 1.
+Alikysely vertaa toisiinsa kaverilistoja ja ehdon tulos on 1
+aina, kun löytyy yhteinen kaveri.
+Niinpä näiden tulosten summa kertoo, montako yhteistä kaveria on yhteensä.
+
+Tällä idealla on mahdollista ratkaista tehtävät 93 ja 94.
+Niissä pitää vielä ryhmitellä tietoa sopivasti sekä verrata yhteisten
+kaverien määrää kaikkien kavereiden määrään.
+
 ## 23.1.2020
 
 Tarkastellaan tilannetta, jossa taulussa `Elokuvat` on elokuvia
