@@ -49,6 +49,13 @@ Muutosten jälkeen tulee kutsua metodia
 Komennon `SELECT` suorituksen jälkeen metodi `fetchall`
 hakee tulosrivit.
 
+Huomaa, että jos suoritat koodin uudestaan,
+tapahtuu virhe, koska taulu `Tuotteet` on jo tietokannassa mutta
+ohjelma yrittää luoda sen uudestaan.
+Voit aina halutessasi nollata tietokannan sisällön
+poistamalla tiedoston `testi.db`.
+
+
 ## Tiedon hakeminen käyttäjänä
 
 Seuraava koodi näyttää esimerkin, jossa käyttäjä pystyy
