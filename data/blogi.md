@@ -8,6 +8,88 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 29.1.2020
+
+Mitä tarkkaan ottaen tapahtuu, kun `LEFT JOIN` yhdistää kolme tai useampia tauluja?
+Tarkastellaan esimerkkinä seuraavaa tilannetta:
+
+<img src="/taulut.png">
+
+Seuraava kysely ilmoittaa jokaiselle asiakkaalle ostoskorin tuotteiden määrän:
+
+```sql
+SELECT A.nimi, COUNT(T.id)
+FROM Asiakkaat A LEFT JOIN Ostokset O ON A.id = O.asiakas_id
+                 LEFT JOIN Tuotteet T ON T.id = O.tuote_id
+GROUP BY A.id;
+```
+
+```x
+nimi        COUNT(T.id)
+----------  -----------
+Uolevi      2
+Maija       3
+Aapeli      0
+```
+
+Mitä tässä siis tapahtuu?
+Tällaisen kyselyn voi tulkita aina kahden periaatteen avulla:
+
+1. `LEFT JOIN` valitsee kaikki rivien yhdistelmät, jotka toteuttavat annetun ehdon,
+   ja lisäksi kerran jokaisen vasemman taulun rivin, jota ei muuten valittu kertaakaan.
+2. Jos tauluja on yli kaksi, yhdistämiset tapahtuvat vasemmalta oikealle.
+
+Äskeisen kyselyn tulkinnassa voimme lähteä liikkeelle tilanteesta,
+jossa yhdistämme ensin kaksi ensimmäistä taulua.
+Saamme paremman kuvan asiasta, kun haemme kaikki sarakkeet ja poistamme ryhmittelyn:
+
+```sql
+SELECT * FROM Asiakkaat A LEFT JOIN Ostokset O ON A.id = O.asiakas_id;
+```
+
+```x
+id          nimi        asiakas_id  tuote_id  
+----------  ----------  ----------  ----------
+1           Uolevi      1           2         
+1           Uolevi      1           5         
+2           Maija       2           1         
+2           Maija       2           4         
+2           Maija       2           5         
+3           Aapeli                     
+```
+
+Koska Aapelin ostoskorissa ei ole mitään tuotteita,
+tulostauluun ilmestyy ylimääräinen rivi Aapelille,
+jossa taulun `Ostokset` sarakkeiden arvoina on `NULL`.
+
+Lisätään sitten peliin kolmas taulu:
+
+```sql
+SELECT * FROM Asiakkaat A LEFT JOIN Ostokset O ON A.id = O.asiakas_id
+                          LEFT JOIN Tuotteet T ON T.id = O.tuote_id;
+```
+
+```x
+id          nimi        asiakas_id  tuote_id    id          nimi        hinta     
+----------  ----------  ----------  ----------  ----------  ----------  ----------
+1           Uolevi      1           2           2           porkkana    5         
+1           Uolevi      1           5           5           selleri     4         
+2           Maija       2           1           1           retiisi     7         
+2           Maija       2           4           4           lanttu      8         
+2           Maija       2           5           5           selleri     4         
+3           Aapeli                                                                
+```
+
+Tässä tapauksessa vasen taulu on `Asiakkaat A LEFT JOIN Ostokset O`
+ja oikea taulu on `Tuotteet T`.
+Koska vasemman taulun Aapelin rivi ei täsmää mihinkään oikean taulun riviin,
+tästä tulee taas ylimääräinen rivi, jossa sarakkeiden arvoina on `NULL`.
+
+Tämä on tavallinen idea kolmen tai useamman taulun `LEFT JOIN` -kyselyissä:
+mahdolliset `NULL`-rivit seuraavat mukana jokaisen uuden taulun yhdistämisessä.
+Tämän vuoksi jos ensimmäinen yhdistys on `LEFT JOIN`,
+niin myös muidenkin pitää olla.
+
 ## 25.1.2020
 
 Harva asia on puhuttanut kurssilla yhtä paljon kuin SQL Trainerin 
