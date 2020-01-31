@@ -8,6 +8,62 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 31.1.2020
+
+Arvo `NULL` tarkoittaa SQL:ssä, että jotain tietoa ei ole saatavilla.
+Tämä on joissain tilanteissa kätevää, mutta voi myös aiheuttaa ongelmia ja yllätyksiä.
+
+Jos `NULL` esiintyy kaavassa, se hävittää kaiken ympärillään.
+Esimerkiksi `NULL+1` on `NULL` ja samoin `5*NULL+2` on `NULL`.
+`NULL` onkin selkeästi eri asia kuin luku nolla.
+Huomaa, että SQLite ei näytä kyselyn tuloksessa tekstiä `NULL` vaan vain tyhjää:
+
+```x
+sqlite> SELECT NULL;
+
+sqlite> SELECT NULL+1;
+
+sqlite> SELECT 5*NULL+2;
+
+```
+
+Joskus kyselyn osana on lauseke, joka _saattaa_ olla `NULL`,
+ja haluamme muuttaa mahdollisen arvon `NULL` luvuksi nolla.
+Tyypillinen tilanne on, kun kyselyssä esiintyy `LEFT JOIN`,
+`GROUP BY` sekä koostefunktio `SUM`,
+joka antaa yleensä sarakkeen arvojen summan mutta `NULL` silloin,
+kun riviä ei ole yhdistetty.
+Tähän on ainakin kolme mahdollista tapaa:
+
+1. Funktion `IFNULL(a,b)` arvo on `a`, jos `a` ei ole `NULL`,
+   ja `b`, jos `a` on `NULL`.
+   Esimerkiksi `IFNULL(5,0)` on `5` ja `IFNULL(NULL,0)` on `0`.
+2. Funktio `COALESCE(...)` antaa listan ensimmäisen arvon,
+   joka ei ole `NULL`, tai arvon `NULL`, jos jokainen arvo on `NULL`.
+   Funktio `IFNULL` on funktion `COALESCE` erikoistapaus,
+   kun parametrien määrä on kaksi.
+   Esimerkiksi `COALESCE(5,0)` on `5` ja `COALESCE(NULL,0)` on `0`.
+3. Voimme myös käyttää `CASE`-rakennetta:
+   `CASE WHEN a IS NULL THEN b ELSE a END`
+   tarkoittaa samaa kuin `IFNULL(a,b)`.
+   Tämä ei ole kuitenkaan kovin tyylikäs tapa.
+
+<text-box variant='hint' name='Miljardin dollarin virhe?'>
+
+SQL:n lisäksi `NULL`-arvoja on muissakin kielissä, ja jotkut pitävät
+niiden ottamista käyttöön vakavana virheenä, koska ne voivat aiheuttaa bugeja.
+
+Tietojenkäsittelytieteen tutkija Tony Hoare
+lisäsi `NULL`-arvot Algol-kieleen vuonna 1965
+ja katuu nykyään tekoaan.
+Voit katsoa Hoaren esityksen vuodelta 2009 tästä:
+
+* [Null References: The Billion Dollar Mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/)
+
+Hoare tunnetaan myös pikajärjestämisen (quick sort) kehittäjä.
+
+</text-box>
+
 ## 29.1.2020
 
 Mitä tarkkaan ottaen tapahtuu, kun `LEFT JOIN` yhdistää kolme tai useampia tauluja?
