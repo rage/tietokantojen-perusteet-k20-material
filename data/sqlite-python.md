@@ -20,6 +20,7 @@ Tämän jälkeen koodi hakee ja näyttää taulun rivit.
 import sqlite3
 
 db = sqlite3.connect("testi.db")
+db.isolation_level = None
 
 c = db.cursor()
 
@@ -29,8 +30,6 @@ c.execute("INSERT INTO Tuotteet (nimi,hinta) VALUES ('porkkana',5)")
 c.execute("INSERT INTO Tuotteet (nimi,hinta) VALUES ('nauris',4)")
 c.execute("INSERT INTO Tuotteet (nimi,hinta) VALUES ('lanttu',8)")
 c.execute("INSERT INTO Tuotteet (nimi,hinta) VALUES ('selleri',4)")
-
-db.commit()
 
 c.execute("SELECT * FROM Tuotteet")
 print(c.fetchall())
@@ -44,10 +43,11 @@ Koodin tulostus on seuraava:
 
 Tietokantaa käytetään _kursorin_ kautta,
 jonka metodi `execute` suorittaa halutun komennon.
-Muutosten jälkeen tulee kutsua metodia
-`commit`, jotta transaktio viedään loppuun.
 Komennon `SELECT` suorituksen jälkeen metodi `fetchall`
 hakee tulosrivit.
+
+Asetus `isolation_level = None` tarkoittaa, että oletuksena jokainen
+komento on oma transaktionsa (kuten SQLite-tulkissa).
 
 Huomaa, että jos suoritat koodin uudestaan,
 tapahtuu virhe, koska taulu `Tuotteet` on jo tietokannassa mutta
@@ -65,6 +65,7 @@ hakemaan tietoa tietokannasta, jossa on valmiina taulu `Tuotteet`:
 import sqlite3
 
 db = sqlite3.connect("testi.db")
+db.isolation_level = None
 
 c = db.cursor()
 
@@ -138,6 +139,7 @@ Tässä on vielä esimerkki, jossa käyttäjä pystyy lisäämään tuotteen:
 import sqlite3
 
 db = sqlite3.connect("testi.db")
+db.isolation_level = None
 
 c = db.cursor()
 
@@ -147,15 +149,12 @@ print("Anna tuotteen hinta:")
 hinta = input()
 
 c.execute("INSERT INTO Tuotteet(nimi,hinta) VALUES (?,?)",[nimi,hinta])
-db.commit()
 
 print("Tuote lisätty id:llä",c.lastrowid)
 ```
 
 Kuten tiedon hakemisessa, turvallinen tapa toteuttaa kysely on
 käyttää parametrisoitua kyselyä.
-Metodin `commit` kutsuminen on tarpeen,
-jotta lisätty rivi menee pysyvästi talteen.
 Rivin lisäämisen jälkeen kentässä `lastrowid` on 
 lisätyn rivin id-numero, josta olisi hyötyä,
 jos esimerkiksi lisäisimme vielä toisen rivin,
@@ -201,23 +200,3 @@ except:
 
 Nyt virhetilanteessa ohjelma tulostaa viestin ja jatkaa toimintaansa.
 
-## Transaktiot
-
-Käyttämämme kirjasto `sqlite3` toteuttaa transaktiot melko oudosti:
-oletuksena taulun rivejä muuttava komento (kuten `INSERT` tai `UPDATE`)
-aloittaa transaktion (jos transaktiota ei ole käynnissä) ja
-meidän täytyy kutsua metodia `commit`, jotta muutokset menevät talteen.
-
-Kuitenkin yllättäen komento `CREATE TABLE` suoritetaan eri tavalla:
-se vie loppuun mahdollisen käynnissä olevan transaktion ja
-komennon luoma uusi taulu myös menee pysyvästi tietokantaan ilman metodin
-`commit` kutsumista.
-
-Seuraava komento ottaa puolestaan käyttöön _autocommit_-tilan:
-
-```python
-db.isolation_level = None
-```
-
-Tällöin jokainen komento on oma transaktionsa ja kaikki muutokset menevät
-talteen ilman metodin `commit` kutsumista (kuten SQLite-tulkissa).
