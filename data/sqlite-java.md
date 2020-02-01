@@ -65,6 +65,20 @@ $ java -classpath ":sqlite-jdbc-3.30.1.jar" Testi
 5 selleri 4
 ```
 
+<text-box variant='hint' name='Entä NetBeansissa?'>
+
+Jos teet projektin NetBeansilla,
+voit tehdä tavallisen Java-ohjelman ja sitten liittää
+sen osaksi yllä mainitun JDBC-ajurin.
+Tämä onnistuu painamalla oikealla hiiren näppäimellä
+_Libraries_-kohdasta ja valitsemalla _Add JAR/Folder_:
+
+<img src="/netbeans.png">
+
+
+</text-box>
+
+
 Huomaa, että jos suoritat koodin uudestaan,
 tapahtuu virhe, koska taulu `Tuotteet` on jo tietokannassa mutta
 ohjelma yrittää luoda sen uudestaan.
