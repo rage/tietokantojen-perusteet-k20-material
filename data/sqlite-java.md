@@ -53,7 +53,8 @@ Saat ladattua tarvittavan ajurin koneellesi [tästä](https://bitbucket.org/xeri
 Oletamme seuraavaksi, että ajuritiedosto on `sqlite-jdbc-3.30.1.jar`
 (voit ladata myös mahdollisen uudemman version ajurista).
 
-Voit kääntää ja suorittaa yllä olevan koodin Linux-ympäristössä näin:
+Voit kääntää ja suorittaa yllä olevan koodin Linux-ympäristössä näin
+(kun tiedostot ovat siinä hakemistossa, jossa suoritat komennot):
 
 ```x
 $ javac Testi.java
@@ -67,7 +68,7 @@ $ java -classpath ":sqlite-jdbc-3.30.1.jar" Testi
 
 <text-box variant='hint' name='Entä NetBeansissa?'>
 
-Jos teet projektin NetBeansilla,
+Jos teet projektin NetBeansissa,
 voit tehdä tavallisen Java-ohjelman ja sitten liittää
 sen osaksi yllä mainitun JDBC-ajurin.
 Tämä onnistuu painamalla oikealla hiiren näppäimellä
