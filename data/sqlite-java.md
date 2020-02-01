@@ -66,6 +66,9 @@ $ java -classpath ":sqlite-jdbc-3.30.1.jar" Testi
 5 selleri 4
 ```
 
+Jos käytät Windowsia, kirjoita kaksoispisteen `:`
+sijasta puolipiste `;` toiseen komentoon.
+
 <text-box variant='hint' name='Entä NetBeansissa?'>
 
 Jos teet projektin NetBeansissa,
