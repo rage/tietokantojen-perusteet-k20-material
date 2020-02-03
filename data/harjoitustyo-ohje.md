@@ -124,23 +124,26 @@ Sovelluksen toiminto 9 suorittaa tehokkuustestin,
 jonka tavoitteena on selvittää, miten hyvin tietokanta toimii,
 kun tiedon määrä on suuri.
 
-Tehokkuustestaus toimii seuraavasti:
+Tehokkuustesti toimii seuraavasti:
 
 1. Tietokantaan lisätään tuhat paikkaa nimillä P1, P2, P3, jne.
 2. Tietokantaan lisätään tuhat asiakasta nimillä A1, A2, A3, jne.
 3. Tietokantaan lisätään tuhat pakettia, jokaiselle jokin asiakas.
-3. Tietokantaan lisätään miljoona tapahtumaa, jokaiselle jokin paketti.
-4. Suoritetaan miljoona kyselyä, joista jokaisessa haetaan jonkin
+4. Tietokantaan lisätään miljoona tapahtumaa, jokaiselle jokin paketti.
+5. Suoritetaan tuhat kyselyä, joista jokaisessa haetaan jonkin
    asiakkaan pakettien määrä.
-5. Suoritetaan miljoona kyselyä, joista jokaisessa haetaan jonkin
+6. Suoritetaan tuhat kyselyä, joista jokaisessa haetaan jonkin
    paketin tapahtumien määrä.
 
-Tulosta testin päätteeksi, kauanko komentoihin meni yhteensä aikaa.
+Tulosta testin jokaisesta vaiheesta (1–6), paljonko siihen menee aikaa.
 Älä tulosta mitään muuta testin aikana.
 
-Raporttia varten testi suoritetaan kahdesti:
-ensin tietokannalla, jossa ei ole indeksejä,
-ja sitten tietokannalla, jossa on sopivasti valitut indeksit.
+Huom! Suorita vaiheet 1–4 yksittäisen transaktion sisällä,
+jotta tietokannan rakentamiseen ei mene liikaa aikaa.
+
+Suorita raporttia varten testi kahdesti:
+ensin tietokannalla, johon ei ole lisätty indeksejä,
+ja sitten tietokannalla, jossa on sopivat indeksit.
 
 ## Raportti
 
