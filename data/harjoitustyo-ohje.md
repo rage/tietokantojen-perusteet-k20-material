@@ -101,7 +101,7 @@ Anna tapahtuman kuvaus: paketti toimitettu
 Tapahtuma lisätty
 Valitse toiminto (1-9): 6
 Anna paketin seurantakoodi: K000000781
-1.2.2020 12:48, Varasto, paketti matkaan
+1.2.2020 12:48, Varasto, paketti kuljetukseen
 1.2.2020 12:49, Satama, paketti tullut maahan
 1.2.2020 12:51, Kalmankuja 13, paketti toimitettu
 Valitse toiminto (1-9): 4
