@@ -35,7 +35,8 @@ eli sen rakenne tulee olla järkevä eikä siinä saa olla toisteista tietoa.
 Sovellus toteutetaan Java- tai Python-kielellä komentoriviohjelmana.
 Sovelluksessa tulee olla valikko, jossa on seuraavat toiminnot:
 
-1. Luo sovelluksen tarvitsemat taulut tyhjään tietokantaan.
+1. Luo sovelluksen tarvitsemat taulut tyhjään tietokantaan
+   (tätä toimintoa voidaan käyttää, kun tietokantaa ei ole vielä olemassa).
 2. Lisää uusi paikka tietokantaan, kun annetaan paikan nimi.
 3. Lisää uusi asiakas tietokantaan, kun annetaan asiakkaan nimi.
 4. Lisää uusi paketti tietokantaan, kun annetaan paketin seurantakoodi ja
@@ -127,15 +128,19 @@ Tehokkuustestaus toimii seuraavasti:
 
 1. Tietokantaan lisätään tuhat paikkaa nimillä P1, P2, P3, jne.
 2. Tietokantaan lisätään tuhat asiakasta nimillä A1, A2, A3, jne.
-3. Tietokantaan lisätään tuhat pakettia, jokaiselle satunnaisesti valittu asiakas.
-3. Tietokantaan lisätään miljoona tapahtumaa, jokaiselle satunnaisesti valittu paketti.
-4. Suoritetaan miljoona kyselyä, joista jokaisessa haetaan satunnaisesti valitun
+3. Tietokantaan lisätään tuhat pakettia, jokaiselle jokin asiakas.
+3. Tietokantaan lisätään miljoona tapahtumaa, jokaiselle jokin paketti.
+4. Suoritetaan miljoona kyselyä, joista jokaisessa haetaan jonkin
    asiakkaan pakettien määrä.
-5. Suoritetaan miljoona kyselyä, joista jokaisessa haetaan satunnaisesti valitun
+5. Suoritetaan miljoona kyselyä, joista jokaisessa haetaan jonkin
    paketin tapahtumien määrä.
 
-Tulosta testin päätteeksi, paljonko komentoihin meni aikaa.
+Tulosta testin päätteeksi, kauanko komentoihin meni yhteensä aikaa.
 Älä tulosta mitään muuta testin aikana.
+
+Raporttia varten testi suoritetaan kahdesti:
+ensin tietokannalla, jossa ei ole indeksejä,
+ja sitten tietokannalla, jossa on sopivasti valitut indeksit.
 
 ## Raportti
 
@@ -146,10 +151,10 @@ tässä järjestyksessä:
 2. Selostus, mitkä toiminnot harjoitustyöhön on toteutettu
 3. Tietokantakaavio ja SQL-skeema
 4. Tehokkuustestin tulokset kahdessa tapauksessa: ilman indeksejä
-   ja sopivien indeksien lisäämisen jälkeen (näissä pitäisi olla selkeä ero)
+   ja indeksien lisäämisen jälkeen (näissä pitäisi olla selkeä ero)
 5. Selostus, miten on varmistettu, että jokaisella paikalla ja asiakkaalla on
    eri nimi ja jokaisella paketilla on eri seurantakoodi
-   (entä jos sovelluksella on useita samanaikaisia käyttäjiä?)
+   (entä jos on useita samanaikaisia käyttäjiä?)
 6. Toteutetun sovelluksen lähdekoodi
 
 Harjoitustyö palautetaan yhtenä PDF-tiedostona Moodleen.
