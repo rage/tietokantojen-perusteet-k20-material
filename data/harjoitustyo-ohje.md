@@ -164,6 +164,9 @@ Harjoitustyö palautetaan yhtenä PDF-tiedostona Moodleen.
 Tiedoston nimenä on sukunimi\_etunimi.pdf (esimerkiksi jos nimesi on Maija Virtanen,
 tiedoston nimi on virtanen_maija.pdf).
 
+Huom! Myös sovelluksen koodi tulee siis PDF-tiedostoon tekstinä
+eikä sitä palauteta erikseen.
+
 Pääset Moodleen [tästä](https://moodle.helsinki.fi/course/view.php?id=34020)
 ja kurssiavain on `2020tikape`.
 
