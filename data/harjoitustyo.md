@@ -6,7 +6,7 @@ information_page: true
 ---
 
 Harjoitustyössä suunnitellaan tietokanta ja toteutetaan sitä käyttävä sovellus.
-Harjoitustyö palautetaan raporttina Moodleen 29.2.
+Harjoitustyö palautetaan raporttina Moodleen 29.2. mennessä.
 
 * [Harjoitustyön ohje](/harjoitustyo-ohje)
 
