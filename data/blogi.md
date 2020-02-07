@@ -8,6 +8,39 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 7.2.2020
+
+Yksi harjoitustyön osa on mitata, kauanko SQL-komentojen suorittaminen
+vie aikaa. Miten tämä kannattaisi tehdä?
+
+Hyvä tapa on käyttää ohjelmointikielen tarjoamaa menetelmää
+hakea kulunut aika jostain kiinteästä ajanhetkestä.
+Tämän ajan voi hakea ennen komentojen suoritusta ja sen jälkeen,
+jolloin aikojen erotus kertoo suoritusajan.
+
+Javassa sopiva metodi on `System.nanoTime`,
+joka hakee kuluneen ajan nanosekunteina
+(sekunnissa on miljardi nanosekuntia):
+
+```java
+long aika1 = System.nanoTime();
+// komentojen suoritus
+long aika2 = System.nanoTime();
+System.out.println("Aikaa kului "+(aika2-aika1)/1e9+" sekuntia");
+```
+
+Pythonissa puolestaan moduulin `time` funktio `time`
+hakee ajan sekunteina:
+
+```python
+from time import time
+
+aika1 = time()
+# komentojen suoritus
+aika2 = time()
+print("Aikaa kului",aika2-aika1,"sekuntia")
+```
+
 ## 31.1.2020
 
 Arvo `NULL` tarkoittaa SQL:ssä, että jotain tietoa ei ole saatavilla.
