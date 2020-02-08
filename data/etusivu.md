@@ -31,8 +31,8 @@ ja suoritustavasta.
 Kurssin yhteydessä toimii paja, jossa voit ratkoa kurssin tehtäviä ja saada
 neuvoja ohjaajilta.
 Paja järjestetään viikoittain Exactumin salissa BK107,
-ja tämän kurssin ohjausta on tarjolla
-erityisesti ti klo 12–14 ja pe klo 14–16.
+ja löydät joka viikko ohjausajat [tästä](https://study.cs.helsinki.fi/pajat/api/tikape/current)
+(harmaa laatikko tarkoittaa, että ohjausta on tarjolla).
 
 Kurssin Telegram-ryhmässä voit keskustella netissä muiden opiskelijoiden ja
 kurssin järjestäjien kanssa. [Liity ryhmään](https://t.me/tkt_tikape)
