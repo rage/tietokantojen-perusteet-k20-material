@@ -8,6 +8,35 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 10.2.2020
+
+SQLitessä sarakkeen tyyppi on melko häilyvä käsite.
+Tästä antaa näytteen seuraava keskustelu SQLiten kanssa:
+
+```x
+sqlite> CREATE TABLE Tuotteet(nimi TEXT, hinta INTEGER);
+sqlite> INSERT INTO Tuotteet (nimi,hinta) VALUES ('nauris','kallis');
+sqlite> SELECT * FROM Tuotteet;
+nauris|kallis
+```
+
+Taulussa `Tuotteet` sarakkeen `hinta` tyyppi on `INTEGER`,
+mutta SQLite kuitenkin hyväksyy hinnaksi merkkijonon.
+
+Ideana SQLitessä on, että sarakkeen tyyppi on _suositeltu_ tyyppi
+sarakkeessa olevalle tiedolle,
+mutta sarakkeeseen pystyy laittamaan mitä tahansa muutakin tietoa.
+
+Itse asiassa voimme jopa keksiä tyypin nimen itse:
+
+```x
+sqlite> CREATE TABLE Tuotteet(nimi TEXT, hinta HASSU);
+```
+
+Tässä sarakkeen tyyppinä on `HASSU` (jota ei ole todellisuudessa olemassa),
+mutta SQLite ei hetkahda asiasta vaan luo taulun ja sitä voi käyttää.
+Tässä taulussa sarakkeessa `hinta` voi olla mitä tahansa tietoa, kuten yleensäkin.
+
 ## 7.2.2020
 
 Yksi harjoitustyön osa on mitata, kauanko SQL-komentojen suorittaminen
