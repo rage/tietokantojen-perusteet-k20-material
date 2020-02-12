@@ -8,6 +8,58 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 12.2.2020
+
+SQLitessä ei ole erillistä tyyppiä ajanhetkien
+(päivämäärä/kellonaika) käsittelyä varten,
+mutta ajanhetket voi tallentaa merkkijonoina (esim. muoto
+`yyyy-mm-dd hh:mm:ss` toimii) ja käyttää sitten SQLiten tarjoamia funktioita.
+
+Esimerkiksi voimme luoda näin taulun `Tapahtumat`,
+jossa on ajanhetkeä kuvaava sarake `aika`, ja lisätä siihen sisältöä:
+
+```x
+sqlite> CREATE TABLE Tapahtumat(id INTEGER PRIMARY KEY, aika TEXT);
+sqlite> INSERT INTO Tapahtumat(aika) VALUES ('2020-02-12 15:30:00');
+sqlite> INSERT INTO Tapahtumat(aika) VALUES ('2020-02-12 18:30:00');
+sqlite> INSERT INTO Tapahtumat(aika) VALUES ('2020-02-12 18:45:00');
+```
+
+Yksi kätevä funktio on `strftime`, jonka avulla voi kysyä ajanhetkeen
+liittyvää tietoa. Esimerkiksi seuraava kysely hakee joka rivistä
+ajanhetken tuntiosan:
+
+```x
+sqlite> SELECT strftime('%H',aika) FROM Tapahtumat;
+15
+18
+18
+```
+
+Seuraava kysely puolestaan hakee tapahtumat,
+joissa minuuttiosa on 30:
+
+```x
+sqlite> SELECT aika FROM Tapahtumat WHERE strftime('%M',aika)='30';
+2020-02-12 15:30:00
+2020-02-12 18:30:00
+```
+
+Lisää tietoa funktion `strftime` mahdollisuuksista ja SQLiten
+muista asiaan liittyvistä funktioista löydät
+[tästä](https://www.sqlite.org/lang_datefunc.html).
+
+Huomaa, että olisimme voineet luoda taulun myös näin:
+
+```x
+sqlite> CREATE TABLE Tapahtumat(id INTEGER PRIMARY KEY, aika DATETIME);
+```
+
+SQLitessä ei ole tyyppiä `DATETIME`, mutta kuten blogin edellisessä
+kirjoituksessa havaittiin, tyypin voi halutessaan tekaista itse.
+Tässä tapauksessa etuna on, että taulun määrittelystä näkee selkeämmin,
+että sarakkeeseen on tarkoitus tallentaa ajanhetki.
+
 ## 10.2.2020
 
 SQLitessä sarakkeen tyyppi on melko häilyvä käsite.
