@@ -8,6 +8,60 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 15.2.2020
+
+Harjoitustyön tehokkuustestissä on ohjeena suorittaa lisäyskomennot
+saman transaktion sisällä.
+Mitä tämä tarkoittaa ja miksi näin pitäisi tehdä?
+
+Tarkastellaan seuraavaa Java-koodia, joka luo taulun `Testi`
+ja lisää siihen miljoona riviä:
+
+```java
+Statement s = db.createStatement();
+s.execute("CREATE TABLE Testi (x INTEGER)");
+
+for (int i = 1; i <= 1000000; i++) {
+    PreparedStatement p = db.prepareStatement("INSERT INTO Testi (x) VALUES (?)");
+    p.setInt(1,i);
+    p.executeUpdate();
+}
+```
+
+Tässä jokainen `INSERT`-komento on erillinen transaktio
+(koska oletuksena näin on), minkä vuoksi koodi toimii hitaasti.
+Koodin suorituksessa voisi mennä ehkä tunti aikaa.
+
+Saamme kuitenkin tehostettua koodia huomattavasti tekemällä lisäykset
+transaktion sisällä. Tämä onnistuu muuttamalla silmukkaa näin:
+
+```java
+s.execute("BEGIN TRANSACTION");
+for (int i = 1; i <= 1000000; i++) {
+    PreparedStatement p = db.prepareStatement("INSERT INTO Testi (x) VALUES (?)");
+    p.setInt(1,i);
+    p.executeUpdate();
+}
+s.execute("COMMIT");
+```
+
+Tämän seurauksena koodi vie aikaa vain noin kymmenen sekuntia.
+
+Itse asiassa voimme parantaa vielä koodia siirtämällä `INSERT`-komennon
+valmistelun silmukan ulkopuolelle, jolloin se täytyy tehdä vain kerran:
+
+```java
+s.execute("BEGIN TRANSACTION");
+PreparedStatement p = db.prepareStatement("INSERT INTO Testi (x) VALUES (?)");
+for (int i = 1; i <= 1000000; i++) {
+    p.setInt(1,i);
+    p.executeUpdate();
+}
+s.execute("COMMIT");
+```
+
+Tämä koodi vie aikaa vain noin sekunnin – hieno parannus tehokkuuteen.
+
 ## 12.2.2020
 
 SQLitessä ei ole erillistä tyyppiä ajanhetkien
