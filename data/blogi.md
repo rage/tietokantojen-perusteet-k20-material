@@ -8,6 +8,139 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 21.2.2020
+
+Miten alikyselyt oikeastaan toimivat ja mihin kohtaan kyselyä alikysely tulisi sijoittaa?
+
+Tässä auttaa ajatella alikyselyä niin, että se palauttaa jonkin tuloksen,
+joka sijoitetaan pääkyselyyn vastaavaan kohtaan.
+Alikysely voi palauttaa yksittäisen arvon, listan arvoista tai kaksiulotteisen taulun tietoa.
+
+Tarkastelemme seuraavaksi alikyselyitä seuraavan taulun `Elokuvat` avulla:
+
+```x
+id          nimi        vuosi     
+----------  ----------  ----------
+1           Lumikki     1937      
+2           Fantasia    1940      
+3           Pinocchio   1940      
+4           Dumbo       1941      
+5           Bambi       1942    
+```
+
+**Tapaus 1: Sarakkeen arvo haetaan alikyselystä**
+
+Tässä tapauksessa alikysely on kyselyn `SELECT`-osassa,
+ja se palauttaa yksittäisen arvon, josta tulee yksi tulostaulun sarakkeista.
+
+Seuraava kysely käy läpi elokuvat ja muodostaa tulostaulun,
+jossa on kolme saraketta:
+elokuvan nimi ja vuosi sekä elokuvien yhteismäärä.
+Kolmas arvo on haettu alikyselyllä,
+joka antaa saman tuloksen jokaiselle riville.
+
+```sql
+SELECT nimi, vuosi, (SELECT COUNT(*) FROM Elokuvat) FROM Elokuvat;
+```
+
+```x
+nimi        vuosi       (SELECT COUNT(*) FROM Elokuvat)
+----------  ----------  -------------------------------
+Lumikki     1937        5                              
+Fantasia    1940        5                              
+Pinocchio   1940        5                              
+Dumbo       1941        5                              
+Bambi       1942        5        
+```
+
+**Tapaus 2: Alikysely luo taulun, josta haetaan tietoa**
+
+Tässä tapauksessa alikysely on kyselyn `FROM`-osassa,
+ja se palauttaa kokonaisen taulun tietoa.
+Pääkysely hakee tietoa tästä taulusta kuin se olisi tietokannassa oleva taulu.
+
+Seuraava kysely hakee tietoa taulusta,
+joka on alikyselyn muodostama.
+Taulussa on kaikki elokuvat, jotka on julkaistu vuonna 1940.
+
+```sql
+SELECT nimi FROM (SELECT * FROM Elokuvat WHERE vuosi=1940);
+```
+
+```x
+nimi      
+----------
+Fantasia  
+Pinocchio 
+```
+
+Huomaa, että yllä oleva kysely toimii samoin kuin tämä kysely:
+
+```sql
+SELECT nimi FROM Elokuvat WHERE vuosi=1940;
+```
+
+**Tapaus 3: Alikysely esiintyy kyselyn ehdossa**
+
+Tässä tapauksessa alikysely voi palauttaa joko yksittäisen arvon tai
+listan arvoja, riippuen miten sitä käytetään ehdossa.
+
+Esimerkiksi seuraava kysely hakee niiden elokuvien nimet,
+joilla on varhaisin julkaisuvuosi.
+Tässä alikysely palauttaa yksittäisen arvon (julkaisuvuosi).
+
+```sql
+SELECT nimi FROM Elokuvat WHERE vuosi=(SELECT MIN(vuosi) FROM Elokuvat);
+```
+
+```x
+nimi      
+----------
+Lumikki  
+```
+
+Seuraava kysely puolestaan hakee niiden elokuvien nimet,
+jotka on julkaistu vuonna 1940.
+Tässä alikysely palauttaa listan arvoja (elokuvien id-numerot).
+
+```sql
+SELECT nimi FROM Elokuvat WHERE id IN (SELECT id FROM Elokuvat WHERE vuosi=1940);
+```
+
+```x
+nimi      
+----------
+Fantasia  
+Pinocchio 
+```
+
+Huomaa, että äskeinen kysely toimii samoin kuin tämä kysely:
+
+```sql
+SELECT nimi FROM Elokuvat WHERE vuosi=1940;
+```
+
+**Tapaus 4: Alikysely esiintyy jossain muussa kyselyn osassa**
+
+Alikysely voi esiintyä lähes missä tahansa kyselyn osassa,
+kunhan se palauttaa sopivan arvon.
+Esimerkiksi seuraava alikysely `LIMIT`-osassa
+valitsee _puolet_ taulun riveistä:
+
+```sql
+SELECT nimi FROM Elokuvat LIMIT (SELECT COUNT(*) FROM Elokuvat)/2;
+```
+
+```x
+nimi      
+----------
+Lumikki   
+Fantasia  
+```
+
+Tässä tapauksessa alikysely palauttaa arvon 5,
+minkä seurauksena taulusta haetaan 5 / 2 = 2 (pyöristys alaspäin) riviä.
+
 ## 15.2.2020
 
 Harjoitustyön tehokkuustestissä on ohjeena suorittaa lisäyskomennot
