@@ -75,10 +75,13 @@ Jos teet projektin NetBeansissa,
 voit tehdä tavallisen Java-ohjelman ja sitten liittää
 sen osaksi yllä mainitun JDBC-ajurin.
 Tämä onnistuu painamalla oikealla hiiren näppäimellä
-_Libraries_-kohdasta ja valitsemalla _Add JAR/Folder_:
+kohdasta _Libraries_ ja valitsemalla _Add JAR/Folder_:
 
 <img src="/netbeans.png">
 
+Huom! Jos et löydä kohtaa _Libraries_,
+kokeile luoda projekti uudestaan niin,
+että sen tyyppinä on "Ant" eikä "Maven".
 
 </text-box>
 
