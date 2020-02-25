@@ -8,6 +8,83 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 25.2.2020
+
+Tietokannan käyttämistä voi haitata sen _lukittuminen_.
+Näin käy seuraavassa koodissa:
+
+```java
+        Connection db1 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db1.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        Connection db2 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s2 = db2.createStatement();
+        s2.execute("INSERT INTO Testi (x) VALUES (1)");
+```
+
+Koodi antaa viimeisellä rivillä ilmoituksen
+`The database file is locked (database is locked)`
+eikä pysty suorittamaan `INSERT`-komentoa.
+
+Ongelmana on, että koodi luo kaksi erillistä yhteyttä tietokantaan
+ja ensimmäinen yhteys (`db1`) on vielä käynnissä,
+kun toinen yhteys (`db2`) muodostetaan.
+Tarkemmin komentoa `INSERT` ei voida suorittaa,
+koska kysely `SELECT` on vielä vireillä.
+
+Lukittumisen estämiseen on ainakin kaksi tapaa.
+Yksi tapa on käyttää `close`-metodia,
+jonka avulla voi sulkea tietokantaan liittyvän olion.
+Esimerkiksi voisimme sulkea avatut yhteydet näin äskeisessä koodissa:
+
+```java
+        Connection db1 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db1.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        db1.close();
+        Connection db2 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s2 = db2.createStatement();
+        s2.execute("INSERT INTO Testi (x) VALUES (1)");
+        db2.close();
+```
+
+Toinen tapa on käyttää koko ajan vain yhtä yhteyttä:
+
+```java
+        Connection db = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        Statement s2 = db.createStatement();
+        s2.execute("INSERT INTO Testi (x) VALUES (1)");
+```
+
+Kun tietokantaan on vain yksi yhteys, sitä ei tarvitse sulkea.
+Yhteys kuitenkin sulkeutuu automaattisesti, kun ohjelman suoritus päättyy.
+
+Seuraava koodi kuitenkin edelleen lukitsee tietokannan:
+
+```java
+        Connection db = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        Statement s2 = db.createStatement();
+        s2.execute("DROP TABLE Testi");
+```
+
+Nyt virheilmoitus on vähän erilainen
+`A table in the database is locked (database table is locked)`.
+Tässä tapauksessa ongelman ratkaisee, että suljemmekin kyselyn:
+
+```java
+        Connection db = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        s1.close();
+        Statement s2 = db.createStatement();
+        s2.execute("DROP TABLE Testi");
+```
+
+
 ## 21.2.2020
 
 Miten alikyselyt oikeastaan toimivat ja mihin kohtaan kyselyä alikysely tulisi sijoittaa?
