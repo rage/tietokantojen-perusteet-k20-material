@@ -8,6 +8,351 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 25.2.2020
+
+Tietokannan käyttämistä voi haitata sen _lukittuminen_.
+Näin käy seuraavassa koodissa:
+
+```java
+        Connection db1 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db1.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        Connection db2 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s2 = db2.createStatement();
+        s2.execute("INSERT INTO Testi (x) VALUES (1)");
+```
+
+Koodi antaa viimeisellä rivillä ilmoituksen
+`The database file is locked (database is locked)`
+eikä pysty suorittamaan `INSERT`-komentoa.
+
+Ongelmana on, että koodi luo kaksi erillistä yhteyttä tietokantaan
+ja ensimmäinen yhteys (`db1`) on vielä käynnissä,
+kun toinen yhteys (`db2`) muodostetaan.
+Tarkemmin komentoa `INSERT` ei voida suorittaa,
+koska kysely `SELECT` on vielä vireillä.
+
+Lukittumisen estämiseen on ainakin kaksi tapaa.
+Yksi tapa on käyttää `close`-metodia,
+jonka avulla voi sulkea tietokantaan liittyvän olion.
+Esimerkiksi voisimme sulkea avatut yhteydet näin äskeisessä koodissa:
+
+```java
+        Connection db1 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db1.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        db1.close();
+        Connection db2 = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s2 = db2.createStatement();
+        s2.execute("INSERT INTO Testi (x) VALUES (1)");
+        db2.close();
+```
+
+Toinen tapa on käyttää koko ajan vain yhtä yhteyttä:
+
+```java
+        Connection db = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        Statement s2 = db.createStatement();
+        s2.execute("INSERT INTO Testi (x) VALUES (1)");
+```
+
+Kun tietokantaan on vain yksi yhteys, sitä ei tarvitse sulkea.
+Yhteys kuitenkin sulkeutuu automaattisesti, kun ohjelman suoritus päättyy.
+
+Seuraava koodi kuitenkin edelleen lukitsee tietokannan:
+
+```java
+        Connection db = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        Statement s2 = db.createStatement();
+        s2.execute("DROP TABLE Testi");
+```
+
+Nyt virheilmoitus on vähän erilainen
+`A table in the database is locked (database table is locked)`.
+Tässä tapauksessa ongelman ratkaisee, että suljemmekin kyselyn:
+
+```java
+        Connection db = DriverManager.getConnection("jdbc:sqlite:testi.db");
+        Statement s1 = db.createStatement();
+        s1.execute("SELECT * FROM Testi");
+        s1.close();
+        Statement s2 = db.createStatement();
+        s2.execute("DROP TABLE Testi");
+```
+
+
+## 21.2.2020
+
+Miten alikyselyt oikeastaan toimivat ja mihin kohtaan kyselyä alikysely tulisi sijoittaa?
+
+Tässä auttaa ajatella alikyselyä niin, että se palauttaa jonkin tuloksen,
+joka sijoitetaan pääkyselyyn vastaavaan kohtaan.
+Alikysely voi palauttaa yksittäisen arvon, listan arvoista tai kaksiulotteisen taulun tietoa.
+
+Tarkastelemme seuraavaksi alikyselyitä seuraavan taulun `Elokuvat` avulla:
+
+```x
+id          nimi        vuosi     
+----------  ----------  ----------
+1           Lumikki     1937      
+2           Fantasia    1940      
+3           Pinocchio   1940      
+4           Dumbo       1941      
+5           Bambi       1942    
+```
+
+**Tapaus 1: Sarakkeen arvo haetaan alikyselystä**
+
+Tässä tapauksessa alikysely on kyselyn `SELECT`-osassa,
+ja se palauttaa yksittäisen arvon, josta tulee yksi tulostaulun sarakkeista.
+
+Seuraava kysely käy läpi elokuvat ja muodostaa tulostaulun,
+jossa on kolme saraketta:
+elokuvan nimi ja vuosi sekä elokuvien yhteismäärä.
+Kolmas arvo on haettu alikyselyllä,
+joka antaa saman tuloksen jokaiselle riville.
+
+```sql
+SELECT nimi, vuosi, (SELECT COUNT(*) FROM Elokuvat) FROM Elokuvat;
+```
+
+```x
+nimi        vuosi       (SELECT COUNT(*) FROM Elokuvat)
+----------  ----------  -------------------------------
+Lumikki     1937        5                              
+Fantasia    1940        5                              
+Pinocchio   1940        5                              
+Dumbo       1941        5                              
+Bambi       1942        5        
+```
+
+**Tapaus 2: Alikysely luo taulun, josta haetaan tietoa**
+
+Tässä tapauksessa alikysely on kyselyn `FROM`-osassa,
+ja se palauttaa kokonaisen taulun tietoa.
+Pääkysely hakee tietoa tästä taulusta kuin se olisi tietokannassa oleva taulu.
+
+Seuraava kysely hakee tietoa taulusta,
+joka on alikyselyn muodostama.
+Taulussa on kaikki elokuvat, jotka on julkaistu vuonna 1940.
+
+```sql
+SELECT nimi FROM (SELECT * FROM Elokuvat WHERE vuosi=1940);
+```
+
+```x
+nimi      
+----------
+Fantasia  
+Pinocchio 
+```
+
+Huomaa, että yllä oleva kysely toimii samoin kuin tämä kysely:
+
+```sql
+SELECT nimi FROM Elokuvat WHERE vuosi=1940;
+```
+
+**Tapaus 3: Alikysely esiintyy kyselyn ehdossa**
+
+Tässä tapauksessa alikysely voi palauttaa joko yksittäisen arvon tai
+listan arvoja, riippuen miten sitä käytetään ehdossa.
+
+Esimerkiksi seuraava kysely hakee niiden elokuvien nimet,
+joilla on varhaisin julkaisuvuosi.
+Tässä alikysely palauttaa yksittäisen arvon (julkaisuvuosi).
+
+```sql
+SELECT nimi FROM Elokuvat WHERE vuosi=(SELECT MIN(vuosi) FROM Elokuvat);
+```
+
+```x
+nimi      
+----------
+Lumikki  
+```
+
+Seuraava kysely puolestaan hakee niiden elokuvien nimet,
+jotka on julkaistu vuonna 1940.
+Tässä alikysely palauttaa listan arvoja (elokuvien id-numerot).
+
+```sql
+SELECT nimi FROM Elokuvat WHERE id IN (SELECT id FROM Elokuvat WHERE vuosi=1940);
+```
+
+```x
+nimi      
+----------
+Fantasia  
+Pinocchio 
+```
+
+Huomaa, että äskeinen kysely toimii samoin kuin tämä kysely:
+
+```sql
+SELECT nimi FROM Elokuvat WHERE vuosi=1940;
+```
+
+**Tapaus 4: Alikysely esiintyy jossain muussa kyselyn osassa**
+
+Alikysely voi esiintyä lähes missä tahansa kyselyn osassa,
+kunhan se palauttaa sopivan arvon.
+Esimerkiksi seuraava alikysely `LIMIT`-osassa
+valitsee _puolet_ taulun riveistä:
+
+```sql
+SELECT nimi FROM Elokuvat LIMIT (SELECT COUNT(*) FROM Elokuvat)/2;
+```
+
+```x
+nimi      
+----------
+Lumikki   
+Fantasia  
+```
+
+Tässä tapauksessa alikysely palauttaa arvon 5,
+minkä seurauksena taulusta haetaan 5 / 2 = 2 (pyöristys alaspäin) riviä.
+
+## 15.2.2020
+
+Harjoitustyön tehokkuustestissä on ohjeena suorittaa lisäyskomennot
+saman transaktion sisällä.
+Mitä tämä tarkoittaa ja miksi näin pitäisi tehdä?
+
+Tarkastellaan seuraavaa Java-koodia, joka luo taulun `Testi`
+ja lisää siihen miljoona riviä:
+
+```java
+Statement s = db.createStatement();
+s.execute("CREATE TABLE Testi (x INTEGER)");
+
+for (int i = 1; i <= 1000000; i++) {
+    PreparedStatement p = db.prepareStatement("INSERT INTO Testi (x) VALUES (?)");
+    p.setInt(1,i);
+    p.executeUpdate();
+}
+```
+
+Tässä jokainen `INSERT`-komento on erillinen transaktio
+(koska oletuksena näin on), minkä vuoksi koodi toimii hitaasti.
+Koodin suorituksessa voisi mennä ehkä tunti aikaa.
+
+Saamme kuitenkin tehostettua koodia huomattavasti tekemällä lisäykset
+transaktion sisällä. Tämä onnistuu muuttamalla silmukkaa näin:
+
+```java
+s.execute("BEGIN TRANSACTION");
+for (int i = 1; i <= 1000000; i++) {
+    PreparedStatement p = db.prepareStatement("INSERT INTO Testi (x) VALUES (?)");
+    p.setInt(1,i);
+    p.executeUpdate();
+}
+s.execute("COMMIT");
+```
+
+Tämän seurauksena koodi vie aikaa vain noin kymmenen sekuntia.
+
+Itse asiassa voimme parantaa vielä koodia siirtämällä `INSERT`-komennon
+valmistelun silmukan ulkopuolelle, jolloin se täytyy tehdä vain kerran:
+
+```java
+s.execute("BEGIN TRANSACTION");
+PreparedStatement p = db.prepareStatement("INSERT INTO Testi (x) VALUES (?)");
+for (int i = 1; i <= 1000000; i++) {
+    p.setInt(1,i);
+    p.executeUpdate();
+}
+s.execute("COMMIT");
+```
+
+Tämä koodi vie aikaa vain noin sekunnin – hieno parannus tehokkuuteen.
+
+## 12.2.2020
+
+SQLitessä ei ole erillistä tyyppiä ajanhetkien
+(päivämäärä/kellonaika) käsittelyä varten,
+mutta ajanhetket voi tallentaa merkkijonoina (esim. muoto
+`yyyy-mm-dd hh:mm:ss` toimii) ja käyttää sitten SQLiten tarjoamia funktioita.
+
+Esimerkiksi voimme luoda näin taulun `Tapahtumat`,
+jossa on ajanhetkeä kuvaava sarake `aika`, ja lisätä siihen sisältöä:
+
+```x
+sqlite> CREATE TABLE Tapahtumat(id INTEGER PRIMARY KEY, aika TEXT);
+sqlite> INSERT INTO Tapahtumat(aika) VALUES ('2020-02-12 15:30:00');
+sqlite> INSERT INTO Tapahtumat(aika) VALUES ('2020-02-12 18:30:00');
+sqlite> INSERT INTO Tapahtumat(aika) VALUES ('2020-02-12 18:45:00');
+```
+
+Yksi kätevä funktio on `strftime`, jonka avulla voi kysyä ajanhetkeen
+liittyvää tietoa. Esimerkiksi seuraava kysely hakee joka rivistä
+ajanhetken tuntiosan:
+
+```x
+sqlite> SELECT strftime('%H',aika) FROM Tapahtumat;
+15
+18
+18
+```
+
+Seuraava kysely puolestaan hakee tapahtumat,
+joissa minuuttiosa on 30:
+
+```x
+sqlite> SELECT aika FROM Tapahtumat WHERE strftime('%M',aika)='30';
+2020-02-12 15:30:00
+2020-02-12 18:30:00
+```
+
+Lisää tietoa funktion `strftime` mahdollisuuksista ja SQLiten
+muista asiaan liittyvistä funktioista löydät
+[tästä](https://www.sqlite.org/lang_datefunc.html).
+
+Huomaa, että olisimme voineet luoda taulun myös näin:
+
+```x
+sqlite> CREATE TABLE Tapahtumat(id INTEGER PRIMARY KEY, aika DATETIME);
+```
+
+SQLitessä ei ole tyyppiä `DATETIME`, mutta kuten blogin edellisessä
+kirjoituksessa havaittiin, tyypin voi halutessaan tekaista itse.
+Tässä tapauksessa etuna on, että taulun määrittelystä näkee selkeämmin,
+että sarakkeeseen on tarkoitus tallentaa ajanhetki.
+
+## 10.2.2020
+
+SQLitessä sarakkeen tyyppi on melko häilyvä käsite.
+Tästä antaa näytteen seuraava keskustelu SQLiten kanssa:
+
+```x
+sqlite> CREATE TABLE Tuotteet(nimi TEXT, hinta INTEGER);
+sqlite> INSERT INTO Tuotteet (nimi,hinta) VALUES ('nauris','kallis');
+sqlite> SELECT * FROM Tuotteet;
+nauris|kallis
+```
+
+Taulussa `Tuotteet` sarakkeen `hinta` tyyppi on `INTEGER`,
+mutta SQLite kuitenkin hyväksyy hinnaksi merkkijonon.
+
+Ideana SQLitessä on, että sarakkeen tyyppi on _suositeltu_ tyyppi
+sarakkeessa olevalle tiedolle,
+mutta sarakkeeseen pystyy laittamaan mitä tahansa muutakin tietoa.
+
+Itse asiassa voimme jopa keksiä tyypin nimen itse:
+
+```x
+sqlite> CREATE TABLE Tuotteet(nimi TEXT, hinta HASSU);
+```
+
+Tässä sarakkeen tyyppinä on `HASSU` (jota ei ole todellisuudessa olemassa),
+mutta SQLite ei hetkahda asiasta vaan luo taulun ja sitä voi käyttää.
+Tässä taulussa sarakkeessa `hinta` voi olla mitä tahansa tietoa, kuten yleensäkin.
+
 ## 7.2.2020
 
 Yksi harjoitustyön osa on mitata, kauanko SQL-komentojen suorittaminen
