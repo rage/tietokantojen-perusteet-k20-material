@@ -8,6 +8,34 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 3.3.2020
+
+Alikyselyt ovat käteviä, mutta todella monen kyselyn voi
+toteuttaa ilman niitä käyttämällä sopivasti monen taulun
+kyselyä ja muita tekniikoita.
+
+Esimerkiksi luvussa 4.2 olevan kyselyn
+
+```sql
+SELECT nimi, tulos FROM Tulokset WHERE tulos = (SELECT MAX(tulos) FROM Tulokset);
+```
+
+voi toteuttaa myös ilman alikyselyä seuraavasti:
+
+```sql
+SELECT A.nimi, A.tulos
+FROM Tulokset A LEFT JOIN Tulokset B ON B.tulos > A.tulos
+GROUP BY A.id HAVING COUNT(B.tulos)=0;
+```
+
+Myös useimmat SQL Trainerin tehtävät voi ratkoa ilman alikyselyitä.
+Itse asiassa tiedossa on tällä hetkellä alikyselytön
+ratkaisu kaikkiin tehtäviin seuraavia lukuun ottamatta:
+
+72, 75, 89, 90, 91, 93, 94
+
+_Haaste_: Osaatko ratkoa jonkin näistä ilman alikyselyä?
+
 ## 25.2.2020
 
 Tietokannan käyttämistä voi haitata sen _lukittuminen_.
