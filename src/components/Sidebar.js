@@ -118,6 +118,10 @@ var content2 = [
     title: "Kurssiblogi",
     path: "/blogi",
   },
+  {
+    title: "Loppuraportti",
+    path: "/loppuraportti",
+  },
   { separator: true },
 ]
 
