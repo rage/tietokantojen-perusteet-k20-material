@@ -8,6 +8,24 @@ information_page: true
 Kurssiblogissa ilmestyy silloin tällöin kurssimateriaalia täydentävää sisältöä,
 jonka tavoitteena on antaa uusia näkökulmia kurssin aiheisiin.
 
+## 11.3.2020
+
+Millainen raportti vaadittiin harjoitustyön arvosanaan 5?
+Tästä voit katsoa kaksi sellaista malliraporttia:
+
+* [Malliraportti Javalla](/raportti_java.pdf)
+* [Malliraportti Pythonilla](/raportti_python.pdf)
+
+Palautetut raportit olivat keskimäärin oikein hyviä. Kolme yleisintä syytä
+raportin arvosanan alentamiseen olivat:
+
+* Tehokkuustesti puuttuu tai sen tulokset eivät ole järkeviä
+  (esim. testi on tehty eri tavalla kuin ohjeessa tai indeksit eivät ole sopivia).
+* Sovellus ei pidä luotettavasti huolta siitä, että tietyssä sarakkeessa on eri arvo
+  jokaisella taulun rivillä (erityisesti kun on samanaikaisia käyttäjiä).
+* SQL-komennossa ei ole käytetty parametreja (?-merkintä komennossa),
+  vaan muuttujia on yhdistetty suoraan komentoon.
+
 ## 3.3.2020
 
 Alikyselyt ovat käteviä, mutta todella monen kyselyn voi
