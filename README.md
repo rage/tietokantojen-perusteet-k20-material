@@ -1,6 +1,6 @@
-# Tietorakenteet ja algoritmit s19
+# Tietokantojen perusteet k20
 
-https://tira-s19.now.sh
+https://tikape-k20.now.sh
 
 ## Development environment
 
