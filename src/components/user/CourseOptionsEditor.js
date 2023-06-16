@@ -10,8 +10,6 @@ import {
   CardContent,
 } from "@material-ui/core"
 
-import { OutboundLink } from "gatsby-plugin-google-analytics"
-
 import Loading from "../Loading"
 
 import {
@@ -68,7 +66,7 @@ class CourseOptionsEditor extends React.Component {
     )
   }
 
-  onClick = async e => {
+  onClick = async (e) => {
     e.preventDefault()
     this.setState({ submitting: true })
     let extraFields = {
@@ -108,7 +106,7 @@ class CourseOptionsEditor extends React.Component {
     focused: null,
   }
 
-  handleInput = e => {
+  handleInput = (e) => {
     const name = e.target.name
     const value = e.target.value
     this.setState({ [name]: value }, () => {
@@ -116,7 +114,7 @@ class CourseOptionsEditor extends React.Component {
     })
   }
 
-  handleCheckboxInput = e => {
+  handleCheckboxInput = (e) => {
     const name = e.target.name
     const value = e.target.checked
     this.setState({ [name]: value }, () => {
@@ -124,7 +122,7 @@ class CourseOptionsEditor extends React.Component {
     })
   }
 
-  handleFocus = e => {
+  handleFocus = (e) => {
     const name = e.target.name
     this.setState({ focused: name })
   }

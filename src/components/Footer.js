@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import BackgroundImage from "../images/banner.svg"
 import { Card, CardContent } from "@material-ui/core"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
@@ -100,7 +99,7 @@ class Footer extends React.Component {
           <StyledCard>
             <StyledCardContent>
               <GithubContainer>
-                <OutboundLink
+                <a
                   href="https://github.com/rage/tietokantojen-perusteet-k20-material"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -111,53 +110,53 @@ class Footer extends React.Component {
                     title="Sivuston lähdekoodi"
                   />
                   <div>Sivuston lähdekoodi</div>
-                </OutboundLink>
+                </a>
               </GithubContainer>
 
               <ContentContainer>
                 <Link to="/credits">Tietoa tekijöistä</Link>
               </ContentContainer>
               <SocialContainer>
-                <OutboundLink
+                <a
                   href="https://twitter.com/moocfi"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Mooc.fi:n Twitter -profiili"
                 >
                   <StyledIcon icon={faTwitter} size="3x" />
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href="https://www.facebook.com/Moocfi"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Mooc.fi:n Facebook -sivu"
                 >
                   <StyledIcon icon={faFacebook} size="3x" />
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href="https://www.youtube.com/channel/UCkHoQ5p9skFdyjrV3_tnUrA"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Mooc.fi:n YouTube -kanava"
                 >
                   <StyledIcon icon={faYoutube} size="3x" />
-                </OutboundLink>
+                </a>
               </SocialContainer>
               <BrandsContainer>
-                <OutboundLink
+                <a
                   href="https://helsinki.fi"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img alt="Helsingin yliopisto" src={UHLogo} />
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href="https://mooc.fi"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img alt="MOOC.fi" src={MoocfiLogo} />
-                </OutboundLink>
+                </a>
               </BrandsContainer>
             </StyledCardContent>
           </StyledCard>

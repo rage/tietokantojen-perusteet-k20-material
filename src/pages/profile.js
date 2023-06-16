@@ -9,7 +9,6 @@ import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheckCircle as icon } from "@fortawesome/free-solid-svg-icons"

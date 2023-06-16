@@ -35,7 +35,7 @@ class ExerciseList extends React.Component {
     }
 
     const sectionPages = value.all
-      .filter(o => o.path.startsWith(`${sectionPath}/`))
+      .filter((o) => o.path.startsWith(`${sectionPath}/`))
       .sort((a, b) => {
         a = a.path.toLowerCase()
         b = b.path.toLowerCase()
@@ -43,11 +43,13 @@ class ExerciseList extends React.Component {
         return a > b ? 1 : b > a ? -1 : 0
       })
 
-    const allExercises = flatten(sectionPages.map(page => page.exercises))
-    const quizIds = allExercises.filter(o => o.type === "quiz").map(o => o.id)
+    const allExercises = flatten(sectionPages.map((page) => page.exercises))
+    const quizIds = allExercises
+      .filter((o) => o.type === "quiz")
+      .map((o) => o.id)
     const quizDetails = await fetchManyQuizDetails(quizIds)
     const quizIdToTitle = {}
-    quizDetails.forEach(o => {
+    quizDetails.forEach((o) => {
       quizIdToTitle[o._id] = o.title
     })
     this.setState({ sectionPages, quizIdToTitle, render: true })

@@ -2,7 +2,7 @@ import TmcClient from "tmc-client-js"
 import fetchPonyfill from "fetch-ponyfill"
 import axios from "axios"
 import * as store from "store"
-import uuidv4 from "uuid/v4"
+import { v4 as uuidv4 } from "uuid"
 
 const { fetch } = fetchPonyfill()
 const BASE_URL = "https://tmc.mooc.fi/api/v8"
@@ -18,11 +18,11 @@ const loginStateListeners = []
 export function authenticate(credentials) {
   return new Promise((resolve, reject) => {
     tmcClient.authenticate(credentials).then(
-      res => {
+      (res) => {
         loginStateChanged()
         resolve(res)
       },
-      err => {
+      (err) => {
         reject(err)
       },
     )
@@ -43,8 +43,8 @@ export function createAccount(data) {
       headers: {
         "Content-Type": "application/json",
       },
-    }).then(res => {
-      res.json().then(json => {
+    }).then((res) => {
+      res.json().then((json) => {
         if (!json.success) {
           reject(json.errors)
         } else {
@@ -63,8 +63,8 @@ export function resetPassword(email) {
       headers: {
         "Content-Type": "application/json",
       },
-    }).then(res => {
-      res.json().then(json => {
+    }).then((res) => {
+      res.json().then((json) => {
         resolve(json)
       })
     })
@@ -147,10 +147,10 @@ export function updatePassword(currentPassword, password, confirmPassword) {
 
   return axios
     .put(`${BASE_URL}/users/${id}`, userDetails, { headers: createHeader() })
-    .then(res => {
+    .then((res) => {
       return res
     })
-    .catch(error => {
+    .catch((error) => {
       return Promise.reject(error.response)
     })
 }
@@ -203,7 +203,7 @@ export function canDoResearch() {
 }
 
 function loginStateChanged() {
-  loginStateListeners.forEach(listener => {
+  loginStateListeners.forEach((listener) => {
     listener(loggedIn())
   })
 }
